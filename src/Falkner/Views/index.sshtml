@@ -1,0 +1,225 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Falkner - Style Guide</title>
+    <!--<link href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css" rel="stylesheet" />-->
+    <!-- Remove base if your project doesn't use Pure's Base or Normalize which is what Pure's Base is based on -->
+    <link href="@Path['~/Content/css/vendor/base.css']" rel="stylesheet" />
+    <!-- Using Pure's Default Responsive Grid for well... what a grid is meant for... in Falkner -->
+    <link href="@Path['~/Content/css/vendor/grids.css']" rel="stylesheet" />
+    <link href="@Path['~/Content/css/vendor/grids-responsive.css']" rel="stylesheet" />
+    <!-- Falkner Styles -->
+    <link href="@Path['~/Content/css/Falkner-styles.css']" rel="stylesheet" />
+    <!-- Highlight code -->
+    <link href="@Path['~/Content/css/vendor/prism.css']" rel="stylesheet" />
+    <!-- Either replace styles.css with your own stylesheet or use it as a starting point -->
+    <link href="@Path['~/Content/css/styles.css']" rel="stylesheet" />
+</head>
+<body id="top">
+    <div class="falkner-wrapper">
+        <h1 class="falkner-h1">About</h1>
+        <p>This is intended to be a starting point for a living style guide to promote visual consistency and speed up development time.</p>
+        <ol>
+            <li><a href="#colors">Colors</a></li>
+            <li><a href="#fonts">Fonts</a></li>
+            <li><a href="#headings">Headings</a></li>
+            <li><a href="#paragraph">Paragraph</a></li>
+            <li><a href="#patterns">Patterns</a>
+                <ol>
+                    <li>
+                        <a href="#lede">Leading Paragraph</a>
+                    </li>
+                    <li>
+                        <a href="#mediaobject">Media Object</a>
+                    </li>
+                    <li>
+                        <a href="#mod">Standard Module</a>
+                    </li>
+                </ol>
+            </li>
+        </ol>
+
+        <h2 id="colors" class="falkner-h2">Colors</h2>
+        <p>For the sake of CSS consistency, give colors more <a href="https://viget.com/inspire/naming-colors" target="_blank">colorful names</a>.</p>
+
+        <div class="pure-g">
+            <div class="pure-u-sm-1 pure-u-md-1-4">
+                <div class="falkner-color-swatch" style="background-color: #004358;"></div>
+                <div class="falkner-color-name" style="color: #004358;">
+                    Karen
+                    <div class="falkner-color-value">#004358</div>
+                </div>
+            </div>
+
+            <div class="pure-u-sm-1 pure-u-md-1-4">
+                <div class="falkner-color-swatch" style="background-color: #1F8A70"></div>
+                <div class="falkner-color-name" style="color: #1F8A70;">
+                    Sophia
+                    <div class="falkner-color-value">#1F8A70</div>
+                </div>
+            </div>
+
+            <div class="pure-u-sm-1 pure-u-md-1-4">
+                <div class="falkner-color-swatch" style="background-color: #FD7400;"></div>
+                <div class="falkner-color-name" style="color: #FD7400;">
+                    Alice
+                    <div class="falkner-color-value">#FD7400</div>
+                </div>
+            </div>
+
+            <div class="pure-u-sm-1 pure-u-md-1-4">
+                <div class="falkner-color-swatch" style="background-color: #7E8AA2"></div>
+                <div class="falkner-color-name" style="color: #7E8AA2;">
+                    Gaen
+                    <div class="falkner-color-value">#7E8AA2</div>
+                </div>
+            </div>
+
+        </div>
+        <a href="#top">Back to Top</a>
+
+        <h2 id="fonts" class="falkner-h2">Font Stacks</h2>
+        <strong>Primary Font:</strong> <span style='font-family:"HelveticaNeue", Helvetica, Arial, sans-serif;'>"HelveticaNeue", Helvetica, Arial, sans-serif;</span>
+        <hr />
+        <strong>Primary Font Italic:</strong><em> <span style='font-family:"HelveticaNeue", Helvetica, Arial, sans-serif;'>"HelveticaNeue", Helvetica, Arial, sans-serif;</span> </em>
+        <hr />
+        <strong>Primary Font Bold:</strong><strong> <span style='font-family:"HelveticaNeue", Helvetica, Arial, sans-serif;'>"HelveticaNeue", Helvetica, Arial, sans-serif;</span> </strong>
+        <hr />
+        <strong>Secondary Font:</strong> <span style='font-family:Georgia, Times, "Times New Roman", serif;'>Georgia, Times, "Times New Roman", serif;</span>
+        <hr />
+        <strong>Secondary Font Italic:</strong><em> <span style='font-family:Georgia, Times, "Times New Roman", serif;'>Georgia, Times, "Times New Roman", serif;</span></em>
+        <hr />
+        <strong>Secondary Font Bold:</strong><strong> <span style='font-family:Georgia, Times, "Times New Roman", serif;'>Georgia, Times, "Times New Roman", serif;</span></strong>
+        <hr />
+        <a href="#top">Back to Top</a>
+
+        <h2 id="headings" class="falkner-h2">Headings</h2>
+        <h1 class="h1">Heading Level 1 - Handgloves - <a href="#">Hypertext</a></h1>
+        <h2 class="h2">Heading Level 2 - Handgloves - <a href="#">Hypertext</a></h2>
+        <h3 class="h3">Heading Level 3 - Handgloves - <a href="#">Hypertext</a></h3>
+        <h4 class="h4">Heading Level 4 - Handgloves - <a href="#">Hypertext</a></h4>
+        <h5 class="h5">Heading Level 5 - Handgloves - <a href="#">Hypertext</a></h5>
+        <h6 class="h6">Heading Level 6 - Handgloves - <a href="#">Hypertext</a></h6>
+
+        <pre class="line-numbers"><code class="language-css">/* .h1-.h6 classes should be used to maintain the semantically appropriate heading levels - NOT for use on non-headings */
+.h1{font-size:196%;  font-weight:normal; font-style: normal; color:#004358;}
+.h2{font-size:167%; font-weight:normal; font-style: normal; color:#004358;}
+.h3{font-size:146.5%; font-weight:normal; font-style: normal; color:#FD7400;}
+.h4{font-size:123.1%; font-weight:normal; font-style: normal; color: #1F8A70;}
+.h5{font-size:108%; font-weight:bold; font-style: normal; color:#004358;}
+.h6{font-size:108%; font-weight:normal;  font-style: italic; color:#1F8A70;}</code></pre>
+
+        <a href="#top">Back to Top</a>
+
+        <h2 id="paragraph" class="falkner-h2">Paragraph</h2>
+        <p>Folk legend in the mountains of Kyushu. Some places call it a <a href="#">Crab of Burden</a>, some places a Heavy Crab, or a Deadweight Crab, some places even call it a God instead. Kami and Kani don't sound that different, after all. The details of it vary, but the one thing they all have in common is that they take away people's weight. People that meet them -- that meet them the wrong way -- it's like they don't exist the same way they used to.</p>
+
+
+        <pre class="line-numbers"><code class="language-html">&lt;p&gt; Suddenly remembering something for no real reason after you had completely forgotten it was not all that unusual, and that was precisely what happened here. I unzipped the travel bag hanging from my shoulder and checked the contents. I knew I would not find what I was looking for, but I could not help but put up that vain struggle. &lt;/p&gt;</code></pre>
+
+        <a href="#top">Back to Top</a>
+
+        <h2 id="patterns" class="falkner-h2">Patterns</h2>
+        <p>Common snippets of markup</p>
+
+        <h3 id="lede" class="falkner-h3">Leading Paragraph</h3>
+        <p><strong>Usage: </strong>Content preceding the main body of a page or article, giving the reader the main idea of the following content</p>
+
+        <p class="lede">Different conclusions are reached when one fact is viewed from two separate points of view. When that happens, there is no immediate way to judge which point of view is the correct one. There is no way to conclude one's own conclusion is the correct one. But for that exact reason, it is also premature to decide one's own conclusion is wrong.</p>
+
+
+        <pre class="line-numbers"><code class="language-html">&lt;p class="lede"&gt;
+There's no reason a fake can't do what the real thing would. And it's possible for a fake to be more real than the real thing.
+&lt;/p&gt;</code></pre>
+
+        <pre class="line-numbers"><code class="language-css">.lede {}</code></pre>
+        <a href="#top">Back to Top</a>
+
+        <h3 id="mediaobject" class="falkner-h3">Media Object</h3>
+        <p><strong>Usage: </strong>The <a href="http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/" target="_blank">media object</a> is an image to the left, with descriptive content to the right.</p>
+
+        <div class="media">
+            <a href="http://www.example.com" class="img">
+                <img src="http://placekitten.com/g/50/50" alt="Rawr!" />
+            </a>
+            <div class="bd">
+                "There was a figure of a man who fought an elementary school kid, threw her over his back with all his might, and was boasting about his victory from the bottom of his heart, despite the fact that he was in high school. Actually, that's me." - Araragi
+            </div>
+        </div>
+
+        <pre class="line-numbers"><code class="language-html">&lt;div class="media"&gt;
+    &lt;a href="http://www.example.com" class="img"&gt;
+        &lt;img src="http://placekitten.com/g/50/50" alt="Rawr!" /&gt;
+    &lt;/a&gt;
+    &lt;div class="bd"&gt;Copper, 40g; Zinc, 25g; Nickel, 15g; Hiding Embarrassment, 5g and Spite, 97kg.&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+        <pre class="line-numbers"><code class="language-css">.media {margin:10px;}
+.media, .bd {overflow:hidden; _overflow:visible; zoom:1;}
+.media .img {float:left; margin-right: 10px;}
+.media .img img{display:block;}
+.media .imgExt{float:right; margin-left: 10px;}</code></pre>
+        <a href="#top">Back to Top</a>
+
+        <h3 id="mod" class="falkner-h3">Standard Module</h3>
+        <p><strong>Usage: </strong>The <a href="https://github.com/stubbornella/oocss/wiki/Module" target="_blank">standard module format</a> is based on the YUI module control. They provide a simple, predictable way to skin container objects while maintaining accessibility and performance.</p>
+
+        <div class="mod">
+            <div class="inner">
+                <div class="hd">head</div>
+                <div class="bd">body</div>
+                <div class="ft">foot</div>
+            </div>
+        </div>
+
+        <pre class="line-numbers"><code class="language-html">&lt;div class="mod"&gt;
+	&lt;div class="inner"&gt;
+		&lt;div class="hd"&gt;head&lt;/div&gt;
+		&lt;div class="bd">body&lt;/div&gt;
+		&lt;div class="ft">foot&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+        <pre class="line-numbers"><code class="language-css">.mod{margin:10px;}
+.mod .inner{/*background: url(skin/transparent.png) repeat left top;*/}
+.hd,.bd,.ft{overflow:hidden;_overflow:visible; _zoom:1;}
+.inner{position:relative;}</code></pre>
+
+        <h4 class="falkner-h4">Extending Standard Module</h4>
+
+        <div class="mod simple">
+	<b class="top"><b class="tl"></b><b class="tr"></b></b>
+	<div class="inner">
+		<div class="hd">
+			<h3>simple</h3>
+		</div>
+		<div class="bd">
+			<p>Body</p>
+		</div>
+	</div>
+	<b class="bottom"><b class="bl"></b><b class="br"></b></b>
+</div>
+
+               <pre class="line-numbers"><code class="language-html">&lt;div class="mod simple"&gt;<!--&lt;b class="top"&gt;&lt;b class="tl"&gt;&lt;/b&gt;&lt;b class="tr"&gt;&lt;/b&gt;&lt;/b&gt;-->
+	&lt;div class="inner"&gt;
+	    &lt;div class="hd"&gt;
+		    &lt;h3&gt;simple&lt;/h3&gt;
+		&lt;/div&gt;
+		&lt;div class="bd"&gt;
+			&lt;p&gt;Body&lt;/p&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+<!--	&lt;b class="bottom"&gt;&lt;b class="bl"&gt;&lt;/b&gt;&lt;b class="br"&gt;&lt;/b&gt;&lt;/b&gt;-->&lt;/div&gt;</code></pre>
+
+        <pre class="line-numbers"><code class="language-css">.simple .inner {border:1px solid #D7D7D7;-moz-border-radius: 7px;-webkit-border-radius: 7px;border-radius: 7px;}
+<!--.simple b{*background-image:url(skin/mod/simple_corners.png);}--></code></pre>
+
+        <a href="#top">Back to Top</a>
+
+
+    </div>
+    <!-- Highlight code -->
+    <script src="@Path['~/Content/js/vendor/prism.js']"></script>
+</body>
+</html>

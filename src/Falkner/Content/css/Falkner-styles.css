@@ -1,0 +1,12 @@
+﻿.falkner-wrapper{margin:0 auto;max-width:990px;}
+
+.falkner-h1{color:#0d3d56;}
+.falkner-h2{color:#0f5b78;}
+.falkner-h3{color:#117899;}
+.falkner-h4{color:#1496bb;}
+.falkner-h5{color:#5ca794;}
+.falkner-h6{color:#707c80;}
+
+.falkner-color-swatch{height:15vh;width:15vh;border-radius:50%;border:1px solid #555;margin:0 auto;}
+.falkner-color-name{font-weight:bold;font-size:2em;text-align:center;}
+.falkner-color-value{color:#555;font-weight:normal;font-size:0.5em; display:inline-block}
