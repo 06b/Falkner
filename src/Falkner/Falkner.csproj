@@ -57,8 +57,13 @@
     <Reference Include="System.Configuration" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\css\00-Normalize-styles.css" />
+    <Content Include="Content\css\02-Typography-styles.css" />
+    <Content Include="Content\css\patterns\04b-module-styles.css" />
+    <Content Include="Content\css\0X-Print-styles.css" />
     <Content Include="Content\css\Falkner-styles.css" />
-    <Content Include="Content\css\styles.css" />
+    <Content Include="Content\css\01-Base-styles.css" />
+    <Content Include="Content\css\patterns\04a-media-object-styles.css" />
     <Content Include="Content\css\vendor\base.css" />
     <Content Include="Content\css\vendor\grids-responsive.css" />
     <Content Include="Content\css\vendor\grids.css" />

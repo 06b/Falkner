@@ -1,0 +1,42 @@
+﻿/**
+ * Media Object Pattern
+ * http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code
+ *
+ * The media object can be used any time you have an image or other media and text next to each other.
+ * 1. Micro clearfix, as per: css-101.org/articles/clearfix/latest-new-clearfix-so-far.php
+ *
+ * Position Modifier(s):
+ * .media--reverse      - Modifies the image location (right instead of left). Extends '.media' and can be combined with any of the size modifiers.
+ *
+ * Size Modifier(s):
+ * .media--tiny         - Modifies the gutter of the media object to be tiny
+ * .media--small        - Modifies the gutter of the media object to be small
+ * .media--large        - Modifies the gutter of the media object to be large
+ * .media--huge         - Modifies the gutter of the media object to be huge
+ * .media--flush        - Modifies the gutter of the media object to be have no space between media element and text
+ *
+ */
+
+.media { display: block; margin: .8em; }
+    .media:after { display: table; clear: both; /* 1 */ content: ''; }
+
+    .media .body { display: block; overflow: hidden; }
+
+    .media .image { float: left; margin-right: .8em; }
+        .media .image img { display: block; }
+
+.media--reverse .image { float: right; margin-right: 0; margin-left: .8em; }
+
+.media--tiny .image { margin-right: .25em; }
+.media--tiny.media--reverse .image { margin-right: 0; margin-left: .25em; }
+
+.media--small .image { margin-right: .5em; }
+.media--small.media--reverse .image { margin-right: 0; margin-left: .5em; }
+
+.media--large .image { margin-right: 1.6em; }
+.media--large.media--reverse .image { margin-right: 0; margin-left: 1.6em; }
+
+.media--huge .image { margin-right: 3.2em; }
+.media--huge.media--reverse .image { margin-right: 0; margin-left: 3.2em; }
+
+.media--flush .image { margin-right: 0; margin-left: 0; }

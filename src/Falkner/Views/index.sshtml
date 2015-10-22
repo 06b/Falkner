@@ -13,8 +13,12 @@
     <link href="@Path['~/Content/css/Falkner-styles.css']" rel="stylesheet" />
     <!-- Highlight code -->
     <link href="@Path['~/Content/css/vendor/prism.css']" rel="stylesheet" />
-    <!-- Either replace styles.css with your own stylesheet or use it as a starting point -->
-    <link href="@Path['~/Content/css/styles.css']" rel="stylesheet" />
+    <!-- Replace below styles with your own stylesheets or use it as a starting point, should be combined when deploying to production -->
+    <link href="@Path['~/Content/css/01-Base-styles.css']" rel="stylesheet"/>
+    <link href="@Path['~/Content/css/02-Typography-styles.css']" rel="stylesheet"/>
+    <link href="@Path['~/Content/css/patterns/04a-media-object-styles.css']" rel="stylesheet"/>
+    <link href="@Path['~/Content/css/patterns/04b-module-styles.css']" rel="stylesheet"/>
+    <link href="@Path['~/Content/css/0X-Print-styles.css']" rel="stylesheet" />
 </head>
 <body id="top">
     <div class="falkner-wrapper">
@@ -23,8 +27,14 @@
         <ol>
             <li><a href="#colors">Colors</a></li>
             <li><a href="#fonts">Fonts</a></li>
-            <li><a href="#headings">Headings</a></li>
-            <li><a href="#paragraph">Paragraph</a></li>
+            <li><a href="#typography">Typography</a>
+                <ul>
+                    <li><a href="#headings">Headings</a></li>
+                    <li><a href="#paragraph">Paragraph</a></li>
+                    <li><a href="#inline">Inline text elements</a></li>
+                </ul>
+            </li>
+
             <li><a href="#patterns">Patterns</a>
                 <ol>
                     <li>
@@ -80,17 +90,17 @@
         <a href="#top">Back to Top</a>
 
         <h2 id="fonts" class="falkner-h2">Font Stacks</h2>
-        <strong>Primary Font:</strong> <span style='font-family:"HelveticaNeue", Helvetica, Arial, sans-serif;'>"HelveticaNeue", Helvetica, Arial, sans-serif;</span>
+        <strong>Primary Font:</strong> <span style='font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;'>"HelveticaNeue", Helvetica, Arial, sans-serif;</span>
         <hr />
-        <strong>Primary Font Italic:</strong><em> <span style='font-family:"HelveticaNeue", Helvetica, Arial, sans-serif;'>"HelveticaNeue", Helvetica, Arial, sans-serif;</span> </em>
+        <strong>Primary Font Italic:</strong><em> <span style='font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;'>"HelveticaNeue", Helvetica, Arial, sans-serif;</span> </em>
         <hr />
-        <strong>Primary Font Bold:</strong><strong> <span style='font-family:"HelveticaNeue", Helvetica, Arial, sans-serif;'>"HelveticaNeue", Helvetica, Arial, sans-serif;</span> </strong>
+        <strong>Primary Font Bold:</strong><strong> <span style='font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;'>"HelveticaNeue", Helvetica, Arial, sans-serif;</span> </strong>
         <hr />
-        <strong>Secondary Font:</strong> <span style='font-family:Georgia, Times, "Times New Roman", serif;'>Georgia, Times, "Times New Roman", serif;</span>
+        <strong>Secondary Font:</strong> <span style='font-family: Georgia, Times, "Times New Roman", serif;'>Georgia, Times, "Times New Roman", serif;</span>
         <hr />
-        <strong>Secondary Font Italic:</strong><em> <span style='font-family:Georgia, Times, "Times New Roman", serif;'>Georgia, Times, "Times New Roman", serif;</span></em>
+        <strong>Secondary Font Italic:</strong><em> <span style='font-family: Georgia, Times, "Times New Roman", serif;'>Georgia, Times, "Times New Roman", serif;</span></em>
         <hr />
-        <strong>Secondary Font Bold:</strong><strong> <span style='font-family:Georgia, Times, "Times New Roman", serif;'>Georgia, Times, "Times New Roman", serif;</span></strong>
+        <strong>Secondary Font Bold:</strong><strong> <span style='font-family: Georgia, Times, "Times New Roman", serif;'>Georgia, Times, "Times New Roman", serif;</span></strong>
         <hr />
         <a href="#top">Back to Top</a>
 
@@ -102,13 +112,12 @@
         <h5 class="h5">Heading Level 5 - Handgloves - <a href="#">Hypertext</a></h5>
         <h6 class="h6">Heading Level 6 - Handgloves - <a href="#">Hypertext</a></h6>
 
-        <pre class="line-numbers"><code class="language-css">/* .h1-.h6 classes should be used to maintain the semantically appropriate heading levels - NOT for use on non-headings */
-.h1{font-size:196%;  font-weight:normal; font-style: normal; color:#004358;}
-.h2{font-size:167%; font-weight:normal; font-style: normal; color:#004358;}
-.h3{font-size:146.5%; font-weight:normal; font-style: normal; color:#FD7400;}
-.h4{font-size:123.1%; font-weight:normal; font-style: normal; color: #1F8A70;}
-.h5{font-size:108%; font-weight:bold; font-style: normal; color:#004358;}
-.h6{font-size:108%; font-weight:normal;  font-style: italic; color:#1F8A70;}</code></pre>
+        <pre class="line-numbers"><code class="language-css">.h1, .alpha { font-size: 2.25em; font-weight: bold; font-style: normal; color: #004358; }
+.h2, .beta { font-size: 2em; font-weight: normal; font-style: normal; color: #004358; }
+.h3, .gamma { font-size: 1.75em; font-weight: normal; font-style: normal; color: #FD7400; }
+.h4, .delta { font-size: 1.5em; font-weight: normal; font-style: normal; color: #1F8A70; }
+.h5, .epsilon { font-size: 1.25em; font-weight: bold; font-style: normal; color: #004358; }
+.h6, .zeta { font-size: 1em; font-weight: normal; font-style: italic; color: #1F8A70; }</code></pre>
 
         <a href="#top">Back to Top</a>
 
@@ -119,6 +128,37 @@
         <pre class="line-numbers"><code class="language-html">&lt;p&gt; Suddenly remembering something for no real reason after you had completely forgotten it was not all that unusual, and that was precisely what happened here. I unzipped the travel bag hanging from my shoulder and checked the contents. I knew I would not find what I was looking for, but I could not help but put up that vain struggle. &lt;/p&gt;</code></pre>
 
         <a href="#top">Back to Top</a>
+
+        <h2 id="inline" class="falkner-h2">Inline text elements</h2>
+        <p>You can use the mark tag to <mark>highlight</mark> text.</p>
+        <p><del>This line of text is meant to be treated as deleted text.</del></p>
+        <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
+        <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+        <p><u>This line of text will render as underlined</u></p>
+        <p><small>This line of text is meant to be treated as fine print.</small></p>
+        <p><strong>This line rendered as bold text.</strong></p>
+        <p><em>This line rendered as italicized text.</em></p>
+
+        <pre class="line-numbers"><code class="language-html">&lt;p&gt;You can use the mark tag to &lt;mark&gt;highlight&lt;/mark&gt; text.&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;This line of text is meant to be treated as deleted text.&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;&lt;s&gt;This line of text is meant to be treated as no longer accurate.&lt;/s&gt;&lt;/p&gt;
+&lt;p&gt;&lt;ins&gt;This line of text is meant to be treated as an addition to the document.&lt;/ins&gt;&lt;/p&gt;
+&lt;p&gt;&lt;u&gt;This line of text will render as underlined&lt;/u&gt;&lt;/p&gt;
+&lt;p&gt;&lt;small&gt;This line of text is meant to be treated as fine print.&lt;/small&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;This line rendered as bold text.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;This line rendered as italicized text.&lt;/em&gt;&lt;/p&gt;</code></pre>
+
+        <a href="#top">Back to Top</a>
+
+        <h2 id="paragraph" class="falkner-h2">Paragraph</h2>
+        <p>Folk legend in the mountains of Kyushu. Some places call it a <a href="#">Crab of Burden</a>, some places a Heavy Crab, or a Deadweight Crab, some places even call it a God instead. Kami and Kani don't sound that different, after all. The details of it vary, but the one thing they all have in common is that they take away people's weight. People that meet them -- that meet them the wrong way -- it's like they don't exist the same way they used to.</p>
+
+
+        <pre class="line-numbers"><code class="language-html">&lt;p&gt; Suddenly remembering something for no real reason after you had completely forgotten it was not all that unusual, and that was precisely what happened here. I unzipped the travel bag hanging from my shoulder and checked the contents. I knew I would not find what I was looking for, but I could not help but put up that vain struggle. &lt;/p&gt;</code></pre>
+
+        <a href="#top">Back to Top</a>
+
+
 
         <h2 id="patterns" class="falkner-h2">Patterns</h2>
         <p>Common snippets of markup</p>
@@ -133,7 +173,7 @@
 There's no reason a fake can't do what the real thing would. And it's possible for a fake to be more real than the real thing.
 &lt;/p&gt;</code></pre>
 
-        <pre class="line-numbers"><code class="language-css">.lede {}</code></pre>
+        <pre class="line-numbers"><code class="language-css">.lede {font-size: 1.5em;}</code></pre>
         <a href="#top">Back to Top</a>
 
         <h3 id="mediaobject" class="falkner-h3">Media Object</h3>
@@ -189,19 +229,19 @@ There's no reason a fake can't do what the real thing would. And it's possible f
         <h4 class="falkner-h4">Extending Standard Module</h4>
 
         <div class="mod simple">
-	<b class="top"><b class="tl"></b><b class="tr"></b></b>
-	<div class="inner">
-		<div class="hd">
-			<h3>simple</h3>
-		</div>
-		<div class="bd">
-			<p>Body</p>
-		</div>
-	</div>
-	<b class="bottom"><b class="bl"></b><b class="br"></b></b>
-</div>
+            <b class="top"><b class="tl"></b><b class="tr"></b></b>
+            <div class="inner">
+                <div class="hd">
+                    <h3>simple</h3>
+                </div>
+                <div class="bd">
+                    <p>Body</p>
+                </div>
+            </div>
+            <b class="bottom"><b class="bl"></b><b class="br"></b></b>
+        </div>
 
-               <pre class="line-numbers"><code class="language-html">&lt;div class="mod simple"&gt;<!--&lt;b class="top"&gt;&lt;b class="tl"&gt;&lt;/b&gt;&lt;b class="tr"&gt;&lt;/b&gt;&lt;/b&gt;-->
+        <pre class="line-numbers"><code class="language-html">&lt;div class="mod simple"&gt;<!--&lt;b class="top"&gt;&lt;b class="tl"&gt;&lt;/b&gt;&lt;b class="tr"&gt;&lt;/b&gt;&lt;/b&gt;-->
 	&lt;div class="inner"&gt;
 	    &lt;div class="hd"&gt;
 		    &lt;h3&gt;simple&lt;/h3&gt;
