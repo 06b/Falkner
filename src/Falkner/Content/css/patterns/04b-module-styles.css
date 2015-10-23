@@ -1,68 +1,59 @@
-﻿
-/*
-|--------------------------------------------------------------------------
-| Standard Module Format
-|--------------------------------------------------------------------------
-|
-| Standard Module Format based off of the YUI Module control.
-|
-| .mod{}
-|    .inner{}
-|        .hd{}
-|        .bd{}
-|        .ft{}
-*/
+﻿/**
+ * Module Pattern
+ * https://github.com/stubbornella/oocss/wiki/Module
+ *
+ * Modules are based off of the YUI's Module Control
+ * 1. Micro clearfix (Grouped in Clearfix-styles), as per: css-101.org/articles/clearfix/latest-new-clearfix-so-far.php
+ * 2. A presentational element which wraps the top/bottom corners. It is used by '.module--complex' to display the upper/lower edge of the block.
+ *    In other block structures it has no height. This empty, non-semantic element should be inserted via a serverside script or JavaScript, the former is preferable.
+ * 3. A presentational element used to display the top left/top right/bottom left/bottom right corner of a block.
+ *    This empty, non-semantic element should be inserted via a serverside script or JavaScript, the former is preferable.
+ *
+ *  Style Modifier(s):
+ * .module--simple      - Used as a basic styling for any container object that doesn't require complex borders or outside transparency'. Extends '.module'.
+ * .module--complex     - Used in cases where you require images that are too complex to be simulated quickly or because of performance issues via pure css. Extends '.module'.
+ * .module--pop         - Used for pop-ups and other containers that need outside transparency. Extends '.module'.
+ *
+ * Example Usage:
+ * <div class="module">
+ *     <div class="inner">
+ *         <div class="header"></div>
+ *         <div class="body"></div>
+ *         <div class="footer"></div>
+ *     </div>
+ * </div>
+ *
+ * <div class="module module--complex">
+ *     <b class="top"><b class="top-left"></b><b class="top-right"></b></b>
+ *     <div class="inner">
+ *         <div class="header"></div>
+ *         <div class="body"></div>
+ *         <div class="footer"></div>
+ *     </div>
+ *     <b class="bottom"><b class="bottom-left"></b><b class="bottom-right"></b></b>
+ * </div>
+ *
+ */
 
-/*
-Copyright (c) 2009, Nicole Sullivan. All rights reserved.
-Code licensed under the BSD License:
-version: 0.2
-*/
-/* **************** BLOCK STRUCTURES ***************** */
-/* mod */
-.mod { margin: 10px; }
-    .mod .inner { /*background: url(skin/transparent.png) repeat left top;*/ }
-.hd,
-.bd,
-.ft { overflow: hidden; _overflow: visible; _zoom: 1; }
-.inner { position: relative; }
-b { font-size: 1%; position: relative; z-index: 10; display: block; background-repeat: no-repeat; }
-.tl,
-.tr,
-.bl,
-.br { float: left; width: 10px; height: 10px; }
-.tl { background-position: left top; }
-.tr { background-position: right top; }
-.bl { background-position: left bottom; }
-.br { background-position: right bottom; }
-.br,
-.tr { float: right; }
-.tr,
-.tl { overflow: hidden; margin-bottom: -32000px; }
-/* margin bottom needs to be < -9px */
-.bl,
-.br { margin-top: -10px; }
-.top { background-position: center top; }
-.bottom { background-position: center bottom; _zoom: 1; }
-/* this zoom required for IE5.5 only*/
+.module { display: block; margin: .8em; }
 
-/* ----- simple (extends mod) ----- */
-.simple .inner { border: 1px solid #d7d7d7; -webkit-border-radius: 7px; -moz-border-radius: 7px; border-radius: 7px; }
-.simple b { *background-image: url(skin/mod/simple_corners.png); }
+    /* .module:after { display: table; clear: both; content: ''; } */ /* 1 */
 
-/* ----- complex (extends mod) ----- */
-.complex { overflow: hidden; *position: relative; *zoom: 1; }
-    /* position/zoom required for IE7, 6, 5.5 */
-    .complex .tl,
-    .complex .tr { width: 10px; height: 32000px; margin-bottom: -32000px; }
-    .complex .bl,
-    .complex .br { /*margin-top:0;*/ }
-    .complex .top { height: 5px; }
-    .complex .bottom { height: 5px; /*margin-top:-10px;*/ }
-/* ----- pop (extends mod) ----- */
-.pop { overflow: visible; margin: 10px 20px 20px 10px; background-position: left top; }
-    .pop .inner { right: -10px; bottom: -10px; padding: 0 10px 10px 0; background-position: right bottom; }
-    .pop .tl,
-    .pop .br { display: none; }
-    .pop .bl { bottom: -10px; }
-    .pop .tr { right: -10px; }
+    .module .inner { position: relative; }
+
+    .module .header,
+    .module .body,
+    .module .footer { display: block; overflow: hidden; }
+
+/* ----- (extends module) ----- */
+.module--simple { }
+.module--complex { }
+.module--pop { }
+
+/* ----- (presentational element which '.module--complex' uses) ----- */
+.module--complex .top { /* 2 */ }
+.module--complex .top-left { /* 3 */ }
+.module--complex .top-right { /* 3 */ }
+.module--complex .bottom { /* 2 */ }
+.module--complex .bottom-left { /* 3 */ }
+.module--complex .bottom-right { /* 3 */ }

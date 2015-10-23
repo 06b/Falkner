@@ -3,28 +3,38 @@
  * http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code
  *
  * The media object can be used any time you have an image or other media and text next to each other.
- * 1. Micro clearfix, as per: css-101.org/articles/clearfix/latest-new-clearfix-so-far.php
+ * 1. Micro clearfix (Grouped in Clearfix-styles), as per: css-101.org/articles/clearfix/latest-new-clearfix-so-far.php
  *
  * Position Modifier(s):
  * .media--reverse      - Modifies the image location (right instead of left). Extends '.media' and can be combined with any of the size modifiers.
  *
  * Size Modifier(s):
- * .media--tiny         - Modifies the gutter of the media object to be tiny
- * .media--small        - Modifies the gutter of the media object to be small
- * .media--large        - Modifies the gutter of the media object to be large
- * .media--huge         - Modifies the gutter of the media object to be huge
- * .media--flush        - Modifies the gutter of the media object to be have no space between media element and text
+ * .media--tiny         - Modifies the gutter of the media object to be tiny. Extends '.media'.
+ * .media--small        - Modifies the gutter of the media object to be small. Extends '.media'.
+ * .media--large        - Modifies the gutter of the media object to be large. Extends '.media'.
+ * .media--huge         - Modifies the gutter of the media object to be huge. Extends '.media'.
+ * .media--flush        - Modifies the gutter of the media object to be have no space between media element and text. Extends '.media'.
+ *
+ * Example Usage:
+ * <div class="media">
+ *     <a href="http://www.example.com" class="img">
+ *         <img src="http://example.com/images/example.png" alt="" />
+ *      </a>
+ *      <div class="bd">
+ *      </div>
+ * </div>
  *
  */
 
 .media { display: block; margin: .8em; }
-    .media:after { display: table; clear: both; /* 1 */ content: ''; }
+    /* .media:after { display: table; clear: both; content: ''; } */ /* 1 */
 
     .media .body { display: block; overflow: hidden; }
 
     .media .image { float: left; margin-right: .8em; }
         .media .image img { display: block; }
 
+/* ----- (extends media) ----- */
 .media--reverse .image { float: right; margin-right: 0; margin-left: .8em; }
 
 .media--tiny .image { margin-right: .25em; }

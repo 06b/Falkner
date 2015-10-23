@@ -1,14 +1,18 @@
 ﻿/**
  * Base styles: opinionated defaults
+ *
  */
 
 * { box-sizing: border-box; }
+
 
 /**
  * Design Tip: Never Use Black
  * 1. http://ianstormtaylor.com/design-tip-never-use-black/
  */
-html { color: #222 /* 1 */; }
+
+html { color: #222 /* 1 */; overflow-y: scroll; min-height: 100%; }
+
 
 /**
  * Remove text-shadow in selection highlight:
@@ -18,20 +22,61 @@ html { color: #222 /* 1 */; }
  * Customize the background color to match your design.
  * 1. Defaulting to a blue which has a 4.7 contrast ratio from #fff http://leaverou.github.io/contrast-ratio/#%23fff-on-%230074D9
  */
+
 ::selection { color: #fff /* 1 */; background: #0074d9 /* 1 */; text-shadow: none; }
+
 
 /**
  * A better looking default horizontal rule
  */
+
 hr { display: block; height: 1px; margin: 1em 0; padding: 0; border: 0; border-top: 1px solid #ccc; }
 
 
 /**
  * Remove default fieldset styles.
  */
+
 fieldset { margin: 0; padding: 0; border: 0; }
+
 
 /**
  * Allow only vertical resizing of textareas.
  */
+
 textarea { resize: vertical; }
+
+
+/**
+ * Give a help cursor to elements that give extra info on `:hover`.
+ */
+
+abbr[title], dfn[title] { cursor: help; }
+
+
+/**
+ * 1. So that `alt` text is visually offset if images don’t load.
+ * 2. Fluid images.
+ */
+
+img { font-style: italic /* 1 */; max-width: 100% /* 2 */; }
+
+/**
+ * Non-fluid images if you specify `width` and/or `height` attributes.
+ */
+img[width],
+img[height] {
+  max-width: none;
+}
+
+
+/**
+ * Give form elements some cursor interactions...
+ */
+
+label,
+input,
+textarea,
+button,
+select,
+option { cursor: pointer; }

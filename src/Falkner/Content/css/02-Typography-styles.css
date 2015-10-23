@@ -2,13 +2,16 @@
  * Typography
  *
  * These are base styles for typographic elements
+ *
  */
 
 /**
  * 1. For accessibility, the base line-height should be 1.5 times the base font-size
  * http://www.w3.org/TR/WCAG20/#visual-audio-contrast-visual-presentation
  */
+
 body { font-size: 1em /* 1 */; line-height: 1.5 /* 1 */; }
+
 
 /**
  * Headings
@@ -23,9 +26,101 @@ h4, .h4, .delta { font-size: 1.5em; font-weight: normal; font-style: normal; col
 h5, .h5, .epsilon { font-size: 1.25em; font-weight: bold; font-style: normal; color: #004358; }
 h6, .h6, .zeta { font-size: 1em; font-weight: normal; font-style: italic; color: #1f8a70; }
 
+
 /**
- *  Lede/Lead
+ * A series of classes for setting massive type; for use in heroes, mastheads,
+ * promos, etc.
+ */
+
+.giga { font-size: 6em; line-height: 1; }
+
+.mega { font-size: 4.5em; line-height: 1; }
+
+.kilo { font-size: 3em; line-height: 1; }
+
+
+/**
+ * Lede/Lead
  *
  * Used to make the introductory text slightly larger http://en.wikipedia.org/wiki/Lead_paragraph
  */
+
 .lede, .lead { font-size: 1.25em; }
+
+
+/**
+ * Small Print
+ *
+ * A series of classes for setting tiny type; for use in smallprint etc.
+ */
+
+.smallprint,
+.milli {
+  font-size: 0.75em;
+  line-height: 2;
+}
+
+.micro {
+  font-size: 0.625em;
+  line-height: 2.4;
+}
+
+/**
+ * Quotes
+ *
+ * Sometimes you need to quote someone - http://html5doctor.com/blockquote-q-cite
+ */
+
+q {
+  quotes: "\2018" "\2019" "\201C" "\201D";
+}
+q:before {
+  content: "\2018";
+  content: open-quote;
+}
+q:after {
+  content: "\2019";
+  content: close-quote;
+}
+q q:before {
+  content: "\201C";
+  content: open-quote;
+}
+q q:after {
+  content: "\201D";
+  content: close-quote;
+}
+
+blockquote {
+  quotes: "\201C" "\201D";
+}
+blockquote p:before {
+  content: "\201C";
+  content: open-quote;
+}
+blockquote p:after {
+  content: "";
+  content: no-close-quote;
+}
+blockquote p:last-of-type:after {
+  content: "\201D";
+  content: close-quote;
+}
+blockquote q:before {
+  content: "\2018";
+  content: open-quote;
+}
+blockquote q:after {
+  content: "\2019";
+  content: close-quote;
+}
+
+blockquote {
+  /**
+   * .4em is roughly equal to the width of the opening “ that we wish to hang.
+   */
+  text-indent: -0.41em;
+}
+blockquote p:last-of-type {
+  margin-bottom: 0;
+}

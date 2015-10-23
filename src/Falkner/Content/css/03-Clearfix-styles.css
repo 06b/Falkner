@@ -1,0 +1,7 @@
+﻿/**
+ * Micro clearfix, as per: css-101.org/articles/clearfix/latest-new-clearfix-so-far.php
+ * Multiple Patterns use this, so make sure to remove selectors as needed
+ *
+ */
+
+.clearfix:after, .media:after, .module:after { display: table; clear: both; content: ''; }
