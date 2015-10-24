@@ -7,11 +7,18 @@
 
 
 /**
- * Design Tip: Never Use Black
- * 1. http://ianstormtaylor.com/design-tip-never-use-black/
+ * 1. Design Tip: Never Use Black: http://ianstormtaylor.com/design-tip-never-use-black/
+ * 2. Eliminate horizontal centering "page jumps": http://css-tricks.com/eliminate-jumps-in-horizontal-centering-by-forcing-a-scroll-bar/
  */
 
-html { color: #222 /* 1 */; overflow-y: scroll; min-height: 100%; }
+html { color: #222 /* 1 */; overflow-y: scroll /* 2 */; min-height: 100% /* 2 */; }
+
+
+/**
+ * 1. Don't show your underwear... http://www.zeldman.com/2008/11/07/is-your-websites-underwear-showing/
+ */
+
+body { background: #fff; }
 
 
 /**
@@ -24,6 +31,23 @@ html { color: #222 /* 1 */; overflow-y: scroll; min-height: 100%; }
  */
 
 ::selection { color: #fff /* 1 */; background: #0074d9 /* 1 */; text-shadow: none; }
+
+
+/**
+ * Placeholder styles
+ */
+
+/* WebKit browsers */
+::-webkit-input-placeholder { color: #aaa; }
+
+/* Mozilla Firefox 19+ */
+::-moz-placeholder { color: #aaa; }
+
+/* Internet Explorer 10+ */
+:-ms-input-placeholder { color: #aaa; }
+
+/* MS Edge */
+::-ms-input-placeholder { color: #aaa; }
 
 
 /**
@@ -48,26 +72,19 @@ textarea { resize: vertical; }
 
 
 /**
- * Give a help cursor to elements that give extra info on `:hover`.
- */
-
-abbr[title], dfn[title] { cursor: help; }
-
-
-/**
  * 1. So that `alt` text is visually offset if images don’t load.
  * 2. Fluid images.
  */
 
 img { font-style: italic /* 1 */; max-width: 100% /* 2 */; }
 
-/**
+
+    /**
  * Non-fluid images if you specify `width` and/or `height` attributes.
  */
-img[width],
-img[height] {
-  max-width: none;
-}
+
+    img[width],
+    img[height] { max-width: none; }
 
 
 /**
@@ -80,3 +97,16 @@ textarea,
 button,
 select,
 option { cursor: pointer; }
+
+/**
+ * Give a not-allowed cursor to elements that are disabled
+ */
+
+[disabled], :disabled, .disabled:hover { cursor: not-allowed; }
+
+
+/**
+ * Give a help cursor to elements that give extra info on `:hover`.
+ */
+
+abbr[title], dfn[title], [rel="help"], .help:hover { cursor: help; }
