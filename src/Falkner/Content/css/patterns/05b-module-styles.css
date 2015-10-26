@@ -45,10 +45,12 @@
     .module .body,
     .module .footer { display: block; overflow: hidden; }
 
+
 /* ----- (extends module) ----- */
 .module--simple { }
 .module--complex { }
 .module--pop { }
+
 
 /* ----- (presentational element which '.module--complex' uses) ----- */
 .module--complex .top { /* 2 */ }

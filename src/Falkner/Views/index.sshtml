@@ -14,12 +14,15 @@
     <!-- Highlight code -->
     <link href="@Path['~/Content/css/vendor/prism.css']" rel="stylesheet" />
     <!-- Replace below styles with your own stylesheets or use it as a starting point, should be combined when deploying to production -->
-    <link href="@Path['~/Content/css/01-Base-styles.css']" rel="stylesheet"/>
-    <link href="@Path['~/Content/css/02-Typography-styles.css']" rel="stylesheet"/>
-    <link href="@Path['~/Content/css/03-Clearfix-styles.css']" rel="stylesheet"/>
-    <link href="@Path['~/Content/css/patterns/04a-media-object-styles.css']" rel="stylesheet"/>
-    <link href="@Path['~/Content/css/patterns/04b-module-styles.css']" rel="stylesheet"/>
-    <link href="@Path['~/Content/css/patterns/04c-list-styles.css']" rel="stylesheet"/>
+    <link href="@Path['~/Content/css/01-Base-styles.css']" rel="stylesheet" />
+    <link href="@Path['~/Content/css/02-Typography-styles.css']" rel="stylesheet" />
+    <link href="@Path['~/Content/css/03-Clearfix-styles.css']" rel="stylesheet" />
+    <link href="@Path['~/Content/css/04-Flexboxgrid-styles.css']" rel="stylesheet" />
+    <link href="@Path['~/Content/css/patterns/05a-media-object-styles.css']" rel="stylesheet" />
+    <link href="@Path['~/Content/css/patterns/05b-module-styles.css']" rel="stylesheet" />
+    <link href="@Path['~/Content/css/patterns/05c-list-styles.css']" rel="stylesheet" />
+    <link href="@Path['~/Content/css/patterns/05d-island-styles.css']" rel="stylesheet" />
+    <link href="@Path['~/Content/css/patterns/05e-navigation-styles.css']" rel="stylesheet" />
     <link href="@Path['~/Content/css/0X-Print-styles.css']" rel="stylesheet" />
 </head>
 <body id="top">
@@ -38,6 +41,8 @@
                     <li><a href="#inline">Inline text elements</a></li>
                 </ul>
             </li>
+            <li><a href="#buttons">TODO: Buttons</a></li>
+            <li><a href="#forms">TODO: Forms</a></li>
 
             <li><a href="#patterns">Patterns</a>
                 <ol>
@@ -49,6 +54,12 @@
                     </li>
                     <li>
                         <a href="#mod">Standard Module</a>
+                    </li>
+                    <li>
+                        <a href="#island">Island</a>
+                    </li>
+                    <li>
+                        <a href="#navigation">Navigation</a>
                     </li>
                 </ol>
             </li>
@@ -136,33 +147,33 @@
 
         <h2 id="blockquotes" class="falkner-h2">Blockquotes</h2>
         <blockquote>
-          <p>Although my life hasn’t been very fortunate until now, I’m glad if I caught your eye because of that misfortune.</p>
+            <p>Although my life hasn’t been very fortunate until now, I’m glad if I caught your eye because of that misfortune.</p>
         </blockquote>
 
         <pre class="line-numbers"><code class="language-html"> &lt;blockquote&gt;
           &lt;p&gt; Did you know every time you sigh, a little bit of happiness escapes?&lt;/p&gt;
          &lt;/blockquote&gt;</code></pre>
 
-    <a href="#top">Back to Top</a>
+        <a href="#top">Back to Top</a>
 
         <h2 id="lists" class="falkner-h2">Lists</h2>
-    <h3 id="unordered" class="falkner-h3">Unordered</h3>
-    <ul>
-        <li>Mayoi Snail</li>
-        <li>Koyomimonogatari
+        <h3 id="unordered" class="falkner-h3">Unordered</h3>
+        <ul>
+            <li>Mayoi Snail</li>
+            <li>Koyomimonogatari
             <ul>
                 <li>Koyomi Flower</li>
                 <li>Koyomi Stone</li>
                 <li>Koyomi Sand</li>
                 <li>Koyomi Wind</li>
             </ul>
-        </li>
-        <li>Hitagi Crab</li>
-        <li>Tsukihi Phoenix</li>
-        <li>Nadeko Snake</li>
-    </ul>
+            </li>
+            <li>Hitagi Crab</li>
+            <li>Tsukihi Phoenix</li>
+            <li>Nadeko Snake</li>
+        </ul>
 
-         <pre class="line-numbers"><code class="language-html"> &lt;ul&gt;
+        <pre class="line-numbers"><code class="language-html"> &lt;ul&gt;
         &lt;li&gt;Mayoi Snail&lt;/li&gt;
         &lt;li&gt;Koyomimonogatari
             &lt;ul&gt;
@@ -180,18 +191,18 @@
 
         <h3 id="ordered" class="falkner-h3">Ordered</h3>
         <ol>
-  <li>Koyomimonogatari </li>
-  <li>Owarimonogatari Vol. 1
+            <li>Koyomimonogatari </li>
+            <li>Owarimonogatari Vol. 1
     <ol>
-      <li>Ōgi Formula</li>
-      <li>Sodachi Riddle</li>
-      <li>Sodachi Lost</li>
+        <li>Ōgi Formula</li>
+        <li>Sodachi Riddle</li>
+        <li>Sodachi Lost</li>
     </ol>
-  </li>
-  <li>Zoku-Owarimonogatari </li>
-  <li>Orokamonogatari </li>
-  <li>Wazamonogatari </li>
-</ol>
+            </li>
+            <li>Zoku-Owarimonogatari </li>
+            <li>Orokamonogatari </li>
+            <li>Wazamonogatari </li>
+        </ol>
 
 
         <pre class="line-numbers"><code class="language-html"> &lt;ol&gt;
@@ -209,12 +220,12 @@
     &lt;/ol&gt;</code></pre>
 
 
-    <a href="#top">Back to Top</a>
+        <a href="#top">Back to Top</a>
 
 
 
 
-    <h2 id="inline" class="falkner-h2">Inline text elements</h2>
+        <h2 id="inline" class="falkner-h2">Inline text elements</h2>
         <p>You can use the mark tag to <mark>highlight</mark> text.</p>
         <p><del>This line of text is meant to be treated as deleted text.</del></p>
         <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
@@ -341,6 +352,126 @@ There's no reason a fake can't do what the real thing would. And it's possible f
 <!--.simple b{*background-image:url(skin/mod/simple_corners.png);}--></code></pre>
 
         <a href="#top">Back to Top</a>
+
+
+        <h3 id="island" class="falkner-h3">Island Object</h3>
+        <p><strong>Usage: </strong>Simple, boxed off content</p>
+
+        <div class="island">
+            I only need 1 thing: Everything
+        </div>
+
+
+        <pre class="line-numbers"><code class="language-html">&lt;div class="island"&gt;
+    The sun is my enemy, but the moon has been good to me.
+&lt;/div&gt;</code></pre>
+
+
+    <a href="#top">Back to Top</a>
+
+
+
+        <h3 id="navigation" class="falkner-h3">Navigation</h3>
+
+        <ul class="navigation">
+            <li><a href="#">Crab</a></li>
+            <li><a href="#">Snail</a></li>
+            <li><a href="#">Monkey</a></li>
+            <li><a href="#">Snake</a></li>
+            <li><a href="#">Cat</a></li>
+        </ul>
+
+        <pre class="line-numbers"><code class="language-html">&lt;ul class="navigation"&gt;
+    &lt;li&gt; &lt;a href="#"&gt; Crab &lt;/a&gt; &lt;/div&gt;
+    &lt;li&gt; &lt;a href="#"&gt; Snail &lt;/a&gt; &lt;/div&gt;
+    &lt;li&gt; &lt;a href="#"&gt; Monkey &lt;/a&gt; &lt;/div&gt;
+    &lt;li&gt; &lt;a href="#"&gt; Snake &lt;/a&gt; &lt;/div&gt;
+    &lt;li&gt; &lt;a href="#"&gt; Cat &lt;/a&gt; &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+        <ul class="navigation navigation--keywords">
+            <li><a href="#">Crab</a></li>
+            <li><a href="#">Snail</a></li>
+            <li><a href="#">Monkey</a></li>
+            <li><a href="#">Snake</a></li>
+            <li><a href="#">Cat</a></li>
+        </ul>
+
+        <pre class="line-numbers"><code class="language-html">&lt;ul class="navigation navigation--keywords"&gt;
+    &lt;li&gt; &lt;a href="#"&gt; Crab &lt;/a&gt; &lt;/div&gt;
+    &lt;li&gt; &lt;a href="#"&gt; Snail &lt;/a&gt; &lt;/div&gt;
+    &lt;li&gt; &lt;a href="#"&gt; Monkey &lt;/a&gt; &lt;/div&gt;
+    &lt;li&gt; &lt;a href="#"&gt; Snake &lt;/a&gt; &lt;/div&gt;
+    &lt;li&gt; &lt;a href="#"&gt; Cat &lt;/a&gt; &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+        <ul class="navigation navigation--stacked">
+            <li><a href="#">Crab</a></li>
+            <li><a href="#">Snail</a></li>
+            <li><a href="#">Monkey</a></li>
+            <li><a href="#">Snake</a></li>
+            <li><a href="#">Cat</a></li>
+        </ul>
+
+        <pre class="line-numbers"><code class="language-html">&lt;ul class="navigation navigation--stacked"&gt;
+    &lt;li&gt; &lt;a href="#"&gt; Crab &lt;/a&gt; &lt;/div&gt;
+    &lt;li&gt; &lt;a href="#"&gt; Snail &lt;/a&gt; &lt;/div&gt;
+    &lt;li&gt; &lt;a href="#"&gt; Monkey &lt;/a&gt; &lt;/div&gt;
+    &lt;li&gt; &lt;a href="#"&gt; Snake &lt;/a&gt; &lt;/div&gt;
+    &lt;li&gt; &lt;a href="#"&gt; Cat &lt;/a&gt; &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+        <ul class="navigation breadcrumb">
+            <li><a href="#" class="root">Crab</a></li>
+            <li><a href="#">Snail</a></li>
+            <li><a href="#">Monkey</a></li>
+            <li><a href="#">Snake</a></li>
+            <li><a href="#">Cat</a></li>
+        </ul>
+
+        <pre class="line-numbers"><code class="language-html">&lt;ul class="navigation breadcrumb"&gt;
+    &lt;li&gt; &lt;a href="#" class="root"&gt; Crab &lt;/a&gt; &lt;/div&gt;
+    &lt;li&gt; &lt;a href="#"&gt; Snail &lt;/a&gt; &lt;/div&gt;
+    &lt;li&gt; &lt;a href="#"&gt; Monkey &lt;/a&gt; &lt;/div&gt;
+    &lt;li&gt; &lt;a href="#"&gt; Snake &lt;/a&gt; &lt;/div&gt;
+    &lt;li&gt; &lt;a href="#"&gt; Cat &lt;/a&gt; &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+        <ul class="navigation breadcrumb">
+            <li><a href="#" class="root">Crab</a></li>
+            <li data-breadcrumb="|"><a href="#">Snail</a></li>
+            <li data-breadcrumb="|"><a href="#">Monkey</a></li>
+            <li data-breadcrumb="|"><a href="#">Snake</a></li>
+            <li data-breadcrumb="|"><a href="#">Cat</a></li>
+        </ul>
+
+        <pre class="line-numbers"><code class="language-html">&lt;ul class="navigation breadcrumb"&gt;
+    &lt;li&gt; &lt;a href="#" class="root"&gt; Crab &lt;/a&gt; &lt;/div&gt;
+    &lt;li data-breadcrumb="|"&gt; &lt;a href="#"&gt; Snail &lt;/a&gt; &lt;/div&gt;
+    &lt;li data-breadcrumb="|"&gt; &lt;a href="#"&gt; Monkey &lt;/a&gt; &lt;/div&gt;
+    &lt;li data-breadcrumb="|"&gt; &lt;a href="#"&gt; Snake &lt;/a&gt; &lt;/div&gt;
+    &lt;li data-breadcrumb="|"&gt; &lt;a href="#"&gt; Cat &lt;/a&gt; &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+        <ul class="navigation breadcrumb breadcrumb--path">
+            <li><a href="#" class="root">Crab</a></li>
+            <li><a href="#">Snail</a></li>
+            <li><a href="#">Monkey</a></li>
+            <li><a href="#">Snake</a></li>
+            <li><a href="#">Cat</a></li>
+        </ul>
+
+        <pre class="line-numbers"><code class="language-html">&lt;ul class="navigation breadcrumb breadcrumb--path"&gt;
+    &lt;li&gt; &lt;a href="#" class="root"&gt; Crab &lt;/a&gt; &lt;/div&gt;
+    &lt;li&gt; &lt;a href="#"&gt; Snail &lt;/a&gt; &lt;/div&gt;
+    &lt;li&gt; &lt;a href="#"&gt; Monkey &lt;/a&gt; &lt;/div&gt;
+    &lt;li&gt; &lt;a href="#"&gt; Snake &lt;/a&gt; &lt;/div&gt;
+    &lt;li&gt; &lt;a href="#"&gt; Cat &lt;/a&gt; &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+        <a href="#top">Back to Top</a>
+
+
 
 
     </div>

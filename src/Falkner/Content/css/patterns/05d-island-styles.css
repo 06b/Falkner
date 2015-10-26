@@ -1,0 +1,35 @@
+﻿/**
+ * Island Object Pattern
+ * http://csswizardry.com/2011/10/the-island-object/
+ *
+ * Simple, boxed off content
+ * 1. Micro clearfix (Grouped in Clearfix-styles), as per: css-101.org/articles/clearfix/latest-new-clearfix-so-far.php
+ *
+ * Size Modifier(s):
+ * .island--tiny         - Modifies the padding of the island object to be tiny. Extends '.island'.
+ * .island--small        - Modifies the padding of the island object to be small. Extends '.island'.
+ * .island--large        - Modifies the padding of the island object to be large. Extends '.island'.
+ * .island--huge         - Modifies the padding of the island object to be huge. Extends '.island'.
+ *
+ * Example Usage:
+ * <div class="island">
+ *     All alone...
+ * </div>
+ *
+ */
+
+.island { display: block; padding: 1.5em; }
+
+    /* .island:after { display: table; clear: both; content: ''; } */ /* 1 */
+
+    .island > :last-child { margin-bottom: 0; }
+
+
+/* ----- (extends island) ----- */
+.island--tiny { padding: 0.375em; }
+
+.island--small { padding: 0.75em; }
+
+.island--large { padding: 3em; }
+
+.island--huge { padding: 6em; }

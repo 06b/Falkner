@@ -4,4 +4,4 @@
  *
  */
 
-.clearfix:after, .media:after, .module:after { display: table; clear: both; content: ''; }
+.clearfix:after, .media:after, .module:after, .island:after, .navigation:after { display: table; clear: both; content: ''; }
