@@ -55,15 +55,10 @@ h6, .h6, .zeta { font-size: 1em; font-weight: normal; font-style: italic; color:
  */
 
 .smallprint,
-.milli {
-  font-size: 0.75em;
-  line-height: 2;
-}
+.milli { font-size: 0.75em; line-height: 2; }
 
-.micro {
-  font-size: 0.625em;
-  line-height: 2.4;
-}
+.micro { font-size: 0.625em; line-height: 2.4; }
+
 
 /**
  * Quotes
@@ -71,56 +66,22 @@ h6, .h6, .zeta { font-size: 1em; font-weight: normal; font-style: italic; color:
  * Sometimes you need to quote someone - http://html5doctor.com/blockquote-q-cite
  */
 
-q {
-  quotes: "\2018" "\2019" "\201C" "\201D";
-}
-q:before {
-  content: "\2018";
-  content: open-quote;
-}
-q:after {
-  content: "\2019";
-  content: close-quote;
-}
-q q:before {
-  content: "\201C";
-  content: open-quote;
-}
-q q:after {
-  content: "\201D";
-  content: close-quote;
-}
+q { quotes: "\2018" "\2019" "\201C" "\201D"; }
+    q:before { content: "\2018"; content: open-quote; }
+    q:after { content: "\2019"; content: close-quote; }
+    q q:before { content: "\201C"; content: open-quote; }
+    q q:after { content: "\201D"; content: close-quote; }
 
-blockquote {
-  quotes: "\201C" "\201D";
-}
-blockquote p:before {
-  content: "\201C";
-  content: open-quote;
-}
-blockquote p:after {
-  content: "";
-  content: no-close-quote;
-}
-blockquote p:last-of-type:after {
-  content: "\201D";
-  content: close-quote;
-}
-blockquote q:before {
-  content: "\2018";
-  content: open-quote;
-}
-blockquote q:after {
-  content: "\2019";
-  content: close-quote;
-}
+blockquote { quotes: "\201C" "\201D"; }
+    blockquote p:before { content: "\201C"; content: open-quote; }
+    blockquote p:after { content: ""; content: no-close-quote; }
+    blockquote p:last-of-type:after { content: "\201D"; content: close-quote; }
+    blockquote q:before { content: "\2018"; content: open-quote; }
+    blockquote q:after { content: "\2019"; content: close-quote; }
 
-blockquote {
-  /**
+
+/**
    * .4em is roughly equal to the width of the opening “ that we wish to hang.
    */
-  text-indent: -0.41em;
-}
-blockquote p:last-of-type {
-  margin-bottom: 0;
-}
+blockquote { text-indent: -0.41em; }
+    blockquote p:last-of-type { margin-bottom: 0; }
