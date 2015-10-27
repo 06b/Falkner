@@ -118,4 +118,4 @@ abbr[title], dfn[title], [rel="help"], .help:hover { cursor: help; }
  */
 
 .hidden,
-[hidden] { display: none !important; }
+[hidden] { display: none }

@@ -14,16 +14,37 @@
     <!-- Highlight code -->
     <link href="@Path['~/Content/css/vendor/prism.css']" rel="stylesheet" />
     <!-- Replace below styles with your own stylesheets or use it as a starting point, should be combined when deploying to production -->
-    <link href="@Path['~/Content/css/01-Base-styles.css']" rel="stylesheet" />
-    <link href="@Path['~/Content/css/02-Typography-styles.css']" rel="stylesheet" />
-    <link href="@Path['~/Content/css/03-Clearfix-styles.css']" rel="stylesheet" />
-    <link href="@Path['~/Content/css/04-Flexboxgrid-styles.css']" rel="stylesheet" />
+
+    <!-- These are your defaults, starting from ground zero styles to an opinionated base to base typographic treatment and color scheme -->
+    <!--<link href="@Path['~/Content/css/00-Normalize-styles.css']" rel="stylesheet" />-->
+    <link href="@Path['~/Content/css/01-Base-styles.css']" rel="stylesheet"/>
+
+        <!-- Conflicted about this, perhaps this would be better as the theme layer -->
+        <link href="@Path['~/Content/css/02-Typography-styles.css']" rel="stylesheet"/>
+        <link href="@Path['~/Content/css/patterns/05c-list-styles.css']" rel="stylesheet"/>
+
+    <link href="@Path['~/Content/css/03-Clearfix-styles.css']" rel="stylesheet"/>
+    <!-- End defaults -->
+
+    <!-- Layout Start - Divide the page into major sections -->
+    <link href="@Path['~/Content/css/04-Flexboxgrid-styles.css']" rel="stylesheet"/>
+    <!-- End Layout -->
+
+    <!-- Objects Start - Design Patterns -->
     <link href="@Path['~/Content/css/patterns/05a-media-object-styles.css']" rel="stylesheet" />
     <link href="@Path['~/Content/css/patterns/05b-module-styles.css']" rel="stylesheet" />
-    <link href="@Path['~/Content/css/patterns/05c-list-styles.css']" rel="stylesheet" />
     <link href="@Path['~/Content/css/patterns/05d-island-styles.css']" rel="stylesheet" />
-    <link href="@Path['~/Content/css/patterns/05e-navigation-styles.css']" rel="stylesheet" />
-    <link href="@Path['~/Content/css/0X-Print-styles.css']" rel="stylesheet" />
+    <link href="@Path['~/Content/css/patterns/05e-navigation-styles.css']" rel="stylesheet"/>
+    <!-- End Objects -->
+
+    <!-- Components Start -->
+    <!-- Components End -->
+    <!-- Theme Start -->
+    <!-- Theme End -->
+
+    <!-- Helpers, Utilities, Trumps Start -->
+    <link href="@Path['~/Content/css/0X-Print-styles.css']" rel="stylesheet"/>
+    <!-- End Helpers, Utilities, Trumps -->
 </head>
 <body id="top">
     <div class="falkner-wrapper">
