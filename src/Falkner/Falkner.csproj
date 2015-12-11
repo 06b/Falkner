@@ -57,18 +57,26 @@
     <Reference Include="System.Configuration" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\css\00-Normalize-styles.css" />
-    <Content Include="Content\css\02-Typography-styles.css" />
-    <Content Include="Content\css\03-Clearfix-styles.css" />
-    <Content Include="Content\css\04-Flexboxgrid-styles.css" />
-    <Content Include="Content\css\0X-Print-styles.css" />
+    <Content Include="Content\css\base\00-Normalize.css" />
+    <Content Include="Content\css\base\02-Typography.css" />
+    <Content Include="Content\css\base\05-Clearfix.css" />
+    <Content Include="Content\css\theme\archipelago.project.css" />
+    <Content Include="Content\css\theme\theme.project.css" />
+    <Content Include="Content\css\utilities\debug.css" />
+    <Content Include="Content\css\utilities\print.css" />
+    <Content Include="Content\css\base\04-Forms.css" />
     <Content Include="Content\css\Falkner-styles.css" />
-    <Content Include="Content\css\01-Base-styles.css" />
-    <Content Include="Content\css\patterns\05a-media-object-styles.css" />
-    <Content Include="Content\css\patterns\05b-module-styles.css" />
-    <Content Include="Content\css\patterns\05c-list-styles.css" />
-    <Content Include="Content\css\patterns\05d-island-styles.css" />
-    <Content Include="Content\css\patterns\05e-navigation-styles.css" />
+    <Content Include="Content\css\base\01-Base.css" />
+    <Content Include="Content\css\layout\00-Layout.css" />
+    <Content Include="Content\css\layout\01-csswizardary-grids.css" />
+    <Content Include="Content\css\objects\flag.css" />
+    <Content Include="Content\css\objects\legend-key.css" />
+    <Content Include="Content\css\objects\media-object.css" />
+    <Content Include="Content\css\objects\module.css" />
+    <Content Include="Content\css\base\03-List.css" />
+    <Content Include="Content\css\objects\island.css" />
+    <Content Include="Content\css\objects\navigation.css" />
+    <Content Include="Content\css\utilities\trumps.css" />
     <Content Include="Content\css\vendor\base.css" />
     <Content Include="Content\css\vendor\grids-responsive.css" />
     <Content Include="Content\css\vendor\grids.css" />

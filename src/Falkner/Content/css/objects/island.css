@@ -18,18 +18,28 @@
  *
  */
 
-.island { display: block; padding: 1.5em; }
+.island{ display: block; padding: 1.5rem; }
 
-    /* .island:after { display: table; clear: both; content: ''; } */ /* 1 */
+.islet { display: block; padding: 0.75rem;}
 
-    .island > :last-child { margin-bottom: 0; }
+    /* .island:after,.islet:after { display: table; clear: both; content: ''; } */ /* 1 */
+
+    .island > :last-child,.islet > :last-child { margin-bottom: 0; }
 
 
 /* ----- (extends island) ----- */
-.island--tiny { padding: 0.375em; }
+.island--diminutive { padding: 0.1875rem; }
 
-.island--small { padding: 0.75em; }
+.island--tiny { padding: 0.375rem; }
 
-.island--large { padding: 3em; }
+.island--small { padding: 0.75rem; }
 
-.island--huge { padding: 6em; }
+.island--large { padding: 3rem; }
+
+.island--huge { padding: 6rem; }
+
+/* ----- (extends islet) ----- */
+.island--tiny { padding: 0.1875rem; }
+
+.island--small { padding: 0.375rem; }
+

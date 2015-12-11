@@ -1,0 +1,110 @@
+﻿/**
+ * CSSWizardary Grids Hack Fix
+ * 1. Handle letter-spacing hack within csswizardary-grids
+ * 2. Handle word-spacing hack for Opera within csswizardary-grids
+ */
+.grid > * { letter-spacing: 0 /* 1 */; word-spacing: 0 /* 2 */; }
+
+/**
+ * Text alignment classes
+ */
+
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+.text-center { text-align: center; }
+
+
+/**
+ * Used to force an element's display
+ */
+.force-block { display: block !important; }
+.force-inline-block { display: inline-block !important; }
+.force-inline { display: inline !important; }
+
+
+/**
+ * Always hide an element when it has the `hidden` HTML attribute.
+ */
+
+.hidden,
+[hidden] { display: none !important; }
+
+
+/**
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visually-hidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+
+
+ /**
+ * Extends the .visually-hidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+    .visually-hidden.focusable:active,
+    .visually-hidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+
+
+/**
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible { visibility: hidden; }
+
+
+/**
+ * Removes the margin from elements
+ */
+
+.strip-margin { margin: 0; }
+
+
+/**
+ * Removes the margin from elements
+ */
+
+.strip-border { border: 0; }
+
+
+/**
+ * Changes text case to uppercase
+ */
+
+.all-caps { text-transform: uppercase; }
+
+
+/**
+ * Uses Flexbox to vertically center align things
+ */
+
+.utility-align-vertical-center { display: flex; align-items: center; }
+
+/**
+ * Forces full width - sometimes useful when attempting to deal with odd flex-box quirks in combination with the inline-block grid
+ */
+
+.utility--full-width { width: 100%; }
+
+
+/**
+ * Adds overflow:auto for areas where a scroll bar is wanted
+ */
+
+.utility-overflow-auto { overflow: auto; }
+
+
+/**
+ * Adds overflow-y:auto for areas where a scroll bar is wanted vertically but not horizontally
+ */
+
+.utility-overflow-y-auto { overflow-y: auto; overflow-x: hidden; }
+
+
+/**
+ * Forces field to be one line and adds an ellipsis if the text escapes the bounds of it's container
+ */
+
+.ellipsis { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }

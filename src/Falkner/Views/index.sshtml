@@ -16,34 +16,55 @@
     <!-- Replace below styles with your own stylesheets or use it as a starting point, should be combined when deploying to production -->
 
     <!-- These are your defaults, starting from ground zero styles to an opinionated base to base typographic treatment and color scheme -->
-    <!--<link href="@Path['~/Content/css/00-Normalize-styles.css']" rel="stylesheet" />-->
-    <link href="@Path['~/Content/css/01-Base-styles.css']" rel="stylesheet"/>
-
-        <!-- Conflicted about this, perhaps this would be better as the theme layer -->
-        <link href="@Path['~/Content/css/02-Typography-styles.css']" rel="stylesheet"/>
-        <link href="@Path['~/Content/css/patterns/05c-list-styles.css']" rel="stylesheet"/>
-
-    <link href="@Path['~/Content/css/03-Clearfix-styles.css']" rel="stylesheet"/>
+    <!--<link href="@Path['~/Content/css/base/00-Normalize.css']" rel="stylesheet" />-->
+    <link href="@Path['~/Content/css/base/01-Base.css']" rel="stylesheet"/>
+    <link href="@Path['~/Content/css/base/02-Typography.css']" rel="stylesheet"/>
+    <link href="@Path['~/Content/css/base/03-Lists.css']" rel="stylesheet"/>
+    <link href="@Path['~/Content/css/base/04-Forms.css']" rel="stylesheet"/>
+    <link href="@Path['~/Content/css/base/05-Clearfix.css']" rel="stylesheet"/>
     <!-- End defaults -->
-
     <!-- Layout Start - Divide the page into major sections -->
-    <link href="@Path['~/Content/css/04-Flexboxgrid-styles.css']" rel="stylesheet"/>
+    <link href="@Path['~/Content/css/layout/00-Layout.css']" rel="stylesheet"/>
+    <link href="@Path['~/Content/css/layout/01-csswizardy-grids.css']" rel="stylesheet"/>
     <!-- End Layout -->
-
     <!-- Objects Start - Design Patterns -->
-    <link href="@Path['~/Content/css/patterns/05a-media-object-styles.css']" rel="stylesheet" />
-    <link href="@Path['~/Content/css/patterns/05b-module-styles.css']" rel="stylesheet" />
-    <link href="@Path['~/Content/css/patterns/05d-island-styles.css']" rel="stylesheet" />
-    <link href="@Path['~/Content/css/patterns/05e-navigation-styles.css']" rel="stylesheet"/>
+    <link href="@Path['~/Content/css/objects/media-object.css']" rel="stylesheet" />
+    <link href="@Path['~/Content/css/objects/module.css']" rel="stylesheet" />
+    <link href="@Path['~/Content/css/objects/island.css']" rel="stylesheet" />
+    <link href="@Path['~/Content/css/objects/navigation.css']" rel="stylesheet"/>
+    <link href="@Path['~/Content/css/objects/flag.css']" rel="stylesheet"/>
+    <link href="@Path['~/Content/css/objects/legend-key.css']" rel="stylesheet"/>
     <!-- End Objects -->
 
-    <!-- Components Start -->
-    <!-- Components End -->
-    <!-- Theme Start -->
+
+    <!-- Theme Start - Define things further and more detailed than the base typographic treatment and color scheme -->
+    <link href="@Path['~/Content/css/theme/theme.project.css']" rel="stylesheet"/>
+        <!-- Third Party Plugins Start -->
+        <!-- End Third Party Plugins -->
+
+        <!-- Example custom themes for objects Start -->
+        <link href="@Path['~/Content/css/theme/archipelago.project.css']" rel="stylesheet"/>
+        <!--
+        <link href="@Path['~/Content/css/theme/media-object.project.css']" rel="stylesheet"/>
+        <link href="@Path['~/Content/css/theme/module.project.css']" rel="stylesheet"/>
+        <link href="@Path['~/Content/css/theme/forms.project.css']" rel="stylesheet"/>
+        -->
+        <!-- End Example custom themes for objects -->
+
+        <!-- Components Start - Designed pieces of UI, explicitly named -->
+        <!-- Components End -->
     <!-- Theme End -->
 
-    <!-- Helpers, Utilities, Trumps Start -->
-    <link href="@Path['~/Content/css/0X-Print-styles.css']" rel="stylesheet"/>
+    <!-- Helpers and Utilities Start - Trumps -->
+
+    <!-- Uncomment when checking for potentially broken, malformed or legacy (X)HTML.
+         Note: Not all "errors" are created equally, so they are color coded to highlight severity. Green is "probably not a big problem",
+         yellow is "worth looking at" and red is "you really should fix this." -->
+    <!--
+    <link href="@Path['~/Content/css/utilities/debug.css']" rel="stylesheet"/>
+    -->
+    <link href="@Path['~/Content/css/utilities/trumps.css']" rel="stylesheet"/>
+    <link href="@Path['~/Content/css/utilities/print.css']" rel="stylesheet"/>
     <!-- End Helpers, Utilities, Trumps -->
 </head>
 <body id="top">

@@ -16,34 +16,34 @@
  *
  * Example Usage:
  * <div class="module">
- *     <div class="inner">
- *         <div class="header"></div>
- *         <div class="body"></div>
- *         <div class="footer"></div>
+ *     <div class="module__inner">
+ *         <div class="module__header"></div>
+ *         <div class="module__body"></div>
+ *         <div class="module__footer"></div>
  *     </div>
  * </div>
  *
  * <div class="module module--complex">
  *     <b class="top"><b class="top-left"></b><b class="top-right"></b></b>
- *     <div class="inner">
- *         <div class="header"></div>
- *         <div class="body"></div>
- *         <div class="footer"></div>
+ *     <div class="module__inner">
+ *         <div class="module__header"></div>
+ *         <div class="module__body"></div>
+ *         <div class="module__footer"></div>
  *     </div>
  *     <b class="bottom"><b class="bottom-left"></b><b class="bottom-right"></b></b>
  * </div>
  *
  */
 
-.module { display: block; margin: .8em; }
+.module { display: block; margin: .8rem; }
 
     /* .module:after { display: table; clear: both; content: ''; } */ /* 1 */
 
-    .module .inner { position: relative; }
+    .module__inner { position: relative; }
 
-    .module .header,
-    .module .body,
-    .module .footer { display: block; overflow: hidden; }
+    .module__header,
+    .module__body,
+    .module__footer { display: block; overflow: hidden; }
 
 
 /* ----- (extends module) ----- */

@@ -74,9 +74,10 @@ textarea { resize: vertical; }
 /**
  * 1. So that `alt` text is visually offset if images don’t load.
  * 2. Fluid images.
+ * 3. Maintain aspect ratio of scaled images
  */
 
-img { font-style: italic /* 1 */; max-width: 100% /* 2 */; }
+img { font-style: italic /* 1 */; max-width: 100% /* 2 */; height: auto /* 3 */; }
 
 
 /**
@@ -105,17 +106,15 @@ option { cursor: pointer; }
 
 [disabled], :disabled, .disabled:hover { cursor: not-allowed; }
 
+/**
+ * Don't sure pointer cursor on readonly inputs
+ */
+
+[readonly] { cursor: default; }
+
 
 /**
  * Give a help cursor to elements that give extra info on `:hover`.
  */
 
 abbr[title], dfn[title], [rel="help"], .help:hover { cursor: help; }
-
-
-/**
- * Always hide an element when it has the `hidden` HTML attribute.
- */
-
-.hidden,
-[hidden] { display: none }

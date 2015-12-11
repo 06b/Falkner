@@ -1,0 +1,24 @@
+﻿/**
+ * Legend Key Abstraction
+ *
+ * The Legend Key object is similar to the Navigation object, however it is meant for a legend and not links
+ * 1. Micro clearfix (Grouped in Clearfix-styles), as per: css-101.org/articles/clearfix/latest-new-clearfix-so-far.php
+ * 2. Assigns a delimiter on the fly through a data attribute
+ *
+ */
+
+.legend-key { list-style: none; }
+
+    /* .legend-key:after { display: table; clear: both; content: ''; } */ /* 1 */
+
+    .legend-key > dt,
+    .legend-key > dd { display: inline-block; }
+
+    .legend-key > dd { margin-left: 0; }
+
+.legend-key dt[data-breadcrumb]:before { content: attr(data-breadcrumb) "\00A0" /* 2 */; }
+.legend-key dd[data-breadcrumb]:before { content: attr(data-breadcrumb) "\00A0" /* 2 */; }
+
+/* ----- (extends legend-key orientation) ----- */
+.legend-key--stacked > dt, .legend-key--stacked > dd { display: list-item; }
+.legend-key--stacked > dd { margin-left: 1em; }

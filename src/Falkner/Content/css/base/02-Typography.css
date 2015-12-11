@@ -10,21 +10,25 @@
  * http://www.w3.org/TR/WCAG20/#visual-audio-contrast-visual-presentation
  */
 
-body { font-size: 1em /* 1 */; line-height: 1.5 /* 1 */; }
+body { font-size: 100% /* 1 */; line-height: 1.5 /* 1 */; }
 
 
 /**
  * Headings
  *
  * Extra class names allow same font-size to be used on other elements to maintain the semantically appropriate heading levels
+ *
+ * 1. Decrease the line-height of wrapped headlings - https://twitter.com/heydonworks/status/672716556179283968
  */
 
-h1, .h1, .alpha { font-size: 2.25em; font-weight: bold; font-style: normal; color: #004358; }
-h2, .h2, .beta { font-size: 2em; font-weight: normal; font-style: normal; color: #004358; }
-h3, .h3, .gamma { font-size: 1.75em; font-weight: normal; font-style: normal; color: #fd7400; }
-h4, .h4, .delta { font-size: 1.5em; font-weight: normal; font-style: normal; color: #1f8a70; }
-h5, .h5, .epsilon { font-size: 1.25em; font-weight: bold; font-style: normal; color: #004358; }
-h6, .h6, .zeta { font-size: 1em; font-weight: normal; font-style: italic; color: #1f8a70; }
+h1,h2,h3,h4,h5,h6{ line-height:1.125 /* 1 */; }
+
+.h1, .alpha { }
+.h2, .beta { }
+.h3, .gamma { }
+.h4, .delta { }
+.h5, .epsilon { }
+.h6, .zeta { }
 
 
 /**
@@ -32,11 +36,11 @@ h6, .h6, .zeta { font-size: 1em; font-weight: normal; font-style: italic; color:
  * promos, etc.
  */
 
-.giga { font-size: 6em; line-height: 1; }
+.giga { font-size: 6rem; line-height: 1; }
 
-.mega { font-size: 4.5em; line-height: 1; }
+.mega { font-size: 4.5rem; line-height: 1; }
 
-.kilo { font-size: 3em; line-height: 1; }
+.kilo { font-size: 3rem; line-height: 1; }
 
 
 /**
@@ -45,7 +49,7 @@ h6, .h6, .zeta { font-size: 1em; font-weight: normal; font-style: italic; color:
  * Used to make the introductory text slightly larger http://en.wikipedia.org/wiki/Lead_paragraph
  */
 
-.lede, .lead { font-size: 1.25em; }
+.lede, .lead { font-size: 1.25rem; }
 
 
 /**
@@ -55,9 +59,9 @@ h6, .h6, .zeta { font-size: 1em; font-weight: normal; font-style: italic; color:
  */
 
 .smallprint,
-.milli { font-size: 0.75em; line-height: 2; }
+.milli { font-size: 0.75rem; line-height: 2; }
 
-.micro { font-size: 0.625em; line-height: 2.4; }
+.micro { font-size: 0.625rem; line-height: 2.4; }
 
 
 /**
@@ -83,5 +87,5 @@ blockquote { quotes: "\201C" "\201D"; }
 /**
  * .4em is roughly equal to the width of the opening “ that we wish to hang.
  */
-blockquote { text-indent: -0.41em; }
+blockquote { text-indent: -0.41rem; }
     blockquote p:last-of-type { margin-bottom: 0; }

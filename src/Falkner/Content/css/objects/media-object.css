@@ -17,37 +17,37 @@
  *
  * Example Usage:
  * <div class="media">
- *     <a href="http://www.example.com" class="img">
+ *     <a href="http://www.example.com" class="media__image">
  *         <img src="http://example.com/images/example.png" alt="" />
  *      </a>
- *      <div class="bd">
+ *      <div class="media__body">
  *      </div>
  * </div>
  *
  */
 
-.media { display: block; margin: .8em; }
+.media { display: block; margin: .75rem; }
     /* .media:after { display: table; clear: both; content: ''; } */ /* 1 */
 
-    .media .body { display: block; overflow: hidden; }
+    .media__body { display: block; overflow: hidden; }
 
-    .media .image { float: left; margin-right: .8em; }
-        .media .image img { display: block; }
+    .media__image { float: left; margin-right: .8rem; }
+    .media__image img, .media__image > svg { display: block; }
 
 
 /* ----- (extends media) ----- */
-.media--reverse .image { float: right; margin-right: 0; margin-left: .8em; }
+.media--reverse .media__image { float: right; margin-right: 0; margin-left: .8rem; }
 
-.media--tiny .image { margin-right: .25em; }
-.media--tiny.media--reverse .image { margin-right: 0; margin-left: .25em; }
+.media--tiny .media__image { margin-right: .25rem; }
+.media--tiny.media--reverse .media__image { margin-right: 0; margin-left: .25rem; }
 
-.media--small .image { margin-right: .5em; }
-.media--small.media--reverse .image { margin-right: 0; margin-left: .5em; }
+.media--small .media__image { margin-right: .5rem; }
+.media--small.media--reverse .media__image { margin-right: 0; margin-left: .5rem; }
 
-.media--large .image { margin-right: 1.6em; }
-.media--large.media--reverse .image { margin-right: 0; margin-left: 1.6em; }
+.media--large .media__image { margin-right: 1.6rem; }
+.media--large.media--reverse .media__image { margin-right: 0; margin-left: 1.6rem; }
 
-.media--huge .image { margin-right: 3.2em; }
-.media--huge.media--reverse .image { margin-right: 0; margin-left: 3.2em; }
+.media--huge .media__image { margin-right: 3.2rem; }
+.media--huge.media--reverse .media__image { margin-right: 0; margin-left: 3.2rem; }
 
-.media--flush .image { margin-right: 0; margin-left: 0; }
+.media--flush .media__image { margin-right: 0; margin-left: 0; }

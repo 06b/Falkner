@@ -1,0 +1,42 @@
+﻿/**
+ * Default element styles
+ */
+
+/* 'Default' link styling css tip: https://twitter.com/nathansmith/status/673925683957993472 */
+.layout__body a[href]:not([class]) {
+  color:#446DA1;
+  text-decoration: underline;
+}
+
+hr { border-color:#000;}
+
+/**
+ * Theme styling for backgrounds
+ */
+.theme-background { background-color: #000; }
+    .theme-background--primary { background-color:#000; }
+    .theme-background--secondary { background-color:#000; }
+    .theme-background--tertiary { background-color:#000; }
+    .theme-background--accent { background-color:#000; }
+    .theme-background--accent-secondary { background-color:#000; }
+
+
+/**
+ * Theme styling for SVG fills
+ */
+.theme-fill { fill: #000; }
+    .theme-fill--primary { fill:#000; }
+    .theme-fill--secondary { fill:#000; }
+    .theme-fill--tertiary { fill:#000; }
+    .theme-fill--accent { fill:#000; }
+    .theme-fill--accent-secondary { fill:#000; }
+
+
+/**
+ * Utility styles
+ */
+.theme-utility{ color: #fff;}
+
+.theme-utility--success{color: #70ad47;}
+.theme-utility--warning,.theme-utility--notify{color: #D43900;}
+.theme-utility--inform{ color: #1C4E97;}
