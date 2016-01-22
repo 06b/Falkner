@@ -104,7 +104,7 @@ option { cursor: pointer; }
  * Give a not-allowed cursor to elements that are disabled
  */
 
-[disabled], :disabled, .disabled:hover { cursor: not-allowed; }
+[disabled], button[disabled], html input[disabled], :disabled, .disabled:hover { cursor: not-allowed; }
 
 /**
  * Don't sure pointer cursor on readonly inputs
