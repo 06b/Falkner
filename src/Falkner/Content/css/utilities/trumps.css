@@ -15,8 +15,17 @@
 
 
 /**
+ * Float classes
+ */
+
+.pull-left { float: left; }
+.pull-right { float: right; }
+
+
+/**
  * Used to force an element's display
  */
+
 .force-block { display: block !important; }
 .force-inline-block { display: inline-block !important; }
 .force-inline { display: inline !important; }
@@ -38,7 +47,7 @@
 .visually-hidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
 
 
- /**
+/**
  * Extends the .visually-hidden class to allow the element
  * to be focusable when navigated to via the keyboard:
  * https://www.drupal.org/node/897638
@@ -77,6 +86,16 @@
 
 
 /**
+ * Adds different margin sizes
+ */
+
+.utility-aside-top { margin-top:0.5em; }
+.utility-aside-bottom { margin-bottom:0.5em; }
+.utility-aside-left { margin-left:0.5em; }
+.utility-aside-right { margin-right:0.5em; }
+
+
+/**
  * Uses Flexbox to vertically center align things
  */
 
@@ -102,6 +121,11 @@
 
 .utility-overflow-y-auto { overflow-y: auto; overflow-x: hidden; }
 
+/**
+ * Adds cursor:pointer for that should appear clickable
+ */
+
+.utility-clickable { cursor: pointer; }
 
 /**
  * Forces field to be one line and adds an ellipsis if the text escapes the bounds of it's container
