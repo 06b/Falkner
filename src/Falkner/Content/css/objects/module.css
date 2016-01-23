@@ -15,47 +15,47 @@
  * .module--pop         - Used for pop-ups and other containers that need outside transparency. Extends '.module'.
  *
  * Example Usage:
- * <div class="module">
- *     <div class="module__inner">
- *         <div class="module__header"></div>
- *         <div class="module__body"></div>
- *         <div class="module__footer"></div>
+ * <div class="o-module">
+ *     <div class="o-module__inner">
+ *         <div class="o-module__header"></div>
+ *         <div class="o-module__body"></div>
+ *         <div class="o-module__footer"></div>
  *     </div>
  * </div>
  *
- * <div class="module module--complex">
+ * <div class="o-module o-module--complex">
  *     <b class="top"><b class="top-left"></b><b class="top-right"></b></b>
- *     <div class="module__inner">
- *         <div class="module__header"></div>
- *         <div class="module__body"></div>
- *         <div class="module__footer"></div>
+ *     <div class="o-module__inner">
+ *         <div class="o-module__header"></div>
+ *         <div class="o-module__body"></div>
+ *         <div class="o-module__footer"></div>
  *     </div>
  *     <b class="bottom"><b class="bottom-left"></b><b class="bottom-right"></b></b>
  * </div>
  *
  */
 
-.module { display: block; margin: .8rem; }
+.o-module { display: block; margin: .8rem; }
 
-    /* .module:after { display: table; clear: both; content: ''; } */ /* 1 */
+    /* .o-module:after { display: table; clear: both; content: ''; } */ /* 1 */
 
-    .module__inner { position: relative; }
+    .o-module__inner { position: relative; }
 
-    .module__header,
-    .module__body,
-    .module__footer { display: block; overflow: hidden; }
+    .o-module__header,
+    .o-module__body,
+    .o-module__footer { display: block; overflow: hidden; }
 
 
 /* ----- (extends module) ----- */
-.module--simple { }
-.module--complex { }
-.module--pop { }
+.o-module--simple { }
+.o-module--complex { }
+.o-module--pop { }
 
 
 /* ----- (presentational element which '.module--complex' uses) ----- */
-.module--complex .top { /* 2 */ }
-.module--complex .top-left { /* 3 */ }
-.module--complex .top-right { /* 3 */ }
-.module--complex .bottom { /* 2 */ }
-.module--complex .bottom-left { /* 3 */ }
-.module--complex .bottom-right { /* 3 */ }
+.o-module--complex .top { /* 2 */ }
+.o-module--complex .top-left { /* 3 */ }
+.o-module--complex .top-right { /* 3 */ }
+.o-module--complex .bottom { /* 2 */ }
+.o-module--complex .bottom-left { /* 3 */ }
+.o-module--complex .bottom-right { /* 3 */ }

@@ -6,48 +6,48 @@
  * 1. Micro clearfix (Grouped in Clearfix-styles), as per: css-101.org/articles/clearfix/latest-new-clearfix-so-far.php
  *
  * Position Modifier(s):
- * .media--reverse      - Modifies the image location (right instead of left). Extends '.media' and can be combined with any of the 'Size Modifiers'.
+ * .o-media--reverse      - Modifies the image location (right instead of left). Extends '.media' and can be combined with any of the 'Size Modifiers'.
  *
  * Size Modifier(s):
- * .media--tiny         - Modifies the gutter of the media object to be tiny. Extends '.media'.
- * .media--small        - Modifies the gutter of the media object to be small. Extends '.media'.
- * .media--large        - Modifies the gutter of the media object to be large. Extends '.media'.
- * .media--huge         - Modifies the gutter of the media object to be huge. Extends '.media'.
- * .media--flush        - Modifies the gutter of the media object to be have no space between media element and text. Extends '.media'.
+ * .o-media--tiny         - Modifies the gutter of the media object to be tiny. Extends '.media'.
+ * .o-media--small        - Modifies the gutter of the media object to be small. Extends '.media'.
+ * .o-media--large        - Modifies the gutter of the media object to be large. Extends '.media'.
+ * .o-media--huge         - Modifies the gutter of the media object to be huge. Extends '.media'.
+ * .o-media--flush        - Modifies the gutter of the media object to be have no space between media element and text. Extends '.media'.
  *
  * Example Usage:
- * <div class="media">
- *     <a href="http://www.example.com" class="media__image">
+ * <div class="o-media">
+ *     <a href="http://www.example.com" class="o-media__image">
  *         <img src="http://example.com/images/example.png" alt="" />
  *      </a>
- *      <div class="media__body">
+ *      <div class="o-media__body">
  *      </div>
  * </div>
  *
  */
 
-.media { display: block; margin: .75rem; }
-    /* .media:after { display: table; clear: both; content: ''; } */ /* 1 */
+.o-media { display: block; margin: .75rem; }
+    /* .o-media:after { display: table; clear: both; content: ''; } */ /* 1 */
 
-    .media__body { display: block; overflow: hidden; }
+    .o-media__body { display: block; overflow: hidden; }
 
-    .media__image { float: left; margin-right: .8rem; }
-    .media__image img, .media__image > svg { display: block; }
+    .o-media__image { float: left; margin-right: .8rem; }
+    .o-media__image img, .o-media__image > svg { display: block; }
 
 
 /* ----- (extends media) ----- */
-.media--reverse .media__image { float: right; margin-right: 0; margin-left: .8rem; }
+.o-media--reverse .o-media__image { float: right; margin-right: 0; margin-left: .8rem; }
 
-.media--tiny .media__image { margin-right: .25rem; }
-.media--tiny.media--reverse .media__image { margin-right: 0; margin-left: .25rem; }
+.o-media--tiny .o-media__image { margin-right: .25rem; }
+.o-media--tiny.o-media--reverse .o-media__image { margin-right: 0; margin-left: .25rem; }
 
-.media--small .media__image { margin-right: .5rem; }
-.media--small.media--reverse .media__image { margin-right: 0; margin-left: .5rem; }
+.o-media--small .o-media__image { margin-right: .5rem; }
+.o-media--small.o-media--reverse .o-media__image { margin-right: 0; margin-left: .5rem; }
 
-.media--large .media__image { margin-right: 1.6rem; }
-.media--large.media--reverse .media__image { margin-right: 0; margin-left: 1.6rem; }
+.o-media--large .o-media__image { margin-right: 1.6rem; }
+.o-media--large.o-media--reverse .o-media__image { margin-right: 0; margin-left: 1.6rem; }
 
-.media--huge .media__image { margin-right: 3.2rem; }
-.media--huge.media--reverse .media__image { margin-right: 0; margin-left: 3.2rem; }
+.o-media--huge .o-media__image { margin-right: 3.2rem; }
+.o-media--huge.o-media--reverse .o-media__image { margin-right: 0; margin-left: 3.2rem; }
 
-.media--flush .media__image { margin-right: 0; margin-left: 0; }
+.o-media--flush .o-media__image { margin-right: 0; margin-left: 0; }

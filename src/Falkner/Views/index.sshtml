@@ -317,74 +317,74 @@ There's no reason a fake can't do what the real thing would. And it's possible f
         <h3 id="mediaobject" class="falkner-h3">Media Object</h3>
         <p><strong>Usage: </strong>The <a href="http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/" target="_blank">media object</a> is an image to the left, with descriptive content to the right.</p>
 
-        <div class="media">
-            <a href="http://www.example.com" class="img">
+        <div class="o-media">
+            <a href="http://www.example.com" class="o-media__image">
                 <img src="http://placekitten.com/g/50/50" alt="Rawr!" />
             </a>
-            <div class="bd">
+            <div class="o-media__body">
                 "There was a figure of a man who fought an elementary school kid, threw her over his back with all his might, and was boasting about his victory from the bottom of his heart, despite the fact that he was in high school. Actually, that's me." - Araragi
             </div>
         </div>
 
-        <pre class="line-numbers"><code class="language-html">&lt;div class="media"&gt;
-    &lt;a href="http://www.example.com" class="img"&gt;
+        <pre class="line-numbers"><code class="language-html">&lt;div class="o-media"&gt;
+    &lt;a href="http://www.example.com" class="o-media__image"&gt;
         &lt;img src="http://placekitten.com/g/50/50" alt="Rawr!" /&gt;
     &lt;/a&gt;
-    &lt;div class="bd"&gt;Copper, 40g; Zinc, 25g; Nickel, 15g; Hiding Embarrassment, 5g and Spite, 97kg.&lt;/div&gt;
+    &lt;div class="o-media__body"&gt;Copper, 40g; Zinc, 25g; Nickel, 15g; Hiding Embarrassment, 5g and Spite, 97kg.&lt;/div&gt;
 &lt;/div&gt;</code></pre>
 
-        <pre class="line-numbers"><code class="language-css">.media {margin:10px;}
-.media, .bd {overflow:hidden; _overflow:visible; zoom:1;}
-.media .img {float:left; margin-right: 10px;}
-.media .img img{display:block;}
-.media .imgExt{float:right; margin-left: 10px;}</code></pre>
+        <pre class="line-numbers"><code class="language-css">.o-media {margin:10px;}
+.o-media, .o-media__body {overflow:hidden; _overflow:visible; zoom:1;}
+.o-media__image {float:left; margin-right: 10px;}
+.o-media__image img{display:block;}
+.o-media--reverse .o-media__image{float:right; margin-left: 10px;}</code></pre>
         <a href="#top">Back to Top</a>
 
         <h3 id="mod" class="falkner-h3">Standard Module</h3>
         <p><strong>Usage: </strong>The <a href="https://github.com/stubbornella/oocss/wiki/Module" target="_blank">standard module format</a> is based on the YUI module control. They provide a simple, predictable way to skin container objects while maintaining accessibility and performance.</p>
 
-        <div class="mod">
-            <div class="inner">
-                <div class="hd">head</div>
-                <div class="bd">body</div>
-                <div class="ft">foot</div>
+        <div class="o-module">
+            <div class="o-module__inner">
+                <div class="o-module__header">head</div>
+                <div class="o-module__body">body</div>
+                <div class="o-module__footer">foot</div>
             </div>
         </div>
 
-        <pre class="line-numbers"><code class="language-html">&lt;div class="mod"&gt;
-	&lt;div class="inner"&gt;
-		&lt;div class="hd"&gt;head&lt;/div&gt;
-		&lt;div class="bd">body&lt;/div&gt;
-		&lt;div class="ft">foot&lt;/div&gt;
+        <pre class="line-numbers"><code class="language-html">&lt;div class="o-module"&gt;
+	&lt;div class="o-module__inner"&gt;
+		&lt;div class="o-module__header"&gt;head&lt;/div&gt;
+		&lt;div class="o-module__body">body&lt;/div&gt;
+		&lt;div class="o-module__footer">foot&lt;/div&gt;
 	&lt;/div&gt;
 &lt;/div&gt;</code></pre>
 
-        <pre class="line-numbers"><code class="language-css">.mod{margin:10px;}
-.mod .inner{/*background: url(skin/transparent.png) repeat left top;*/}
-.hd,.bd,.ft{overflow:hidden;_overflow:visible; _zoom:1;}
-.inner{position:relative;}</code></pre>
+        <pre class="line-numbers"><code class="language-css">.o-module{margin:10px;}
+.o-module__inner{/*background: url(skin/transparent.png) repeat left top;*/}
+.o-module__header,.o-module__body,.o-module__footer{overflow:hidden;_overflow:visible; _zoom:1;}
+.o-module__inner{position:relative;}</code></pre>
 
         <h4 class="falkner-h4">Extending Standard Module</h4>
 
-        <div class="mod simple">
+        <div class="o-module simple">
             <b class="top"><b class="tl"></b><b class="tr"></b></b>
-            <div class="inner">
-                <div class="hd">
+            <div class="o-module__inner">
+                <div class="o-module__header">
                     <h3>simple</h3>
                 </div>
-                <div class="bd">
+                <div class="o-module__footer">
                     <p>Body</p>
                 </div>
             </div>
             <b class="bottom"><b class="bl"></b><b class="br"></b></b>
         </div>
 
-        <pre class="line-numbers"><code class="language-html">&lt;div class="mod simple"&gt;<!--&lt;b class="top"&gt;&lt;b class="tl"&gt;&lt;/b&gt;&lt;b class="tr"&gt;&lt;/b&gt;&lt;/b&gt;-->
-	&lt;div class="inner"&gt;
-	    &lt;div class="hd"&gt;
+        <pre class="line-numbers"><code class="language-html">&lt;div class="o-module simple"&gt;<!--&lt;b class="top"&gt;&lt;b class="tl"&gt;&lt;/b&gt;&lt;b class="tr"&gt;&lt;/b&gt;&lt;/b&gt;-->
+	&lt;div class="o-module__inner"&gt;
+	    &lt;div class="o-module__header"&gt;
 		    &lt;h3&gt;simple&lt;/h3&gt;
 		&lt;/div&gt;
-		&lt;div class="bd"&gt;
+		&lt;div class="o-module__body"&gt;
 			&lt;p&gt;Body&lt;/p&gt;
 		&lt;/div&gt;
 	&lt;/div&gt;
@@ -399,12 +399,12 @@ There's no reason a fake can't do what the real thing would. And it's possible f
         <h3 id="island" class="falkner-h3">Island Object</h3>
         <p><strong>Usage: </strong>Simple, boxed off content</p>
 
-        <div class="island">
+        <div class="o-island">
             I only need 1 thing: Everything
         </div>
 
 
-        <pre class="line-numbers"><code class="language-html">&lt;div class="island"&gt;
+        <pre class="line-numbers"><code class="language-html">&lt;div class="o-island"&gt;
     The sun is my enemy, but the moon has been good to me.
 &lt;/div&gt;</code></pre>
 
@@ -415,7 +415,7 @@ There's no reason a fake can't do what the real thing would. And it's possible f
 
         <h3 id="navigation" class="falkner-h3">Navigation</h3>
 
-        <ul class="navigation">
+        <ul class="o-navigation">
             <li><a href="#">Crab</a></li>
             <li><a href="#">Snail</a></li>
             <li><a href="#">Monkey</a></li>
@@ -423,7 +423,7 @@ There's no reason a fake can't do what the real thing would. And it's possible f
             <li><a href="#">Cat</a></li>
         </ul>
 
-        <pre class="line-numbers"><code class="language-html">&lt;ul class="navigation"&gt;
+        <pre class="line-numbers"><code class="language-html">&lt;ul class="o-navigation"&gt;
     &lt;li&gt; &lt;a href="#"&gt; Crab &lt;/a&gt; &lt;/div&gt;
     &lt;li&gt; &lt;a href="#"&gt; Snail &lt;/a&gt; &lt;/div&gt;
     &lt;li&gt; &lt;a href="#"&gt; Monkey &lt;/a&gt; &lt;/div&gt;
@@ -431,7 +431,7 @@ There's no reason a fake can't do what the real thing would. And it's possible f
     &lt;li&gt; &lt;a href="#"&gt; Cat &lt;/a&gt; &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 
-        <ul class="navigation navigation--keywords">
+        <ul class="o-navigation o-navigation--keywords">
             <li><a href="#">Crab</a></li>
             <li><a href="#">Snail</a></li>
             <li><a href="#">Monkey</a></li>
@@ -439,7 +439,7 @@ There's no reason a fake can't do what the real thing would. And it's possible f
             <li><a href="#">Cat</a></li>
         </ul>
 
-        <pre class="line-numbers"><code class="language-html">&lt;ul class="navigation navigation--keywords"&gt;
+        <pre class="line-numbers"><code class="language-html">&lt;ul class="o-navigation o-navigation--keywords"&gt;
     &lt;li&gt; &lt;a href="#"&gt; Crab &lt;/a&gt; &lt;/div&gt;
     &lt;li&gt; &lt;a href="#"&gt; Snail &lt;/a&gt; &lt;/div&gt;
     &lt;li&gt; &lt;a href="#"&gt; Monkey &lt;/a&gt; &lt;/div&gt;
@@ -447,7 +447,7 @@ There's no reason a fake can't do what the real thing would. And it's possible f
     &lt;li&gt; &lt;a href="#"&gt; Cat &lt;/a&gt; &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 
-        <ul class="navigation navigation--stacked">
+        <ul class="o-navigation o-navigation--stacked">
             <li><a href="#">Crab</a></li>
             <li><a href="#">Snail</a></li>
             <li><a href="#">Monkey</a></li>
@@ -455,7 +455,7 @@ There's no reason a fake can't do what the real thing would. And it's possible f
             <li><a href="#">Cat</a></li>
         </ul>
 
-        <pre class="line-numbers"><code class="language-html">&lt;ul class="navigation navigation--stacked"&gt;
+        <pre class="line-numbers"><code class="language-html">&lt;ul class="o-navigation o-navigation--stacked"&gt;
     &lt;li&gt; &lt;a href="#"&gt; Crab &lt;/a&gt; &lt;/div&gt;
     &lt;li&gt; &lt;a href="#"&gt; Snail &lt;/a&gt; &lt;/div&gt;
     &lt;li&gt; &lt;a href="#"&gt; Monkey &lt;/a&gt; &lt;/div&gt;
@@ -463,7 +463,7 @@ There's no reason a fake can't do what the real thing would. And it's possible f
     &lt;li&gt; &lt;a href="#"&gt; Cat &lt;/a&gt; &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 
-        <ul class="navigation breadcrumb">
+        <ul class="o-navigation o-breadcrumb">
             <li><a href="#" class="root">Crab</a></li>
             <li><a href="#">Snail</a></li>
             <li><a href="#">Monkey</a></li>
@@ -471,7 +471,7 @@ There's no reason a fake can't do what the real thing would. And it's possible f
             <li><a href="#">Cat</a></li>
         </ul>
 
-        <pre class="line-numbers"><code class="language-html">&lt;ul class="navigation breadcrumb"&gt;
+        <pre class="line-numbers"><code class="language-html">&lt;ul class="o-navigation o-breadcrumb"&gt;
     &lt;li&gt; &lt;a href="#" class="root"&gt; Crab &lt;/a&gt; &lt;/div&gt;
     &lt;li&gt; &lt;a href="#"&gt; Snail &lt;/a&gt; &lt;/div&gt;
     &lt;li&gt; &lt;a href="#"&gt; Monkey &lt;/a&gt; &lt;/div&gt;
@@ -479,7 +479,7 @@ There's no reason a fake can't do what the real thing would. And it's possible f
     &lt;li&gt; &lt;a href="#"&gt; Cat &lt;/a&gt; &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 
-        <ul class="navigation breadcrumb">
+        <ul class="o-navigation o-breadcrumb">
             <li><a href="#" class="root">Crab</a></li>
             <li data-breadcrumb="|"><a href="#">Snail</a></li>
             <li data-breadcrumb="|"><a href="#">Monkey</a></li>
@@ -487,7 +487,7 @@ There's no reason a fake can't do what the real thing would. And it's possible f
             <li data-breadcrumb="|"><a href="#">Cat</a></li>
         </ul>
 
-        <pre class="line-numbers"><code class="language-html">&lt;ul class="navigation breadcrumb"&gt;
+        <pre class="line-numbers"><code class="language-html">&lt;ul class="o-navigation o-breadcrumb"&gt;
     &lt;li&gt; &lt;a href="#" class="root"&gt; Crab &lt;/a&gt; &lt;/div&gt;
     &lt;li data-breadcrumb="|"&gt; &lt;a href="#"&gt; Snail &lt;/a&gt; &lt;/div&gt;
     &lt;li data-breadcrumb="|"&gt; &lt;a href="#"&gt; Monkey &lt;/a&gt; &lt;/div&gt;
@@ -495,7 +495,7 @@ There's no reason a fake can't do what the real thing would. And it's possible f
     &lt;li data-breadcrumb="|"&gt; &lt;a href="#"&gt; Cat &lt;/a&gt; &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 
-        <ul class="navigation breadcrumb breadcrumb--path">
+        <ul class="o-navigation o-breadcrumb o-breadcrumb--path">
             <li><a href="#" class="root">Crab</a></li>
             <li><a href="#">Snail</a></li>
             <li><a href="#">Monkey</a></li>
@@ -503,7 +503,7 @@ There's no reason a fake can't do what the real thing would. And it's possible f
             <li><a href="#">Cat</a></li>
         </ul>
 
-        <pre class="line-numbers"><code class="language-html">&lt;ul class="navigation breadcrumb breadcrumb--path"&gt;
+        <pre class="line-numbers"><code class="language-html">&lt;ul class="o-navigation o-breadcrumb o-breadcrumb--path"&gt;
     &lt;li&gt; &lt;a href="#" class="root"&gt; Crab &lt;/a&gt; &lt;/div&gt;
     &lt;li&gt; &lt;a href="#"&gt; Snail &lt;/a&gt; &lt;/div&gt;
     &lt;li&gt; &lt;a href="#"&gt; Monkey &lt;/a&gt; &lt;/div&gt;

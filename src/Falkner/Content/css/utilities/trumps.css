@@ -9,26 +9,26 @@
  * Text alignment classes
  */
 
-.text-left { text-align: left; }
-.text-right { text-align: right; }
-.text-center { text-align: center; }
+.u-text-left { text-align: left; }
+.u-text-right { text-align: right; }
+.u-text-center { text-align: center; }
 
 
 /**
  * Float classes
  */
 
-.pull-left { float: left; }
-.pull-right { float: right; }
+.u-pull-left { float: left; }
+.u-pull-right { float: right; }
 
 
 /**
  * Used to force an element's display
  */
 
-.force-block { display: block !important; }
-.force-inline-block { display: inline-block !important; }
-.force-inline { display: inline !important; }
+.u-force-block { display: block !important; }
+.u-force-inline-block { display: inline-block !important; }
+.u-force-inline { display: inline !important; }
 
 
 /**
@@ -44,7 +44,7 @@
  * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
  */
 
-.visually-hidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+.u-visually-hidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
 
 
 /**
@@ -53,82 +53,82 @@
  * https://www.drupal.org/node/897638
  */
 
-    .visually-hidden.focusable:active,
-    .visually-hidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+    .u-visually-hidden.u-focusable:active,
+    .u-visually-hidden.u-focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
 
 
 /**
  * Hide visually and from screen readers, but maintain layout
  */
 
-.invisible { visibility: hidden; }
+.u-invisible { visibility: hidden; }
 
 
 /**
  * Removes the margin from elements
  */
 
-.strip-margin { margin: 0; }
+.u-strip-margin { margin: 0; }
 
 
 /**
  * Removes the margin from elements
  */
 
-.strip-border { border: 0; }
+.u-strip-border { border: 0; }
 
 
 /**
  * Changes text case to uppercase
  */
 
-.all-caps { text-transform: uppercase; }
+.u-all-caps { text-transform: uppercase; }
 
 
 /**
  * Adds different margin sizes
  */
 
-.utility-aside-top { margin-top:0.5em; }
-.utility-aside-bottom { margin-bottom:0.5em; }
-.utility-aside-left { margin-left:0.5em; }
-.utility-aside-right { margin-right:0.5em; }
+.u-aside-top { margin-top:0.5em; }
+.u-aside-bottom { margin-bottom:0.5em; }
+.u-aside-left { margin-left:0.5em; }
+.u-aside-right { margin-right:0.5em; }
 
 
 /**
  * Uses Flexbox to vertically center align things
  */
 
-.utility-align-vertical-center { display: flex; align-items: center; }
+.u-align-vertical-center { display: flex; align-items: center; }
 
 /**
  * Forces full width - sometimes useful when attempting to deal with odd flex-box quirks in combination with the inline-block grid
  */
 
-.utility--full-width { width: 100%; }
+.u-full-width { width: 100%; }
 
 
 /**
  * Adds overflow:auto for areas where a scroll bar is wanted
  */
 
-.utility-overflow-auto { overflow: auto; }
+.u-overflow-auto { overflow: auto; }
 
 
 /**
  * Adds overflow-y:auto for areas where a scroll bar is wanted vertically but not horizontally
  */
 
-.utility-overflow-y-auto { overflow-y: auto; overflow-x: hidden; }
+.u-overflow-y-auto { overflow-y: auto; overflow-x: hidden; }
 
 /**
  * Adds cursor:pointer for that should appear clickable
  */
 
-.utility-clickable { cursor: pointer; }
+.u-clickable { cursor: pointer; }
 
 /**
  * Forces field to be one line and adds an ellipsis if the text escapes the bounds of it's container
  */
 
-.ellipsis { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.u-ellipsis { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }

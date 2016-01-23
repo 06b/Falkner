@@ -7,18 +7,18 @@
  *
  */
 
-.legend-key { list-style: none; }
+.o-legend-key { list-style: none; }
 
-    /* .legend-key:after { display: table; clear: both; content: ''; } */ /* 1 */
+    /* .o-legend-key:after { display: table; clear: both; content: ''; } */ /* 1 */
 
-    .legend-key > dt,
-    .legend-key > dd { display: inline-block; }
+    .o-legend-key > dt,
+    .o-legend-key > dd { display: inline-block; }
 
-    .legend-key > dd { margin-left: 0; }
+    .o-legend-key > dd { margin-left: 0; }
 
-.legend-key dt[data-breadcrumb]:before { content: attr(data-breadcrumb) "\00A0" /* 2 */; }
-.legend-key dd[data-breadcrumb]:before { content: attr(data-breadcrumb) "\00A0" /* 2 */; }
+.o-legend-key dt[data-breadcrumb]:before { content: attr(data-breadcrumb) "\00A0" /* 2 */; }
+.o-legend-key dd[data-breadcrumb]:before { content: attr(data-breadcrumb) "\00A0" /* 2 */; }
 
 /* ----- (extends legend-key orientation) ----- */
-.legend-key--stacked > dt, .legend-key--stacked > dd { display: list-item; }
-.legend-key--stacked > dd { margin-left: 1em; }
+.o-legend-key--stacked > dt, .o-legend-key--stacked > dd { display: list-item; }
+.o-legend-key--stacked > dd { margin-left: 1em; }

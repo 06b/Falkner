@@ -13,30 +13,41 @@ hr { border-color:#000;}
 /**
  * Theme styling for backgrounds
  */
-.theme-background { background-color: #000; }
-    .theme-background--primary { background-color:#000; }
-    .theme-background--secondary { background-color:#000; }
-    .theme-background--tertiary { background-color:#000; }
-    .theme-background--accent { background-color:#000; }
-    .theme-background--accent-secondary { background-color:#000; }
+.t-background { background-color: #000; }
+    .t-background--primary { background-color:#000; }
+    .t-background--secondary { background-color:#000; }
+    .t-background--tertiary { background-color:#000; }
+    .t-background--accent { background-color:#000; }
+    .t-background--accent-secondary { background-color:#000; }
 
 
 /**
  * Theme styling for SVG fills
  */
-.theme-fill { fill: #000; }
-    .theme-fill--primary { fill:#000; }
-    .theme-fill--secondary { fill:#000; }
-    .theme-fill--tertiary { fill:#000; }
-    .theme-fill--accent { fill:#000; }
-    .theme-fill--accent-secondary { fill:#000; }
+.t-fill { fill: #000; }
+    .t-fill--primary { fill:#000; }
+    .t-fill--secondary { fill:#000; }
+    .t-fill--tertiary { fill:#000; }
+    .t-fill--accent { fill:#000; }
+    .t-fill--accent-secondary { fill:#000; }
 
 
 /**
- * Utility styles
+ * Theme styling for text color styles
  */
-.theme-utility{ color: #fff;}
+.t-color { fill: #000; }
+    .t-color--primary { fill:#000; }
+    .t-color--secondary { fill:#000; }
+    .t-color--tertiary { fill:#000; }
+    .t-color--accent { fill:#000; }
+    .t-color--accent-secondary { fill:#000; }
 
-.theme-utility--success{color: #70ad47;}
-.theme-utility--warning,.theme-utility--notify{color: #D43900;}
-.theme-utility--inform{ color: #1C4E97;}
+/**
+ * Theme status colors when text needs to be set to a certain color due to a status
+ */
+.t-status{ color: #fff;}
+
+.t-status--success{color: #70ad47;}
+.t-status--warning{color: #D43900;}
+.t-status--notify{color: #D43900;}
+.t-status--inform{ color: #1C4E97;}
