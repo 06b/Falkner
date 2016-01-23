@@ -1,17 +1,17 @@
 ﻿/**
- * Base styles: opinionated defaults
+ * Base styles: opinionated defaults that provides a starting point more suitable for web applications.
  *
  */
-
-* { box-sizing: border-box; }
 
 
 /**
  * 1. Design Tip: Never Use Black: http://ianstormtaylor.com/design-tip-never-use-black/
  * 2. Eliminate horizontal centering "page jumps": http://css-tricks.com/eliminate-jumps-in-horizontal-centering-by-forcing-a-scroll-bar/
+ * 3. Prevent margin and border from affecting element width. https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
  */
 
-html { color: #222 /* 1 */; overflow-y: scroll /* 2 */; min-height: 100% /* 2 */; }
+html { color: #222 /* 1 */; overflow-y: scroll /* 2 */; min-height: 100% /* 2 */; box-sizing: border-box /* 3 */;}
+*, *::before, *::after { box-sizing: inherit /* 3 */; }
 
 
 /**
@@ -118,3 +118,12 @@ option { cursor: pointer; }
  */
 
 abbr[title], dfn[title], [rel="help"], .help:hover { cursor: help; }
+
+
+/**
+ * Suppress the focus outline on elements that cannot be accessed via keyboard.
+ * This prevents an unwanted focus outline from appearing around elements that
+ * might still respond to pointer events.
+ */
+
+[tabindex="-1"]:focus { outline: none !important; }
