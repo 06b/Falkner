@@ -6,15 +6,15 @@
  * 1. Micro clearfix (Grouped in Clearfix-styles), as per: css-101.org/articles/clearfix/latest-new-clearfix-so-far.php
  *
  * Orientation Modifier(s):
- * .navigation--stacked             - Modifies the display of the navigation list to 'display:block' to make the list vertical. Extends '.navigation'.
+ * .o-navigation--stacked             - Modifies the display of the navigation list to 'display:block' to make the list vertical. Extends '.navigation'.
  *
  * Styling Modifiers(s):
- * .navigation--keywords            - Modifies navigation to appear like a comma delimited list. Extends '.navigation' and should not be used with the 'Orientation Modifiers' or with 'breadcrumbs'
- * .breadcrumb                      - Simple breadcrumb styling to apply to (ordered) lists. Extends '.navigation' and should not be used with the 'Orientation Modifiers'
- * .breadcrumb--path                - Path like structure for example in a file system or folder structure. Extends '.breadcrumb' and should not be used with the 'Orientation Modifiers'
+ * .o-navigation--keywords            - Modifies navigation to appear like a comma delimited list. Extends '.navigation' and should not be used with the 'Orientation Modifiers' or with 'breadcrumbs'
+ * .o-breadcrumb                      - Simple breadcrumb styling to apply to (ordered) lists. Extends '.navigation' and should not be used with the 'Orientation Modifiers'
+ * .o-breadcrumb--path                - Path like structure for example in a file system or folder structure. Extends '.breadcrumb' and should not be used with the 'Orientation Modifiers'
  *
  * Example Usage:
- * <ul class="navigation">
+ * <ul class="o-navigation">
  *     <li>Crab</li>
  *     <li>Snail</li>
  *     <li>Monkey</li>
@@ -22,7 +22,7 @@
  *     <li>Cat</li>
  * </ul>
  *
- * <ul class="navigation breadcrumb">
+ * <ul class="o-navigation o-breadcrumb">
  *     <li>Crab</li>
  *     <li data-breadcrumb="|">Snail</li>
  *     <li data-breadcrumb="|">Monkey</li>
@@ -31,21 +31,21 @@
  * </ul>
  */
 
-.navigation { list-style: none; padding-left: 0; }
+.o-navigation { list-style: none; padding-left: 0; }
 
-    /* .navigation:after { display: table; clear: both; content: ''; } */ /* 1 */
+    /* .o-navigation:after { display: table; clear: both; content: ''; } */ /* 1 */
 
-    .navigation > li,
-    .navigation > li > a { display: inline-block; }
+    .o-navigation > li,
+    .o-navigation > li > a { display: inline-block; }
 
 /* ----- (extends navigation) ----- */
-.navigation--keywords > li:after { content: "\002C" "\00A0"; }
-.navigation--keywords > li:last-child:after { display: none; }
+.o-navigation--keywords > li:after { content: "\002C" "\00A0"; }
+.o-navigation--keywords > li:last-child:after { display: none; }
 
 
 /* ----- (extends navigation orientation) ----- */
-.navigation--stacked > li { display: list-item; }
-    .navigation--stacked > li > a { display: block; }
+.o-navigation--stacked > li { display: list-item; }
+    .o-navigation--stacked > li > a { display: block; }
 
 
 /**
@@ -54,11 +54,11 @@
  * 2b. Assigns a delimiter on the fly through a data attribute
  */
 
-.breadcrumb > li + li:before { content: "\00BB" "\00A0"; }
-.breadcrumb .root { font-weight: bold /* 1b */; }
+.o-breadcrumb > li + li:before { content: "\00BB" "\00A0"; }
+.o-breadcrumb .root { font-weight: bold /* 1b */; }
 
 
 /* ----- (extends breadcrumb) ----- */
-.breadcrumb--path > li + li:before { content: "\002F" "\00A0"; }
+.o-breadcrumb--path > li + li:before { content: "\002F" "\00A0"; }
 
-.breadcrumb > li + li[data-breadcrumb]:before { content: attr(data-breadcrumb) "\00A0" /* 2b */; }
+.o-breadcrumb > li + li[data-breadcrumb]:before { content: attr(data-breadcrumb) "\00A0" /* 2b */; }

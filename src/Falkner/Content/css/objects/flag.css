@@ -3,7 +3,6 @@
  * http://csswizardry.com/2013/05/the-flag-object/
  *
  * The flag object is similar to the media object, however it has the ability to vertically align the image and the text
- * 1. Micro clearfix (Grouped in Clearfix-styles), as per: css-101.org/articles/clearfix/latest-new-clearfix-so-far.php
  *
  * Position Modifier(s):
  * .flag--reverse      - Modifies the image location (right instead of left). Extends '.flag' and can be combined with any of the 'Alignment Modifiers'.
@@ -13,31 +12,31 @@
  * .flag--bottom        - Modifies the gutter of the media object to be small. Extends '.media'.
  *
  * Example Usage:
- * <div class="flag">
- *     <div class="flag__image">
+ * <div class="o-flag">
+ *     <div class="o-flag__image">
  *         <img src="http://example.com/images/example.png" alt="" />
  *      </div>
- *      <div class="flag__body">
+ *      <div class="o-flag__body">
  *      </div>
  * </div>
  *
  */
 
-.flag { display: table; width: 100%; }
+.o-flag { display: table; width: 100%; }
 
-    .flag__image,
-    .flag__body { display: table-cell; vertical-align: middle; }
+    .o-flag__image,
+    .o-flag__body { display: table-cell; vertical-align: middle; }
 
-    .flag__image { padding-right: 0.625rem; }
-        .flag__image > img, .flag__image > svg { display: block; max-width: none; }
+    .o-flag__image { padding-right: 0.625rem; }
+        .o-flag__image > img, .o-flag__image > svg { display: block; max-width: none; }
 
-    .flag__body { width: 100%; }
+    .o-flag__body { width: 100%; }
 
 /* ----- (extends flag) ----- */
-.flag--reverse .flag__image { padding-right: 0; padding-left: 0.625rem; }
+.o-flag--reverse .o-flag__image { padding-right: 0; padding-left: 0.625rem; }
 
-.flag--top .flag__image,
-.flag--top .flag__body { vertical-align: top; }
+.o-flag--top .o-flag__image,
+.o-flag--top .o-flag__body { vertical-align: top; }
 
-.flag--bottom .flag__image,
-.flag--bottom .flag__body { vertical-align: bottom; }
+.o-flag--bottom .o-flag__image,
+.o-flag--bottom .o-flag__body { vertical-align: bottom; }
