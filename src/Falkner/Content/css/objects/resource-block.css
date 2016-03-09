@@ -1,0 +1,12 @@
+﻿/**
+ * Resource Block
+ *
+ * A Resource Block object simply stacks an image on top of some text content.
+ * Source:
+ */
+
+.o-resource-block{margin-bottom:1rem;}
+.o-resource-block__image{}
+.o-resource-block__headline{}
+.o-resource-block__teaser-body{}
+.o-resource-block__link{}
