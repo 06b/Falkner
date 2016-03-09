@@ -60,7 +60,7 @@
     <Content Include="Content\css\base\00-Normalize.css" />
     <Content Include="Content\css\base\02-Typography.css" />
     <Content Include="Content\css\base\05-Clearfix.css" />
-    <Content Include="Content\css\theme\archipelago.project.css" />
+    <Content Include="Content\css\components\archipelago.css" />
     <Content Include="Content\css\theme\theme.project.css" />
     <Content Include="Content\css\utilities\debug.css" />
     <Content Include="Content\css\utilities\print.css" />
@@ -94,6 +94,7 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="packages.config" />
+    <Content Include="Content\css\scope\.gitkeep" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -101,9 +102,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Content\css\scope\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
