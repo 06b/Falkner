@@ -63,6 +63,7 @@
     <Content Include="Content\css\components\archipelago.css" />
     <Content Include="Content\css\components\footer-navigation.css" />
     <Content Include="Content\css\components\header-navigation.css" />
+    <Content Include="Content\css\components\oversize-button.css" />
     <Content Include="Content\css\components\preloader.css" />
     <Content Include="Content\css\objects\pseudo-upload.css" />
     <Content Include="Content\css\objects\resource-block.css" />
