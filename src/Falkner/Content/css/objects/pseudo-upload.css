@@ -1,0 +1,11 @@
+﻿/**
+ * Pseudo upload button styling
+ * 1. Support: Chrome 48+
+ *    Details: Border is still present at certain screen sizes with a width of 0, a border of 0, a transparent background and positioned to the left of 0
+ *    Fix: Setting left to -1px fixes the issue.
+ * 2. Style pseudo upload as needed, should be a span or div - do not use a button or anchor
+ */
+
+.o-pseudo-upload-wrapper{ position: relative; overflow: hidden;display: inline-table; }
+.o-pseudo-upload{/* 2 */}
+.o-pseudo-upload-wrapper .o-pseudo-upload-input{ position: absolute; width: 0; background: transparent; outline: none;border: 0; left:-1px/* 1 */; }
