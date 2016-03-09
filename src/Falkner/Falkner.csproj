@@ -61,6 +61,7 @@
     <Content Include="Content\css\base\02-Typography.css" />
     <Content Include="Content\css\base\05-Clearfix.css" />
     <Content Include="Content\css\components\archipelago.css" />
+    <Content Include="Content\css\components\preloader.css" />
     <Content Include="Content\css\objects\pseudo-upload.css" />
     <Content Include="Content\css\objects\resource-block.css" />
     <Content Include="Content\css\theme\theme.project.css" />
