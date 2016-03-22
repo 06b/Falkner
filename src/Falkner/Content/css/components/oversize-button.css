@@ -3,7 +3,6 @@
  *
  */
 
-
 .c-oversize-button {display:table;}
 .c-oversize-button__text{display:table-cell;}
 .c-oversize-button__text--centered-vertically{vertical-align: middle;}
