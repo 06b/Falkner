@@ -160,6 +160,13 @@
 
 
 /**
+ * Sets a cursor to be styled as the default - used for overriding where the cursor is set to something else.
+ */
+
+.u-normalize-cursor { cursor: default; }
+
+
+/**
  * Forces field to be one line and adds an ellipsis if the text escapes the bounds of it's container
  */
 
