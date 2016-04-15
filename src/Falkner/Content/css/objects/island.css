@@ -39,6 +39,6 @@
 .o-island--huge { padding: 6rem; }
 
 /* ----- (extends islet) ----- */
-.o-island--tiny { padding: 0.1875rem; }
+.o-islet--tiny { padding: 0.1875rem; }
 
-.o-island--small { padding: 0.375rem; }
+.o-islet--small { padding: 0.375rem; }
