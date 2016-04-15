@@ -5,6 +5,7 @@
  *    Fix: Setting left to -1px fixes the issue.
  * 2. Style pseudo upload as needed, should be a span or div - do not use a button or anchor
  * 3. Support: Chrome 49+
+ *    Details: Unable to style inline elements (For example:<span class="c-pseudo-upload">) with a hover due to z-indexing issue.
  *
  * Example Usage:
  * <label class="c-pseudo-upload-wrapper">
