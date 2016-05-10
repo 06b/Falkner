@@ -6,14 +6,14 @@
  * 1. Micro clearfix (Grouped in Clearfix-styles), as per: css-101.org/articles/clearfix/latest-new-clearfix-so-far.php
  *
  * Position Modifier(s):
- * .o-media--reverse      - Modifies the image location (right instead of left). Extends '.media' and can be combined with any of the 'Size Modifiers'.
+ * .o-media--reverse      - Modifies the image location (right instead of left). Extends '.o-media' and can be combined with any of the 'Size Modifiers'.
  *
  * Size Modifier(s):
- * .o-media--tiny         - Modifies the gutter of the media object to be tiny. Extends '.media'.
- * .o-media--small        - Modifies the gutter of the media object to be small. Extends '.media'.
- * .o-media--large        - Modifies the gutter of the media object to be large. Extends '.media'.
- * .o-media--huge         - Modifies the gutter of the media object to be huge. Extends '.media'.
- * .o-media--flush        - Modifies the gutter of the media object to be have no space between media element and text. Extends '.media'.
+ * .o-media--tiny         - Modifies the gutter of the media object to be tiny. Extends '.o-media'.
+ * .o-media--small        - Modifies the gutter of the media object to be small. Extends '.o-media'.
+ * .o-media--large        - Modifies the gutter of the media object to be large. Extends '.o-media'.
+ * .o-media--huge         - Modifies the gutter of the media object to be huge. Extends '.o-media'.
+ * .o-media--flush        - Modifies the gutter of the media object to be have no space between media element and text. Extends '.o-media'.
  *
  * Example Usage:
  * <div class="o-media">
