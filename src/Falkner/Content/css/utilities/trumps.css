@@ -1,11 +1,4 @@
 ﻿/**
- * CSSWizardary Grids Hack Fix
- * 1. Handle letter-spacing hack within csswizardary-grids
- * 2. Handle word-spacing hack for Opera within csswizardary-grids
- */
-.l-grid > * { letter-spacing: 0 /* 1 */; word-spacing: 0 /* 2 */; }
-
-/**
  * Text alignment classes
  */
 
