@@ -5,11 +5,14 @@
  * The flag object is similar to the media object, however it has the ability to vertically align the image and the text
  *
  * Position Modifier(s):
- * .flag--reverse      - Modifies the image location (right instead of left). Extends '.flag' and can be combined with any of the 'Alignment Modifiers'.
+ * .o-flag--reverse     - Modifies the image location (right instead of left). Extends '.o-flag' and can be combined with any of the 'Alignment Modifiers'.
  *
  * Alignment Modifier(s):
- * .flag--top         - Modifies the gutter of the media object to be tiny. Extends '.media'.
- * .flag--bottom        - Modifies the gutter of the media object to be small. Extends '.media'.
+ * .o-flag--top         - Modifies the alignment of the flag object to align towards the top. Extends '.o-flag'.
+ * .o-flag--bottom      - Modifies the alignment of the flag object to align towards the bottom. Extends '.o-flag'.
+ *
+ * Width Modifier(s):
+ * .o-flag--collapse    - Modifies the width of the body within the flag and the flag object's width to 'auto'. Extends '.o-flag'.
  *
  * Example Usage:
  * <div class="o-flag">
@@ -40,3 +43,5 @@
 
 .o-flag--bottom .o-flag__image,
 .o-flag--bottom .o-flag__body { vertical-align: bottom; }
+
+.o-flag--collapse,.o-flag--collapse .o-flag__body{width:auto;}
