@@ -65,7 +65,7 @@
     <Content Include="Content\css\components\header-navigation.css" />
     <Content Include="Content\css\components\oversize-button.css" />
     <Content Include="Content\css\components\preloader.css" />
-    <Content Include="Content\css\objects\pseudo-upload.css" />
+    <Content Include="Content\css\components\pseudo-upload.css" />
     <Content Include="Content\css\objects\resource-block.css" />
     <Content Include="Content\css\theme\theme.project.css" />
     <Content Include="Content\css\utilities\debug.css" />
