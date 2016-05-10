@@ -68,6 +68,7 @@ h1,h2,h3,h4,h5,h6{ line-height:1.125 /* 1 */; }
  * Quotes
  *
  * Sometimes you need to quote someone - http://html5doctor.com/blockquote-q-cite
+ * 1. .4em is roughly equal to the width of the opening “ that we wish to hang.
  */
 
 q { quotes: "\2018" "\2019" "\201C" "\201D"; }
@@ -76,16 +77,10 @@ q { quotes: "\2018" "\2019" "\201C" "\201D"; }
     q q:before { content: "\201C"; content: open-quote; }
     q q:after { content: "\201D"; content: close-quote; }
 
-blockquote { quotes: "\201C" "\201D"; }
+blockquote { text-indent: -0.41rem /* 1 */; quotes: "\201C" "\201D"; }
     blockquote p:before { content: "\201C"; content: open-quote; }
     blockquote p:after { content: ""; content: no-close-quote; }
-    blockquote p:last-of-type:after { content: "\201D"; content: close-quote; }
     blockquote q:before { content: "\2018"; content: open-quote; }
     blockquote q:after { content: "\2019"; content: close-quote; }
-
-
-/**
- * .4em is roughly equal to the width of the opening “ that we wish to hang.
- */
-blockquote { text-indent: -0.41rem; }
     blockquote p:last-of-type { margin-bottom: 0; }
+    blockquote p:last-of-type:after { content: "\201D"; content: close-quote; }

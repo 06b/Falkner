@@ -43,11 +43,11 @@ body { background: #fff; }
 /* Mozilla Firefox 19+ */
 ::-moz-placeholder { color: #aaa; }
 
-/* Internet Explorer 10+ */
-:-ms-input-placeholder { color: #aaa; }
-
 /* MS Edge */
 ::-ms-input-placeholder { color: #aaa; }
+
+/* Internet Explorer 10+ */
+:-ms-input-placeholder { color: #aaa; }
 
 
 /**
