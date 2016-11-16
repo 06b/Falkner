@@ -30,13 +30,13 @@
     .o-flag__image,
     .o-flag__body { display: table-cell; vertical-align: middle; }
 
-    .o-flag__image { padding-right: 0.625rem; }
+    .o-flag__image { padding-right: var(--t-gutter); }
         .o-flag__image > img, .o-flag__image > svg { display: block; max-width: none; }
 
     .o-flag__body { width: 100%; }
 
 /* ----- (extends flag) ----- */
-.o-flag--reverse .o-flag__image { padding-right: 0; padding-left: 0.625rem; }
+.o-flag--reverse .o-flag__image { padding-right: 0; padding-left: var(--t-gutter); }
 
 .o-flag--top .o-flag__image,
 .o-flag--top .o-flag__body { vertical-align: top; }
@@ -44,4 +44,11 @@
 .o-flag--bottom .o-flag__image,
 .o-flag--bottom .o-flag__body { vertical-align: bottom; }
 
-.o-flag--collapse,.o-flag--collapse .o-flag__body{width:auto;}
+.o-flag--tiny .o-flag__image { padding-right: var(--t-gutter--tiny); }
+.o-flag--small .o-flag__image { padding-right: var(--t-gutter--small); }
+.o-flag--medium .o-flag__image { padding-right: var(--t-gutter--medium); }
+.o-flag--large .o-flag__image { padding-right: var(--t-gutter--large); }
+.o-flag--huge .o-flag__image { padding-right: var(--t-gutter--huge); }
+
+.o-flag--collapse,.o-flag--collapse .o-flag__body { width:auto; }
+
