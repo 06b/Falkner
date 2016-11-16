@@ -49,38 +49,37 @@
     <Reference Include="System.Configuration" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\css\base\00-Normalize.css" />
-    <Content Include="Content\css\base\02-Typography.css" />
-    <Content Include="Content\css\base\05-Clearfix.css" />
-    <Content Include="Content\css\components\archipelago.css" />
-    <Content Include="Content\css\components\footer-navigation.css" />
-    <Content Include="Content\css\components\header-navigation.css" />
-    <Content Include="Content\css\components\oversize-button.css" />
-    <Content Include="Content\css\components\preloader.css" />
-    <Content Include="Content\css\components\pseudo-upload.css" />
-    <Content Include="Content\css\objects\resource-block.css" />
-    <Content Include="Content\css\scope\example.css" />
-    <Content Include="Content\css\theme\theme.project.css" />
-    <Content Include="Content\css\utilities\animations\animated.css" />
-    <Content Include="Content\css\utilities\animations\generic-fade.css" />
-    <Content Include="Content\css\utilities\animations\swing.css" />
-    <Content Include="Content\css\utilities\animations\yellow-fade-technique.css" />
-    <Content Include="Content\css\utilities\debug.css" />
-    <Content Include="Content\css\utilities\print.css" />
-    <Content Include="Content\css\base\04-Forms.css" />
-    <Content Include="Content\css\base\01-Base.css" />
-    <Content Include="Content\css\layout\00-Layout.css" />
-    <Content Include="Content\css\layout\01-csswizardary-grids.css" />
-    <Content Include="Content\css\objects\flag.css" />
-    <Content Include="Content\css\objects\legend-key.css" />
-    <Content Include="Content\css\objects\media-object.css" />
-    <Content Include="Content\css\objects\module.css" />
-    <Content Include="Content\css\base\03-List.css" />
-    <Content Include="Content\css\objects\island.css" />
-    <Content Include="Content\css\objects\navigation.css" />
-    <Content Include="Content\css\utilities\overrides.css" />
-    <Content Include="Content\css\_settings\project.css" />
-    <Content Include="Content\js\vendor\prism.js" />
+    <Content Include="Content\css\src\base\00-Normalize.css" />
+    <Content Include="Content\css\src\base\02-Typography.css" />
+    <Content Include="Content\css\src\base\05-Clearfix.css" />
+    <Content Include="Content\css\src\components\archipelago.css" />
+    <Content Include="Content\css\src\components\footer-navigation.css" />
+    <Content Include="Content\css\src\components\header-navigation.css" />
+    <Content Include="Content\css\src\components\oversize-button.css" />
+    <Content Include="Content\css\src\components\preloader.css" />
+    <Content Include="Content\css\src\components\pseudo-upload.css" />
+    <Content Include="Content\css\src\objects\resource-block.css" />
+    <Content Include="Content\css\src\scope\example.css" />
+    <Content Include="Content\css\src\theme\theme.project.css" />
+    <Content Include="Content\css\src\utilities\animations\animated.css" />
+    <Content Include="Content\css\src\utilities\animations\generic-fade.css" />
+    <Content Include="Content\css\src\utilities\animations\swing.css" />
+    <Content Include="Content\css\src\utilities\animations\yellow-fade-technique.css" />
+    <Content Include="Content\css\src\utilities\debug.css" />
+    <Content Include="Content\css\src\utilities\print.css" />
+    <Content Include="Content\css\src\base\04-Forms.css" />
+    <Content Include="Content\css\src\base\01-Base.css" />
+    <Content Include="Content\css\src\layout\00-Layout.css" />
+    <Content Include="Content\css\src\layout\01-csswizardary-grids.css" />
+    <Content Include="Content\css\src\objects\flag.css" />
+    <Content Include="Content\css\src\objects\legend-key.css" />
+    <Content Include="Content\css\src\objects\media-object.css" />
+    <Content Include="Content\css\src\objects\module.css" />
+    <Content Include="Content\css\src\base\03-List.css" />
+    <Content Include="Content\css\src\objects\island.css" />
+    <Content Include="Content\css\src\objects\navigation.css" />
+    <Content Include="Content\css\src\utilities\overrides.css" />
+    <Content Include="Content\css\src\_settings\project.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -95,7 +94,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Content\css\vendor\" />
+    <Folder Include="Content\css\src\vendor\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
