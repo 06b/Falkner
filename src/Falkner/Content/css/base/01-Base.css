@@ -7,7 +7,7 @@
 /**
  * 1. Design Tip: Never Use Black: http://ianstormtaylor.com/design-tip-never-use-black/
  * 2. Eliminate horizontal centering "page jumps": http://css-tricks.com/eliminate-jumps-in-horizontal-centering-by-forcing-a-scroll-bar/
- * 3. Prevent margin and border from affecting element width. https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ * 3. Prevent padding and border from affecting element width. https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
  */
 
 html { color: #222 /* 1 */; overflow-y: scroll /* 2 */; min-height: 100% /* 2 */; box-sizing: border-box /* 3 */;}
@@ -107,7 +107,7 @@ option { cursor: pointer; }
 [disabled], button[disabled], html input[disabled], :disabled, .u-disabled:hover { cursor: not-allowed; }
 
 /**
- * Don't sure pointer cursor on readonly inputs
+ * Don't show pointer cursor on readonly inputs
  */
 
 [readonly] { cursor: default; }
