@@ -75,6 +75,7 @@
     <Content Include="Content\css\objects\island.css" />
     <Content Include="Content\css\objects\navigation.css" />
     <Content Include="Content\css\utilities\trumps.css" />
+    <Content Include="Content\css\_settings\project.css" />
     <Content Include="Content\js\vendor\prism.js" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -91,7 +92,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Content\css\vendor\" />
-    <Folder Include="Content\css\_settings\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
