@@ -64,7 +64,6 @@
     <Content Include="Content\css\utilities\debug.css" />
     <Content Include="Content\css\utilities\print.css" />
     <Content Include="Content\css\base\04-Forms.css" />
-    <Content Include="Content\css\Falkner-styles.css" />
     <Content Include="Content\css\base\01-Base.css" />
     <Content Include="Content\css\layout\00-Layout.css" />
     <Content Include="Content\css\layout\01-csswizardary-grids.css" />
@@ -76,10 +75,6 @@
     <Content Include="Content\css\objects\island.css" />
     <Content Include="Content\css\objects\navigation.css" />
     <Content Include="Content\css\utilities\trumps.css" />
-    <Content Include="Content\css\vendor\base.css" />
-    <Content Include="Content\css\vendor\grids-responsive.css" />
-    <Content Include="Content\css\vendor\grids.css" />
-    <Content Include="Content\css\vendor\prism.css" />
     <Content Include="Content\js\vendor\prism.js" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -95,6 +90,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Content\css\vendor\" />
     <Folder Include="Content\css\_settings\" />
   </ItemGroup>
   <PropertyGroup>
