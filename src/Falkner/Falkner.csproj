@@ -61,6 +61,10 @@
     <Content Include="Content\css\objects\resource-block.css" />
     <Content Include="Content\css\scope\example.css" />
     <Content Include="Content\css\theme\theme.project.css" />
+    <Content Include="Content\css\utilities\animations\animated.css" />
+    <Content Include="Content\css\utilities\animations\generic-fade.css" />
+    <Content Include="Content\css\utilities\animations\swing.css" />
+    <Content Include="Content\css\utilities\animations\yellow-fade-technique.css" />
     <Content Include="Content\css\utilities\debug.css" />
     <Content Include="Content\css\utilities\print.css" />
     <Content Include="Content\css\base\04-Forms.css" />
