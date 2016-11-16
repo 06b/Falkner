@@ -10,7 +10,7 @@
  * http://www.w3.org/TR/WCAG20/#visual-audio-contrast-visual-presentation
  */
 
-body { font-size: 100% /* 1 */; line-height: 1.5 /* 1 */; }
+body { font-size: var(--t-size-body-copy) /* 1 */; line-height: 1.5 /* 1 */; }
 
 
 /**
