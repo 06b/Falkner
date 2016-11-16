@@ -6,39 +6,42 @@
  * 1. Micro clearfix (Grouped in Clearfix-styles), as per: css-101.org/articles/clearfix/latest-new-clearfix-so-far.php
  *
  * Size Modifier(s):
- * .island--tiny         - Modifies the padding of the island object to be tiny. Extends '.island'.
- * .island--small        - Modifies the padding of the island object to be small. Extends '.island'.
- * .island--large        - Modifies the padding of the island object to be large. Extends '.island'.
- * .island--huge         - Modifies the padding of the island object to be huge. Extends '.island'.
+ * .o-island--tiny         - Modifies the padding of the island object to be tiny. Extends '.o-island'.
+ * .o-island--small        - Modifies the padding of the island object to be small. Extends '.o-island'.
+ * .o-island--medium       - Modifies the padding of the island object to be medium. Extends '.o-island'.
+ * .o-island--large        - Modifies the padding of the island object to be large. Extends '.o-island'.
+ * .o-island--huge         - Modifies the padding of the island object to be huge. Extends '.o-island'.
  *
  * Example Usage:
- * <div class="island">
+ * <div class="o-island">
  *     All alone...
  * </div>
  *
  */
 
-.o-island{ display: block; padding: 1.5rem; }
+.o-island { display: block; padding: var(--t-gutter); }
 
-.o-islet { display: block; padding: 0.75rem;}
+.o-islet { display: block; padding: var(--t-gutter--small);}
 
     /* .o-island:after,.o-islet:after { display: table; clear: both; content: ''; } */ /* 1 */
 
     .o-island > :last-child,.o-islet > :last-child { margin-bottom: 0; }
 
 
-/* ----- (extends island) ----- */
-.o-island--diminutive { padding: 0.1875rem; }
+/* ----- (extends .o-island) ----- */
+.o-island--diminutive { padding: var(--t-gutter--diminutive); }
 
-.o-island--tiny { padding: 0.375rem; }
+.o-island--tiny { padding: var(--t-gutter--tiny); }
 
-.o-island--small { padding: 0.75rem; }
+.o-island--small { padding: var(--t-gutter--small); }
 
-.o-island--large { padding: 3rem; }
+.o-island--medium { padding: var(--t-gutter--medium); }
 
-.o-island--huge { padding: 6rem; }
+.o-island--large { padding: var(--t-gutter--large); }
 
-/* ----- (extends islet) ----- */
-.o-islet--tiny { padding: 0.1875rem; }
+.o-island--huge { padding: var(--t-gutter--huge); }
 
-.o-islet--small { padding: 0.375rem; }
+/* ----- (extends .o-islet) ----- */
+.o-islet--tiny { padding: var(--t-gutter--diminutive); }
+
+.o-islet--small { padding: var(--t-gutter--tiny); }
