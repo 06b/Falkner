@@ -2,16 +2,16 @@
  * Layout
  */
 
-.l-global-container{}
+.l-global-container { }
 
-.l-global-header-container{}
-.l-global-header-inner{}
-.l-global-header{}
+.l-global-header-container { }
+.l-global-header-inner { }
+.l-global-header { }
 
-.l-global-content-container{}
-.l-global-content-inner{}
-.l-global-content{}
+.l-global-content-container { }
+.l-global-content-inner { }
+.l-global-content { }
 
-.l-global-footer-container{}
-.l-global-footer-inner{}
-.l-global-footer{}
+.l-global-footer-container { }
+.l-global-footer-inner { }
+.l-global-footer { }
