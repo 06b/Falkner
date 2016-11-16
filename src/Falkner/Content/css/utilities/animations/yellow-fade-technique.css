@@ -1,0 +1,23 @@
+﻿/**
+ * Spotlight aka the "Yellow Fade Technique"
+ *
+ * Coined by 37signals to be used to subtly spotlight a recently changed area of a page.
+ * Source: https://signalvnoise.com/archives/000558.php
+ *
+ * Example Usage:
+ * <span class="u-spotlight-animation">Pikachu used Flash!</span>
+ *
+ */
+
+@keyframes spotlight {
+  from {
+    background: var(--t-background-highlight);
+  }
+  to {
+    background: transparent;
+  }
+}
+
+.u-spotlight-animation {
+  animation: spotlight 2.5s;
+}
