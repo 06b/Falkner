@@ -78,7 +78,7 @@
     <Content Include="Content\css\base\03-List.css" />
     <Content Include="Content\css\objects\island.css" />
     <Content Include="Content\css\objects\navigation.css" />
-    <Content Include="Content\css\utilities\trumps.css" />
+    <Content Include="Content\css\utilities\overrides.css" />
     <Content Include="Content\css\_settings\project.css" />
     <Content Include="Content\js\vendor\prism.js" />
     <Content Include="Web.config" />
