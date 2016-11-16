@@ -135,3 +135,15 @@ abbr[title], dfn[title], [rel="help"], .help:hover { cursor: help; }
 
 td {  vertical-align: top; }
 
+
+/**
+ * Support: Firefox 4+
+ * Details: Input fields with 'required' get red shadow/border before submitting
+ * Supporting Details: https://github.com/angular/angular.js/issues/12102
+ * Supporting Details: http://stackoverflow.com/questions/3809146/firefox-4-required-input-form-red-border-outline
+ * Fix: Rather than disabling native browser validation - remove the styles on invalid required inputs and apply them via non-native browser validation
+ */
+
+[required]:invalid {
+    box-shadow:none;
+}
