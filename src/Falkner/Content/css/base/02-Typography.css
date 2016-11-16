@@ -18,7 +18,7 @@ body { font-size: 100% /* 1 */; line-height: 1.5 /* 1 */; }
  *
  * Extra class names allow same font-size to be used on other elements to maintain the semantically appropriate heading levels
  *
- * 1. Decrease the line-height of wrapped headlings - https://twitter.com/heydonworks/status/672716556179283968
+ * 1. Decrease the line-height of wrapped headings - https://twitter.com/heydonworks/status/672716556179283968
  */
 
 h1,h2,h3,h4,h5,h6{ line-height:1.125 /* 1 */; }
