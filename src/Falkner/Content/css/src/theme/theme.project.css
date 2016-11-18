@@ -2,14 +2,21 @@
  * Default element styles
  */
 
-/* 'Default' link styling css tip: https://twitter.com/nathansmith/status/673925683957993472 */
+/**
+ * 'Default' link styling css tip: https://twitter.com/nathansmith/status/673925683957993472
+ * 2. Support: User Interface
+ *    Details: In the event text-decoration: underline is used and the text is being overridden by a different color within the link the
+               underline will pick up the default color and not the color of the text that was overridden on pseudo-classes such as :hover.
+ *    Fix: Set the color to currentColor so on :hover, :focus, etc will pick up the currentColor of the text.
+ *
+ */
 .l-global-content-container a[href]:not([class]) {
-  color:#446DA1;
+  color:var(--t-color-hyperlink);
   text-decoration: underline;
 }
 
 .l-global-content-container a[href]:not([class]):hover,.l-global-content-container a[href]:not([class]):active {
-  color:#446DA1;
+  color:currentColor /* 2 */;
   text-decoration: underline;
 }
 

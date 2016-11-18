@@ -16,6 +16,7 @@
      --pure-white: #fff;
      --gallery-white: #eee;
      --jet-black: #222;
+     --default-link: #194C97;
 
      --initial-rem-unit: 1rem;
      --initial-gutter-unit: var(--initial-rem-unit);
@@ -44,6 +45,8 @@
 
     --t-size-body-copy: calc(var(--initial-rem-unit) * 0.875);
 
+    /* ----- Colors (Text) ----- */
+     --t-color-hyperlink: var(--default-link);
     /* ----- Colors (Background) ----- */
      --t-background-stencil: var(--gallery-white);
      --t-background-stencil--loading: var(--pure-white);
