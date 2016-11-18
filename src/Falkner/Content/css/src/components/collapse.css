@@ -1,0 +1,24 @@
+﻿/**
+ * Collapse Component
+ *
+ * Used to allow simple toggling of a section's visibility - such as a single panel of an accordion via the use of a hidden checkbox
+ *
+ * Example Usage:
+ * <div class="c-collapse">
+ *     <label class="c-collapse__label" for="example">
+ *         Show More
+ *     </label>
+ *     <input class="c-collapse__button" type="checkbox" id="example" />
+ *     <div class="c-collapse__section">
+ *         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ex nulla, posuere et vestibulum at, euismod eu nunc.
+ *     </div>
+ * </div>
+ *
+ */
+
+.c-collapse { }
+.c-collapse__label { }
+.c-collapse__button { display: none; }
+.c-collapse__section { visibility: hidden; max-height: 0; opacity: 0; transition: max-height .1s, visibility .3s, opacity .3s; }
+
+.c-collapse__button:checked ~ .c-collapse__section { visibility: visible; max-height: 100%; opacity: 100; }
