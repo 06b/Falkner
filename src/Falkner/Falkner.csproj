@@ -63,6 +63,7 @@
     <Content Include="Content\css\src\components\preloader.css" />
     <Content Include="Content\css\src\components\pseudo-upload.css" />
     <Content Include="Content\css\src\components\stencil.css" />
+    <Content Include="Content\css\src\components\tooltip.css" />
     <Content Include="Content\css\src\objects\resource-block.css" />
     <Content Include="Content\css\src\scope\example.css" />
     <Content Include="Content\css\src\theme\theme.project.css" />
