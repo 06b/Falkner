@@ -47,6 +47,39 @@
 .o-navigation--stacked > li { display: list-item; }
     .o-navigation--stacked > li > a { display: block; }
 
+@media only screen and (max-width: 30em) {
+    .o-navigation--stacked--phone-portrait-only > li { display: list-item; }
+    .o-navigation--stacked--phone-portrait-only > li > a { display: block; }
+}
+@media only screen and (min-width: 30em) {
+    .o-navigation--stacked--phone-landscape-up  > li { display: list-item; }
+    .o-navigation--stacked--phone-landscape-up  > li > a { display: block; }
+}
+@media only screen and (min-width: 30em) and (max-width: 39.9375em) {
+    .o-navigation--stacked--phone-landscape-only  > li { display: list-item; }
+    .o-navigation--stacked--phone-landscape-only  > li > a { display: block; }
+}
+@media only screen and (min-width: 40em) {
+    .o-navigation--stacked--tablet-portrait-up > li { display: list-item; }
+    .o-navigation--stacked--tablet-portrait-up > li > a { display: block; }
+}
+@media only screen and (min-width: 40em) and (max-width: 63.9375em) {
+    .o-navigation--stacked--tablet-portrait-only > li { display: list-item; }
+    .o-navigation--stacked--tablet-portrait-only > li > a { display: block; }
+}
+@media only screen and (min-width: 64em) {
+    .o-navigation--stacked--tablet-landscape-up > li { display: list-item; }
+    .o-navigation--stacked--tablet-landscape-up > li > a { display: block; }
+}
+@media only screen and (min-width: 64em) and (max-width: 79.9375em) {
+    .o-navigation--stacked--tablet-landscape-only > li { display: list-item; }
+    .o-navigation--stacked--tablet-landscape-only > li > a { display: block; }
+}
+@media only screen and (min-width: 80em) {
+    .o-navigation--stacked--desktop-up > li { display: list-item; }
+    .o-navigation--stacked--desktop-up > li > a { display: block; }
+}
+
 
 /**
  * Breadcrumbs (extends navigation)
