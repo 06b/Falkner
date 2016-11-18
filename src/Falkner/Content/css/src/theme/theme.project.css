@@ -6,6 +6,22 @@ html { height:100%; }
 body { background:var(--t-background-body); height:100%; }
 
 /**
+ * Custom Font Stack Styling
+ * 1. Support: Chrome 51+, Firefox 46+
+ *    Details: Specific font stacks may break the OS/Browser compatibility within the grid's letter spacing hack
+ *    Supporting Details: https://github.com/yahoo/pure/issues/41
+ *    Supporting Details: http://purecss.io/grids/#using-grids-with-custom-fonts
+ *    Supporting Details: http://blog.purecss.io/post/60789414532/how-we-improved-grids-in-pure-030
+ *    Fix: Since there is no one-size-fits-all solution with the letter spacing hack the approach to fix is to use
+ *    a fix which is similar to the approach taken from Yahoo's PureCSS grid which is when setting the primary font
+ *    stack, apply it to the grid column units along with `html`, `button`, `input`, `select`, and `textarea` while
+ *    keeping the grid unit as the sans-serif which is similar to what normalize.css does.
+ */
+.l-grid { font-family:sans-serif /* 1 */; }
+
+html, button, input, select, textarea, .l-grid [class *= "l-grid__column"] { font-family:var(--t-font-stack-content) /* 1 */; }
+
+/**
  * 'Default' link styling css tip: https://twitter.com/nathansmith/status/673925683957993472
  * 2. Support: User Interface
  *    Details: In the event text-decoration: underline is used and the text is being overridden by a different color within the link the
