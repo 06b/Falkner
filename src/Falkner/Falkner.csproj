@@ -54,6 +54,7 @@
     <Content Include="Content\css\src\base\05-Clearfix.css" />
     <Content Include="Content\css\src\components\archipelago.css" />
     <Content Include="Content\css\src\components\avatar.css" />
+    <Content Include="Content\css\src\components\backdrop.css" />
     <Content Include="Content\css\src\components\footer-navigation.css" />
     <Content Include="Content\css\src\components\header-navigation.css" />
     <Content Include="Content\css\src\components\oversize-button.css" />
