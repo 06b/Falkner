@@ -47,7 +47,9 @@
 
     /* ----- Colors (Text) ----- */
      --t-color-hyperlink: var(--default-link);
+     --t-color-content-text:var(--jet-black);
     /* ----- Colors (Background) ----- */
+     --t-background-body: var(--pure-white);
      --t-background-stencil: var(--gallery-white);
      --t-background-stencil--loading: var(--pure-white);
 }

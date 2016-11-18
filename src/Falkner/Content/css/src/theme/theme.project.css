@@ -2,6 +2,9 @@
  * Default element styles
  */
 
+html { height:100%; }
+body { background:var(--t-background-body); height:100%; }
+
 /**
  * 'Default' link styling css tip: https://twitter.com/nathansmith/status/673925683957993472
  * 2. Support: User Interface
