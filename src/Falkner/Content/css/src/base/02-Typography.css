@@ -23,6 +23,13 @@ body { font-size: var(--t-size-body-copy) /* 1 */; line-height: 1.5 /* 1 */; }
 
 h1,h2,h3,h4,h5,h6 { line-height:1.125 /* 1 */; }
 
+h1 { }
+h2 { }
+h3 { }
+h4 { }
+h5 { }
+h6 { }
+
 .h1, .alpha { }
 .h2, .beta { }
 .h3, .gamma { }
