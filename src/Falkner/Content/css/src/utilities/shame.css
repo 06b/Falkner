@@ -1,0 +1,24 @@
+﻿/**
+ * Shame.css
+ *
+ * The idea of shame.css is that you have a totally new stylesheet reserved just for your hacky code. Code you have to write to get the release out on time, but code that makes you ashamed.
+ *
+ * Hacks are inevitable, we want to make sure everyone is aware of them so it's easy to find and fix things.
+ * The goal is to try and keep good code nice and clean - Broken Windows Theory
+ *
+ */
+
+/**
+ * The Example Page was done within the timespan of X with the following process - Human Name YYYY-MM-DD
+ * 1) Due to time constraints only the ....
+ * 2) Changes were made half way while being built which differed from original design/planning
+ * 3) Still wasn't sent to be QA tested...
+ * 4) This Is Fine.
+ *
+ */
+
+@media only screen and (max-width: 79.9375em) {
+    ._ExampleScrollArea{ overflow:overlay; overflow:auto; }
+    ._ExampleVisibleArea{ width:1195px; }
+}
+
