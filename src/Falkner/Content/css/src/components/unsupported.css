@@ -1,0 +1,26 @@
+﻿/**
+ * Unsupported Component
+ *
+ * Used when a browser doesn't meet minimum browser grade support
+ *
+ * Example Usage:
+ * <div class="c-unsupported">
+ *     <div class="c-unsupported__clearance">
+ *          <h3>Sorry!</h3>
+ *          <p class="c-unsupported__description">Our site has detected that your web browser is out of date or can not support most of the features on this site.</p>
+ *      </div>
+ *      <div class="c-unsupported__wall">
+ *          Content which will be blocked
+ *      </div>
+ * </div>
+ */
+
+.c-unsupported { }
+
+.c-unsupported__clearance{ display:none; }
+.c-unsupported__description { }
+.c-unsupported__wall{ }
+
+/* Toggle the visibility of 'c-unsupported__clearance' via either a scope class or modification of the DOM, etc */
+.s-legacy .c-unsupported__clearance { display:block; }
+.s-legacy .c-unsupported__wall { display:none; }
