@@ -1,0 +1,19 @@
+﻿/**
+ * Counter Component
+ *
+ * Used often as an unread number indicator or when an item needs a more generic counter
+ *
+ * Notes:
+ * N1. When using 'c-counter--pinned' the parent container must be positioned relative for it to work properly.
+ *
+ * Example Usage:
+ * <div class="c-counter"> 99+ </div>
+ *
+ */
+
+.c-counter { display:inline-block; border-radius:50%; text-align:center; font-weight:bold; line-height:1.6; font-size:11px; padding:3px; min-width:1rem; min-height:1rem; }
+.c-counter--pinned { position:absolute /* N1 */; }
+.c-counter--pinned-top { top:0; }
+.c-counter--pinned-right { right:0; }
+.c-counter--pinned-bottom { bottom:0; }
+.c-counter--pinned-left { left:0; }
