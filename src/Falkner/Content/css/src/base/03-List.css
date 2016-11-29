@@ -1,6 +1,7 @@
 ﻿/**
  * Remove vertical spacing from nested lists.
  */
+
 li > ul,
 li > ol {
   margin-bottom: 0;
@@ -10,6 +11,7 @@ li > ol {
 /**
  * Have a numbered 'ul' without the semantics implied by using an 'ol'.
  */
+
 /*ul*/
 .numbered-list {
   list-style-type: decimal;
