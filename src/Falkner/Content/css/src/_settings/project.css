@@ -14,6 +14,9 @@
 
      --clear-glass: transparent;
      --pure-white: #fff;
+     --crusta-orange: #f77b44;
+     --chateau-green: #40A350;
+     --red-orange: #ff4136;
      --gallery-white: #eee;
      --jet-black: #222;
      --default-link: #194C97;
@@ -52,4 +55,7 @@
      --t-background-body: var(--pure-white);
      --t-background-stencil: var(--gallery-white);
      --t-background-stencil--loading: var(--pure-white);
+     --t-background-success: var(--chateau-green);
+     --t-background-alert: var(--crusta-orange);
+     --t-background-failure: var(--red-orange);
 }
