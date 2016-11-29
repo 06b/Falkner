@@ -29,6 +29,7 @@
  *     <li data-breadcrumb="|">Snake</li>
  *     <li data-breadcrumb="|" class="current">Cat</li>
  * </ul>
+ *
  */
 
 .o-navigation { list-style: none; padding-left: 0; }

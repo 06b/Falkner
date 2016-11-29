@@ -4,6 +4,7 @@
  *
  * Notes:
  * N1. The space content is one way to avoid an Opera bug when the `contenteditable` attribute is included anywhere else in the document. Otherwise it causes space to appear at the top and bottom of the element.
+ *
  */
 
 .clearfix:after, .o-media:after, .o-module:after, .o-island:after,.o-islet:after, .o-navigation:after, .o-legend-key:after { display: table; clear: both; content: ' ' /* N1 */; }
