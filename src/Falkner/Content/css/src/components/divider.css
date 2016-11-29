@@ -1,0 +1,44 @@
+﻿/**
+ * Divider Component
+ *
+ * Size Modifier(s):
+ * .c-divider--extend-diminutive    - Modifies the margin of the divider component to be diminutive. Extends '.c-divider'. *
+ * .c-divider--extend-tiny          - Modifies the margin of the divider component to be tiny. Extends '.c-divider'. *
+ * .c-divider--extend-small         - Modifies the margin of the divider component to be small. Extends '.c-divider'. *
+ * .c-divider--extend-medium        - Modifies the margin of the divider component to be medium. Extends '.c-divider'. *
+ * .c-divider--extend               - Modifies the margin of the divider component to be the default sizing unit. Extends '.c-divider'. *
+ * .c-divider--extend-large         - Modifies the margin of the divider component to be large. Extends '.c-divider'. *
+ * .c-divider--extend-huge          - Modifies the margin of the divider component to be huge. Extends '.c-divider'. *
+ *
+ * Style Modifier(s):
+ * .c-divider--dashed               - Modifies the style of the divider component to be dashed. Extends '.c-divider'. *
+ *
+ * Example Usage:
+ * <hr class="c-divider c-divider--extend-medium c-divider--dashed">
+ *
+ */
+
+.c-divider { }
+
+/* ----- (extends .c-divider) ----- */
+
+.c-divider--dashed { border-style:dashed;}
+
+/**
+ * Size Modifier Notes:
+ * 'cacl(-1 * )' is required in order to convert CSS Custom Properties from a number to a negative length - https://twitter.com/LeaVerou/status/737573310792237056
+ */
+
+.c-divider--extend-diminutive { margin-right: calc( -1 * var(--t-gutter--diminutive)); margin-left: calc( -1 * var(--t-gutter--diminutive)); }
+
+.c-divider--extend-tiny { margin-right: calc( -1 * var(--t-gutter--tiny)); margin-left: calc( -1 * var(--t-gutter--small)); }
+
+.c-divider--extend-small { margin-right: calc( -1 * var(--t-gutter--small)); margin-left: calc( -1 * var(--t-gutter--small)); }
+
+.c-divider--extend-medium { margin-right: calc( -1 * var(--t-gutter--medium)); margin-left: calc( -1 * var(--t-gutter--medium)); }
+
+.c-divider--extend{ margin-right: calc(-1 * var(--t-gutter)); margin-left: calc(-1 * var(--t-gutter)); }
+
+.c-divider--extend-large { margin-right: calc( -1 * var(--t-gutter--large)); margin-left: calc( -1 * var(--t-gutter--large)); }
+
+.c-divider--extend-huge { margin-right: calc( -1 * var(--t-gutter--huge)); margin-left: calc( -1 * var(--t-gutter--huge)); }
