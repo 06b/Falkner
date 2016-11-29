@@ -2,7 +2,8 @@
  * Micro clearfix, as per: css-101.org/articles/clearfix/latest-new-clearfix-so-far.php
  * Multiple Patterns use this, so make sure to remove selectors as needed
  *
- * 1. The space content is one way to avoid an Opera bug when the `contenteditable` attribute is included anywhere else in the document. Otherwise it causes space to appear at the top and bottom of the element.
+ * Notes:
+ * N1. The space content is one way to avoid an Opera bug when the `contenteditable` attribute is included anywhere else in the document. Otherwise it causes space to appear at the top and bottom of the element.
  */
 
-.clearfix:after, .o-media:after, .o-module:after, .o-island:after,.o-islet:after, .o-navigation:after, .o-legend-key:after { display: table; clear: both; content: ' ' /* 1 */; }
+.clearfix:after, .o-media:after, .o-module:after, .o-island:after,.o-islet:after, .o-navigation:after, .o-legend-key:after { display: table; clear: both; content: ' ' /* N1 */; }
