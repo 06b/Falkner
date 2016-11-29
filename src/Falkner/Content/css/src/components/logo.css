@@ -1,0 +1,12 @@
+﻿/**
+ * Logo Component
+ *
+ * Notes:
+ * N1. If the parent container has no set height so it appears as if a float was never cleared, so set a pseudo element to have the size of the element's height
+ * N2. Position the logo to cover the parent element completely. Source: http://www.mademyday.de/css-height-equals-width-with-pure-css.html
+ *
+ */
+
+.c-logo { position: relative /* N2 */; }
+.c-logo:before{ content: "" /* N2 */; display: block /* N2 */; padding-top: 4rem /* N1 */; }
+.c-logo__image{ position: absolute /* N2 */; top: 0 /* N2 */; left: 0 /* N2 */; bottom: 0 /* N2 */; right: 0 /* N2 */; max-height: 4rem /* N1 */; }

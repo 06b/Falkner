@@ -60,6 +60,7 @@
     <Content Include="Content\css\src\components\footer-navigation.css" />
     <Content Include="Content\css\src\components\header-navigation.css" />
     <Content Include="Content\css\src\components\legal.css" />
+    <Content Include="Content\css\src\components\logo.css" />
     <Content Include="Content\css\src\components\marginal-highlight.css" />
     <Content Include="Content\css\src\components\oversize-button.css" />
     <Content Include="Content\css\src\components\preloader.css" />
