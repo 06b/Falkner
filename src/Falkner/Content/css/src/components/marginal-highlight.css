@@ -8,6 +8,13 @@
  * pattern to cater those who suffer from color blindness.
  * Source: https://medium.com/intrepid-s-insights/designing-for-and-with-color-blindness-48392aab3d87#.69f8252r0
  *
+ * Example Usage:
+ * <div class="c-marginal-highlight c-marginal-highlight--success">
+ *  <!-- Container within the marginal-highlight should have a background color so the highlight doesn't bleed through -->
+ *   <div class="t-background">
+ *       This item has been approved!
+ *   </div>
+ * </div>
  */
 
 .c-marginal-highlight { padding-left:var(--t-gutter) /* N1*/; }
