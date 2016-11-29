@@ -1,5 +1,7 @@
 ﻿/**
  * Pseudo upload button styling
+ *
+ * Notes:
  * N1. Support: Chrome 48+
  *    Details: Border is still present at certain screen sizes with a width of 0, a border of 0, a transparent background and positioned to the left of 0
  *    Fix: Setting left to -1px fixes the issue.
