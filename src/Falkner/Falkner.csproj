@@ -67,6 +67,7 @@
     <Content Include="Content\css\src\components\preloader.css" />
     <Content Include="Content\css\src\components\pseudo-upload.css" />
     <Content Include="Content\css\src\components\stencil.css" />
+    <Content Include="Content\css\src\components\toggle-button.css" />
     <Content Include="Content\css\src\components\tooltip.css" />
     <Content Include="Content\css\src\components\unsupported.css" />
     <Content Include="Content\css\src\objects\resource-block.css" />
