@@ -91,6 +91,7 @@
     <Content Include="Content\css\src\objects\island.css" />
     <Content Include="Content\css\src\objects\navigation.css" />
     <Content Include="Content\css\src\utilities\overrides.css" />
+    <Content Include="Content\css\src\utilities\shame.css" />
     <Content Include="Content\css\src\_settings\project.css" />
     <Content Include="Web.config" />
   </ItemGroup>
