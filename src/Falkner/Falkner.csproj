@@ -79,6 +79,7 @@
     <Content Include="Content\css\src\utilities\animations\swing.css" />
     <Content Include="Content\css\src\utilities\animations\yellow-fade-technique.css" />
     <Content Include="Content\css\src\utilities\debug.css" />
+    <Content Include="Content\css\src\utilities\overrides\align.css" />
     <Content Include="Content\css\src\utilities\overrides\aside.css" />
     <Content Include="Content\css\src\utilities\overrides\cursor.css" />
     <Content Include="Content\css\src\utilities\overrides\flex-utilities.css" />

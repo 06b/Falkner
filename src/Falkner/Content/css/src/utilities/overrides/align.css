@@ -1,0 +1,17 @@
+/**
+ * Vertical Alignment utilities - Note this depends on the appropriate 'display' value.
+ */
+
+.u-align-baseline { vertical-align: baseline !important; }
+.u-align-bottom { vertical-align: bottom !important; }
+.u-align-middle { vertical-align: middle !important; }
+.u-align-top { vertical-align: top !important; }
+
+
+/**
+ * Easily center block level content if it's not taking up the full width of the parent.
+ * AKA Classic '0 auto' centering
+ */
+
+.u-align-center { margin: 0 auto; }
+
