@@ -28,7 +28,7 @@
     .u-strip-margin--desktop-up { margin: 0; }
 }
 
-.u-strip-margin-top{ margin-top:0; }
+.u-strip-margin-top { margin-top:0; }
 @media only screen and (max-width: 30em) {
     .u-strip-margin-top--phone-portrait-only { margin-top: 0; }
 }
@@ -54,7 +54,7 @@
     .u-strip-margin-top--desktop-up { margin-top: 0; }
 }
 
-.u-strip-margin-bottom{ margin-bottom:0; }
+.u-strip-margin-bottom { margin-bottom:0; }
 @media only screen and (max-width: 30em) {
     .u-strip-margin-bottom--phone-portrait-only { margin-bottom: 0; }
 }
@@ -80,7 +80,7 @@
     .u-strip-margin-bottom--desktop-up { margin-bottom: 0; }
 }
 
-.u-strip-margin-left{ margin-left:0; }
+.u-strip-margin-left { margin-left:0; }
 @media only screen and (max-width: 30em) {
     .u-strip-margin-left--phone-portrait-only { margin-left: 0; }
 }
@@ -106,7 +106,7 @@
     .u-strip-margin-left--desktop-up { margin-left: 0; }
 }
 
-.u-strip-margin-right{ margin-right:0; }
+.u-strip-margin-right { margin-right:0; }
 @media only screen and (max-width: 30em) {
     .u-strip-margin-right--phone-portrait-only { margin-right: 0; }
 }
