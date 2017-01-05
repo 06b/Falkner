@@ -65,7 +65,7 @@
     .u-text-center--phone-landscape-only { text-align: center !important; }
 }
 @media only screen and (min-width: 40em) {
-    .u-text-center--tablet-portrait-up{ text-align: center !important; }
+    .u-text-center--tablet-portrait-up { text-align: center !important; }
 }
 @media only screen and (min-width: 40em) and (max-width: 63.9375em) {
     .u-text-center---tablet-portrait-only { text-align: center !important; }
