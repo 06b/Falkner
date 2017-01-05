@@ -84,6 +84,7 @@
     <Content Include="Content\css\src\utilities\overrides\flex-utilities.css" />
     <Content Include="Content\css\src\utilities\overrides\floats.css" />
     <Content Include="Content\css\src\utilities\overrides\force-display-visibility.css" />
+    <Content Include="Content\css\src\utilities\overrides\line-height.css" />
     <Content Include="Content\css\src\utilities\overrides\links.css" />
     <Content Include="Content\css\src\utilities\overrides\overflow.css" />
     <Content Include="Content\css\src\utilities\overrides\position.css" />
