@@ -1,0 +1,14 @@
+/**
+ * Adds different margin sizes
+ */
+
+.u-aside-top { margin-top:1rem; }
+.u-aside-bottom { margin-bottom:1rem; }
+.u-aside-left { margin-left:1rem; }
+.u-aside-right { margin-right:1rem; }
+
+.u-aside-top--small { margin-top:0.5rem; }
+.u-aside-bottom--small { margin-bottom:0.5rem; }
+.u-aside-left--small { margin-left:0.5rem; }
+.u-aside-right--small { margin-right:0.5rem; }
+

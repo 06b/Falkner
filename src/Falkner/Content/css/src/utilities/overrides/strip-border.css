@@ -1,0 +1,10 @@
+/**
+ * Removes the border from elements
+ */
+
+.u-strip-border { border: 0; }
+.u-strip-border-top{ border-top:0; }
+.u-strip-border-bottom{ border-bottom:0; }
+.u-strip-border-left{ border-left:0; }
+.u-strip-border-right{ border-right:0; }
+
