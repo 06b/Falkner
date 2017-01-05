@@ -1,0 +1,6 @@
+/**
+ * Changes text case to uppercase
+ */
+
+.u-text-all-caps { text-transform: uppercase; }
+

@@ -1,0 +1,10 @@
+/**
+ * Removes the padding from elements
+ */
+
+.u-strip-padding { padding: 0; }
+.u-strip-padding-top{ padding-top:0; }
+.u-strip-padding-bottom{ padding-bottom:0; }
+.u-strip-padding-left{ padding-left:0; }
+.u-strip-padding-right{ padding-right:0; }
+
