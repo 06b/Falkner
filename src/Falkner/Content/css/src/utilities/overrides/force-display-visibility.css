@@ -1,10 +1,230 @@
 /**
- * Used to force an element's display
+ * Used to force an element to display block
  */
 
 .u-force-block { display: block !important; }
-.u-force-inline-block { display: inline-block !important; }
+@media only screen and (max-width: 30em) {
+    .u-force-block--phone-portrait-only { display: block !important; }
+}
+@media only screen and (min-width: 30em) {
+    .u-force-block--phone-landscape-up { display: block !important; }
+}
+@media only screen and (min-width: 30em) and (max-width: 39.9375em) {
+    .u-force-block--phone-landscape-only { display: block !important; }
+}
+@media only screen and (min-width: 40em) {
+    .u-force-block--tablet-portrait-up { display: block !important; }
+}
+@media only screen and (min-width: 40em) and (max-width: 63.9375em) {
+    .u-force-block--tablet-portrait-only { display: block !important; }
+}
+@media only screen and (min-width: 64em) {
+    .u-force-block--tablet-landscape-up { display: block !important; }
+}
+@media only screen and (min-width: 64em) and (max-width: 79.9375em) {
+    .u-force-block--tablet-landscape-only { display: block !important; }
+}
+@media only screen and (min-width: 80em) {
+    .u-force-block--desktop-up { display: block !important; }
+}
+
+/**
+ * Used to force an element's display inline-block
+ * 1. Support: Firefox
+ *    Details: An image styled 'max-width:100%' within an inline-block will display at its default size, and not limit its width to 100% of an ancestral container.
+ *    Fix: Set 'max-width:100%' within the inline-block
+ */
+.u-force-inline-block { display: inline-block !important; max-width:100% /* 1 */; }
+@media only screen and (max-width: 30em) {
+    .u-force-inline-block--phone-portrait-only{ display: inline-block !important; max-width:100% /* 1 */; }
+}
+@media only screen and (min-width: 30em) {
+    .u-force-inline-block--phone-landscape-up { display: inline-block !important; max-width:100% /* 1 */;}
+}
+@media only screen and (min-width: 30em) and (max-width: 39.9375em) {
+    .u-force-inline-block--phone-landscape-only { display: inline-block !important; max-width:100% /* 1 */;}
+}
+@media only screen and (min-width: 40em) {
+    .u-force-inline-block--tablet-portrait-up { display: inline-block !important; max-width:100% /* 1 */;}
+}
+@media only screen and (min-width: 40em) and (max-width: 63.9375em) {
+    .u-force-inline-block--tablet-portrait-only { display: inline-block !important; max-width:100% /* 1 */;}
+}
+@media only screen and (min-width: 64em) {
+    .u-force-inline-block--tablet-landscape-up { display: inline-block !important; max-width:100% /* 1 */;}
+}
+@media only screen and (min-width: 64em) and (max-width: 79.9375em) {
+    .u-force-inline-block--tablet-landscape-only { display: inline-block !important; max-width:100% /* 1 */;}
+}
+@media only screen and (min-width: 80em) {
+    .u-force-inline-block--desktop-up { display: inline-block !important; max-width:100% /* 1 */;}
+}
+
 .u-force-inline { display: inline !important; }
+@media only screen and (max-width: 30em) {
+    .u-force-inline--phone-portrait-only { display: inline !important; }
+}
+@media only screen and (min-width: 30em) {
+    .u-force-inline--phone-landscape-up { display: inline !important; }
+}
+@media only screen and (min-width: 30em) and (max-width: 39.9375em) {
+    .u-force-inline--phone-landscape-only { display: inline !important; }
+}
+@media only screen and (min-width: 40em) {
+    .u-force-inline--tablet-portrait-up { display: inline !important; }
+}
+@media only screen and (min-width: 40em) and (max-width: 63.9375em) {
+    .u-force-inline--tablet-portrait-only { display: inline !important; }
+}
+@media only screen and (min-width: 64em) {
+    .u-force-inline--tablet-landscape-up { display: inline !important; }
+}
+@media only screen and (min-width: 64em) and (max-width: 79.9375em) {
+    .u-force-inline--tablet-landscape-only { display: inline !important; }
+}
+@media only screen and (min-width: 80em) {
+    .u-force-inline--desktop-up { display: inline !important; }
+}
+
+.u-force-table { display: table !important; }
+@media only screen and (max-width: 30em) {
+    .u-force-table--phone-portrait-only { display: table !important; }
+}
+@media only screen and (min-width: 30em) {
+    .u-force-table--phone-landscape-up { display: table !important; }
+}
+@media only screen and (min-width: 30em) and (max-width: 39.9375em) {
+    .u-force-table--phone-landscape-only { display: table !important; }
+}
+@media only screen and (min-width: 40em) {
+    .u-force-table--tablet-portrait-up { display: table !important; }
+}
+@media only screen and (min-width: 40em) and (max-width: 63.9375em) {
+    .u-force-table--tablet-portrait-only { display: table !important; }
+}
+@media only screen and (min-width: 64em) {
+    .u-force-table--tablet-landscape-up { display: table !important; }
+}
+@media only screen and (min-width: 64em) and (max-width: 79.9375em) {
+    .u-force-table--tablet-landscape-only { display: table !important; }
+}
+@media only screen and (min-width: 80em) {
+    .u-force-table--desktop-up { display: table !important; }
+}
+
+.u-force-table-row { display: table-row !important; }
+@media only screen and (max-width: 30em) {
+    .u-force-table-row--phone-portrait-only { display: table-row !important; }
+}
+@media only screen and (min-width: 30em) {
+    .u-force-table-row--phone-landscape-up { display: table-row !important; }
+}
+@media only screen and (min-width: 30em) and (max-width: 39.9375em) {
+    .u-force-table-row--phone-landscape-only { display: table-row !important; }
+}
+@media only screen and (min-width: 40em) {
+    .u-force-table-row--tablet-portrait-up { display: table-row !important; }
+}
+@media only screen and (min-width: 40em) and (max-width: 63.9375em) {
+    .u-force-table-row--tablet-portrait-only { display: table-row !important; }
+}
+@media only screen and (min-width: 64em) {
+    .u-force-table-row--tablet-landscape-up { display: table-row !important; }
+}
+@media only screen and (min-width: 64em) and (max-width: 79.9375em) {
+    .u-force-table-row--tablet-landscape-only { display: table-row !important; }
+}
+@media only screen and (min-width: 80em) {
+    .u-force-table-row--desktop-up { display: table-row !important; }
+}
+
+.u-force-table-cell { display: table-cell !important; }
+@media only screen and (max-width: 30em) {
+    .u-force-table-cell--phone-portrait-only { display: table-cell !important; }
+}
+@media only screen and (min-width: 30em) {
+    .u-force-table-cell--phone-landscape-up { display: table-cell !important; }
+}
+@media only screen and (min-width: 30em) and (max-width: 39.9375em) {
+    .u-force-table-cell--phone-landscape-only { display: table-cell !important; }
+}
+@media only screen and (min-width: 40em) {
+    .u-force-table-cell--tablet-portrait-up { display: table-cell !important; }
+}
+@media only screen and (min-width: 40em) and (max-width: 63.9375em) {
+    .u-force-table-cell--tablet-portrait-only { display: table-cell !important; }
+}
+@media only screen and (min-width: 64em) {
+    .u-force-table-cell--tablet-landscape-up { display: table-cell !important; }
+}
+@media only screen and (min-width: 64em) and (max-width: 79.9375em) {
+    .u-force-table-cell--tablet-landscape-only { display: table-cell !important; }
+}
+@media only screen and (min-width: 80em) {
+    .u-force-table-cell--desktop-up { display: table-cell !important; }
+}
+
+
+/**
+ * Used to force a row using flex box
+ */
+
+.u-force-flex-row { display: flex !important; flex-direction:row; flex-wrap:wrap; }
+@media only screen and (max-width: 30em) {
+    .u-force-flex-row--phone-portrait-only { display: flex !important; flex-direction:row; flex-wrap:wrap; }
+}
+@media only screen and (min-width: 30em) {
+    .u-force-flex-row--phone-landscape-up { display: flex !important; flex-direction:row; flex-wrap:wrap; }
+}
+@media only screen and (min-width: 30em) and (max-width: 39.9375em) {
+    .u-force-flex-row--phone-landscape-only { display: flex !important; flex-direction:row; flex-wrap:wrap; }
+}
+@media only screen and (min-width: 40em) {
+    .u-force-flex-row--tablet-portrait-up { display: flex !important; flex-direction:row; flex-wrap:wrap; }
+}
+@media only screen and (min-width: 40em) and (max-width: 63.9375em) {
+    .u-force-flex-row--tablet-portrait-only { display: flex !important; flex-direction:row; flex-wrap:wrap; }
+}
+@media only screen and (min-width: 64em) {
+    .u-force-flex-row--tablet-landscape-up { display: flex !important; flex-direction:row; flex-wrap:wrap; }
+}
+@media only screen and (min-width: 64em) and (max-width: 79.9375em) {
+    .u-force-flex-row--tablet-landscape-only { display: flex !important; flex-direction:row; flex-wrap:wrap; }
+}
+@media only screen and (min-width: 80em) {
+    .u-force-flex-row--desktop-up { display: flex !important; flex-direction:row; flex-wrap:wrap; }
+}
+
+
+/**
+ * Used to force inline-flex
+ */
+
+.u-force-inline-flex { display: inline-flex !important; }
+@media only screen and (max-width: 30em) {
+    .u-force-inline-flex--phone-portrait-only { display: inline-flex !important; }
+}
+@media only screen and (min-width: 30em) {
+    .u-force-inline-flex--phone-landscape-up { display: inline-flex !important; }
+}
+@media only screen and (min-width: 30em) and (max-width: 39.9375em) {
+    .u-force-inline-flex--phone-landscape-only { display: inline-flex !important; }
+}
+@media only screen and (min-width: 40em) {
+    .u-force-inline-flex--tablet-portrait-up { display: inline-flex !important; }
+}
+@media only screen and (min-width: 40em) and (max-width: 63.9375em) {
+    .u-force-inline-flex--tablet-portrait-only { display: inline-flex !important; }
+}
+@media only screen and (min-width: 64em) {
+    .u-force-inline-flex--tablet-landscape-up { display: inline-flex !important; }
+}
+@media only screen and (min-width: 64em) and (max-width: 79.9375em) {
+    .u-force-inline-flex--tablet-landscape-only { display: inline-flex !important; }
+}
+@media only screen and (min-width: 80em) {
+    .u-force-inline-flex--desktop-up { display: inline-flex !important; }
+}
 
 
 /**
@@ -14,6 +234,30 @@
 .u-hidden,
 [hidden] { display: none !important; }
 
+@media only screen and (max-width: 30em) {
+    .u-hidden--phone-portrait-only { display: none !important; }
+}
+@media only screen and (min-width: 30em) {
+    .u-hidden--phone-landscape-up { display: none !important; }
+}
+@media only screen and (min-width: 30em) and (max-width: 39.9375em) {
+    .u-hidden--phone-landscape-only { display: none !important; }
+}
+@media only screen and (min-width: 40em) {
+    .u-hidden--tablet-portrait-up { display: none !important; }
+}
+@media only screen and (min-width: 40em) and (max-width: 63.9375em) {
+    .u-hidden--tablet-portrait-only { display: none !important; }
+}
+@media only screen and (min-width: 64em) {
+    .u-hidden--tablet-landscape-up { display: none !important; }
+}
+@media only screen and (min-width: 64em) and (max-width: 79.9375em) {
+    .u-hidden--tablet-landscape-only { display: none !important; }
+}
+@media only screen and (min-width: 80em) {
+    .u-hidden--desktop-up { display: none !important; }
+}
 
 /**
  * Hide only visually, but have it available for screen readers:
@@ -22,6 +266,30 @@
 
 .u-visually-hidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
 
+@media only screen and (max-width: 30em) {
+    .u-visually-hidden--phone-portrait-only { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+}
+@media only screen and (min-width: 30em) {
+    .u-visually-hidden--phone-landscape-up { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+}
+@media only screen and (min-width: 30em) and (max-width: 39.9375em) {
+    .u-visually-hidden--phone-landscape-only { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+}
+@media only screen and (min-width: 40em) {
+    .u-visually-hidden--tablet-portrait-up { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+}
+@media only screen and (min-width: 40em) and (max-width: 63.9375em) {
+    .u-visually-hidden--tablet-portrait-only { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+}
+@media only screen and (min-width: 64em) {
+    .u-visually-hidden--tablet-landscape-up { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+}
+@media only screen and (min-width: 64em) and (max-width: 79.9375em) {
+    .u-visually-hidden--tablet-landscape-only { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+}
+@media only screen and (min-width: 80em) {
+    .u-visually-hidden--desktop-up { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+}
 
 /**
  * Extends the .visually-hidden class to allow the element
@@ -32,11 +300,58 @@
     .u-visually-hidden.u-focusable:active,
     .u-visually-hidden.u-focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
 
+@media only screen and (max-width: 30em) {
+    .u-visually-hidden--phone-portrait-only.u-focusable:active,.u-visually-hidden--phone-portrait-only.u-focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+}
+@media only screen and (min-width: 30em) {
+    .u-visually-hidden--phone-landscape-up.u-focusable:active,.u-visually-hidden--phone-landscape-up.u-focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+}
+@media only screen and (min-width: 30em) and (max-width: 39.9375em) {
+    .u-visually-hidden--phone-landscape-only.u-focusable:active,.u-visually-hidden--phone-landscape-only.u-focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+}
+@media only screen and (min-width: 40em) {
+    .u-visually-hidden--tablet-portrait-up.u-focusable:active,.u-visually-hidden--tablet-portrait-up.u-focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+}
+@media only screen and (min-width: 40em) and (max-width: 63.9375em) {
+    .u-visually-hidden--tablet-portrait-only.u-focusable:active,.u-visually-hidden--tablet-portrait-only.u-focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+}
+@media only screen and (min-width: 64em) {
+    .u-visually-hidden--tablet-landscape-up.u-focusable:active,.u-visually-hidden--tablet-landscape-up.u-focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+}
+@media only screen and (min-width: 64em) and (max-width: 79.9375em) {
+    .u-visually-hidden--tablet-landscape-only.u-focusable:active,.u-visually-hidden--tablet-landscape-only.u-focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+}
+@media only screen and (min-width: 80em) {
+    .u-visually-hidden--desktop-up.u-focusable:active,.u-visually-hidden--desktop-up.u-focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+}
 
 /**
  * Hide visually and from screen readers, but maintain layout
  */
 
 .u-invisible { visibility: hidden; }
-
+@media only screen and (max-width: 30em) {
+    .u-invisible--phone-portrait-only { visibility: hidden; }
+}
+@media only screen and (min-width: 30em) {
+    .u-invisible--phone-landscape-up { visibility: hidden; }
+}
+@media only screen and (min-width: 30em) and (max-width: 39.9375em) {
+    .u-invisible--phone-landscape-only { visibility: hidden; }
+}
+@media only screen and (min-width: 40em) {
+    .u-invisible--tablet-portrait-up { visibility: hidden; }
+}
+@media only screen and (min-width: 40em) and (max-width: 63.9375em) {
+    .u-invisible--tablet-portrait-only { visibility: hidden; }
+}
+@media only screen and (min-width: 64em) {
+    .u-invisible--tablet-landscape-up { visibility: hidden; }
+}
+@media only screen and (min-width: 64em) and (max-width: 79.9375em) {
+    .u-invisible--tablet-landscape-only { visibility: hidden; }
+}
+@media only screen and (min-width: 80em) {
+    .u-invisible--desktop-up { visibility: hidden; }
+}
 
