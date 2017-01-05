@@ -1,0 +1,41 @@
+﻿/**
+ * Floating Button Component
+ *
+ * A Floating Button that can be used to for Feedback or a Live Chat, etc.
+ *
+ * Notes:
+ * N1. Hack to rotate the letters so it's readable.
+ * N2. Hack to display letters in the same way it's written and not do some other crazy hack.
+ *
+ * Example Usage:
+ * <a href="#" class="c-floating-button u-linkClean u-position-fixed">
+ * 	<span class="c-floating-button__letter">F</span>
+ *	<span class="c-floating-button__letter">e</span>
+ *	<span class="c-floating-button__letter">e</span>
+ * 	<span class="c-floating-button__letter">d</span>
+ * 	<span class="c-floating-button__letter">b</span>
+ * 	<span class="c-floating-button__letter">a</span>
+ *	<span class="c-floating-button__letter">c</span>
+ *	<span class="c-floating-button__letter">k</span>
+ * </a>
+ *
+ */
+
+.c-floating-button {
+  transform: rotate(-90deg);
+  border: none;
+  outline: none;
+  padding: .5em 2em .2em 2em;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  z-index:100;
+  left:-4.7rem;
+  bottom:25vh;
+  opacity:0.7;
+  display:flex /* N2 */;
+  flex-direction:row-reverse /* N2 */;
+}
+
+.c-floating-button__letter{ transform:rotate(-270deg) /* N1 */; }
+
+.c-floating-button:hover,.c-floating-button:focus{ opacity:1; }
