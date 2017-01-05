@@ -1,0 +1,11 @@
+/**
+ * Font Weight
+ * These are specific typography related utilities
+ */
+
+.u-font-weight { font-weight: inherit !important; }
+.u-font-weight--normal { font-weight: normal !important; }
+.u-font-weight--bold { font-weight: bold !important; }
+.u-font-weight--bolder { font-weight: bolder !important; }
+.u-font-weight--lighter { font-weight: lighter !important; }
+
