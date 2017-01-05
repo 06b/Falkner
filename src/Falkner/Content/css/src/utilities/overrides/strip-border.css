@@ -28,7 +28,7 @@
     .u-strip-border--desktop-up { border: 0; }
 }
 
-.u-strip-border-top{ border-top:0; }
+.u-strip-border-top { border-top:0; }
 @media only screen and (max-width: 30em) {
     .u-strip-border-top--phone-portrait-only { border-top: 0; }
 }
@@ -54,7 +54,7 @@
     .u-strip-border-top--desktop-up { border-top: 0; }
 }
 
-.u-strip-border-bottom{ border-bottom:0; }
+.u-strip-border-bottom { border-bottom:0; }
 @media only screen and (max-width: 30em) {
     .u-strip-border-bottom--phone-portrait-only { border-bottom: 0; }
 }
@@ -80,7 +80,7 @@
     .u-strip-border-bottom--desktop-up { border-bottom: 0; }
 }
 
-.u-strip-border-left{ border-left:0; }
+.u-strip-border-left { border-left:0; }
 @media only screen and (max-width: 30em) {
     .u-phone-portrait-only--strip-border-left { border-left: 0; }
 }
@@ -106,7 +106,7 @@
     .u-desktop-up--strip-border-left { border-left: 0; }
 }
 
-.u-strip-border-right{ border-right:0; }
+.u-strip-border-right { border-right:0; }
 @media only screen and (max-width: 30em) {
     .u-phone-portrait-only--strip-border-right { border-right: 0; }
 }
