@@ -1,14 +1,9 @@
 /**
- * Adds different margin sizes
+ * Adds different margin sizes which can be used for spacing
  */
 
-.u-aside-top { margin-top:1rem; }
-.u-aside-bottom { margin-bottom:1rem; }
-.u-aside-left { margin-left:1rem; }
-.u-aside-right { margin-right:1rem; }
-
-.u-aside-top--small { margin-top:0.5rem; }
-.u-aside-bottom--small { margin-bottom:0.5rem; }
-.u-aside-left--small { margin-left:0.5rem; }
-.u-aside-right--small { margin-right:0.5rem; }
+.u-aside-top { margin-top:var(--t-gutter) !important; }
+.u-aside-bottom { margin-bottom:var(--t-gutter) !important; }
+.u-aside-left { margin-left:var(--t-gutter) !important; }
+.u-aside-right { margin-right:var(--t-gutter) !important; }
 
