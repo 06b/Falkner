@@ -51,7 +51,14 @@
 
     /* ----- Colors (Text) ----- */
      --t-color-hyperlink: var(--default-link);
-     --t-color-content-text:var(--jet-black);
+     --t-color-content-text: var(--jet-black);
+     --t-color-content-text--primary: var(--jet-black);
+     --t-color-content-text--secondary: var(--jet-black);
+     --t-color-content-text--tertiary: var(--jet-black);
+     --t-color-content-text--accent: var(--jet-black);
+     --t-color-content-text--accent-secondary: var(--jet-black);
+     --t-color-content-text--success: var(--chateau-green);
+     --t-color-content-text--failure: var(--red-orange);
 
     /* ----- Colors (Background) ----- */
      --t-background-body: var(--pure-white);

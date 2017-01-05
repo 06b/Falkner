@@ -66,20 +66,12 @@ hr { border-color:#000;}
 /**
  * Theme styling for text color styles
  */
-.t-color { fill: #000; }
-    .t-color--primary { fill:#000; }
-    .t-color--secondary { fill:#000; }
-    .t-color--tertiary { fill:#000; }
-    .t-color--accent { fill:#000; }
-    .t-color--accent-secondary { fill:#000; }
-
-
-/**
- * Theme status colors when text needs to be set to a certain color due to a status
- */
-.t-status{ color: #fff;}
-
-.t-status--success{color: #70ad47;}
-.t-status--warning{color: #D43900;}
-.t-status--notify{color: #D43900;}
-.t-status--inform{ color: #1C4E97;}
+.t-color { color:var(--t-color-content-text); }
+    .t-color--primary { color: var(--t-color-content-text--primary); }
+    .t-color--secondary { color: var(--t-color-content-text--secondary); }
+    .t-color--tertiary { color: var(--t-color-content-text--tertiary); }
+    .t-color--accent { color: var(--t-color-content-text--accent); }
+    .t-color--accent-secondary { color: var(--t-color-content-text--accent-secondary); }
+    .t-color--hyperlink { color: var(--t-color-hyperlink); }
+    .t-color--success { color:var(--t-color-content-text--success); }
+    .t-color--failure { color:var(--t-color-content-text--failure); }
