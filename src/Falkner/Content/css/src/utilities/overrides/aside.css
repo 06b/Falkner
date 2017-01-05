@@ -1,9 +1,54 @@
 /**
  * Adds different margin sizes which can be used for spacing
+ *
+ * Size Modifier(s):
+ * .u-aside-*--diminutive   - Extends '.u-aside-*' where * is the direction to be diminutive.
+ * .u-aside-*--tiny         - Extends '.u-aside-*' where * is the direction to be tiny.
+ * .u-aside-*--small        - Extends '.u-aside-*' where * is the direction to be small.
+ * .u-aside-*--large        - Extends '.u-aside-*' where * is the direction to be large.
+ * .u-aside-*--huge         - Extends '.u-aside-*' where * is the direction to be huge.
+ * .u-aside-*--gargantuan   - Extends '.u-aside-*' where * is the direction to be gargantuan.
+ * .u-aside-*--colossal     - Extends '.u-aside-*' where * is the direction to be colossal.
+ *
  */
 
 .u-aside-top { margin-top:var(--t-gutter) !important; }
+.u-aside-top--diminutive { margin-top:var(--t-gutter--diminutive) !important; }
+.u-aside-top--tiny { margin-top:var(--t-gutter--tiny) !important; }
+.u-aside-top--small { margin-top:var(--t-gutter--small) !important; }
+.u-aside-top--medium { margin-top:var(--t-gutter--medium) !important; }
+.u-aside-top--large { margin-top:var(--t-gutter--large) !important; }
+.u-aside-top--huge { margin-top:var(--t-gutter--huge) !important; }
+.u-aside-top--gargantuan { margin-top:var(--t-gutter--gargantuan) !important; }
+.u-aside-top--colossal { margin-top:var(--t-gutter--colossal) !important; }
+
 .u-aside-bottom { margin-bottom:var(--t-gutter) !important; }
+.u-aside-bottom--diminutive { margin-bottom:var(--t-gutter--diminutive) !important; }
+.u-aside-bottom--tiny { margin-bottom:var(--t-gutter--tiny) !important; }
+.u-aside-bottom--small { margin-bottom:var(--t-gutter--small) !important; }
+.u-aside-bottom--medium { margin-bottom:var(--t-gutter--medium) !important; }
+.u-aside-bottom--large { margin-bottom:var(--t-gutter--large) !important; }
+.u-aside-bottom--huge { margin-bottom:var(--t-gutter--huge) !important; }
+.u-aside-bottom--gargantuan { margin-bottom:var(--t-gutter--gargantuan) !important; }
+.u-aside-bottom--colossal { margin-bottom:var(--t-gutter--colossal) !important; }
+
 .u-aside-left { margin-left:var(--t-gutter) !important; }
+.u-aside-left--diminutive { margin-left:var(--t-gutter--diminutive) !important; }
+.u-aside-left--tiny { margin-left:var(--t-gutter--tiny) !important; }
+.u-aside-left--small { margin-left:var(--t-gutter--small) !important; }
+.u-aside-left--medium { margin-left:var(--t-gutter--medium) !important; }
+.u-aside-left--large { margin-left:var(--t-gutter--large) !important; }
+.u-aside-left--huge { margin-left:var(--t-gutter--huge) !important; }
+.u-aside-left--gargantuan { margin-left:var(--t-gutter--gargantuan) !important; }
+.u-aside-left--colossal { margin-left:var(--t-gutter--colossal) !important; }
+
 .u-aside-right { margin-right:var(--t-gutter) !important; }
+.u-aside-right--diminutive { margin-right:var(--t-gutter--diminutive) !important; }
+.u-aside-right--tiny { margin-right:var(--t-gutter--tiny) !important; }
+.u-aside-right--small { margin-right:var(--t-gutter--small) !important; }
+.u-aside-right--medium { margin-right:var(--t-gutter--medium) !important; }
+.u-aside-right--large { margin-right:var(--t-gutter--large) !important; }
+.u-aside-right--huge { margin-right:var(--t-gutter--huge) !important; }
+.u-aside-right--gargantuan { margin-right:var(--t-gutter--gargantuan) !important; }
+.u-aside-right--colossal { margin-right:var(--t-gutter--colossal) !important; }
 
