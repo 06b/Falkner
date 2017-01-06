@@ -26,11 +26,11 @@
 }
 
 @media only screen and (min-width: 30em) and (max-width: 39.9375em) {
-    .u-font-weight--phone-landscape-only  { font-weight: inherit !important; }
-    .u-font-weight--normal--phone-landscape-only  { font-weight: normal !important; }
-    .u-font-weight--bold--phone-landscape-only  { font-weight: bold !important; }
-    .u-font-weight--bolder--phone-landscape-only  { font-weight: bolder !important; }
-    .u-font-weight--lighter--phone-landscape-only  { font-weight: lighter !important; }
+    .u-font-weight--phone-landscape-only { font-weight: inherit !important; }
+    .u-font-weight--normal--phone-landscape-only { font-weight: normal !important; }
+    .u-font-weight--bold--phone-landscape-only { font-weight: bold !important; }
+    .u-font-weight--bolder--phone-landscape-only { font-weight: bolder !important; }
+    .u-font-weight--lighter--phone-landscape-only { font-weight: lighter !important; }
 }
 
 @media only screen and (min-width: 40em) {
