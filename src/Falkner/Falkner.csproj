@@ -110,12 +110,14 @@
     <Content Include="Content\css\src\objects\navigation.css" />
     <Content Include="Content\css\src\utilities\shame.css" />
     <Content Include="Content\css\src\_settings\project.css" />
+    <Content Include="Gulpfile.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="package.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
