@@ -37,7 +37,7 @@
 
 .c-divider--extend-medium { margin-right: calc( -1 * var(--t-gutter--medium)); margin-left: calc( -1 * var(--t-gutter--medium)); }
 
-.c-divider--extend{ margin-right: calc(-1 * var(--t-gutter)); margin-left: calc(-1 * var(--t-gutter)); }
+.c-divider--extend { margin-right: calc(-1 * var(--t-gutter)); margin-left: calc(-1 * var(--t-gutter)); }
 
 .c-divider--extend-large { margin-right: calc( -1 * var(--t-gutter--large)); margin-left: calc( -1 * var(--t-gutter--large)); }
 
