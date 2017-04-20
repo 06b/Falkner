@@ -68,7 +68,7 @@ gulp.task('stylelint', function () {
             "value-list-comma-space-before": "never",
 
             //Custom Properties
-            "custom-property-no-outside-root": true,
+            //"custom-property-no-outside-root": true, //TODO: Deprecated as of 7.8.0 - a stylelint plugin may exist in it's place
 
             "shorthand-property-no-redundant-values": true,
             "property-case": "lower",
@@ -82,10 +82,10 @@ gulp.task('stylelint', function () {
             //TODO: Selector
             //TODO: Selector List
 
-            "root-no-standard-properties": true,
+            //"root-no-standard-properties": true, //Deprecated as of 7.8.0 - a stylelint plugin may exist in it's place
 
-            "rule-non-nested-empty-line-before": ["always-multi-line", {
-                "ignore": ["after-comment"]
+            "rule-empty-line-before": ["always-multi-line", {
+                "ignore": ["after-comment","inside-block"]
             }],
 
             //TODO: Media Feature
@@ -93,13 +93,14 @@ gulp.task('stylelint', function () {
             //TODO: Media query list
             //TODO: At-rule
 
-            "stylelint-disable-reason": "always-before",
 
+            //stylelint-disable comment
+            //"stylelint-disable-reason": "always-before", //Deprecated as of 7.8.0 - a stylelint plugin may exist in it's place
             //TODO: Comments
             //TODO: General / Sheet
             "max-empty-lines": 2,
             //"max-line-length": 110, //This may or may not be an issue...
-            "no-browser-hacks": true,
+            //"no-browser-hacks": true, //Deprecated as of 7.8.0 - a stylelint plugin may exist in it's place - See: stylelint-no-browser-hacks: https://stylelint.io/user-guide/plugins/
             //"no-descending-specificity": true, //Need to look into
             "no-duplicate-selectors": true,
             "no-eol-whitespace": true,
