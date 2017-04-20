@@ -4,5 +4,6 @@
 
 .u-normalize-line-height { line-height:1.5; }
 .u-normalize-line-height--wrapped-headings { line-height:1.125; }
+.u-normalize-line-height--one { line-height:1; }
 .u-normalize-line-height--zero { line-height:0; }
 
