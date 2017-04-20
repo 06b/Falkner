@@ -109,6 +109,16 @@ gulp.task('stylelint', function () {
             //"declaration-no-important": true, //Only use when checking if !important is being used - note that !important is acceptable in utilities
 
             //TODO: Declaration Block
+            "declaration-block-no-duplicate-properties": [true, {
+                "ignore": ["consecutive-duplicates-with-different-values"]
+            }],
+            "declaration-block-no-redundant-longhand-properties": true,
+            "declaration-block-no-shorthand-property-overrides": true,
+            "declaration-block-semicolon-newline-after": "always-multi-line",
+            "declaration-block-semicolon-newline-before": "never-multi-line",
+            "declaration-block-semicolon-space-after": "always-single-line",
+            "declaration-block-semicolon-space-before": "never",
+            "declaration-block-trailing-semicolon": "always",
             //TODO: Block
             //TODO: Selector
             "selector-attribute-brackets-space-inside": "never",
