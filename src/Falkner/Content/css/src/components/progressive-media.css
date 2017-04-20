@@ -1,0 +1,34 @@
+﻿/**
+ * Progressive Media Component
+ *
+ * Progressive Media Components is a combo attempt at combining the blurred effect and Inline Image Data to mimic Low Quality Image Placeholders
+ *
+ * Source: https://jmperezperez.com/medium-image-progressive-loading-placeholder/
+ * Source: https://blog.placeit.net/ux-tactics-make-slow-things-seem-faster/
+ *
+ * Notes:
+ * N1. When `c-progressive-media__proxy` is used with loading background-urls - mimic progressive image rendering by blurring the item and scaling it to the images container
+ * N2. `c-progressive-media__content` and position the image above the `c-progressive-media__proxy`
+ * N3. Absolute Horizontal and Vertical Centering trick - https://www.smashingmagazine.com/2013/08/absolute-horizontal-vertical-centering-css/
+ * N4. Use `c-progressive-media__proxy--contain` to scale the image to the largest size that can fit inside the background positioning area - used in cases where you don't know the width or height of the image
+ * N5. Use to fill up space around the `c-progressive-media__content` to hide `c-progressive-media__proxy` when `c-progressive-media__content` is a transparent image.
+ * N6. When `c-progressive-media__proxy--contain` is used, due to the content and/or proxy width and height being unknown - the proxy blur overflow can not be hidden, so use to hide the blur on a successful image load
+ *     which requires javascript to detect that the image has loaded as the outline will fill the container depending on it's value which covers the proxy which makes using this technique pointless.
+ *
+ * Example Usage:
+ * <div class="c-progressive-media">
+ *     <img class="c-progressive-media__content" src="" alt="" />
+ *     <div class="c-progressive-media__proxy" style="background-image:url('data:image/jpeg;base64,/9j/4AA....');">
+ *     </div>
+ * </div>
+ *
+ */
+
+.c-progressive-media { overflow: hidden; position:relative; }
+.c-progressive-media__proxy { filter:blur(5px) /* N1 */; background-size: cover /* N1*/; background-repeat:no-repeat /* N1 */; background-position:center /* N1 */; overflow:hidden; top:0 /* N3 */; right:0 /* N3 */; bottom:0 /* N3 */; left:0 /* N3 */; position:absolute; z-index:1; }
+.c-progressive-media__content { top:0; position:absolute/* N2 */; z-index:2 /* N2 */; }
+
+.c-progressive-media__proxy--contain{ background-size:contain /* N4 */; }
+
+.c-progressive-media__content--transparency-fix { background-color: var(--t-background-content-block) /* N5 */; }
+.c-progressive-media__content--successful-load-fix { outline:3in solid var(--t-background-content-block) /* N6 */; }
