@@ -111,6 +111,21 @@ gulp.task('stylelint', function () {
             //TODO: Declaration Block
             //TODO: Block
             //TODO: Selector
+            "selector-attribute-brackets-space-inside": "never",
+            "selector-attribute-operator-space-after": "never",
+            "selector-attribute-operator-space-before": "never",
+            "selector-combinator-space-after": "always",
+            "selector-combinator-space-before": "always",
+            "selector-descendant-combinator-no-non-space": true,
+            "selector-no-id": true,
+            "selector-pseudo-class-case": "lower",
+            "selector-pseudo-class-no-unknown": true,
+            "selector-pseudo-class-parentheses-space-inside": "never",
+            "selector-pseudo-element-case": "lower",
+            "selector-pseudo-element-no-unknown": true,
+            "selector-type-case": "lower",
+            "selector-type-no-unknown": true,
+            "selector-max-empty-lines":0,
             //TODO: Selector List
 
             //"root-no-standard-properties": true, //Deprecated as of 7.8.0 - a stylelint plugin may exist in it's place
