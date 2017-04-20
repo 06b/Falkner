@@ -4,9 +4,9 @@
   "private": true,
   "devDependencies": {
     "gulp": "3.9.1",
-    "gulp-postcss": "6.3.0",
+    "gulp-postcss": "6.4.0",
     "postcss-reporter": "3.0.0",
-    "stylelint": "6.3.3"
+    "stylelint": "7.10.1"
   }
 
 }
