@@ -49,6 +49,21 @@
 
     --t-size-body-copy: calc(var(--initial-rem-unit) * 0.875);
 
+    --t-size-giga: calc(var(--initial-rem-unit) * 6);
+    --t-size-mega: calc(var(--initial-rem-unit) * 4.5);
+    --t-size-kilo: calc(var(--initial-rem-unit) * 3);
+
+    --t-size-alpha: calc(var(--initial-rem-unit) * 2);
+    --t-size-beta: calc(var(--initial-rem-unit) * 1.5);
+    --t-size-gamma: calc(var(--initial-rem-unit) * 1.125);
+    --t-size-delta: calc(var(--initial-rem-unit) * 1);
+    --t-size-epsilon: calc(var(--initial-rem-unit) * 0.875);
+    /*--t-size-zeta: calc(var(--initial-rem-unit) * 1);*/
+
+    --t-size-lede: calc(var(--t-size-body-copy) * 1.25);
+    --t-size-milli: calc(var(--initial-rem-unit) * 0.75);
+    --t-size-micro: calc(var(--initial-rem-unit) * 0.625);
+
     /* ----- Colors (Text) ----- */
      --t-color-hyperlink: var(--default-link);
      --t-color-content-text: var(--jet-black);
