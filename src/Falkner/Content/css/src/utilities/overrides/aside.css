@@ -2,23 +2,23 @@
  * Adds different margin sizes which can be used for spacing
  *
  * Size Modifier(s):
- * .u-aside-*--diminutive   - Extends '.u-aside-*' where * is the direction to be diminutive.
- * .u-aside-*--tiny         - Extends '.u-aside-*' where * is the direction to be tiny.
- * .u-aside-*--small        - Extends '.u-aside-*' where * is the direction to be small.
- * .u-aside-*--large        - Extends '.u-aside-*' where * is the direction to be large.
- * .u-aside-*--huge         - Extends '.u-aside-*' where * is the direction to be huge.
- * .u-aside-*--gargantuan   - Extends '.u-aside-*' where * is the direction to be gargantuan.
- * .u-aside-*--colossal     - Extends '.u-aside-*' where * is the direction to be colossal.
+ * .u-aside-*--diminutive   - Extends `.u-aside-*` where * is the direction to be diminutive.
+ * .u-aside-*--tiny         - Extends `.u-aside-*` where * is the direction to be tiny.
+ * .u-aside-*--small        - Extends `.u-aside-*` where * is the direction to be small.
+ * .u-aside-*--large        - Extends `.u-aside-*` where * is the direction to be large.
+ * .u-aside-*--huge         - Extends `.u-aside-*` where * is the direction to be huge.
+ * .u-aside-*--gargantuan   - Extends `.u-aside-*` where * is the direction to be gargantuan.
+ * .u-aside-*--colossal     - Extends `.u-aside-*` where * is the direction to be colossal.
  *
  * Responsive Modifier(s):
- * .u-aside-*--phone-portrait-only        - Extends '.u-aside-*' where * is the direction to be triggered at that breakpoint only
- * .u-aside-*--phone-landscape-up         - Extends '.u-aside-*' where * is the direction to be triggered at that breakpoint and above
- * .u-aside-*--phone-landscape-only       - Extends '.u-aside-*' where * is the direction to be triggered at that breakpoint only
- * .u-aside-*--tablet-portrait-up         - Extends '.u-aside-*' where * is the direction to be triggered at that breakpoint and above
- * .u-aside-*--tablet-portrait-only       - Extends '.u-aside-*' where * is the direction to be triggered at that breakpoint only
- * .u-aside-*--tablet-landscape-up        - Extends '.u-aside-*' where * is the direction to be triggered at that breakpoint and above
- * .u-aside-*--tablet-landscape-only      - Extends '.u-aside-*' where * is the direction to be triggered at that breakpoint only
- * .u-aside-*--desktop-up                 - Extends '.u-aside-*' where * is the direction to be triggered at that breakpoint and above
+ * .u-aside-*--phone-portrait-only        - Extends `.u-aside-*` where * is the direction to be triggered at that breakpoint only
+ * .u-aside-*--phone-landscape-up         - Extends `.u-aside-*` where * is the direction to be triggered at that breakpoint and above
+ * .u-aside-*--phone-landscape-only       - Extends `.u-aside-*` where * is the direction to be triggered at that breakpoint only
+ * .u-aside-*--tablet-portrait-up         - Extends `.u-aside-*` where * is the direction to be triggered at that breakpoint and above
+ * .u-aside-*--tablet-portrait-only       - Extends `.u-aside-*` where * is the direction to be triggered at that breakpoint only
+ * .u-aside-*--tablet-landscape-up        - Extends `.u-aside-*` where * is the direction to be triggered at that breakpoint and above
+ * .u-aside-*--tablet-landscape-only      - Extends `.u-aside-*` where * is the direction to be triggered at that breakpoint only
+ * .u-aside-*--desktop-up                 - Extends `.u-aside-*` where * is the direction to be triggered at that breakpoint and above
  *
  */
 
