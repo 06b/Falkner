@@ -54,7 +54,7 @@ gulp.task('stylelint', function () {
             "string-quotes": "double",
 
             //Length
-            "number-zero-length-no-unit": true, // As of 6.6.0 this has been deprecated and is now - length-zero-no-unit
+            "length-zero-no-unit": true,
 
             //Unit
             "unit-no-unknown": true,
