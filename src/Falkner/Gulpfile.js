@@ -126,7 +126,7 @@ gulp.task('stylelint', function () {
     // Stylesheet source:
     ['./Content/css/src/**/*.css',
     // Ignore linting vendor assets:
-    '!./Content/css/src/vendor/**/*.css', '!./Content/css/src/theme/kendo*.css', '!./Content/css/src/utilities/debug.css', '!./Content/css/src/utilities/deprecated.css', '!./Content/css/src/base/00-Normalize.css']//, '!./Content/css/src/_settings/**/*.css']
+    '!./Content/css/src/vendor/**/*.css', '!./Content/css/src/utilities/debug.css', '!./Content/css/src/utilities/deprecated.css', '!./Content/css/src/base/00-Normalize.css']//, '!./Content/css/src/_settings/**/*.css']
   )
   .pipe(postcss(processors));
 });
