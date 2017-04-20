@@ -85,6 +85,7 @@
     <Content Include="Content\css\src\utilities\overrides\aside.css" />
     <Content Include="Content\css\src\utilities\overrides\clearfix.css" />
     <Content Include="Content\css\src\utilities\overrides\cursor.css" />
+    <Content Include="Content\css\src\utilities\overrides\depth.css" />
     <Content Include="Content\css\src\utilities\overrides\flex-utilities.css" />
     <Content Include="Content\css\src\utilities\overrides\floats.css" />
     <Content Include="Content\css\src\utilities\overrides\font-size.css" />
