@@ -25,7 +25,7 @@
   transform: rotate(-90deg);
   border: none;
   outline: none;
-  padding: .5em 2em .2em 2em;
+  padding: 0.4em 1.3em 0.2em 0;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   z-index:100;
