@@ -26,7 +26,7 @@
 
 /**
  * Size Modifier Notes:
- * 'cacl(-1 * )' is required in order to convert CSS Custom Properties from a number to a negative length - https://twitter.com/LeaVerou/status/737573310792237056
+ * `cacl(-1 * )` is required in order to convert CSS Custom Properties from a number to a negative length - https://twitter.com/LeaVerou/status/737573310792237056
  */
 
 .c-divider--extend-diminutive { margin-right: calc( -1 * var(--t-gutter--diminutive)); margin-left: calc( -1 * var(--t-gutter--diminutive)); }
