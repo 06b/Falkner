@@ -19,7 +19,7 @@ body { background:var(--t-background-body); height:100%; }
  */
 .l-grid { font-family:sans-serif /* 1 */; }
 
-html, button, input, select, textarea, .l-grid [class *= "l-grid__column"] { font-family:var(--t-font-stack-content) /* 1 */; }
+html, button, input, select, textarea, .l-grid [class*="l-grid__column"] { font-family:var(--t-font-stack-content) /* 1 */; }
 
 /**
  * 'Default' link styling css tip: https://twitter.com/nathansmith/status/673925683957993472
