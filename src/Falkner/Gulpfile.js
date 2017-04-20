@@ -32,18 +32,31 @@ gulp.task('stylelint', function () {
     var stylelintConfig = {
         "rules": {
             //Color Rules via http://stylelint.io/user-guide/rules/
-            "color-no-invalid-hex": true,
+            //"color-hex-case": "lower", //TBD
             "color-hex-length": "short",
             "color-named": "never",
             "color-no-invalid-hex": true,
+
             //Font Family
-            //"font-family-name-quotes": "always-where-recommended", // Doesn't appear to work as rules claim as of stylelint: "6.3.3"
-            //"font-family-no-duplicate-names": true, // Undefined Rule as of as of stylelint: "6.3.3"
+            "font-family-name-quotes": "always-where-recommended",
+            "font-family-no-duplicate-names": true,
+
             //Font weight
-            //"font-weight-notation": "named-where-possible", //TODO: Look into this more
+            "font-weight-notation": "named-where-possible", //TODO: Look into this more
 
             //Function
-            //TODO: Finish Function List
+            "function-calc-no-unspaced-operator": true,
+            "function-linear-gradient-no-nonstandard-direction": true,
+            "function-max-empty-lines": 0,
+            "function-name-case": "lower",
+            "function-parentheses-newline-inside": "always-multi-line",
+            "function-parentheses-space-inside": "never",
+            "function-url-data-uris": "never",
+            "function-url-no-scheme-relative": true,
+            "function-url-quotes": ["always", {
+                "except": ["empty"]
+            }],
+            "function-whitespace-after": "always",
 
             //Number
             //"number-leading-zero":"always", //Currently the impact to get rid of this is pretty large, but I can see where it's useful
@@ -56,6 +69,8 @@ gulp.task('stylelint', function () {
             //Length
             "length-zero-no-unit": true,
 
+            //TODO: Time
+
             //Unit
             "unit-no-unknown": true,
             "unit-case": "lower",
@@ -64,19 +79,35 @@ gulp.task('stylelint', function () {
             "value-no-vendor-prefix": true,
             "value-keyword-case": "lower",
 
+            //Value list
+            "value-list-comma-newline-after": "always-multi-line",
+            "value-list-comma-newline-before": "always-multi-line",
             "value-list-comma-space-after": "always",
             "value-list-comma-space-before": "never",
+            "value-list-max-empty-lines": 0,
 
             //Custom Properties
             //"custom-property-no-outside-root": true, //TODO: Deprecated as of 7.8.0 - a stylelint plugin may exist in it's place
 
+            //Shorthand property
             "shorthand-property-no-redundant-values": true,
-            "property-case": "lower",
 
-            //"property-no-unknown":true, // Undefined Rule as of as of stylelint: "6.3.3"
+            //Property
+            "property-case": "lower",
+            "property-no-unknown":true,
             //"property-no-vendor-prefix": true, //Currently the impact isn't huge but should be a todo in the future
 
-            //TODO: Declaration
+            //Keyframe declaration
+            "keyframe-declaration-no-important": true,
+
+            //Declaration
+            "declaration-bang-space-after": "never",
+            "declaration-bang-space-before": "always",
+            //"declaration-colon-space-after": "always-single-line", //Currently the impact isn't huge but should be a todo in the future
+            "declaration-colon-space-before": "never",
+            "declaration-empty-line-before": "never",
+            //"declaration-no-important": true, //Only use when checking if !important is being used - note that !important is acceptable in utilities
+
             //TODO: Declaration Block
             //TODO: Block
             //TODO: Selector
@@ -88,26 +119,46 @@ gulp.task('stylelint', function () {
                 "ignore": ["after-comment","inside-block"]
             }],
 
+            //TODO: Root rule
+            //TODO: Rule
             //TODO: Media Feature
+            "media-feature-name-case": "lower",
+            "media-feature-name-no-unknown": true,
             //TODO: Custom Media
-            //TODO: Media query list
-            //TODO: At-rule
+            //Media query list
+            "media-query-list-comma-newline-after": "always-multi-line",
+            "media-query-list-comma-newline-before": "never-multi-line",
+            "media-query-list-comma-space-after": "always-single-line",
+            "media-query-list-comma-space-before": "never-single-line",
 
+            //At-rule
+            //"at-rule-empty-line-before": "always",
+            "at-rule-name-case": "lower",
+            //"at-rule-name-newline-after": "always", // Undefined Rule as of as of stylelint: "6.3.3"
+            "at-rule-name-space-after": "always",
+            "at-rule-no-unknown": true,
+            "at-rule-no-vendor-prefix": true,
+            "at-rule-semicolon-newline-after": "always",
 
             //stylelint-disable comment
             //"stylelint-disable-reason": "always-before", //Deprecated as of 7.8.0 - a stylelint plugin may exist in it's place
-            //TODO: Comments
+
+            //Comments
+            "comment-no-empty": true,
+
             //TODO: General / Sheet
             "max-empty-lines": 2,
-            //"max-line-length": 110, //This may or may not be an issue...
+            //"max-line-length": [110, {
+            //    "ignore": ["comments"]
+            // }], //This may or may not be an issue...
             //"no-browser-hacks": true, //Deprecated as of 7.8.0 - a stylelint plugin may exist in it's place - See: stylelint-no-browser-hacks: https://stylelint.io/user-guide/plugins/
             //"no-descending-specificity": true, //Need to look into
             "no-duplicate-selectors": true,
             "no-eol-whitespace": true,
             "no-extra-semicolons": true,
-            //"no-indistinguishable-colors": true, // Either Settings needs to be excluded or need to look into when this issue is taken care of: https://github.com/SlexAxton/css-colorguard/issues/49 - or attempt to disable around rules due to this issue
+            //"no-indistinguishable-colors": true, // Either Settings needs to be excluded or need to look into when this issue is taken care of: https://github.com/SlexAxton/css-colorguard/issues/49 - or attempt to disable around rules due to this issue - Deprecated
             "no-invalid-double-slash-comments": true,
-            //"no-missing-end-of-source-newline": true, // Undefined Rule as of as of stylelint: "6.3.3"
+            "no-missing-end-of-source-newline": true,
             "no-unknown-animations": true,
             //TODO: Setup supported browser list for not only this rule but theme building - https://stylelint.io/user-guide/rules/no-unsupported-browser-features/
             //"no-unsupported-browser-features": true
