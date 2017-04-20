@@ -29,16 +29,16 @@
  * `cacl(-1 * )` is required in order to convert CSS Custom Properties from a number to a negative length - https://twitter.com/LeaVerou/status/737573310792237056
  */
 
-.c-divider--extend-diminutive { margin-right: calc( -1 * var(--t-gutter--diminutive)); margin-left: calc( -1 * var(--t-gutter--diminutive)); }
+.c-divider--extend-diminutive { margin-right: calc(-1 * var(--t-gutter--diminutive)); margin-left: calc(-1 * var(--t-gutter--diminutive)); }
 
-.c-divider--extend-tiny { margin-right: calc( -1 * var(--t-gutter--tiny)); margin-left: calc( -1 * var(--t-gutter--small)); }
+.c-divider--extend-tiny { margin-right: calc(-1 * var(--t-gutter--tiny)); margin-left: calc(-1 * var(--t-gutter--small)); }
 
-.c-divider--extend-small { margin-right: calc( -1 * var(--t-gutter--small)); margin-left: calc( -1 * var(--t-gutter--small)); }
+.c-divider--extend-small { margin-right: calc(-1 * var(--t-gutter--small)); margin-left: calc(-1 * var(--t-gutter--small)); }
 
-.c-divider--extend-medium { margin-right: calc( -1 * var(--t-gutter--medium)); margin-left: calc( -1 * var(--t-gutter--medium)); }
+.c-divider--extend-medium { margin-right: calc(-1 * var(--t-gutter--medium)); margin-left: calc(-1 * var(--t-gutter--medium)); }
 
 .c-divider--extend { margin-right: calc(-1 * var(--t-gutter)); margin-left: calc(-1 * var(--t-gutter)); }
 
-.c-divider--extend-large { margin-right: calc( -1 * var(--t-gutter--large)); margin-left: calc( -1 * var(--t-gutter--large)); }
+.c-divider--extend-large { margin-right: calc(-1 * var(--t-gutter--large)); margin-left: calc(-1 * var(--t-gutter--large)); }
 
-.c-divider--extend-huge { margin-right: calc( -1 * var(--t-gutter--huge)); margin-left: calc( -1 * var(--t-gutter--huge)); }
+.c-divider--extend-huge { margin-right: calc(-1 * var(--t-gutter--huge)); margin-left: calc(-1 * var(--t-gutter--huge)); }
