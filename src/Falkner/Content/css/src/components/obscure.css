@@ -1,0 +1,15 @@
+﻿/**
+ * Obscure Component
+ *
+ * Used to conceal content in cases where a traditional modal window doesn't work for example:
+ * using the obscure component to dim a section out or blur a section for example sensitive material.
+ *
+ */
+
+.c-obscure { }
+.c-obscure--screen { /* Used to lighten in example - when not using a theme prefixed background for example */ }
+.c-obscure--darken { /* Used to darken in example - when not using a theme prefixed background for example */ }
+.c-obscure--blurred { filter:blur(5px); }
+.c-obscure--blurred--1 { filter:blur(1px); }
+
+.c-obscure--blurred--1--grayscale{ filter: blur(1px) grayscale(1); }

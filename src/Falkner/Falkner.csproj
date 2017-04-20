@@ -64,6 +64,7 @@
     <Content Include="Content\css\src\components\legal.css" />
     <Content Include="Content\css\src\components\logo.css" />
     <Content Include="Content\css\src\components\marginal-highlight.css" />
+    <Content Include="Content\css\src\components\obscure.css" />
     <Content Include="Content\css\src\components\oversize-button.css" />
     <Content Include="Content\css\src\components\preloader.css" />
     <Content Include="Content\css\src\components\pseudo-upload.css" />
