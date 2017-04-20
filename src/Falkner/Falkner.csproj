@@ -57,6 +57,7 @@
     <Content Include="Content\css\src\components\collapse.css" />
     <Content Include="Content\css\src\components\counter.css" />
     <Content Include="Content\css\src\components\divider.css" />
+    <Content Include="Content\css\src\components\expansion-limit.css" />
     <Content Include="Content\css\src\components\floating-button.css" />
     <Content Include="Content\css\src\components\footer-navigation.css" />
     <Content Include="Content\css\src\components\header-navigation.css" />
