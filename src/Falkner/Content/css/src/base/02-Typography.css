@@ -8,9 +8,11 @@
 /**
  * 1. For accessibility, the base line-height should be 1.5 times the base font-size
  * http://www.w3.org/TR/WCAG20/#visual-audio-contrast-visual-presentation
+ * 2. Responsive Typography: https://madebymike.com.au/writing/precise-control-responsive-typography/
+ * Related: https://www.smashingmagazine.com/2016/05/fluid-typography/
  */
 
-body { font-size: var(--t-size-body-copy) /* 1 */; line-height: 1.5 /* 1 */; }
+body { font-size: calc(var(--t-size-body-copy) + 0.025vw) /* 2 */; line-height: 1.5 /* 1 */; }
 
 
 /**
@@ -19,15 +21,17 @@ body { font-size: var(--t-size-body-copy) /* 1 */; line-height: 1.5 /* 1 */; }
  * Extra class names allow same font-size to be used on other elements to maintain the semantically appropriate heading levels
  *
  * 1. Decrease the line-height of wrapped headings - https://twitter.com/heydonworks/status/672716556179283968
+ * 2. Responsive Typography: https://madebymike.com.au/writing/precise-control-responsive-typography/
+ * Related: https://www.smashingmagazine.com/2016/05/fluid-typography/
  */
 
 h1,h2,h3,h4,h5,h6 { line-height:1.125 /* 1 */; }
 
-h1 { }
-h2 { }
-h3 { }
-h4 { }
-h5 { }
+h1 { font-size: calc(var(--t-size-alpha) + 0.1vw) /* 2 */; }
+h2 { font-size: calc(var(--t-size-beta) + 0.1vw) /* 2 */; }
+h3 { font-size: calc(var(--t-size-gamma) + 0.1vw) /* 2 */; }
+h4 { font-size: calc(var(--t-size-delta) + 0.1vw) /* 2 */; }
+h5 { font-size:calc(var(--t-size-epsilon) + 0.1vw) /* 2 */; }
 h6 { }
 
 .h1, .alpha { }
