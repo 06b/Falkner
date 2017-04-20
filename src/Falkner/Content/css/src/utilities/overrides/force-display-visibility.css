@@ -31,8 +31,8 @@
 /**
  * Used to force an element's display inline-block
  * 1. Support: Firefox
- *    Details: An image styled 'max-width:100%' within an inline-block will display at its default size, and not limit its width to 100% of an ancestral container.
- *    Fix: Set 'max-width:100%' within the inline-block
+ *    Details: An image styled `max-width:100%` within an inline-block will display at its default size, and not limit its width to 100% of an ancestral container.
+ *    Fix: Set `max-width:100%` within the inline-block
  */
 .u-force-inline-block { display: inline-block !important; max-width:100% /* 1 */; }
 @media only screen and (max-width: 30em) {
