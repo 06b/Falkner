@@ -18,7 +18,10 @@ body { font-size: calc(var(--t-size-body-copy) + 0.025vw) /* 2 */; line-height: 
 /**
  * Headings
  *
- * Extra class names allow same font-size to be used on other elements to maintain the semantically appropriate heading levels
+ * Simple default styles for headings 1 through 6. Anything more opinionated
+ * than simple font-size changes should likely be applied via classes.
+ * Related: https://csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css/
+ * Related: https://csswizardry.com/2016/02/managing-typography-on-large-apps/
  *
  * 1. Decrease the line-height of wrapped headings - https://twitter.com/heydonworks/status/672716556179283968
  * 2. Responsive Typography: https://madebymike.com.au/writing/precise-control-responsive-typography/
@@ -33,46 +36,6 @@ h3 { font-size: calc(var(--t-size-gamma) + 0.1vw) /* 2 */; }
 h4 { font-size: calc(var(--t-size-delta) + 0.1vw) /* 2 */; }
 h5 { font-size:calc(var(--t-size-epsilon) + 0.1vw) /* 2 */; }
 h6 { }
-
-.h1, .alpha { }
-.h2, .beta { }
-.h3, .gamma { }
-.h4, .delta { }
-.h5, .epsilon { }
-.h6, .zeta { }
-
-
-/**
- * A series of classes for setting massive type; for use in heroes, mastheads,
- * promos, etc.
- */
-
-.giga { font-size: 6rem; line-height: 1; }
-
-.mega { font-size: 4.5rem; line-height: 1; }
-
-.kilo { font-size: 3rem; line-height: 1; }
-
-
-/**
- * Lede/Lead
- *
- * Used to make the introductory text slightly larger http://en.wikipedia.org/wiki/Lead_paragraph
- */
-
-.lede, .lead { font-size: 1.25rem; }
-
-
-/**
- * Small Print
- *
- * A series of classes for setting tiny type; for use in smallprint etc.
- */
-
-.smallprint,
-.milli { font-size: 0.75rem; }
-
-.micro { font-size: 0.625rem; }
 
 
 /**
