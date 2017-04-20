@@ -1,0 +1,28 @@
+﻿/**
+ * Tabs Component
+ *
+ * Keep related content in a single container.
+ *
+ * Dependency: Navigation Abstraction Object
+ *
+ * Example Usage:
+ * <div class="c-tabs">
+ *  <ul class="c-tabs__header">
+ *      <li class="c-tabs__item c-tabs__item--selected">
+ *          <a href="#"> </a>
+ *      </li>
+        <li class="c-tabs__item">
+            <a href="#"> </a>
+        </li>
+ *  </ul>
+ * </div>
+ *
+ */
+
+
+.c-tabs { }
+.c-tabs__header { margin-top:-1rem; }
+.c-tabs__item { border:0; border-bottom:5px solid transparent; }
+.c-tabs__item.is-selected { border-bottom-color:currentColor; }
+.c-tabs__link { padding-right: var(--t-gutter--small); padding-left:var(--t-gutter--small); }
+
