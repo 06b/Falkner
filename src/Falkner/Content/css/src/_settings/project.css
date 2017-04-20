@@ -26,12 +26,20 @@
      --initial-gutter-unit: var(--initial-rem-unit);
 
      --initial-font-family:"Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-
+     --initial-z-index-increase-unit: 1;
 
     /**
      * Theme Custom Properties - Only adjust the variables values to use the base custom properties from above.
      * Do not add more theme custom properties unless it has been added for every other custom theme setting.
      */
+
+    /* ----- Dealing with z-index ----- */
+     --t-depth--negative-one: calc(var(--initial-z-index-increase-unit) * -1);
+     --t-depth--one: var(--initial-z-index-increase-unit);
+     --t-depth--ten: calc(var(--initial-z-index-increase-unit) * 10);
+     --t-depth--twenty: calc(var(--initial-z-index-increase-unit) * 20);
+     --t-depth--one-hundred: calc(var(--initial-z-index-increase-unit) * 100);
+     --t-depth--one-thousand: calc(var(--initial-z-index-increase-unit) * 1000);
 
     /* ----- Spacing ----- */
      --t-gutter--diminutive: calc(var(--initial-gutter-unit) * 0.125);

@@ -1,0 +1,28 @@
+﻿/**
+ * Depth
+ *
+ * An attempt to have rational `z-index` values since tracking tends to be messy
+ *
+ * Dependency: `z-index` only has an effect if an element is positioned - https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/Adding_z-index
+ *
+ * Spec: http://www.w3.org/TR/CSS2/zindex.html
+ *
+ * Modifier(s):
+ * .u-depth--*  - Extends `.u-depth` to have `z-index` based on it's value
+ *
+ * Notes:
+ * N1. Several newer CSS properties can affect stacking related to `z-index` - make sure this isn't the case if you are having issues. https://philipwalton.com/articles/what-no-one-told-you-about-z-index/
+ * N2. By using a negative z-index it will prevent the user from interacting with certain elements.
+ * N3. One would hope the maximum would never need to be used however in the event which it is used you may want to reconsider what you are doing. http://softwareas.com/whats-the-maximum-z-index/
+ *
+ */
+
+.u-depth { z-index: auto /* Default value */; }
+.u-depth--one { z-index: var(--t-depth--one); }
+.u-depth--ten { z-index: var(--t-depth--ten); }
+.u-depth--twenty { z-index: var(--t-depth--twenty); }
+.u-depth--one-hundred { z-index: var(--t-depth--one-hundred); }
+.u-depth--one-thousand { z-index: var(--t-depth--one-thousand); }
+.u-depth--maximum { z-index: 2147483647 /* N3 */; }
+
+.u-depth--negative-one{ z-index: var(--t-depth--negative-one) /* N2 */; }
