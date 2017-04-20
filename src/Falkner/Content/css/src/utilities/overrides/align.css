@@ -1,5 +1,5 @@
 /**
- * Vertical Alignment utilities - Note this depends on the appropriate 'display' value.
+ * Vertical Alignment utilities - Note this depends on the appropriate `display` value.
  */
 
 .u-align-baseline { vertical-align: baseline !important; }
