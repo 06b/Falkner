@@ -90,6 +90,7 @@
     <Content Include="Content\css\src\utilities\overrides\font-size.css" />
     <Content Include="Content\css\src\utilities\overrides\font-weight.css" />
     <Content Include="Content\css\src\utilities\overrides\force-display-visibility.css" />
+    <Content Include="Content\css\src\utilities\overrides\height.css" />
     <Content Include="Content\css\src\utilities\overrides\line-height.css" />
     <Content Include="Content\css\src\utilities\overrides\links.css" />
     <Content Include="Content\css\src\utilities\overrides\overflow.css" />
