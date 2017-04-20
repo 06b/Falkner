@@ -8,7 +8,7 @@
  * Source: https://blog.placeit.net/ux-tactics-make-slow-things-seem-faster/
  *
  * Notes:
- * N1. 'background-size: cover;' within '.c-avatar' is used when loading background-urls to mimic progressive image rendering
+ * N1. `background-size: cover;` within `.c-avatar` is used when loading background-urls to mimic progressive image rendering
  *
  */
 
@@ -18,7 +18,7 @@
 .c-avatar--large { height: 6.25rem; width: 6.25rem; }
 .c-avatar--medium { height: 3.75rem; width: 3.75rem; }
 .c-avatar--small { height: 2.5rem; width: 2.5rem; }
-.c-avatar--tiny { height:1.25rem;  width: 1.25rem; }
+.c-avatar--tiny { height:1.25rem; width: 1.25rem; }
 
 @media only screen and (max-width: 30em) {
     .c-avatar--phone-portrait-only { height: 5rem; width: 5rem; background-size: cover; overflow: hidden; }
@@ -27,7 +27,7 @@
     .c-avatar--large--phone-portrait-only { height: 6.25rem; width: 6.25rem; }
     .c-avatar--medium--phone-portrait-only { height: 3.75rem; width: 3.75rem; }
     .c-avatar--small--phone-portrait-only { height: 2.5rem; width: 2.5rem; }
-    .c-avatar--tiny--phone-portrait-only { height:1.25rem;  width: 1.25rem; }
+    .c-avatar--tiny--phone-portrait-only { height:1.25rem; width: 1.25rem; }
 }
 
 @media only screen and (min-width: 30em) {
@@ -37,7 +37,7 @@
     .c-avatar--large--phone-landscape-up { height: 6.25rem; width: 6.25rem; }
     .c-avatar--medium--phone-landscape-up { height: 3.75rem; width: 3.75rem; }
     .c-avatar--small--phone-landscape-up { height: 2.5rem; width: 2.5rem; }
-    .c-avatar--tiny--phone-landscape-up { height:1.25rem;  width: 1.25rem; }
+    .c-avatar--tiny--phone-landscape-up { height:1.25rem; width: 1.25rem; }
 }
 
 @media only screen and (min-width: 30em) and (max-width: 39.9375em) {
@@ -47,7 +47,7 @@
     .c-avatar--large--phone-landscape-only { height: 6.25rem; width: 6.25rem; }
     .c-avatar--medium--phone-landscape-only { height: 3.75rem; width: 3.75rem; }
     .c-avatar--small--phone-landscape-only { height: 2.5rem; width: 2.5rem; }
-    .c-avatar--tiny--phone-landscape-only { height:1.25rem;  width: 1.25rem; }
+    .c-avatar--tiny--phone-landscape-only { height:1.25rem; width: 1.25rem; }
 }
 
 @media only screen and (min-width: 40em) {
@@ -57,7 +57,7 @@
     .c-avatar--large--tablet-portrait-up { height: 6.25rem; width: 6.25rem; }
     .c-avatar--medium--tablet-portrait-up { height: 3.75rem; width: 3.75rem; }
     .c-avatar--small--tablet-portrait-up { height: 2.5rem; width: 2.5rem; }
-    .c-avatar--tiny--tablet-portrait-up { height:1.25rem;  width: 1.25rem; }
+    .c-avatar--tiny--tablet-portrait-up { height:1.25rem; width: 1.25rem; }
 }
 
 @media only screen and (min-width: 40em) and (max-width: 63.9375em) {
@@ -67,7 +67,7 @@
     .c-avatar--large--tablet-portrait-only { height: 6.25rem; width: 6.25rem; }
     .c-avatar--medium--tablet-portrait-only { height: 3.75rem; width: 3.75rem; }
     .c-avatar--small--tablet-portrait-only { height: 2.5rem; width: 2.5rem; }
-    .c-avatar--tiny--tablet-portrait-only { height:1.25rem;  width: 1.25rem; }
+    .c-avatar--tiny--tablet-portrait-only { height:1.25rem; width: 1.25rem; }
 }
 
 @media only screen and (min-width: 64em) {
@@ -77,7 +77,7 @@
     .c-avatar--large--tablet-landscape-up { height: 6.25rem; width: 6.25rem; }
     .c-avatar--medium--tablet-landscape-up { height: 3.75rem; width: 3.75rem; }
     .c-avatar--small--tablet-landscape-up { height: 2.5rem; width: 2.5rem; }
-    .c-avatar--tiny--tablet-landscape-up { height:1.25rem;  width: 1.25rem; }
+    .c-avatar--tiny--tablet-landscape-up { height:1.25rem; width: 1.25rem; }
 }
 
 @media only screen and (min-width: 64em) and (max-width: 79.9375em) {
@@ -87,7 +87,7 @@
     .c-avatar--large--tablet-landscape-only { height: 6.25rem; width: 6.25rem; }
     .c-avatar--medium--tablet-landscape-only { height: 3.75rem; width: 3.75rem; }
     .c-avatar--small--tablet-landscape-only { height: 2.5rem; width: 2.5rem; }
-    .c-avatar--tiny--tablet-landscape-only { height:1.25rem;  width: 1.25rem; }
+    .c-avatar--tiny--tablet-landscape-only { height:1.25rem; width: 1.25rem; }
 }
 
 @media only screen and (min-width: 80em) {
@@ -97,5 +97,5 @@
     .c-avatar--large--desktop-up { height: 6.25rem; width: 6.25rem; }
     .c-avatar--medium--desktop-up { height: 3.75rem; width: 3.75rem; }
     .c-avatar--small--desktop-up { height: 2.5rem; width: 2.5rem; }
-    .c-avatar--tiny--desktop-up { height:1.25rem;  width: 1.25rem; }
+    .c-avatar--tiny--desktop-up { height:1.25rem; width: 1.25rem; }
 }
