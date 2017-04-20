@@ -67,6 +67,7 @@
     <Content Include="Content\css\src\components\obscure.css" />
     <Content Include="Content\css\src\components\oversize-button.css" />
     <Content Include="Content\css\src\components\preloader.css" />
+    <Content Include="Content\css\src\components\progressive-media.css" />
     <Content Include="Content\css\src\components\pseudo-upload.css" />
     <Content Include="Content\css\src\components\stencil.css" />
     <Content Include="Content\css\src\components\tabs.css" />
