@@ -56,6 +56,7 @@
     opacity: 1;
   }
 }
+
 .c-tooltipped:hover::before, .c-tooltipped:hover::after,
 .c-tooltipped:active::before,
 .c-tooltipped:active::after,
@@ -92,6 +93,7 @@
   right: 50%;
   margin-top: 5px;
 }
+
 .c-tooltipped--south::before,
 .c-tooltipped--southeast::before,
 .c-tooltipped--southwest::before {
@@ -119,6 +121,7 @@
   bottom: 100%;
   margin-bottom: 5px;
 }
+
 .c-tooltipped--north::before,
 .c-tooltipped--northeast::before,
 .c-tooltipped--northwest::before {
@@ -150,6 +153,7 @@
   margin-right: 5px;
   transform: translateY(50%);
 }
+
 .c-tooltipped--west::before {
   top: 50%;
   bottom: 50%;
@@ -164,6 +168,7 @@
   margin-left: 5px;
   transform: translateY(50%);
 }
+
 .c-tooltipped--east::before {
   top: 50%;
   right: -5px;
@@ -180,11 +185,13 @@
   white-space: pre-line;
   border-collapse: separate;
 }
+
 .c-tooltipped--multiline.c-tooltipped--south::after, .c-tooltipped--multiline.c-tooltipped--north::after {
   right: auto;
   left: 50%;
   transform: translateX(-50%);
 }
+
 .c-tooltipped--multiline.c-tooltipped--west::after, .c-tooltipped--multiline.c-tooltipped--east::after {
   right: 100%;
 }
@@ -194,9 +201,11 @@
     width: 250px;
   }
 }
+
 .c-tooltipped--sticky::before, .c-tooltipped--sticky::after {
   display: inline-block;
 }
+
 .c-tooltipped--sticky.c-tooltipped--multiline::after {
   display: table-cell;
 }
