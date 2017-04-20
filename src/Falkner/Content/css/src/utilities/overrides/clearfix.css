@@ -7,4 +7,4 @@
  *
  */
 
-.clearfix:after, .o-media:after, .o-module:after, .o-island:after,.o-islet:after, .o-navigation:after, .o-legend-key:after { display: table; clear: both; content: " " /* N1 */; }
+.u-clearfix:after, .o-media:after, .o-module:after, .o-island:after,.o-islet:after, .o-navigation:after, .o-legend-key:after { display: table; clear: both; content: " " /* N1 */; }

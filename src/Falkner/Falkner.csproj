@@ -51,7 +51,6 @@
   <ItemGroup>
     <Content Include="Content\css\src\base\00-Normalize.css" />
     <Content Include="Content\css\src\base\02-Typography.css" />
-    <Content Include="Content\css\src\base\05-Clearfix.css" />
     <Content Include="Content\css\src\components\archipelago.css" />
     <Content Include="Content\css\src\components\avatar.css" />
     <Content Include="Content\css\src\components\backdrop.css" />
@@ -81,6 +80,7 @@
     <Content Include="Content\css\src\utilities\debug.css" />
     <Content Include="Content\css\src\utilities\overrides\align.css" />
     <Content Include="Content\css\src\utilities\overrides\aside.css" />
+    <Content Include="Content\css\src\utilities\overrides\clearfix.css" />
     <Content Include="Content\css\src\utilities\overrides\cursor.css" />
     <Content Include="Content\css\src\utilities\overrides\flex-utilities.css" />
     <Content Include="Content\css\src\utilities\overrides\floats.css" />
