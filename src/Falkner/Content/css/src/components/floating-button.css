@@ -36,6 +36,6 @@
   flex-direction:row-reverse /* N2 */;
 }
 
-.c-floating-button__letter{ transform:rotate(-270deg) /* N1 */; }
+.c-floating-button__letter { transform:rotate(-270deg) /* N1 */; }
 
-.c-floating-button:hover,.c-floating-button:focus{ opacity:1; }
+.c-floating-button:hover,.c-floating-button:focus { opacity:1; }

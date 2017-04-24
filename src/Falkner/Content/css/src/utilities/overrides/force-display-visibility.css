@@ -36,7 +36,7 @@
  */
 .u-force-inline-block { display: inline-block !important; max-width:100% /* 1 */; }
 @media only screen and (max-width: 30em) {
-    .u-force-inline-block--phone-portrait-only{ display: inline-block !important; max-width:100% /* 1 */; }
+    .u-force-inline-block--phone-portrait-only { display: inline-block !important; max-width:100% /* 1 */; }
 }
 @media only screen and (min-width: 30em) {
     .u-force-inline-block--phone-landscape-up { display: inline-block !important; max-width:100% /* 1 */;}

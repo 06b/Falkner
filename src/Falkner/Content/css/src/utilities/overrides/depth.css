@@ -25,4 +25,4 @@
 .u-depth--one-thousand { z-index: var(--t-depth--one-thousand); }
 .u-depth--maximum { z-index: 2147483647 /* N3 */; }
 
-.u-depth--negative-one{ z-index: var(--t-depth--negative-one) /* N2 */; }
+.u-depth--negative-one { z-index: var(--t-depth--negative-one) /* N2 */; }
