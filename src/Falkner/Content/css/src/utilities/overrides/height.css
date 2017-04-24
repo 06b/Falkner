@@ -6,7 +6,7 @@
  */
 
 .u-height--zero { height: 0; }
-.u-height--one-quarter-view-height{ height: 25vh; }
+.u-height--one-quarter-view-height { height: 25vh; }
 .u-height--half-view-height { height: 50vh; }
 .u-height--three-quarters-view-height { height: 75vh; }
 .u-height--full-view-height { height: 100vh; }

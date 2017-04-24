@@ -28,7 +28,7 @@
 .c-progressive-media__proxy { filter:blur(5px) /* N1 */; background-size: cover /* N1*/; background-repeat:no-repeat /* N1 */; background-position:center /* N1 */; overflow:hidden; top:0 /* N3 */; right:0 /* N3 */; bottom:0 /* N3 */; left:0 /* N3 */; position:absolute; z-index:1; }
 .c-progressive-media__content { top:0; position:absolute/* N2 */; z-index:2 /* N2 */; }
 
-.c-progressive-media__proxy--contain{ background-size:contain /* N4 */; }
+.c-progressive-media__proxy--contain { background-size:contain /* N4 */; }
 
 .c-progressive-media__content--transparency-fix { background-color: var(--t-background-content-block) /* N5 */; }
 .c-progressive-media__content--successful-load-fix { outline:3in solid var(--t-background-content-block) /* N6 */; }

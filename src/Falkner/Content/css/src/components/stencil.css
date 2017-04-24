@@ -38,10 +38,10 @@
 @media only screen and (max-width: 30em) {
     .c-stencil__avatar--phone-portrait-only { height: 5rem; width: 5rem; }
     .c-stencil__avatar--gargantuan--phone-portrait-only { height: 8.75rem; width: 8.75rem; }
-    .c-stencil__avatar--huge--phone-portrait-only  { height: 7.5rem; width: 7.5rem; }
-    .c-stencil__avatar--large--phone-portrait-only  { height: 6.25rem; width: 6.25rem; }
-    .c-stencil__avatar--medium--phone-portrait-only  { height: 3.75rem; width: 3.75rem; }
-    .c-stencil__avatar--small--phone-portrait-only  { height: 2.5rem; width: 2.5rem; }
+    .c-stencil__avatar--huge--phone-portrait-only { height: 7.5rem; width: 7.5rem; }
+    .c-stencil__avatar--large--phone-portrait-only { height: 6.25rem; width: 6.25rem; }
+    .c-stencil__avatar--medium--phone-portrait-only { height: 3.75rem; width: 3.75rem; }
+    .c-stencil__avatar--small--phone-portrait-only { height: 2.5rem; width: 2.5rem; }
 }
 
 @media only screen and (min-width: 30em) {

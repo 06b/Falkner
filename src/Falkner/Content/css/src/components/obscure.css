@@ -12,4 +12,4 @@
 .c-obscure--blurred { filter:blur(5px); }
 .c-obscure--blurred--1 { filter:blur(1px); }
 
-.c-obscure--blurred--1--grayscale{ filter: blur(1px) grayscale(1); }
+.c-obscure--blurred--1--grayscale { filter: blur(1px) grayscale(1); }
