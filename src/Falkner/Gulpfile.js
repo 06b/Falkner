@@ -120,6 +120,11 @@ gulp.task('stylelint', function () {
             "declaration-block-semicolon-space-before": "never",
             "declaration-block-trailing-semicolon": "always",
             //TODO: Block
+            "block-closing-brace-empty-line-before": "never", //False Positives in nested rules - look into following feature request https://github.com/stylelint/stylelint/issues/2090
+            "block-closing-brace-newline-after": "always",
+            "block-closing-brace-newline-before": "always-multi-line",
+            "block-opening-brace-newline-after": "always-multi-line",
+            "block-opening-brace-space-before": "always",
             //TODO: Selector
             "selector-attribute-brackets-space-inside": "never",
             "selector-attribute-operator-space-after": "never",
