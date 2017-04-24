@@ -127,7 +127,11 @@ gulp.task('stylelint', function () {
             "selector-combinator-space-after": "always",
             "selector-combinator-space-before": "always",
             "selector-descendant-combinator-no-non-space": true,
+            "selector-max-compound-selectors": 3,
+            //"selector-max-specificity": "0,2,1", // Set to what works for you - https://stylelint.io/user-guide/rules/selector-max-specificity/
             "selector-no-id": true,
+            "selector-no-universal": true,
+            "selector-no-vendor-prefix": true,
             "selector-pseudo-class-case": "lower",
             "selector-pseudo-class-no-unknown": true,
             "selector-pseudo-class-parentheses-space-inside": "never",
@@ -137,6 +141,9 @@ gulp.task('stylelint', function () {
             "selector-type-no-unknown": true,
             "selector-max-empty-lines":0,
             //TODO: Selector List
+            "selector-list-comma-newline-after": "always-multi-line",
+            "selector-list-comma-newline-before": "never-multi-line",
+
 
             //"root-no-standard-properties": true, //Deprecated as of 7.8.0 - a stylelint plugin may exist in it's place
 
