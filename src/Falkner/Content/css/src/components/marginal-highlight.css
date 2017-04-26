@@ -20,15 +20,18 @@
 
 .c-marginal-highlight { padding-left:var(--t-gutter) /* N1*/; }
 
-.c-marginal-highlight--success { background-color: var(--t-background-success);
-background-image: linear-gradient(45deg, transparent 50%, rgba(0,0,0,0.1) 50%);
-background-size: 8px 8px; }
+.c-marginal-highlight--success {
+    background-color: var(--t-background-success);
+    background-image: linear-gradient(45deg, transparent 50%, rgba(0,0,0,0.1) 50%);
+    background-size: 8px 8px;
+}
 
-.c-marginal-highlight--alert { background-color: var(--t-background-alert);
-background-image: repeating-linear-gradient(45deg, transparent, transparent 5px, rgba(255,255,255,.5) 5px, rgba(255,255,255,.5) 10px); }
+.c-marginal-highlight--alert {
+    background-color: var(--t-background-alert);
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 5px, rgba(255,255,255,.5) 5px, rgba(255,255,255,.5) 10px);
+}
 
 .c-marginal-highlight--failure { background-color: var(--t-background-failure); }
-
 
 @media only screen and (max-width: 30em) {
     .c-marginal-highlight--phone-portrait-only { padding-left:var(--t-gutter); }
