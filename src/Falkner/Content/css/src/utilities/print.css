@@ -3,6 +3,22 @@
    Inlined to avoid the additional HTTP request:
    http://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
+
+/**
+ * Notes:
+ * N1. The selector-no-universal rule warning is aimed at flagging possible slow rules due to the universal selector, such as cases
+ *     where the universal selector may be found as a key part of a selector. In some cases, even if it is the key part of a selector
+ *     it may have little impact on page render, it depends on the circumstances such as how the selector is being used or if
+ *     peformance expensive styles are being applied - in the case of a print stylesheet it's acceptable.
+ * Related: http://www.telerik.com/blogs/css-tip-star-selector-not-that-bad
+ * Related: https://www.paulirish.com/2012/box-sizing-border-box-ftw/#content
+ * Related: https://benfrain.com/css-performance-revisited-selectors-bloat-expensive-styles/#h-H1_10
+ * Related: http://perfectionkills.com/profiling-css-for-fun-and-profit-optimization-notes/
+ *
+ */
+
+/* stylelint-disable selector-no-universal */
+
 @media print {
     *,
     *:before,
@@ -45,3 +61,5 @@
     h2,
     h3 { page-break-after: avoid; }
 }
+
+/* stylelint-enable selector-no-universal */
