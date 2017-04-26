@@ -7,10 +7,11 @@
  * 1. Design Tip: Never Use Black: http://ianstormtaylor.com/design-tip-never-use-black/
  * 2. Eliminate horizontal centering "page jumps": http://css-tricks.com/eliminate-jumps-in-horizontal-centering-by-forcing-a-scroll-bar/
  * 3. Prevent padding and border from affecting element width. https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ * 4. Disable stylelint rule as border-box performance impact isn't significant when using the universal selector - https://www.paulirish.com/2012/box-sizing-border-box-ftw/#content
  */
 
 html { color: #222 /* 1 */; overflow-y: scroll /* 2 */; min-height: 100% /* 2 */; box-sizing: border-box /* 3 */;}
-*, *::before, *::after { box-sizing: inherit /* 3 */; }
+*, *::before, *::after { box-sizing: inherit /* 3 */ /* 4 */; /* stylelint-disable selector-no-universal */ }
 
 
 /**
