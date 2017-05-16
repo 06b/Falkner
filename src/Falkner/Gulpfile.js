@@ -59,7 +59,7 @@ gulp.task('stylelint', function () {
             "function-whitespace-after": "always",
 
             //Number
-            //"number-leading-zero":"always", //Currently the impact to get rid of this is pretty large, but I can see where it's useful
+            "number-leading-zero":"always",
             "number-no-trailing-zeros": true,
 
             //String
@@ -69,7 +69,8 @@ gulp.task('stylelint', function () {
             //Length
             "length-zero-no-unit": true,
 
-            //TODO: Time
+            //Time
+            "time-min-milliseconds": 100, //According to the notes to the original issue (https://github.com/stylelint/stylelint/issues/597#issuecomment-180872504) the human eye can't see transition times under 100ms. //TODO: More resources maybe recommended to confirm.
 
             //Unit
             "unit-no-unknown": true,
@@ -119,11 +120,13 @@ gulp.task('stylelint', function () {
             "declaration-block-semicolon-space-after": "always-single-line",
             "declaration-block-semicolon-space-before": "never",
             "declaration-block-trailing-semicolon": "always",
-            //TODO: Block
+            //Block
             "block-closing-brace-empty-line-before": "never", //False Positives in nested rules - look into following feature request https://github.com/stylelint/stylelint/issues/2090
             "block-closing-brace-newline-after": "always",
             "block-closing-brace-newline-before": "always-multi-line",
+            //"block-closing-brace-space-before": "always", //Currently the impact to get rid of this is pretty large, but I can see where it's useful. TODO: need to look into more
             "block-opening-brace-newline-after": "always-multi-line",
+            //"block-opening-brace-space-after": "always", //Currently the impact to get rid of this is pretty large, but I can see where it's useful. TODO: need to look into more
             "block-opening-brace-space-before": "always",
             //TODO: Selector
             "selector-attribute-brackets-space-inside": "never",
@@ -145,7 +148,7 @@ gulp.task('stylelint', function () {
             "selector-type-case": "lower",
             "selector-type-no-unknown": true,
             "selector-max-empty-lines":0,
-            //TODO: Selector List
+            //Selector List
             "selector-list-comma-newline-after": "always-multi-line",
             "selector-list-comma-newline-before": "never-multi-line",
 
