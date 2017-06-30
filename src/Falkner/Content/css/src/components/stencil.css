@@ -6,14 +6,17 @@
  *
  * Notes:
  * N1. Aspect Ratio for thumbnails logic source: http://www.mademyday.de/css-height-equals-width-with-pure-css.html
+ * N2. Stencil Keyframe shouldn't be named just `loading` as it is very generic and can conflict with other third party keyframes
  *
  */
 
 .c-stencil { background: var(--t-background-stencil); }
 
 .c-stencil__headline { height: 2rem; }
-.c-stencil__headline--kilo { height: 3rem; }
-.c-stencil__headline--mega { height:4.5rem; }
+.c-stencil__headline--giga { height: calc(var(--t-size-giga)); }
+.c-stencil__headline--mega { height: calc(var(--t-size-mega)); }
+.c-stencil__headline--kilo { height: calc(var(--t-size-kilo)); }
+
 .c-stencil__subheadline { height: 1.25rem; }
 .c-stencil__content { height: 0.75rem; }
 .c-stencil__divider { height: 0.25rem; }
@@ -107,12 +110,16 @@
     .c-stencil__avatar--small--desktop-up { height: 2.5rem; width: 2.5rem; }
 }
 
-
 .c-stencil--rounded { border-radius: 50%; }
 
-.c-stencil.is-loading, .is-loading .c-stencil { will-change: background-position; background: -webkit-linear-gradient(180deg, var(--t-background-stencil) 0, var(--t-background-stencil--loading) 50%, var(--t-background-stencil) 100%); background: linear-gradient(-90deg, var(--t-background-stencil) 0, var(--t-background-stencil--loading) 20%, var(--t-background-stencil) 40%, var(--t-background-stencil) 100%); background-size: 300% 300%; animation: loading 2.4s ease-in-out infinite; }
+.c-stencil.is-loading, .is-loading .c-stencil {
+    will-change: background-position;
+    background: linear-gradient(-90deg, var(--t-background-stencil) 0, var(--t-background-stencil--loading) 20%, var(--t-background-stencil) 40%, var(--t-background-stencil) 100%);
+    background-size: 300% 300%;
+    animation: stencil-loading /* N2 */ 2.4s ease-in-out infinite;
+}
 
-@keyframes loading {
+@keyframes stencil-loading {
     0% { background-position: 0% 0%; }
     100% { background-position: -150% 0%; }
 }
