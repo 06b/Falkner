@@ -1,0 +1,25 @@
+/**
+ * Responsive Embed Component
+ * Helps build responsive embed codes for embedding rich third-party media into responsive web pages
+ *
+ * Source: http://embedresponsively.com/
+ *
+ * Example Usage:
+ * <div class="c-embed-container">
+ * <iframe></iframe>
+ * </div>
+ *
+ */
+.c-embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.c-embed-container iframe, .c-embed-container object, .c-embed-container embed, .c-embed-container img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
