@@ -57,6 +57,7 @@
     <Content Include="Content\css\src\components\collapse.css" />
     <Content Include="Content\css\src\components\counter.css" />
     <Content Include="Content\css\src\components\divider.css" />
+    <Content Include="Content\css\src\components\embed.css" />
     <Content Include="Content\css\src\components\expansion-limit.css" />
     <Content Include="Content\css\src\components\floating-button.css" />
     <Content Include="Content\css\src\components\footer-navigation.css" />
@@ -75,6 +76,7 @@
     <Content Include="Content\css\src\components\unsupported.css" />
     <Content Include="Content\css\src\objects\resource-block.css" />
     <Content Include="Content\css\src\scope\example.css" />
+    <Content Include="Content\css\src\scope\visualize-layout.css" />
     <Content Include="Content\css\src\theme\theme.project.css" />
     <Content Include="Content\css\src\utilities\animations\animated.css" />
     <Content Include="Content\css\src\utilities\animations\generic-fade.css" />
@@ -83,6 +85,7 @@
     <Content Include="Content\css\src\utilities\debug.css" />
     <Content Include="Content\css\src\utilities\overrides\align.css" />
     <Content Include="Content\css\src\utilities\overrides\aside.css" />
+    <Content Include="Content\css\src\utilities\overrides\box-sizing.css" />
     <Content Include="Content\css\src\utilities\overrides\clearfix.css" />
     <Content Include="Content\css\src\utilities\overrides\cursor.css" />
     <Content Include="Content\css\src\utilities\overrides\depth.css" />
