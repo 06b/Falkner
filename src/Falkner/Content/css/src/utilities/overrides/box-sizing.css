@@ -1,0 +1,16 @@
+﻿/**
+ * Box-Sizing utilities
+ *
+ * Notes:
+ * N1. Some Third Party components sometimes will reset all content to use `box-sizing: content-box` rather than `box-sizing: border-box` set in the base.
+ * N2. In cases where all elements contained should be reset - due to a Third Party applying the universal selector, the easiest way to reverse it is
+ *     via the use of the universal selector.
+ *
+ * Modifier(s):
+ * .u-box-sizing--border                - Used in cases where only certain element needs to be reset.
+ * .u-box-sizing--border--universal     - In cases which all elements contained within should be reset.
+ *
+ */
+
+.u-box-sizing--border { box-sizing:border-box /* N1 */; }
+.u-box-sizing--border--universal * { box-sizing:border-box /* N2 */; /* stylelint-disable selector-no-universal */ }
