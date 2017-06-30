@@ -24,6 +24,16 @@
 
 
 /**
+ * Used when needing to adjust a partial position.
+ */
+
+.u-position--top { top: 0 !important; }
+.u-position--right { right: 0 !important; }
+.u-position--bottom { bottom: 0 !important; }
+.u-position--left { left: 0 !important; }
+
+
+/**
  * 1. Make sure fixed elements are promoted into a new layer, for performance
  *    reasons.
  */
