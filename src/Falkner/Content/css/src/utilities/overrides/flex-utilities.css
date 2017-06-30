@@ -4,54 +4,54 @@
 
 .u-flex-vertical-center { display: flex; align-items: center; }
 @media only screen and (max-width: 30em) {
-    .u-flex-vertical-center--phone-portrait-only { display: flex; align-items: center; }
+    .u-flex-vertical-center\@phone-portrait-only { display: flex; align-items: center; }
 }
 @media only screen and (min-width: 30em) {
-    .u-flex-vertical-center--phone-landscape-up { display: flex; align-items: center; }
+    .u-flex-vertical-center\@phone-landscape-up { display: flex; align-items: center; }
 }
 @media only screen and (min-width: 30em) and (max-width: 39.9375em) {
-    .u-flex-vertical-center--phone-landscape-only { display: flex; align-items: center; }
+    .u-flex-vertical-center\@phone-landscape-only { display: flex; align-items: center; }
 }
 @media only screen and (min-width: 40em) {
-    .u-flex-vertical-center--tablet-portrait-up { display: flex; align-items: center; }
+    .u-flex-vertical-center\@tablet-portrait-up { display: flex; align-items: center; }
 }
 @media only screen and (min-width: 40em) and (max-width: 63.9375em) {
-    .u-flex-vertical-center--tablet-portrait-only { display: flex; align-items: center; }
+    .u-flex-vertical-center\@tablet-portrait-only { display: flex; align-items: center; }
 }
 @media only screen and (min-width: 64em) {
-    .u-flex-vertical-center--tablet-landscape-up { display: flex; align-items: center; }
+    .u-flex-vertical-center\@tablet-landscape-up { display: flex; align-items: center; }
 }
 @media only screen and (min-width: 64em) and (max-width: 79.9375em) {
-    .u-flex-vertical-center--tablet-landscape-only { display: flex; align-items: center; }
+    .u-flex-vertical-center\@tablet-landscape-only { display: flex; align-items: center; }
 }
 @media only screen and (min-width: 80em) {
-    .u-flex-vertical-center--desktop-up { display: flex; align-items: center; }
+    .u-flex-vertical-center\@desktop-up { display: flex; align-items: center; }
 }
 
 .u-flex-stretch { display: flex; align-items: stretch; }
 @media only screen and (max-width: 30em) {
-    .u-flex-stretch--phone-portrait-only { display: flex; align-items: stretch; }
+    .u-flex-stretch\@phone-portrait-only { display: flex; align-items: stretch; }
 }
 @media only screen and (min-width: 30em) {
-    .u-flex-stretch--phone-landscape-up { display: flex; align-items: stretch; }
+    .u-flex-stretch\@phone-landscape-up { display: flex; align-items: stretch; }
 }
 @media only screen and (min-width: 30em) and (max-width: 39.9375em) {
-    .u-flex-stretch--phone-landscape-only { display: flex; align-items: stretch; }
+    .u-flex-stretch\@phone-landscape-only { display: flex; align-items: stretch; }
 }
 @media only screen and (min-width: 40em) {
-    .u-flex-stretch--tablet-portrait-up { display: flex; align-items: stretch; }
+    .u-flex-stretch\@tablet-portrait-up { display: flex; align-items: stretch; }
 }
 @media only screen and (min-width: 40em) and (max-width: 63.9375em) {
-    .u-flex-stretch--tablet-portrait-only { display: flex; align-items: stretch; }
+    .u-flex-stretch\@tablet-portrait-only { display: flex; align-items: stretch; }
 }
 @media only screen and (min-width: 64em) {
-    .u-flex-stretch--tablet-landscape-up { display: flex; align-items: stretch; }
+    .u-flex-stretch\@tablet-landscape-up { display: flex; align-items: stretch; }
 }
 @media only screen and (min-width: 64em) and (max-width: 79.9375em) {
-    .u-flex-stretch--tablet-landscape-only { display: flex; align-items: stretch; }
+    .u-flex-stretch\@tablet-landscape-only { display: flex; align-items: stretch; }
 }
 @media only screen and (min-width: 80em) {
-    .u-flex-stretch--desktop-up { display: flex; align-items: stretch; }
+    .u-flex-stretch\@desktop-up { display: flex; align-items: stretch; }
 }
 
 /**

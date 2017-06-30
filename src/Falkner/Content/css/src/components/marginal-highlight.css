@@ -34,33 +34,33 @@
 .c-marginal-highlight--failure { background-color: var(--t-background-failure); }
 
 @media only screen and (max-width: 30em) {
-    .c-marginal-highlight--phone-portrait-only { padding-left:var(--t-gutter); }
+    .c-marginal-highlight\@phone-portrait-only { padding-left:var(--t-gutter); }
 }
 
 @media only screen and (min-width: 30em) {
-    .c-marginal-highlight--phone-landscape-up { padding-left:var(--t-gutter); }
+    .c-marginal-highlight\@phone-landscape-up { padding-left:var(--t-gutter); }
 }
 
 @media only screen and (min-width: 30em) and (max-width: 39.9375em) {
-    .c-marginal-highlight--phone-landscape-only { padding-left:var(--t-gutter); }
+    .c-marginal-highlight\@phone-landscape-only { padding-left:var(--t-gutter); }
 }
 
 @media only screen and (min-width: 40em) {
-    .c-marginal-highlight--tablet-portrait-up { padding-left:var(--t-gutter); }
+    .c-marginal-highlight\@tablet-portrait-up { padding-left:var(--t-gutter); }
 }
 
 @media only screen and (min-width: 40em) and (max-width: 63.9375em) {
-    .c-marginal-highlight--tablet-portrait-only { padding-left:var(--t-gutter); }
+    .c-marginal-highlight\@tablet-portrait-only { padding-left:var(--t-gutter); }
 }
 
 @media only screen and (min-width: 64em) {
-    .c-marginal-highlight--tablet-landscape-up { padding-left:var(--t-gutter); }
+    .c-marginal-highlight\@tablet-landscape-up { padding-left:var(--t-gutter); }
 }
 
 @media only screen and (min-width: 64em) and (max-width: 79.9375em) {
-    .c-marginal-highlight--tablet-landscape-only { padding-left:var(--t-gutter); }
+    .c-marginal-highlight\@tablet-landscape-only { padding-left:var(--t-gutter); }
 }
 
 @media only screen and (min-width: 80em) {
-    .c-marginal-highlight--desktop-up { padding-left:var(--t-gutter); }
+    .c-marginal-highlight\@desktop-up { padding-left:var(--t-gutter); }
 }

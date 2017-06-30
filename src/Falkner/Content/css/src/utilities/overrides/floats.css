@@ -4,53 +4,53 @@
 
 .u-pull-left { float: left; }
 @media only screen and (max-width: 30em) {
-    .u-pull-left--phone-portrait-only { float: left; }
+    .u-pull-left\@phone-portrait-only { float: left; }
 }
 @media only screen and (min-width: 30em) {
-    .u-pull-left--phone-landscape-up { float: left; }
+    .u-pull-left\@phone-landscape-up { float: left; }
 }
 @media only screen and (min-width: 30em) and (max-width: 39.9375em) {
-    .u-pull-left--phone-landscape-only { float: left; }
+    .u-pull-left\@phone-landscape-only { float: left; }
 }
 @media only screen and (min-width: 40em) {
-    .u-pull-left--tablet-portrait-up { float: left; }
+    .u-pull-left\@tablet-portrait-up { float: left; }
 }
 @media only screen and (min-width: 40em) and (max-width: 63.9375em) {
-    .u-pull-left--tablet-portrait-only { float: left; }
+    .u-pull-left\@tablet-portrait-only { float: left; }
 }
 @media only screen and (min-width: 64em) {
-    .u-pull-left--tablet-landscape-up { float: left; }
+    .u-pull-left\@tablet-landscape-up { float: left; }
 }
 @media only screen and (min-width: 64em) and (max-width: 79.9375em) {
-    .u-pull-left--tablet-landscape-only { float: left; }
+    .u-pull-left\@tablet-landscape-only { float: left; }
 }
 @media only screen and (min-width: 80em) {
-    .u-pull-left--desktop-up { float: left; }
+    .u-pull-left\@desktop-up { float: left; }
 }
 
 .u-pull-right { float: right; }
 @media only screen and (max-width: 30em) {
-    .u-pull-right--phone-portrait-only { float: right; }
+    .u-pull-right\@phone-portrait-only { float: right; }
 }
 @media only screen and (min-width: 30em) {
-    .u-pull-right--phone-landscape-up { float: right; }
+    .u-pull-right\@phone-landscape-up { float: right; }
 }
 @media only screen and (min-width: 30em) and (max-width: 39.9375em) {
-    .u-pull-right--phone-landscape-only { float: right; }
+    .u-pull-right\@phone-landscape-only { float: right; }
 }
 @media only screen and (min-width: 40em) {
-    .u-pull-right--tablet-portrait-up { float: right; }
+    .u-pull-right\@tablet-portrait-up { float: right; }
 }
 @media only screen and (min-width: 40em) and (max-width: 63.9375em) {
-    .u-pull-right--tablet-portrait-only { float: right; }
+    .u-pull-right\@tablet-portrait-only { float: right; }
 }
 @media only screen and (min-width: 64em) {
-    .u-pull-right--tablet-landscape-up { float: right; }
+    .u-pull-right\@tablet-landscape-up { float: right; }
 }
 @media only screen and (min-width: 64em) and (max-width: 79.9375em) {
-    .u-pull-right--tablet-landscape-only { float: right; }
+    .u-pull-right\@tablet-landscape-only { float: right; }
 }
 @media only screen and (min-width: 80em) {
-    .u-pull-right--desktop-up { float: right; }
+    .u-pull-right\@desktop-up { float: right; }
 }
 

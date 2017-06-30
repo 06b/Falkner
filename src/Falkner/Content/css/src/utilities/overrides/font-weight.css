@@ -10,66 +10,66 @@
 .u-font-weight--lighter { font-weight: lighter !important; }
 
 @media only screen and (max-width: 30em) {
-    .u-font-weight--phone-portrait-only { font-weight: inherit !important; }
-    .u-font-weight--normal--phone-portrait-only { font-weight: normal !important; }
-    .u-font-weight--bold--phone-portrait-only { font-weight: bold !important; }
-    .u-font-weight--bolder--phone-portrait-only { font-weight: bolder !important; }
-    .u-font-weight--lighter--phone-portrait-only { font-weight: lighter !important; }
+    .u-font-weight\@phone-portrait-only { font-weight: inherit !important; }
+    .u-font-weight--normal\@phone-portrait-only { font-weight: normal !important; }
+    .u-font-weight--bold\@phone-portrait-only { font-weight: bold !important; }
+    .u-font-weight--bolder\@phone-portrait-only { font-weight: bolder !important; }
+    .u-font-weight--lighter\@phone-portrait-only { font-weight: lighter !important; }
 }
 
 @media only screen and (min-width: 30em) {
-    .u-font-weight--phone-landscape-up { font-weight: inherit !important; }
-    .u-font-weight--normal--phone-landscape-up { font-weight: normal !important; }
-    .u-font-weight--bold--phone-landscape-up { font-weight: bold !important; }
-    .u-font-weight--bolder--phone-landscape-up { font-weight: bolder !important; }
-    .u-font-weight--lighter--phone-landscape-up { font-weight: lighter !important; }
+    .u-font-weight\@phone-landscape-up { font-weight: inherit !important; }
+    .u-font-weight--normal\@phone-landscape-up { font-weight: normal !important; }
+    .u-font-weight--bold\@phone-landscape-up { font-weight: bold !important; }
+    .u-font-weight--bolder\@phone-landscape-up { font-weight: bolder !important; }
+    .u-font-weight--lighter\@phone-landscape-up { font-weight: lighter !important; }
 }
 
 @media only screen and (min-width: 30em) and (max-width: 39.9375em) {
-    .u-font-weight--phone-landscape-only { font-weight: inherit !important; }
-    .u-font-weight--normal--phone-landscape-only { font-weight: normal !important; }
-    .u-font-weight--bold--phone-landscape-only { font-weight: bold !important; }
-    .u-font-weight--bolder--phone-landscape-only { font-weight: bolder !important; }
-    .u-font-weight--lighter--phone-landscape-only { font-weight: lighter !important; }
+    .u-font-weight\@phone-landscape-only { font-weight: inherit !important; }
+    .u-font-weight--normal\@phone-landscape-only { font-weight: normal !important; }
+    .u-font-weight--bold\@phone-landscape-only { font-weight: bold !important; }
+    .u-font-weight--bolder\@phone-landscape-only { font-weight: bolder !important; }
+    .u-font-weight--lighter\@phone-landscape-only { font-weight: lighter !important; }
 }
 
 @media only screen and (min-width: 40em) {
-    .u-font-weight--tablet-portrait-up { font-weight: inherit !important; }
-    .u-font-weight--normal--tablet-portrait-up { font-weight: normal !important; }
-    .u-font-weight--bold--tablet-portrait-up { font-weight: bold !important; }
-    .u-font-weight--bolder--tablet-portrait-up { font-weight: bolder !important; }
-    .u-font-weight--lighter--tablet-portrait-up { font-weight: lighter !important; }
+    .u-font-weight\@tablet-portrait-up { font-weight: inherit !important; }
+    .u-font-weight--normal\@tablet-portrait-up { font-weight: normal !important; }
+    .u-font-weight--bold\@tablet-portrait-up { font-weight: bold !important; }
+    .u-font-weight--bolder\@tablet-portrait-up { font-weight: bolder !important; }
+    .u-font-weight--lighter\@tablet-portrait-up { font-weight: lighter !important; }
 }
 
 @media only screen and (min-width: 40em) and (max-width: 63.9375em) {
-    .u-font-weight--tablet-portrait-only { font-weight: inherit !important; }
-    .u-font-weight--normal--tablet-portrait-only { font-weight: normal !important; }
-    .u-font-weight--bold--tablet-portrait-only { font-weight: bold !important; }
-    .u-font-weight--bolder--tablet-portrait-only { font-weight: bolder !important; }
-    .u-font-weight--lighter--tablet-portrait-only { font-weight: lighter !important; }
+    .u-font-weight\@tablet-portrait-only { font-weight: inherit !important; }
+    .u-font-weight--normal\@tablet-portrait-only { font-weight: normal !important; }
+    .u-font-weight--bold\@tablet-portrait-only { font-weight: bold !important; }
+    .u-font-weight--bolder\@tablet-portrait-only { font-weight: bolder !important; }
+    .u-font-weight--lighter\@tablet-portrait-only { font-weight: lighter !important; }
 }
 
 @media only screen and (min-width: 64em) {
-    .u-font-weight--tablet-landscape-up { font-weight: inherit !important; }
-    .u-font-weight--normal--tablet-landscape-up { font-weight: normal !important; }
-    .u-font-weight--bold--tablet-landscape-up { font-weight: bold !important; }
-    .u-font-weight--bolder--tablet-landscape-up { font-weight: bolder !important; }
-    .u-font-weight--lighter--tablet-landscape-up { font-weight: lighter !important; }
+    .u-font-weight\@tablet-landscape-up { font-weight: inherit !important; }
+    .u-font-weight--normal\@tablet-landscape-up { font-weight: normal !important; }
+    .u-font-weight--bold\@tablet-landscape-up { font-weight: bold !important; }
+    .u-font-weight--bolder\@tablet-landscape-up { font-weight: bolder !important; }
+    .u-font-weight--lighter\@tablet-landscape-up { font-weight: lighter !important; }
 }
 
 @media only screen and (min-width: 64em) and (max-width: 79.9375em) {
-    .u-font-weight--tablet-landscape-only { font-weight: inherit !important; }
-    .u-font-weight--normal--tablet-landscape-only { font-weight: normal !important; }
-    .u-font-weight--bold--tablet-landscape-only { font-weight: bold !important; }
-    .u-font-weight--bolder--tablet-landscape-only { font-weight: bolder !important; }
-    .u-font-weight--lighter--tablet-landscape-only { font-weight: lighter !important; }
+    .u-font-weight\@tablet-landscape-only { font-weight: inherit !important; }
+    .u-font-weight--normal\@tablet-landscape-only { font-weight: normal !important; }
+    .u-font-weight--bold\@tablet-landscape-only { font-weight: bold !important; }
+    .u-font-weight--bolder\@tablet-landscape-only { font-weight: bolder !important; }
+    .u-font-weight--lighter\@tablet-landscape-only { font-weight: lighter !important; }
 }
 
 @media only screen and (min-width: 80em) {
-    .u-font-weight--desktop-up { font-weight: inherit !important; }
-    .u-font-weight--normal--desktop-up { font-weight: normal !important; }
-    .u-font-weight--bold--desktop-up { font-weight: bold !important; }
-    .u-font-weight--bolder--desktop-up { font-weight: bolder !important; }
-    .u-font-weight--lighter--desktop-up { font-weight: lighter !important; }
+    .u-font-weight\@desktop-up { font-weight: inherit !important; }
+    .u-font-weight--normal\@desktop-up { font-weight: normal !important; }
+    .u-font-weight--bold\@desktop-up { font-weight: bold !important; }
+    .u-font-weight--bolder\@desktop-up { font-weight: bolder !important; }
+    .u-font-weight--lighter\@desktop-up { font-weight: lighter !important; }
 }
 

@@ -36,75 +36,75 @@
 .c-stencil__avatar--small { height: 2.5rem; width: 2.5rem; }
 
 @media only screen and (max-width: 30em) {
-    .c-stencil__avatar--phone-portrait-only { height: 5rem; width: 5rem; }
-    .c-stencil__avatar--gargantuan--phone-portrait-only { height: 8.75rem; width: 8.75rem; }
-    .c-stencil__avatar--huge--phone-portrait-only { height: 7.5rem; width: 7.5rem; }
-    .c-stencil__avatar--large--phone-portrait-only { height: 6.25rem; width: 6.25rem; }
-    .c-stencil__avatar--medium--phone-portrait-only { height: 3.75rem; width: 3.75rem; }
-    .c-stencil__avatar--small--phone-portrait-only { height: 2.5rem; width: 2.5rem; }
+    .c-stencil__avatar\@phone-portrait-only { height: 5rem; width: 5rem; }
+    .c-stencil__avatar--gargantuan\@phone-portrait-only { height: 8.75rem; width: 8.75rem; }
+    .c-stencil__avatar--huge\@phone-portrait-only { height: 7.5rem; width: 7.5rem; }
+    .c-stencil__avatar--large\@phone-portrait-only { height: 6.25rem; width: 6.25rem; }
+    .c-stencil__avatar--medium\@phone-portrait-only { height: 3.75rem; width: 3.75rem; }
+    .c-stencil__avatar--small\@phone-portrait-only { height: 2.5rem; width: 2.5rem; }
 }
 
 @media only screen and (min-width: 30em) {
-    .c-stencil__avatar--phone-landscape-up { height: 5rem; width: 5rem; }
-    .c-stencil__avatar--gargantuan--phone-landscape-up { height: 8.75rem; width: 8.75rem; }
-    .c-stencil__avatar--huge--phone-landscape-up { height: 7.5rem; width: 7.5rem; }
-    .c-stencil__avatar--large--phone-landscape-up { height: 6.25rem; width: 6.25rem; }
-    .c-stencil__avatar--medium--phone-landscape-up { height: 3.75rem; width: 3.75rem; }
-    .c-stencil__avatar--small--phone-landscape-up { height: 2.5rem; width: 2.5rem; }
+    .c-stencil__avatar\@phone-landscape-up { height: 5rem; width: 5rem; }
+    .c-stencil__avatar--gargantuan\@phone-landscape-up { height: 8.75rem; width: 8.75rem; }
+    .c-stencil__avatar--huge\@phone-landscape-up { height: 7.5rem; width: 7.5rem; }
+    .c-stencil__avatar--large\@phone-landscape-up { height: 6.25rem; width: 6.25rem; }
+    .c-stencil__avatar--medium\@phone-landscape-up { height: 3.75rem; width: 3.75rem; }
+    .c-stencil__avatar--small\@phone-landscape-up { height: 2.5rem; width: 2.5rem; }
 }
 
 @media only screen and (min-width: 30em) and (max-width: 39.9375em) {
-    .c-stencil__avatar--phone-landscape-only { height: 5rem; width: 5rem; }
-    .c-stencil__avatar--gargantuan--phone-landscape-only { height: 8.75rem; width: 8.75rem; }
-    .c-stencil__avatar--huge--phone-landscape-only { height: 7.5rem; width: 7.5rem; }
-    .c-stencil__avatar--large--phone-landscape-only { height: 6.25rem; width: 6.25rem; }
-    .c-stencil__avatar--medium--phone-landscape-only { height: 3.75rem; width: 3.75rem; }
-    .c-stencil__avatar--small--phone-landscape-only { height: 2.5rem; width: 2.5rem; }
+    .c-stencil__avatar\@phone-landscape-only { height: 5rem; width: 5rem; }
+    .c-stencil__avatar--gargantuan\@phone-landscape-only { height: 8.75rem; width: 8.75rem; }
+    .c-stencil__avatar--huge\@phone-landscape-only { height: 7.5rem; width: 7.5rem; }
+    .c-stencil__avatar--large\@phone-landscape-only { height: 6.25rem; width: 6.25rem; }
+    .c-stencil__avatar--medium\@phone-landscape-only { height: 3.75rem; width: 3.75rem; }
+    .c-stencil__avatar--small\@phone-landscape-only { height: 2.5rem; width: 2.5rem; }
 }
 
 @media only screen and (min-width: 40em) {
-    .c-stencil__avatar--tablet-portrait-up { height: 5rem; width: 5rem; }
-    .c-stencil__avatar--gargantuan--tablet-portrait-up { height: 8.75rem; width: 8.75rem; }
-    .c-stencil__avatar--huge--tablet-portrait-up { height: 7.5rem; width: 7.5rem; }
-    .c-stencil__avatar--large--tablet-portrait-up { height: 6.25rem; width: 6.25rem; }
-    .c-stencil__avatar--medium--tablet-portrait-up { height: 3.75rem; width: 3.75rem; }
-    .c-stencil__avatar--small--tablet-portrait-up { height: 2.5rem; width: 2.5rem; }
+    .c-stencil__avatar\@tablet-portrait-up { height: 5rem; width: 5rem; }
+    .c-stencil__avatar--gargantuan\@tablet-portrait-up { height: 8.75rem; width: 8.75rem; }
+    .c-stencil__avatar--huge\@tablet-portrait-up { height: 7.5rem; width: 7.5rem; }
+    .c-stencil__avatar--large\@tablet-portrait-up { height: 6.25rem; width: 6.25rem; }
+    .c-stencil__avatar--medium\@tablet-portrait-up { height: 3.75rem; width: 3.75rem; }
+    .c-stencil__avatar--small\@tablet-portrait-up { height: 2.5rem; width: 2.5rem; }
 }
 
 @media only screen and (min-width: 40em) and (max-width: 63.9375em) {
-    .c-stencil__avatar--tablet-portrait-only { height: 5rem; width: 5rem; }
-    .c-stencil__avatar--gargantuan--tablet-portrait-only { height: 8.75rem; width: 8.75rem; }
-    .c-stencil__avatar--huge--tablet-portrait-only { height: 7.5rem; width: 7.5rem; }
-    .c-stencil__avatar--large--tablet-portrait-only { height: 6.25rem; width: 6.25rem; }
-    .c-stencil__avatar--medium--tablet-portrait-only { height: 3.75rem; width: 3.75rem; }
-    .c-stencil__avatar--small--tablet-portrait-only { height: 2.5rem; width: 2.5rem; }
+    .c-stencil__avatar\@tablet-portrait-only { height: 5rem; width: 5rem; }
+    .c-stencil__avatar--gargantuan\@tablet-portrait-only { height: 8.75rem; width: 8.75rem; }
+    .c-stencil__avatar--huge\@tablet-portrait-only { height: 7.5rem; width: 7.5rem; }
+    .c-stencil__avatar--large\@tablet-portrait-only { height: 6.25rem; width: 6.25rem; }
+    .c-stencil__avatar--medium\@tablet-portrait-only { height: 3.75rem; width: 3.75rem; }
+    .c-stencil__avatar--small\@tablet-portrait-only { height: 2.5rem; width: 2.5rem; }
 }
 
 @media only screen and (min-width: 64em) {
-    .c-stencil__avatar--tablet-landscape-up { height: 5rem; width: 5rem; }
-    .c-stencil__avatar--gargantuan--tablet-landscape-up { height: 8.75rem; width: 8.75rem; }
-    .c-stencil__avatar--huge--tablet-landscape-up { height: 7.5rem; width: 7.5rem; }
-    .c-stencil__avatar--large--tablet-landscape-up { height: 6.25rem; width: 6.25rem; }
-    .c-stencil__avatar--medium--tablet-landscape-up { height: 3.75rem; width: 3.75rem; }
-    .c-stencil__avatar--small--tablet-landscape-up { height: 2.5rem; width: 2.5rem; }
+    .c-stencil__avatar\@tablet-landscape-up { height: 5rem; width: 5rem; }
+    .c-stencil__avatar--gargantuan\@tablet-landscape-up { height: 8.75rem; width: 8.75rem; }
+    .c-stencil__avatar--huge\@tablet-landscape-up { height: 7.5rem; width: 7.5rem; }
+    .c-stencil__avatar--large\@tablet-landscape-up { height: 6.25rem; width: 6.25rem; }
+    .c-stencil__avatar--medium\@tablet-landscape-up { height: 3.75rem; width: 3.75rem; }
+    .c-stencil__avatar--small\@tablet-landscape-up { height: 2.5rem; width: 2.5rem; }
 }
 
 @media only screen and (min-width: 64em) and (max-width: 79.9375em) {
-    .c-stencil__avatar--tablet-landscape-only { height: 5rem; width: 5rem; }
-    .c-stencil__avatar--gargantuan--tablet-landscape-only { height: 8.75rem; width: 8.75rem; }
-    .c-stencil__avatar--huge--tablet-landscape-only { height: 7.5rem; width: 7.5rem; }
-    .c-stencil__avatar--large--tablet-landscape-only { height: 6.25rem; width: 6.25rem; }
-    .c-stencil__avatar--medium--tablet-landscape-only { height: 3.75rem; width: 3.75rem; }
-    .c-stencil__avatar--small--tablet-landscape-only { height: 2.5rem; width: 2.5rem; }
+    .c-stencil__avatar\@tablet-landscape-only { height: 5rem; width: 5rem; }
+    .c-stencil__avatar--gargantuan\@tablet-landscape-only { height: 8.75rem; width: 8.75rem; }
+    .c-stencil__avatar--huge\@tablet-landscape-only { height: 7.5rem; width: 7.5rem; }
+    .c-stencil__avatar--large\@tablet-landscape-only { height: 6.25rem; width: 6.25rem; }
+    .c-stencil__avatar--medium\@tablet-landscape-only { height: 3.75rem; width: 3.75rem; }
+    .c-stencil__avatar--small\@tablet-landscape-only { height: 2.5rem; width: 2.5rem; }
 }
 
 @media only screen and (min-width: 80em) {
-    .c-stencil__avatar--desktop-up { height: 5rem; width: 5rem; }
-    .c-stencil__avatar--gargantuan--desktop-up { height: 8.75rem; width: 8.75rem; }
-    .c-stencil__avatar--huge--desktop-up { height: 7.5rem; width: 7.5rem; }
-    .c-stencil__avatar--large--desktop-up { height: 6.25rem; width: 6.25rem; }
-    .c-stencil__avatar--medium--desktop-up { height: 3.75rem; width: 3.75rem; }
-    .c-stencil__avatar--small--desktop-up { height: 2.5rem; width: 2.5rem; }
+    .c-stencil__avatar\@desktop-up { height: 5rem; width: 5rem; }
+    .c-stencil__avatar--gargantuan\@desktop-up { height: 8.75rem; width: 8.75rem; }
+    .c-stencil__avatar--huge\@desktop-up { height: 7.5rem; width: 7.5rem; }
+    .c-stencil__avatar--large\@desktop-up { height: 6.25rem; width: 6.25rem; }
+    .c-stencil__avatar--medium\@desktop-up { height: 3.75rem; width: 3.75rem; }
+    .c-stencil__avatar--small\@desktop-up { height: 2.5rem; width: 2.5rem; }
 }
 
 
