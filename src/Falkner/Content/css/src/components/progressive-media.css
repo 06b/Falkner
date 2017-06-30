@@ -14,6 +14,8 @@
  * N5. Use to fill up space around the `c-progressive-media__content` to hide `c-progressive-media__proxy` when `c-progressive-media__content` is a transparent image.
  * N6. When `c-progressive-media__proxy--contain` is used, due to the content and/or proxy width and height being unknown - the proxy blur overflow can not be hidden, so use to hide the blur on a successful image load
  *     which requires javascript to detect that the image has loaded as the outline will fill the container depending on it's value which covers the proxy which makes using this technique pointless.
+ * N7. When `c-progressive-media__proxy--smooth-sharpen` is used, it allows for the initial blur of `c-progressive-media__proxy` to decrease over a set amount of time to appear as if it's loading.
+ * N8. `overflow:hidden` required due to the filter property having no effect on the geometry of the target element and can cause paint outside of the element's border box. - https://css-tricks.com/almanac/properties/f/filter/#article-header-id-13
  *
  * Example Usage:
  * <div class="c-progressive-media">
@@ -24,11 +26,12 @@
  *
  */
 
-.c-progressive-media { overflow: hidden; position:relative; }
+.c-progressive-media { overflow: hidden /* N8 */; position:relative; }
 .c-progressive-media__proxy { filter:blur(5px) /* N1 */; background-size: cover /* N1*/; background-repeat:no-repeat /* N1 */; background-position:center /* N1 */; overflow:hidden; top:0 /* N3 */; right:0 /* N3 */; bottom:0 /* N3 */; left:0 /* N3 */; position:absolute; z-index:1; }
 .c-progressive-media__content { top:0; position:absolute/* N2 */; z-index:2 /* N2 */; }
 
 .c-progressive-media__proxy--contain { background-size:contain /* N4 */; }
+.c-progressive-media__proxy--smooth-sharpen { filter:blur(1px) /* N7 */; transition: filter 2.5s ease-out /* N7 */; }
 
 .c-progressive-media__content--transparency-fix { background-color: var(--t-background-content-block) /* N5 */; }
 .c-progressive-media__content--successful-load-fix { outline:3in solid var(--t-background-content-block) /* N6 */; }
