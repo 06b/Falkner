@@ -107,7 +107,7 @@ img[height] { max-width: none; }
  * Give form elements some cursor interactions...
  */
 
-label,
+label[for],
 input,
 textarea,
 button,
