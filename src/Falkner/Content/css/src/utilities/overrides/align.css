@@ -108,9 +108,10 @@
 
 
 /**
+ * Classic "margin: 0 auto" centering
  * Easily center block level content if it's not taking up the full width of the parent.
- * AKA Classic '0 auto' centering
+ * Longhand used due to shorthand syntax can sometimes be harmful - https://csswizardry.com/2016/12/css-shorthand-syntax-considered-an-anti-pattern/
  */
 
-.u-align-center { margin: 0 auto; }
+.u-align-center { margin-right: auto; margin-left: auto; }
 
