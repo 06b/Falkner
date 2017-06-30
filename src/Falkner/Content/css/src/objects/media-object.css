@@ -37,21 +37,21 @@
 
 
 /* ----- (extends media) ----- */
-.o-media--reverse .o-media__image { float: right; margin-right: 0; margin-left: var(--t-gutter); }
+.o-media--reverse > .o-media__image { float: right; margin-right: 0; margin-left: var(--t-gutter); }
 
-.o-media--tiny .o-media__image { margin-right: var(--t-gutter--tiny); }
-.o-media--tiny.o-media--reverse .o-media__image { margin-right: 0; margin-left: var(--t-gutter--tiny); }
+.o-media--tiny > .o-media__image { margin-right: var(--t-gutter--tiny); }
+.o-media--tiny.o-media--reverse > .o-media__image { margin-right: 0; margin-left: var(--t-gutter--tiny); }
 
-.o-media--small .o-media__image { margin-right: var(--t-gutter--small); }
-.o-media--small.o-media--reverse .o-media__image { margin-right: 0; margin-left: var(--t-gutter--small); }
+.o-media--small > .o-media__image { margin-right: var(--t-gutter--small); }
+.o-media--small.o-media--reverse > .o-media__image { margin-right: 0; margin-left: var(--t-gutter--small); }
 
-.o-media--medium .o-media__image { margin-right: var(--t-gutter--medium); }
-.o-media--medium.o-media--reverse .o-media__image { margin-right: 0; margin-left: var(--t-gutter--medium); }
+.o-media--medium > .o-media__image { margin-right: var(--t-gutter--medium); }
+.o-media--medium.o-media--reverse > .o-media__image { margin-right: 0; margin-left: var(--t-gutter--medium); }
 
-.o-media--large .o-media__image { margin-right: var(--t-gutter--large); }
-.o-media--large.o-media--reverse .o-media__image { margin-right: 0; margin-left: var(--t-gutter--large); }
+.o-media--large > .o-media__image { margin-right: var(--t-gutter--large); }
+.o-media--large.o-media--reverse > .o-media__image { margin-right: 0; margin-left: var(--t-gutter--large); }
 
-.o-media--huge .o-media__image { margin-right: var(--t-gutter--huge); }
-.o-media--huge.o-media--reverse .o-media__image { margin-right: 0; margin-left: var(--t-gutter--huge); }
+.o-media--huge > .o-media__image { margin-right: var(--t-gutter--huge); }
+.o-media--huge.o-media--reverse > .o-media__image { margin-right: 0; margin-left: var(--t-gutter--huge); }
 
-.o-media--flush .o-media__image { margin-right: 0; margin-left: 0; }
+.o-media--flush > .o-media__image { margin-right: 0; margin-left: 0; }
