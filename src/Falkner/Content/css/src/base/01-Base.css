@@ -35,7 +35,17 @@ body { background: #fff; }
 
 /**
  * Placeholder styles
+ *
+ * Experimental: The `::placeholder` css pseudo-element has not been stabilized and is considered experimental technology.
+ *
+ * 1. The default color of the placeholder text is not of sufficient contrast with its default background color
+ * https://www.paciellogroup.com/blog/2011/02/html5-accessibility-chops-the-placeholder-attribute/
+ * 2. Until `::placeholder` becomes standardized vendor-prefixed selectors are recommended to reach across multiple browsers.
+ * https://css-tricks.com/almanac/selectors/p/placeholder/
+ *
  */
+
+/* stylelint-disable selector-no-vendor-prefix */
 
 /* WebKit browsers */
 ::-webkit-input-placeholder { color: #aaa; }
@@ -48,6 +58,11 @@ body { background: #fff; }
 
 /* Internet Explorer 10+ */
 :-ms-input-placeholder { color: #aaa; }
+
+/* stylelint-enable selector-no-vendor-prefix */
+
+/* Specification Working Draft */
+::placeholder { color: #aaa; }
 
 
 /**
@@ -124,6 +139,8 @@ abbr[title], dfn[title], [rel="help"], .help:hover { cursor: help; }
  * Suppress the focus outline on elements that cannot be accessed via keyboard.
  * This prevents an unwanted focus outline from appearing around elements that
  * might still respond to pointer events.
+ *
+ * Credit: https://github.com/suitcss/base
  */
 
 [tabindex="-1"]:focus { outline: none !important; }
@@ -133,7 +150,7 @@ abbr[title], dfn[title], [rel="help"], .help:hover { cursor: help; }
  * Set table cells to be vertically align to the top
  */
 
-td {  vertical-align: top; }
+td { vertical-align: top; }
 
 
 /**
