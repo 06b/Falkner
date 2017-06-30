@@ -2,7 +2,7 @@
  * Forces field to be one line and adds an ellipsis if the text escapes the bounds of it's container
  */
 
-.u-ellipsis { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.u-text-ellipsis { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
 
 
 /**
@@ -11,3 +11,12 @@
 
 .u-text-underline { text-decoration:underline; }
 
+
+/**
+ * Word breaking
+ *
+ * Specify whether or not the browser may break lines within words in order to prevent overflow when
+ * an otherwise unbreakable string is too long to fit in its containing box.
+ */
+
+.u-text-break { word-wrap: break-word !important; }
