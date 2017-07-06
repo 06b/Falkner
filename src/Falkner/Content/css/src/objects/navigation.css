@@ -53,12 +53,12 @@
     .o-navigation--stacked--phone-portrait-only > li > a { display: block; }
 }
 @media only screen and (min-width: 30em) {
-    .o-navigation--stacked--phone-landscape-up  > li { display: list-item; }
-    .o-navigation--stacked--phone-landscape-up  > li > a { display: block; }
+    .o-navigation--stacked--phone-landscape-up > li { display: list-item; }
+    .o-navigation--stacked--phone-landscape-up > li > a { display: block; }
 }
 @media only screen and (min-width: 30em) and (max-width: 39.9375em) {
-    .o-navigation--stacked--phone-landscape-only  > li { display: list-item; }
-    .o-navigation--stacked--phone-landscape-only  > li > a { display: block; }
+    .o-navigation--stacked--phone-landscape-only > li { display: list-item; }
+    .o-navigation--stacked--phone-landscape-only > li > a { display: block; }
 }
 @media only screen and (min-width: 40em) {
     .o-navigation--stacked--tablet-portrait-up > li { display: list-item; }
