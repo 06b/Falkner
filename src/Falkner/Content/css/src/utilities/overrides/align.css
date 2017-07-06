@@ -106,6 +106,57 @@
     .u-align-top--desktop-up { vertical-align: top !important; }
 }
 
+.u-align-text-top { vertical-align: text-top !important; }
+@media only screen and (max-width: 30em) {
+    .u-align-text-top--phone-portrait-only { vertical-align: text-top !important; }
+}
+@media only screen and (min-width: 30em) {
+    .u-align-text-top--phone-landscape-up { vertical-align: text-top !important; }
+}
+@media only screen and (min-width: 30em) and (max-width: 39.9375em) {
+    .u-align-text-top--phone-landscape-only { vertical-align: text-top !important; }
+}
+@media only screen and (min-width: 40em) {
+    .u-align-text-top--tablet-portrait-up { vertical-align: text-top !important; }
+}
+@media only screen and (min-width: 40em) and (max-width: 63.9375em) {
+    .u-align-text-top--tablet-portrait-only { vertical-align: text-top !important; }
+}
+@media only screen and (min-width: 64em) {
+    .u-align-text-top--tablet-landscape-up { vertical-align: text-top !important; }
+}
+@media only screen and (min-width: 64em) and (max-width: 79.9375em) {
+    .u-align-text-top--tablet-landscape-only { vertical-align: text-top !important; }
+}
+@media only screen and (min-width: 80em) {
+    .u-align-text-top--desktop-up { vertical-align: text-top !important; }
+}
+
+.u-align-text-bottom { vertical-align: text-bottom !important; }
+@media only screen and (max-width: 30em) {
+    .u-align-text-bottom--phone-portrait-only { vertical-align: text-bottom !important; }
+}
+@media only screen and (min-width: 30em) {
+    .u-align-text-bottom--phone-landscape-up { vertical-align: text-bottom !important; }
+}
+@media only screen and (min-width: 30em) and (max-width: 39.9375em) {
+    .u-align-text-bottom--phone-landscape-only { vertical-align: text-bottom !important; }
+}
+@media only screen and (min-width: 40em) {
+    .u-align-text-bottom--tablet-portrait-up { vertical-align: text-bottom !important; }
+}
+@media only screen and (min-width: 40em) and (max-width: 63.9375em) {
+    .u-align-text-bottom--tablet-portrait-only { vertical-align: text-bottom !important; }
+}
+@media only screen and (min-width: 64em) {
+    .u-align-text-bottom--tablet-landscape-up { vertical-align: text-bottom !important; }
+}
+@media only screen and (min-width: 64em) and (max-width: 79.9375em) {
+    .u-align-text-bottom--tablet-landscape-only { vertical-align: text-bottom !important; }
+}
+@media only screen and (min-width: 80em) {
+    .u-align-text-bottom--desktop-up { vertical-align: text-bottom !important; }
+}
 
 /**
  * Classic "margin: 0 auto" centering
