@@ -26,7 +26,7 @@
     --initial-rem-unit: 1rem;
     --initial-gutter-unit: var(--initial-rem-unit);
 
-    --initial-font-family:"Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+    --initial-font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", tahoma, sans-serif;
     --initial-z-index-increase-unit: 1;
 
     /**
