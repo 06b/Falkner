@@ -72,8 +72,8 @@
 
 @media only screen and (min-width: 64em) {
     .c-avatar--tablet-landscape-up { height: 5rem; width: 5rem; background-size: cover; overflow: hidden; }
-    .c-avatar--gargantuan--large--tablet-landscape-up { height: 8.75rem; width: 8.75rem; }
-    .c-avatar--huge--large--tablet-landscape-up { height: 7.5rem; width: 7.5rem; }
+    .c-avatar--gargantuan--tablet-landscape-up { height: 8.75rem; width: 8.75rem; }
+    .c-avatar--huge--tablet-landscape-up { height: 7.5rem; width: 7.5rem; }
     .c-avatar--large--tablet-landscape-up { height: 6.25rem; width: 6.25rem; }
     .c-avatar--medium--tablet-landscape-up { height: 3.75rem; width: 3.75rem; }
     .c-avatar--small--tablet-landscape-up { height: 2.5rem; width: 2.5rem; }
