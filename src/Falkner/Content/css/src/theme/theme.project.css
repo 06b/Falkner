@@ -55,12 +55,16 @@ hr { border-color:#000;}
 /**
  * Theme styling for SVG fills
  */
-.t-fill { fill: #000; }
-    .t-fill--primary { fill:#000; }
-    .t-fill--secondary { fill:#000; }
-    .t-fill--tertiary { fill:#000; }
-    .t-fill--accent { fill:#000; }
-    .t-fill--accent-secondary { fill:#000; }
+.t-fill { fill: var(--t-svg-default); }
+    .t-fill--primary { fill:var(--t-svg-primary); }
+    .t-fill--secondary { fill:var(--t-svg-secondary); }
+    .t-fill--tertiary { fill:currentColor; }
+    .t-fill--accent { fill:var(--t-svg-accent); }
+    .t-fill--accent-secondary { fill:var(--t-svg-accent-secondary); }
+    .t-fill--success { fill:var(--t-svg-success); }
+    .t-fill--alert { fill:var(--t-svg-alert); }
+    .t-fill--failure { fill:var(--t-svg-failure); }
+    .t-fill--highlight { fill: var(--t-svg-highlight); }
 
 
 /**

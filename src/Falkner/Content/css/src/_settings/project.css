@@ -98,4 +98,14 @@
      --t-background-alert: var(--crusta-orange);
      --t-background-failure: var(--red-orange);
 
+    /* ----- Colors (SVG) ----- */
+    --t-svg-default: var(--jet-black);
+    --t-svg-primary: var(--gallery-white);
+    --t-svg-secondary: var(--pure-white);
+    --t-svg-accent: var(--jet-black);
+    --t-svg-accent-secondary: var(--jet-black);
+    --t-svg-success: var(--chateau-green);
+    --t-svg-alert: var(--crusta-orange);
+    --t-svg-failure: var(--red-orange);
+    --t-svg-highlight: var(--highlight-yellow);
 }
