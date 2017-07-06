@@ -1,0 +1,40 @@
+﻿/*!
+ * WARNING: scope should be used sparingly - these should be used for a new styling context but may not necessarily cosmetic.
+ *
+ * Scope can be open to abuse and lead to poor CSS if not used wisely. If you find yourself having to call a certain scope style in multiple locations
+ * then it probably should be re-factored and moved outside of scope.
+ *
+ * Normally what would be used in scope would be things that we don't have control over - such as if we were using some third party content management system
+ * another case might be if we are needing to do certain styles that might be considered a 'one-off' or if it's a certain section of the site that needs to
+ * be styled a certain way that for certain pages but the markup remains the same with the exception of the class that get's appended which would be used as the
+ * scope hook.
+ *
+ */
+
+/**
+ * Number Input Spinner Adjustment
+ *
+ * Support: Chrome 59+
+ * Details: When requested to disable the spinner button across all browsers.
+ * Supporting Details: https://stackoverflow.com/questions/3790935/can-i-hide-the-html5-number-input-s-spin-box/27935448#27935448
+ * Additional Details: https://css-tricks.com/numeric-inputs-a-comparison-of-browser-defaults/
+ * Workaround: Use the `s-disable-spinners` scope class when it is requested to hide the up and down spin buttons on a number input either by wrapping the input
+ * or adding the class to the input directly.
+ *
+ * Notes:
+ * N1. Apparently some margin exists even if it's hidden.
+ *
+ */
+
+.s-disable-spinners input[type="number"]::-webkit-outer-spin-button,
+.s-disable-spinners input[type="number"]::-webkit-inner-spin-button,
+input[type="number"].s-disable-spinners::-webkit-outer-spin-button,
+input[type="number"].s-disable-spinners::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0 /* N1 */;
+}
+
+.s-disable-spinners input[type="number"],
+input[type="number"].s-disable-spinners {
+    -moz-appearance: textfield;
+}
