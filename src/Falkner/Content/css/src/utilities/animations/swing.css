@@ -1,5 +1,13 @@
 ﻿/**
  * Swing port from Animate.css - http://daneden.me/animate
+ *
+ * Notes:
+ * N1. Free up required resources when keyframe is at 100% - https://github.com/daneden/animate.css/issues/537#issuecomment-185738234
+ * N2. Due to the CSS Will Change Module Level 1 spec (https://www.w3.org/TR/css-will-change-1/) `will-change` should be applied a short time
+ *     before the animation actually starts so in cases where one wants to make use of `will-change` performance then a `u-*--hint` class should
+ *     be added in locations where an animation class will be used - https://github.com/daneden/animate.css/issues/537#issuecomment-186105273
+ * N3. WARNING - Be-careful using `u-*--hint` classes as it can also be harmful to performance if it is abused or can cause the browser
+ *     to crash due to running out of GPU memory - https://github.com/daneden/animate.css/issues/537#issuecomment-286775213
  */
 
 @keyframes swing {
@@ -21,6 +29,7 @@
 
   to {
     transform: rotate3d(0, 0, 1, 0deg);
+    will-change: auto /* N1 */;
   }
 }
 
@@ -28,3 +37,5 @@
   transform-origin: top center;
   animation-name: swing;
 }
+
+.u-swing--hint { will-change: transform /* N2 */ /* N3 */; }
