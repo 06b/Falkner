@@ -74,8 +74,11 @@
     --t-size-micro: calc(var(--initial-rem-unit) * 0.625);
 
     /* ----- Colors (Border) ----- */
-    --t-border-content-block: var(--ghost-gray);
+
     --t-border-invalid: var(--red-orange);
+
+        /* --- Search Form Component --- */
+        --t-border-content-block: var(--ghost-gray);
 
     /* ----- Colors (Text) ----- */
     --t-color-hyperlink: var(--default-link);
@@ -90,19 +93,22 @@
 
     /* ----- Colors (Background) ----- */
     --t-background-body: var(--pure-white);
-    
+
+        /* --- Progressive Media & Tabs Components --- */
+        --t-background-content-block: var(--pure-white);
+
     --t-background-default: var(--pure-white);
     --t-background-primary: var(--pure-white);
     --t-background-secondary: var(--pure-white);
     --t-background-tertiary: var(--pure-white);
     --t-background-accent: var(--pure-white);
-    --t-background-accent-secondary: var(--pure-white);    
-              
-    --t-background-content-block: var(--pure-white);
+    --t-background-accent-secondary: var(--pure-white);
+
     --t-background-transparent: var(--clear-glass);
 
-    --t-background-stencil: var(--gallery-white);
-    --t-background-stencil--loading: var(--pure-white);
+        /* --- Stencil Component --- */
+        --t-background-stencil: var(--gallery-white);
+        --t-background-stencil--loading: var(--pure-white);
 
     --t-background-highlight: var(--highlight-yellow);
     --t-background-success: var(--chateau-green);
