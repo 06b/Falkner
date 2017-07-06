@@ -2,6 +2,6 @@
  * Animated Class port from Animate.css - http://daneden.me/animate
  */
 
-.u-animated { -webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-fill-mode: both; animation-fill-mode: both; }
+.u-animated { animation-duration: 1s; animation-fill-mode: both; }
 
-    .u-animated.is-infinite { -webkit-animation-iteration-count: infinite; animation-iteration-count: infinite; }
+    .u-animated.is-infinite { animation-iteration-count: infinite; }
