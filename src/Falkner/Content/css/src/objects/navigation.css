@@ -89,7 +89,7 @@
  */
 
 .o-breadcrumb > li + li:before { content: "\00BB" "\00A0"; }
-.o-breadcrumb .root { font-weight: bold /* 1b */; }
+.o-breadcrumb .root { font-weight: 400 /* 1b */; }
 
 
 /* ----- (extends breadcrumb) ----- */
