@@ -1,0 +1,32 @@
+﻿/*!
+ * WARNING: scope should be used sparingly - these should be used for a new styling context but may not necessarily cosmetic.
+ *
+ * Scope can be open to abuse and lead to poor CSS if not used wisely. If you find yourself having to call a certain scope style in multiple locations
+ * then it probably should be re-factored and moved outside of scope.
+ *
+ * Normally what would be used in scope would be things that we don't have control over - such as if we were using some third party content management system
+ * another case might be if we are needing to do certain styles that might be considered a 'one-off' or if it's a certain section of the site that needs to
+ * be styled a certain way that for certain pages but the markup remains the same with the exception of the class that get's appended which would be used as the
+ * scope hook.
+ *
+ */
+
+/**
+ * SVG Scope
+ *
+ * Support: Edge 14+
+ * Details: When using a linked SVG wrapped around an anchor- if the SVG is clicked on rather than any surrounding whitespace within
+ *          the anchor the browser will remain on the same page rather than navigating to the link in Edge.
+ * Supporting Details: https://github.com/06b/MS-Edge-Anchor-wrapped-around-SVG-use-not-triggering-click-when-used-with-pseudo-class-present-bug
+ * Edge Bug: https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/11920214/
+ * Workaround: Set `pointer-events:none` on svg elements limiting workaround to specific Edge releases to make keep an eye on this issue rather
+ *             than setting the workaround globally to Edge releases.
+ * Dependency: Depends on some sort of browser detection in which browser-specific CSS class to the root element in this case targeting the
+ *             specific versions of Edge.
+ * Fix: Once Microsoft updates Edge to fix the above bug and the workaround is no longer needed for any older supported browsers the workaround
+ *      can be deleted.
+ */
+
+.s-svg.edge13 svg, .s-svg.edge14 svg, .s-svg.edge15 svg {
+    pointer-events: none;
+}
