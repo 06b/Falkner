@@ -76,6 +76,7 @@
     <Content Include="Content\css\src\components\unsupported.css" />
     <Content Include="Content\css\src\objects\resource-block.css" />
     <Content Include="Content\css\src\scope\example.css" />
+    <Content Include="Content\css\src\scope\svg.css" />
     <Content Include="Content\css\src\scope\visualize-layout.css" />
     <Content Include="Content\css\src\theme\theme.project.css" />
     <Content Include="Content\css\src\utilities\animations\animated.css" />

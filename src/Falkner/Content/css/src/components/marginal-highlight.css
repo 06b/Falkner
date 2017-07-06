@@ -28,7 +28,7 @@
 
 .c-marginal-highlight--alert {
     background-color: var(--t-background-alert);
-    background-image: repeating-linear-gradient(45deg, transparent, transparent 5px, rgba(255,255,255,.5) 5px, rgba(255,255,255,.5) 10px);
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 5px, rgba(255,255,255,0.5) 5px, rgba(255,255,255,0.5) 10px);
 }
 
 .c-marginal-highlight--failure { background-color: var(--t-background-failure); }
