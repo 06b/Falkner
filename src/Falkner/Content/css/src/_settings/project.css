@@ -72,6 +72,8 @@
     --t-size-milli: calc(var(--initial-rem-unit) * 0.75);
     --t-size-micro: calc(var(--initial-rem-unit) * 0.625);
 
+    /* ----- Colors (Border) ----- */
+    --t-border-invalid: var(--red-orange);
     /* ----- Colors (Text) ----- */
      --t-color-hyperlink: var(--default-link);
      --t-color-content-text: var(--jet-black);
@@ -85,6 +87,8 @@
 
     /* ----- Colors (Background) ----- */
      --t-background-body: var(--pure-white);
+    --t-background-content-block: var(--pure-white);
+    --t-background-transparent: var(--clear-glass);
 
      --t-background-stencil: var(--gallery-white);
      --t-background-stencil--loading: var(--pure-white);
