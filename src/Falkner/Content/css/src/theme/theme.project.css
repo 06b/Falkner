@@ -53,6 +53,22 @@ hr { border-color:#000;}
     .t-background--error { background-color: var(--t-background-failure); }
     .t-background--transparent { background-color: var(--t-background-transparent); }
 
+
+/**
+ * Theme styling for borders
+ */
+.t-border { border: 1px solid currentColor; }
+.t-border-color { border-color: currentColor; }
+    .t-border-color--primary { border-color: var(--t-border-primary); }
+    .t-border-color--secondary { border-color: var(--t-border-secondary); }
+    .t-border-color--tertiary { border-color: var(--t-border-tertiary); }
+    .t-border-color--accent { border-color: var(--t-border-accent); }
+    .t-border-color--accent-secondary { border-color: var(--t-border-accent-secondary); }
+    .t-border-color--error { border-color: var(--t-border-invalid); }
+    .t-border-type--dashed { border-style: dashed; }
+    .t-border-radius--rounded { border-radius: 50%; }
+
+
 /**
  * Theme styling for SVG fills
  */
