@@ -109,7 +109,7 @@ gulp.task('stylelint', function () {
             "declaration-empty-line-before": "never",
             //"declaration-no-important": true, //Only use when checking if !important is being used - note that !important is acceptable in utilities
 
-            //TODO: Declaration Block
+            //Declaration Block
             "declaration-block-no-duplicate-properties": [true, {
                 "ignore": ["consecutive-duplicates-with-different-values"]
             }],
@@ -119,6 +119,7 @@ gulp.task('stylelint', function () {
             "declaration-block-semicolon-newline-before": "never-multi-line",
             "declaration-block-semicolon-space-after": "always-single-line",
             "declaration-block-semicolon-space-before": "never",
+            //"declaration-block-single-line-max-declarations": 1, //TODO: Make this change in the future - this would allow for reduced chance of merge conflicts and would be more 'truthful' when viewing a diff - see cssguidlin.es
             "declaration-block-trailing-semicolon": "always",
             //Block
             "block-closing-brace-empty-line-before": "never", //False Positives in nested rules - look into following feature request https://github.com/stylelint/stylelint/issues/2090
