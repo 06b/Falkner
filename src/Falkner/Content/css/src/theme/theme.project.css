@@ -44,13 +44,14 @@ hr { border-color:#000;}
 /**
  * Theme styling for backgrounds
  */
-.t-background { background-color: #000; }
-    .t-background--primary { background-color:#000; }
-    .t-background--secondary { background-color:#000; }
-    .t-background--tertiary { background-color:#000; }
-    .t-background--accent { background-color:#000; }
-    .t-background--accent-secondary { background-color:#000; }
-    .t-background--error { background-color:#000; }
+.t-background { background-color: var(--t-background-default); }
+    .t-background--primary { background-color: var(--t-background-primary); }
+    .t-background--secondary { background-color: var(--t-background-secondary); }
+    .t-background--tertiary { background-color: var(--t-background-tertiary); }
+    .t-background--accent { background-color: var(--t-background-accent); }
+    .t-background--accent-secondary { background-color: var(--t-background-accent-secondary); }
+    .t-background--error { background-color: var(--t-background-failure); }
+    .t-background--transparent { background-color: var(--t-background-transparent); }
 
 /**
  * Theme styling for SVG fills
@@ -70,7 +71,7 @@ hr { border-color:#000;}
 /**
  * Theme styling for text color styles
  */
-.t-color { color:var(--t-color-content-text); }
+.t-color { color: var(--t-color-content-text); }
     .t-color--primary { color: var(--t-color-content-text--primary); }
     .t-color--secondary { color: var(--t-color-content-text--secondary); }
     .t-color--tertiary { color: var(--t-color-content-text--tertiary); }

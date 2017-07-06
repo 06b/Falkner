@@ -18,6 +18,7 @@
     --chateau-green: #40A350;
     --red-orange: #ff4136;
     --gallery-white: #eee;
+    --ghost-gray: #cccccd;
     --highlight-yellow: #FFD100;
     --jet-black: #222;
     --default-link: #194C97;
@@ -73,6 +74,7 @@
     --t-size-micro: calc(var(--initial-rem-unit) * 0.625);
 
     /* ----- Colors (Border) ----- */
+    --t-border-content-block: var(--ghost-gray);
     --t-border-invalid: var(--red-orange);
 
     /* ----- Colors (Text) ----- */
@@ -88,6 +90,14 @@
 
     /* ----- Colors (Background) ----- */
     --t-background-body: var(--pure-white);
+    
+    --t-background-default: var(--pure-white);
+    --t-background-primary: var(--pure-white);
+    --t-background-secondary: var(--pure-white);
+    --t-background-tertiary: var(--pure-white);
+    --t-background-accent: var(--pure-white);
+    --t-background-accent-secondary: var(--pure-white);    
+              
     --t-background-content-block: var(--pure-white);
     --t-background-transparent: var(--clear-glass);
 
