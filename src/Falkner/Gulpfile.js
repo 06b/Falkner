@@ -27,7 +27,9 @@ gulp.task('default', function () {
 
 });
 
-gulp.task('stylelint', function () {
+gulp.task('stylelint', function ()
+{
+    // TODO: Look also into stylelint-suitcss pluginpack - https://github.com/suitcss/stylelint-suitcss based off the recommendation of this rule and see if useful https://stylelint.io/user-guide/rules/selector-root-no-composition/
     // Stylelint config rules
     var stylelintConfig = {
         "rules": {
