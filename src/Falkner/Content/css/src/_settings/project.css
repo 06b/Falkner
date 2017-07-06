@@ -12,21 +12,21 @@
      * Base Custom Properties
      */
 
-     --clear-glass: transparent;
-     --pure-white: #fff;
-     --crusta-orange: #f77b44;
-     --chateau-green: #40A350;
-     --red-orange: #ff4136;
-     --gallery-white: #eee;
-     --highlight-yellow: #FFD100;
-     --jet-black: #222;
-     --default-link: #194C97;
+    --clear-glass: transparent;
+    --pure-white: #fff;
+    --crusta-orange: #f77b44;
+    --chateau-green: #40A350;
+    --red-orange: #ff4136;
+    --gallery-white: #eee;
+    --highlight-yellow: #FFD100;
+    --jet-black: #222;
+    --default-link: #194C97;
 
-     --initial-rem-unit: 1rem;
-     --initial-gutter-unit: var(--initial-rem-unit);
+    --initial-rem-unit: 1rem;
+    --initial-gutter-unit: var(--initial-rem-unit);
 
-     --initial-font-family:"Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-     --initial-z-index-increase-unit: 1;
+    --initial-font-family:"Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+    --initial-z-index-increase-unit: 1;
 
     /**
      * Theme Custom Properties - Only adjust the variables values to use the base custom properties from above.
@@ -34,23 +34,23 @@
      */
 
     /* ----- Dealing with z-index ----- */
-     --t-depth--negative-one: calc(var(--initial-z-index-increase-unit) * -1);
-     --t-depth--one: var(--initial-z-index-increase-unit);
-     --t-depth--ten: calc(var(--initial-z-index-increase-unit) * 10);
-     --t-depth--twenty: calc(var(--initial-z-index-increase-unit) * 20);
-     --t-depth--one-hundred: calc(var(--initial-z-index-increase-unit) * 100);
-     --t-depth--one-thousand: calc(var(--initial-z-index-increase-unit) * 1000);
+    --t-depth--negative-one: calc(var(--initial-z-index-increase-unit) * -1);
+    --t-depth--one: var(--initial-z-index-increase-unit);
+    --t-depth--ten: calc(var(--initial-z-index-increase-unit) * 10);
+    --t-depth--twenty: calc(var(--initial-z-index-increase-unit) * 20);
+    --t-depth--one-hundred: calc(var(--initial-z-index-increase-unit) * 100);
+    --t-depth--one-thousand: calc(var(--initial-z-index-increase-unit) * 1000);
 
     /* ----- Spacing ----- */
-     --t-gutter--diminutive: calc(var(--initial-gutter-unit) * 0.125);
-     --t-gutter--tiny: calc(var(--initial-gutter-unit) * 0.25);
-     --t-gutter--small: calc(var(--initial-gutter-unit) * 0.5);
-     --t-gutter--medium: calc(var(--initial-gutter-unit) * 0.75);
-     --t-gutter: var(--initial-gutter-unit);
-     --t-gutter--large: calc(var(--initial-gutter-unit) * 1.5);
-     --t-gutter--huge: calc(var(--initial-gutter-unit) * 2);
-     --t-gutter--gargantuan: calc(var(--initial-gutter-unit) * 3);
-     --t-gutter--colossal: calc(var(--initial-gutter-unit) * 4);
+    --t-gutter--diminutive: calc(var(--initial-gutter-unit) * 0.125);
+    --t-gutter--tiny: calc(var(--initial-gutter-unit) * 0.25);
+    --t-gutter--small: calc(var(--initial-gutter-unit) * 0.5);
+    --t-gutter--medium: calc(var(--initial-gutter-unit) * 0.75);
+    --t-gutter: var(--initial-gutter-unit);
+    --t-gutter--large: calc(var(--initial-gutter-unit) * 1.5);
+    --t-gutter--huge: calc(var(--initial-gutter-unit) * 2);
+    --t-gutter--gargantuan: calc(var(--initial-gutter-unit) * 3);
+    --t-gutter--colossal: calc(var(--initial-gutter-unit) * 4);
 
     /* ----- Fonts -----*/
     --t-font-stack-content: var(--initial-font-family);
@@ -74,29 +74,30 @@
 
     /* ----- Colors (Border) ----- */
     --t-border-invalid: var(--red-orange);
+
     /* ----- Colors (Text) ----- */
-     --t-color-hyperlink: var(--default-link);
-     --t-color-content-text: var(--jet-black);
-     --t-color-content-text--primary: var(--jet-black);
-     --t-color-content-text--secondary: var(--jet-black);
-     --t-color-content-text--tertiary: var(--jet-black);
-     --t-color-content-text--accent: var(--jet-black);
-     --t-color-content-text--accent-secondary: var(--jet-black);
-     --t-color-content-text--success: var(--chateau-green);
-     --t-color-content-text--failure: var(--red-orange);
+    --t-color-hyperlink: var(--default-link);
+    --t-color-content-text: var(--jet-black);
+    --t-color-content-text--primary: var(--jet-black);
+    --t-color-content-text--secondary: var(--jet-black);
+    --t-color-content-text--tertiary: var(--jet-black);
+    --t-color-content-text--accent: var(--jet-black);
+    --t-color-content-text--accent-secondary: var(--jet-black);
+    --t-color-content-text--success: var(--chateau-green);
+    --t-color-content-text--failure: var(--red-orange);
 
     /* ----- Colors (Background) ----- */
-     --t-background-body: var(--pure-white);
+    --t-background-body: var(--pure-white);
     --t-background-content-block: var(--pure-white);
     --t-background-transparent: var(--clear-glass);
 
-     --t-background-stencil: var(--gallery-white);
-     --t-background-stencil--loading: var(--pure-white);
+    --t-background-stencil: var(--gallery-white);
+    --t-background-stencil--loading: var(--pure-white);
 
-     --t-background-highlight: var(--highlight-yellow);
-     --t-background-success: var(--chateau-green);
-     --t-background-alert: var(--crusta-orange);
-     --t-background-failure: var(--red-orange);
+    --t-background-highlight: var(--highlight-yellow);
+    --t-background-success: var(--chateau-green);
+    --t-background-alert: var(--crusta-orange);
+    --t-background-failure: var(--red-orange);
 
     /* ----- Colors (SVG) ----- */
     --t-svg-default: var(--jet-black);
