@@ -11,7 +11,7 @@
  *
  */
 
-.c-counter { display:inline-block; border-radius:50%; text-align:center; font-weight:bold; line-height:1.6; font-size:11px; padding:3px; min-width:1rem; min-height:1rem; }
+.c-counter { display:inline-block; border-radius:50%; text-align:center; font-weight:bold; line-height:1.6; font-size:11px; padding:3px; min-width:1.4rem; min-height:1rem; }
 .c-counter--pinned { position:absolute /* N1 */; }
 .c-counter--pinned-top { top:0; }
 .c-counter--pinned-right { right:0; }
