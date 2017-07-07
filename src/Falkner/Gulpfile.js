@@ -11,6 +11,11 @@ var gulp = require('gulp');
 var postcss = require("gulp-postcss");
 
 /**
+ * PostCSS Ordered Values - Ensure values are ordered consistently in your CSS.
+ */
+var orderedValues = require('postcss-ordered-values');
+
+/**
  * PostCSS Reporter - Log PostCSS messages in the console
  */
 var reporter = require('postcss-reporter');
@@ -30,6 +35,22 @@ var parker = require('gulp-parker');
  */
 
 var del = require('del');
+
+/**
+ * CSSComb - Sorts CSS Properties within each selector declaration in a predefined order to improve maintenance.
+ */
+var csscomb = require('gulp-csscomb');
+
+/**
+ * Gulp Log2 - Support for simple log statements in the gulp pipeline
+ */
+var log = require('gulp-log2');
+
+/**
+ * perfectionist - Beautify CSS files.
+ */
+var perfectionist  = require('perfectionist');
+
 
 gulp.task('default', function () {
 
@@ -255,4 +276,19 @@ gulp.task('prepare-parker', function () {
         .pipe(parker({
             file: 'report.md'
         }));
+});
+
+    var cssSrc = './Content/css/src/{base,components,components/**,layout,objects,scope,theme,utilities,utilities/**,vendor,vendor/**}/*.css';
+    console.log('Running CSSComb - sorting CSS Properties within each selector declaration');
+
+    return gulp.src(cssSrc)
+        .pipe(log("Starting CSSComb - sorting CSS Properties within each selector declaration"))
+        .pipe(csscomb())
+        .pipe(log("Ending CSSComb"))
+        .pipe(log("Starting PostCSS"))
+        .pipe(postcss([
+            orderedValues(),
+            perfectionist({ trimLeadingZero: false })
+        ]))
+        .pipe(log("Ending PostCSS"))
 });
