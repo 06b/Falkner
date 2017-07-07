@@ -1,9 +1,11 @@
 {
   "name": "Falkner",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": true,
   "devDependencies": {
+    "del": "3.0.0",
     "gulp": "3.9.1",
+    "gulp-parker": "0.1.4",
     "gulp-postcss": "7.0.0",
     "postcss-reporter": "4.0.0",
     "stylelint": "7.11.0"
