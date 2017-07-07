@@ -278,6 +278,7 @@ gulp.task('prepare-parker', function () {
         }));
 });
 
+gulp.task('normalize-css-styles', function () {
     var cssSrc = './Content/css/src/{base,components,components/**,layout,objects,scope,theme,utilities,utilities/**,vendor,vendor/**}/*.css';
     console.log('Running CSSComb - sorting CSS Properties within each selector declaration');
 
@@ -291,4 +292,5 @@ gulp.task('prepare-parker', function () {
             perfectionist({ trimLeadingZero: false })
         ]))
         .pipe(log("Ending PostCSS"))
+        .pipe(gulp.dest('./Content/css/dist'));
 });
