@@ -79,13 +79,7 @@ gulp.task('stylelint', function ()
   .pipe(postcss(processors));
 });
 
-gulp.task('parker', ['prepare-parker'], function () {
-
-    console.log('Markdown File (report.md) is located at the root of the Solution');
-
-});
-
-gulp.task('prepare-parker', function () {
+gulp.task('parker', function () {
 
     del(['./report.md'])
 
@@ -97,7 +91,8 @@ gulp.task('prepare-parker', function () {
     )
         .pipe(parker({
             file: 'report.md'
-        }));
+        }))
+        .pipe(log("Markdown File (report.md) is located at the root of the Solution"));
 });
 
 gulp.task('normalize-css-styles', function () {
