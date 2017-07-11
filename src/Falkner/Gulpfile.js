@@ -47,9 +47,9 @@ var csscomb = require('gulp-csscomb');
 var log = require('gulp-log2');
 
 /**
- * perfectionist - Beautify CSS files.
+ * PostCSS Discard Duplicates - Discard duplicate rules in your CSS files with PostCSS.
  */
-var perfectionist  = require('perfectionist');
+var discardDuplicates = require('postcss-discard-duplicates');
 
 
 gulp.task('default', function () {
@@ -283,14 +283,15 @@ gulp.task('normalize-css-styles', function () {
     console.log('Running CSSComb - sorting CSS Properties within each selector declaration');
 
     return gulp.src(cssSrc)
+        .pipe(log("Starting PostCSS"))
+        .pipe(postcss([
+            discardDuplicates(),
+            orderedValues()
+        ]))
+        .pipe(log("Ending PostCSS"))
         .pipe(log("Starting CSSComb - sorting CSS Properties within each selector declaration"))
         .pipe(csscomb())
         .pipe(log("Ending CSSComb"))
-        .pipe(log("Starting PostCSS"))
-        .pipe(postcss([
-            orderedValues(),
-            perfectionist({ trimLeadingZero: false })
-        ]))
-        .pipe(log("Ending PostCSS"))
-        .pipe(gulp.dest('./Content/css/dist'));
+        .pipe(gulp.dest('./Content/css/normalized'))
+        .pipe(log("CSS Normalization is complete, compare changes in src against normalized"));
 });
