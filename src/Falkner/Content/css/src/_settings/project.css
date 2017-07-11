@@ -15,13 +15,13 @@
     --clear-glass: transparent;
     --pure-white: #fff;
     --crusta-orange: #f77b44;
-    --chateau-green: #40A350;
+    --chateau-green: #40a350;
     --red-orange: #ff4136;
     --gallery-white: #eee;
     --ghost-gray: #cccccd;
-    --highlight-yellow: #FFD100;
+    --highlight-yellow: #ffd100;
     --jet-black: #222;
-    --default-link: #194C97;
+    --default-link: #194c97;
 
     --initial-rem-unit: 1rem;
     --initial-gutter-unit: var(--initial-rem-unit);
