@@ -125,4 +125,8 @@
     --t-svg-alert: var(--crusta-orange);
     --t-svg-failure: var(--red-orange);
     --t-svg-highlight: var(--highlight-yellow);
+
+            /* --- Search Form Component --- */
+        --t-svg-icon-failure: var(--gallery-white);
+
 }

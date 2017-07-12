@@ -69,5 +69,5 @@
 
 .invalid .c-search-form__button-icon
 {
-    color: var(--t-color-alternative-block-text) /*N1*/;
+    color: var(--t-svg-icon-failure) /*N1*/;
 }
