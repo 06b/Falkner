@@ -10,15 +10,32 @@
  * 4. Disable stylelint rule as border-box performance impact isn't significant when using the universal selector - https://www.paulirish.com/2012/box-sizing-border-box-ftw/#content
  */
 
-html { color: #222 /* 1 */; overflow-y: scroll /* 2 */; min-height: 100% /* 2 */; box-sizing: border-box /* 3 */;}
-*, *::before, *::after { box-sizing: inherit /* 3 */ /* 4 */; /* stylelint-disable selector-no-universal */ }
+html
+{
+    overflow-y: scroll /* 2 */;
+    box-sizing: border-box /* 3 */;
+    min-height: 100% /* 2 */;
+    color: #222 /* 1 */;
+}
+
+/* stylelint-disable selector-no-universal */
+*,
+*::before,
+*::after
+{
+    box-sizing: inherit /* 3 */ /* 4 */;
+}
+/* stylelint-enable selector-no-universal */
 
 
 /**
  * 1. Don't show your underwear... http://www.zeldman.com/2008/11/07/is-your-websites-underwear-showing/
  */
 
-body { background: #fff; }
+body
+{
+    background: #fff;
+}
 
 
 /**
@@ -30,7 +47,12 @@ body { background: #fff; }
  * 1. Defaulting to a blue which has a 4.7 contrast ratio from #fff http://leaverou.github.io/contrast-ratio/#%23fff-on-%230074D9
  */
 
-::selection { color: #fff /* 1 */; background: #0074d9 /* 1 */; text-shadow: none; }
+::selection
+{
+    background: #0074d9 /* 1 */;
+    color: #fff /* 1 */;
+    text-shadow: none;
+}
 
 
 /**
@@ -48,51 +70,87 @@ body { background: #fff; }
 /* stylelint-disable selector-no-vendor-prefix */
 
 /* WebKit browsers */
-::-webkit-input-placeholder { color: #aaa; }
+::-webkit-input-placeholder
+{
+    color: #aaa;
+}
 
 /* Mozilla Firefox 19+ */
-::-moz-placeholder { color: #aaa; }
+::-moz-placeholder
+{
+    color: #aaa;
+}
 
 /* MS Edge */
-::-ms-input-placeholder { color: #aaa; }
+::-ms-input-placeholder
+{
+    color: #aaa;
+}
 
 /* Internet Explorer 10+ */
-:-ms-input-placeholder { color: #aaa; }
+:-ms-input-placeholder
+{
+    color: #aaa;
+}
 
 /* stylelint-enable selector-no-vendor-prefix */
 
 /* Specification Working Draft */
-::placeholder { color: #aaa; }
+::placeholder
+{
+    color: #aaa;
+}
 
 
 /**
  * A better looking default horizontal rule
  */
 
-hr { display: block; height: 1px; margin: 1em 0; padding: 0; border: 0; border-top: 1px solid #ccc; }
+hr
+{
+    display: block;
+    margin: 1em 0;
+    padding: 0;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+}
 
 
 /**
  * Remove default fieldset styles.
  */
 
-fieldset { margin: 0; padding: 0; border: 0; }
+fieldset
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
 
 
 /**
  * Allow only vertical resizing of textareas.
  */
 
-textarea { resize: vertical; }
+textarea
+{
+    resize: vertical;
+}
 
 
 /**
- * 1. So that `alt` text is visually offset if images don’t load.
+ * 1. So that `alt` text is visually offset if images don't load.
  * 2. Fluid images.
  * 3. Maintain aspect ratio of scaled images
  */
 
-img { font-style: italic /* 1 */; max-width: 100% /* 2 */; height: auto /* 3 */; }
+img
+{
+    max-width: 100% /* 2 */;
+    height: auto /* 3 */;
+    font-style: italic /* 1 */;
+}
 
 
 /**
@@ -100,7 +158,10 @@ img { font-style: italic /* 1 */; max-width: 100% /* 2 */; height: auto /* 3 */;
  */
 
 img[width],
-img[height] { max-width: none; }
+img[height]
+{
+    max-width: none;
+}
 
 
 /**
@@ -112,27 +173,46 @@ input,
 textarea,
 button,
 select,
-option { cursor: pointer; }
+option
+{
+    cursor: pointer;
+}
 
 
 /**
  * Give a not-allowed cursor to elements that are disabled
  */
 
-[disabled], button[disabled], html input[disabled], :disabled, .u-disabled:hover { cursor: not-allowed !important; }
+[disabled],
+button[disabled],
+html input[disabled],
+:disabled,
+.u-disabled:hover
+{
+    cursor: not-allowed !important;
+}
 
 /**
  * Don't show pointer cursor on readonly inputs
  */
 
-[readonly] { cursor: default; }
+[readonly]
+{
+    cursor: default;
+}
 
 
 /**
  * Give a help cursor to elements that give extra info on `:hover`.
  */
 
-abbr[title], dfn[title], [rel="help"], .help:hover { cursor: help; }
+abbr[title],
+dfn[title],
+[rel="help"],
+.help:hover
+{
+    cursor: help;
+}
 
 
 /**
@@ -143,14 +223,20 @@ abbr[title], dfn[title], [rel="help"], .help:hover { cursor: help; }
  * Credit: https://github.com/suitcss/base
  */
 
-[tabindex="-1"]:focus { outline: none !important; }
+[tabindex="-1"]:focus
+{
+    outline: none !important;
+}
 
 
 /**
  * Set table cells to be vertically align to the top
  */
 
-td { vertical-align: top; }
+td
+{
+    vertical-align: top;
+}
 
 
 /**
@@ -161,6 +247,7 @@ td { vertical-align: top; }
  * Fix: Rather than disabling native browser validation - remove the styles on invalid required inputs and apply them via non-native browser validation
  */
 
-[required]:invalid {
-    box-shadow:none;
+[required]:invalid
+{
+    box-shadow: none;
 }

@@ -12,7 +12,11 @@
  * Related: https://www.smashingmagazine.com/2016/05/fluid-typography/
  */
 
-body { font-size: calc(var(--t-size-body-copy) + 0.025vw) /* 2 */; line-height: 1.5 /* 1 */; }
+body
+{
+    font-size: calc(var(--t-size-body-copy) + 0.025vw) /* 2 */;
+    line-height: 1.5 /* 1 */;
+}
 
 
 /**
@@ -28,14 +32,45 @@ body { font-size: calc(var(--t-size-body-copy) + 0.025vw) /* 2 */; line-height: 
  * Related: https://www.smashingmagazine.com/2016/05/fluid-typography/
  */
 
-h1,h2,h3,h4,h5,h6 { line-height:1.125 /* 1 */; }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+    line-height: 1.125 /* 1 */;
+}
 
-h1 { font-size: calc(var(--t-size-alpha) + 0.1vw) /* 2 */; }
-h2 { font-size: calc(var(--t-size-beta) + 0.1vw) /* 2 */; }
-h3 { font-size: calc(var(--t-size-gamma) + 0.1vw) /* 2 */; }
-h4 { font-size: calc(var(--t-size-delta) + 0.1vw) /* 2 */; }
-h5 { font-size:calc(var(--t-size-epsilon) + 0.1vw) /* 2 */; }
-h6 { }
+h1
+{
+    font-size: calc(var(--t-size-alpha) + 0.1vw) /* 2 */;
+}
+
+h2
+{
+    font-size: calc(var(--t-size-beta) + 0.1vw) /* 2 */;
+}
+
+h3
+{
+    font-size: calc(var(--t-size-gamma) + 0.1vw) /* 2 */;
+}
+
+h4
+{
+    font-size: calc(var(--t-size-delta) + 0.1vw) /* 2 */;
+}
+
+h5
+{
+    font-size: calc(var(--t-size-epsilon) + 0.1vw) /* 2 */;
+}
+
+h6
+{
+
+}
 
 
 /**
@@ -45,16 +80,72 @@ h6 { }
  * 1. .4em is roughly equal to the width of the opening “ that we wish to hang.
  */
 
-q { quotes: "\2018" "\2019" "\201C" "\201D"; }
-    q:before { content: "\2018"; content: open-quote; }
-    q:after { content: "\2019"; content: close-quote; }
-    q q:before { content: "\201C"; content: open-quote; }
-    q q:after { content: "\201D"; content: close-quote; }
+q
+{
+    quotes: "\2018" "\2019" "\201C" "\201D";
+}
 
-blockquote { text-indent: -0.41rem /* 1 */; quotes: "\201C" "\201D"; }
-    blockquote p:before { content: "\201C"; content: open-quote; }
-    blockquote p:after { content: ""; content: no-close-quote; }
-    blockquote q:before { content: "\2018"; content: open-quote; }
-    blockquote q:after { content: "\2019"; content: close-quote; }
-    blockquote p:last-of-type { margin-bottom: 0; }
-    blockquote p:last-of-type:after { content: "\201D"; content: close-quote; }
+q:before
+{
+    content: "\2018";
+    content: open-quote;
+}
+
+q:after
+{
+    content: "\2019";
+    content: close-quote;
+}
+
+q q:before
+{
+    content: "\201C";
+    content: open-quote;
+}
+
+q q:after
+{
+    content: "\201D";
+    content: close-quote;
+}
+
+blockquote
+{
+    quotes: "\201C" "\201D";
+    text-indent: -0.41rem /* 1 */;
+}
+
+blockquote p:before
+{
+    content: "\201C";
+    content: open-quote;
+}
+
+blockquote p:after
+{
+    content: "";
+    content: no-close-quote;
+}
+
+blockquote q:before
+{
+    content: "\2018";
+    content: open-quote;
+}
+
+blockquote q:after
+{
+    content: "\2019";
+    content: close-quote;
+}
+
+blockquote p:last-of-type
+{
+    margin-bottom: 0;
+}
+
+blockquote p:last-of-type:after
+{
+    content: "\201D";
+    content: close-quote;
+}

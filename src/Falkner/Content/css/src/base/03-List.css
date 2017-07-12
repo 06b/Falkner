@@ -3,8 +3,9 @@
  */
 
 li > ul,
-li > ol {
-  margin-bottom: 0;
+li > ol
+{
+    margin-bottom: 0;
 }
 
 
@@ -13,6 +14,7 @@ li > ol {
  */
 
 /*ul*/
-.numbered-list {
-  list-style-type: decimal;
+.numbered-list
+{
+    list-style-type: decimal;
 }
