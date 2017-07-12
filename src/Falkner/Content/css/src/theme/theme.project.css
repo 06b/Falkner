@@ -2,8 +2,17 @@
  * Default element styles
  */
 
-html { height:100%; }
-body { background:var(--t-background-body); height:100%; }
+html
+{
+    height: 100%;
+}
+
+body
+{
+    height: 100%;
+    background: var(--t-background-body);
+}
+
 
 /**
  * Custom Font Stack Styling
@@ -17,9 +26,20 @@ body { background:var(--t-background-body); height:100%; }
  *    stack, apply it to the grid column units along with `html`, `button`, `input`, `select`, and `textarea` while
  *    keeping the grid unit as the sans-serif which is similar to what normalize.css does.
  */
-.l-grid { font-family:sans-serif /* 1 */; }
+.l-grid
+{
+    font-family: sans-serif /* 1 */;
+}
 
-html, button, input, select, textarea, .l-grid [class*="l-grid__column"] { font-family:var(--t-font-stack-content) /* 1 */; }
+html,
+button,
+input,
+select,
+textarea,
+.l-grid [class*="l-grid__column"]
+{
+    font-family: var(--t-font-stack-content) /* 1 */;
+}
 
 /**
  * 'Default' link styling css tip: https://twitter.com/nathansmith/status/673925683957993472
@@ -29,70 +49,220 @@ html, button, input, select, textarea, .l-grid [class*="l-grid__column"] { font-
  *    Fix: Set the color to currentColor so on :hover, :focus, etc will pick up the currentColor of the text.
  *
  */
-.l-global-content-container a[href]:not([class]) {
-  color:var(--t-color-hyperlink);
-  text-decoration: underline;
+.l-global-content-container a[href]:not([class])
+{
+    color: var(--t-color-hyperlink);
+    text-decoration: underline;
 }
 
-.l-global-content-container a[href]:not([class]):hover,.l-global-content-container a[href]:not([class]):active {
-  color:currentColor /* 2 */;
-  text-decoration: underline;
+.l-global-content-container a[href]:not([class]):hover,
+.l-global-content-container a[href]:not([class]):active
+{
+    color: currentColor /* 2 */;
+    text-decoration: underline;
 }
 
-hr { border-color:#000;}
+hr
+{
+    border-color: #000;
+}
 
 /**
  * Theme styling for backgrounds
  */
-.t-background { background-color: var(--t-background-default); }
-    .t-background--primary { background-color: var(--t-background-primary); }
-    .t-background--secondary { background-color: var(--t-background-secondary); }
-    .t-background--tertiary { background-color: var(--t-background-tertiary); }
-    .t-background--accent { background-color: var(--t-background-accent); }
-    .t-background--accent-secondary { background-color: var(--t-background-accent-secondary); }
-    .t-background--error { background-color: var(--t-background-failure); }
-    .t-background--transparent { background-color: var(--t-background-transparent); }
+.t-background
+{
+    background-color: var(--t-background-default);
+}
+
+.t-background--primary
+{
+    background-color: var(--t-background-primary);
+}
+
+.t-background--secondary
+{
+    background-color: var(--t-background-secondary);
+}
+
+.t-background--tertiary
+{
+    background-color: var(--t-background-tertiary);
+}
+
+.t-background--accent
+{
+    background-color: var(--t-background-accent);
+}
+
+.t-background--accent-secondary
+{
+    background-color: var(--t-background-accent-secondary);
+}
+
+.t-background--error
+{
+    background-color: var(--t-background-failure);
+}
+
+.t-background--transparent
+{
+    background-color: var(--t-background-transparent);
+}
 
 
 /**
  * Theme styling for borders
  */
-.t-border { border: 1px solid currentColor; }
-.t-border-color { border-color: currentColor; }
-    .t-border-color--primary { border-color: var(--t-border-primary); }
-    .t-border-color--secondary { border-color: var(--t-border-secondary); }
-    .t-border-color--tertiary { border-color: var(--t-border-tertiary); }
-    .t-border-color--accent { border-color: var(--t-border-accent); }
-    .t-border-color--accent-secondary { border-color: var(--t-border-accent-secondary); }
-    .t-border-color--error { border-color: var(--t-border-invalid); }
-    .t-border-type--dashed { border-style: dashed; }
-    .t-border-radius--rounded { border-radius: 50%; }
+.t-border
+{
+    border: 1px solid currentColor;
+}
+
+.t-border-color
+{
+    border-color: currentColor;
+}
+
+.t-border-color--primary
+{
+    border-color: var(--t-border-primary);
+}
+
+.t-border-color--secondary
+{
+    border-color: var(--t-border-secondary);
+}
+
+.t-border-color--tertiary
+{
+    border-color: var(--t-border-tertiary);
+}
+
+.t-border-color--accent
+{
+    border-color: var(--t-border-accent);
+}
+
+.t-border-color--accent-secondary
+{
+    border-color: var(--t-border-accent-secondary);
+}
+
+.t-border-color--error
+{
+    border-color: var(--t-border-invalid);
+}
+
+.t-border-type--dashed
+{
+    border-style: dashed;
+}
+
+.t-border-radius--rounded
+{
+    border-radius: 50%;
+}
 
 
 /**
  * Theme styling for SVG fills
  */
-.t-fill { fill: var(--t-svg-default); }
-    .t-fill--primary { fill: var(--t-svg-primary); }
-    .t-fill--secondary { fill: var(--t-svg-secondary); }
-    .t-fill--tertiary { fill: currentColor; }
-    .t-fill--accent { fill: var(--t-svg-accent); }
-    .t-fill--accent-secondary { fill: var(--t-svg-accent-secondary); }
-    .t-fill--success { fill: var(--t-svg-success); }
-    .t-fill--alert { fill: var(--t-svg-alert); }
-    .t-fill--failure { fill: var(--t-svg-failure); }
-    .t-fill--highlight { fill: var(--t-svg-highlight); }
+.t-fill
+{
+    fill: var(--t-svg-default);
+}
+
+.t-fill--primary
+{
+    fill: var(--t-svg-primary);
+}
+
+.t-fill--secondary
+{
+    fill: var(--t-svg-secondary);
+}
+
+.t-fill--tertiary
+{
+    fill: currentColor;
+}
+
+.t-fill--accent
+{
+    fill: var(--t-svg-accent);
+}
+
+.t-fill--accent-secondary
+{
+    fill: var(--t-svg-accent-secondary);
+}
+
+.t-fill--success
+{
+    fill: var(--t-svg-success);
+}
+
+.t-fill--alert
+{
+    fill: var(--t-svg-alert);
+}
+
+.t-fill--failure
+{
+    fill: var(--t-svg-failure);
+}
+
+.t-fill--highlight
+{
+    fill: var(--t-svg-highlight);
+}
 
 
 /**
  * Theme styling for text color styles
  */
-.t-color { color: var(--t-color-content-text); }
-    .t-color--primary { color: var(--t-color-content-text--primary); }
-    .t-color--secondary { color: var(--t-color-content-text--secondary); }
-    .t-color--tertiary { color: var(--t-color-content-text--tertiary); }
-    .t-color--accent { color: var(--t-color-content-text--accent); }
-    .t-color--accent-secondary { color: var(--t-color-content-text--accent-secondary); }
-    .t-color--hyperlink { color: var(--t-color-hyperlink); }
-    .t-color--success { color:var(--t-color-content-text--success); }
-    .t-color--failure { color:var(--t-color-content-text--failure); }
+.t-color
+{
+    color: var(--t-color-content-text);
+}
+
+.t-color--primary
+{
+    color: var(--t-color-content-text--primary);
+}
+
+.t-color--secondary
+{
+    color: var(--t-color-content-text--secondary);
+}
+
+.t-color--tertiary
+{
+    color: var(--t-color-content-text--tertiary);
+}
+
+.t-color--accent
+{
+    color: var(--t-color-content-text--accent);
+}
+
+.t-color--accent-secondary
+{
+    color: var(--t-color-content-text--accent-secondary);
+}
+
+.t-color--hyperlink
+{
+    color: var(--t-color-hyperlink);
+}
+
+.t-color--success
+{
+    color: var(--t-color-content-text--success);
+}
+
+.t-color--failure
+{
+    color: var(--t-color-content-text--failure);
+}

@@ -17,12 +17,42 @@
  *
  */
 
-.u-depth { z-index: auto /* Default value */; }
-.u-depth--one { z-index: var(--t-depth--one); }
-.u-depth--ten { z-index: var(--t-depth--ten); }
-.u-depth--twenty { z-index: var(--t-depth--twenty); }
-.u-depth--one-hundred { z-index: var(--t-depth--one-hundred); }
-.u-depth--one-thousand { z-index: var(--t-depth--one-thousand); }
-.u-depth--maximum { z-index: 2147483647 /* N3 */; }
+.u-depth
+{
+    z-index: auto /* Default value */;
+}
 
-.u-depth--negative-one { z-index: var(--t-depth--negative-one) /* N2 */; }
+.u-depth--one
+{
+    z-index: var(--t-depth--one);
+}
+
+.u-depth--ten
+{
+    z-index: var(--t-depth--ten);
+}
+
+.u-depth--twenty
+{
+    z-index: var(--t-depth--twenty);
+}
+
+.u-depth--one-hundred
+{
+    z-index: var(--t-depth--one-hundred);
+}
+
+.u-depth--one-thousand
+{
+    z-index: var(--t-depth--one-thousand);
+}
+
+.u-depth--maximum
+{
+    z-index: 2147483647 /* N3 */;
+}
+
+.u-depth--negative-one
+{
+    z-index: var(--t-depth--negative-one) /* N2 */;
+}

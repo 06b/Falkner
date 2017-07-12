@@ -3,18 +3,51 @@
  *
  */
 
-.c-header-navigation-container { }
-.c-header-navigation { }
-.c-header-navigation > li + li[data-breadcrumb]:before { }
-.c-header-navigation a { }
+.c-header-navigation-container
+{
+}
 
-.c-header-navigation__profile-actions-container { }
-.c-header-navigation__profile-actions { }
-.c-header-navigation__profile-actions a { }
-.c-header-navigation__profile-actions a:hover,.c-header-navigation__profile-actions a:focus { }
-.c-header-navigation__profile-actions > li { }
+.c-header-navigation
+{
+}
 
-.c-header-navigation__greeting { }
-.c-header-navigation__profile-name { }
+.c-header-navigation > li + li[data-breadcrumb]:before
+{
+}
 
-.c-header-navigation .is-selected a { }
+.c-header-navigation a
+{
+}
+
+.c-header-navigation__profile-actions-container
+{
+}
+
+.c-header-navigation__profile-actions
+{
+}
+
+.c-header-navigation__profile-actions a
+{
+}
+
+.c-header-navigation__profile-actions a:hover,
+.c-header-navigation__profile-actions a:focus
+{
+}
+
+.c-header-navigation__profile-actions > li
+{
+}
+
+.c-header-navigation__greeting
+{
+}
+
+.c-header-navigation__profile-name
+{
+}
+
+.c-header-navigation .is-selected a
+{
+}

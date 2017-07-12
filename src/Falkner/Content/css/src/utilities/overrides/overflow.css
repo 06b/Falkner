@@ -2,26 +2,38 @@
  * This will clip overflow. This affords some useful properties to the element. It won't wrap under floats. Will also contain any floated children.
  */
 
-.u-overflow-hidden { overflow: hidden; }
+.u-overflow-hidden
+{
+    overflow: hidden;
+}
 
 
 /**
  * This will allow content to flow out of it's container.
  */
 
-.u-overflow-visible { overflow: visible; }
+.u-overflow-visible
+{
+    overflow: visible;
+}
 
 
 /**
  * Adds overflow:auto for areas where a scroll bar is wanted
  */
 
-.u-overflow-auto { overflow: auto; }
+.u-overflow-auto
+{
+    overflow: auto;
+}
 
 
 /**
  * Adds overflow-y:auto for areas where a scroll bar is wanted vertically but not horizontally
  */
 
-.u-overflow-y-auto { overflow-y: auto; overflow-x: hidden; }
-
+.u-overflow-y-auto
+{
+    overflow-x: hidden;
+    overflow-y: auto;
+}

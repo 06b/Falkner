@@ -27,6 +27,9 @@
  *      can be deleted.
  */
 
-.s-svg.edge13 svg, .s-svg.edge14 svg, .s-svg.edge15 svg {
+.s-svg.edge13 svg,
+.s-svg.edge14 svg,
+.s-svg.edge15 svg
+{
     pointer-events: none;
 }

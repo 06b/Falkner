@@ -17,8 +17,16 @@
  *
  */
 
-@media only screen and (max-width: 79.9375em) {
-    ._Example__ScrollArea { overflow:overlay; overflow:auto; }
-    ._Example__VisibleArea { width:1195px; }
-}
+@media only screen and (max-width: 79.9375em)
+{
+    ._Example__ScrollArea
+    {
+        overflow: overlay;
+        overflow: auto;
+    }
 
+    ._Example__VisibleArea
+    {
+        width: 1195px;
+    }
+}

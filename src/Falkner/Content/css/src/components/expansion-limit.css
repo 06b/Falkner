@@ -23,12 +23,47 @@
  *
  */
 
-.c-expansion-limit--diminutive { max-height: calc(var(--t-gutter--diminutive) * 12.5); }
-.c-expansion-limit--tiny { max-height: calc(var(--t-gutter--tiny) * 12.5); }
-.c-expansion-limit--small { max-height: calc(var(--t-gutter--small) * 12.5); }
-.c-expansion-limit--medium { max-height: calc(var(--t-gutter--medium) * 12.5); }
-.c-expansion-limit { max-height: calc(var(--t-gutter) * 12.5); }
-.c-expansion-limit--large { max-height: calc(var(--t-gutter--large) * 12.5); }
-.c-expansion-limit--huge { max-height: calc(var(--t-gutter--huge) * 12.5); }
-.c-expansion-limit--gargantuan { max-height: calc(var(--t-gutter--gargantuan) * 12.5); }
-.c-expansion-limit--colossal { max-height: calc(var(--t-gutter--colossal) * 12.5); }
+.c-expansion-limit--diminutive
+{
+    max-height: calc(var(--t-gutter--diminutive) * 12.5);
+}
+
+.c-expansion-limit--tiny
+{
+    max-height: calc(var(--t-gutter--tiny) * 12.5);
+}
+
+.c-expansion-limit--small
+{
+    max-height: calc(var(--t-gutter--small) * 12.5);
+}
+
+.c-expansion-limit--medium
+{
+    max-height: calc(var(--t-gutter--medium) * 12.5);
+}
+
+.c-expansion-limit
+{
+    max-height: calc(var(--t-gutter) * 12.5);
+}
+
+.c-expansion-limit--large
+{
+    max-height: calc(var(--t-gutter--large) * 12.5);
+}
+
+.c-expansion-limit--huge
+{
+    max-height: calc(var(--t-gutter--huge) * 12.5);
+}
+
+.c-expansion-limit--gargantuan
+{
+    max-height: calc(var(--t-gutter--gargantuan) * 12.5);
+}
+
+.c-expansion-limit--colossal
+{
+    max-height: calc(var(--t-gutter--colossal) * 12.5);
+}

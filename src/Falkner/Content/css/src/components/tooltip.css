@@ -9,209 +9,241 @@
  *
  */
 
-.c-tooltipped {
-  position: relative;
+.c-tooltipped
+{
+    position: relative;
 }
 
-.c-tooltipped::after {
-  position: absolute;
-  z-index: var(--t-depth--ten);
-  display: none;
-  padding: 5px 8px;
-  font: normal normal 11px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  -webkit-font-smoothing: subpixel-antialiased;
-  color: #fff;
-  text-align: center;
-  text-decoration: none;
-  text-shadow: none;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: break-word;
-  white-space: pre;
-  pointer-events: none;
-  content: attr(aria-label);
-  background: rgba(0, 0, 0, 0.8);
-  border-radius: 3px;
-  opacity: 0;
-}
-
-.c-tooltipped::before {
-  position: absolute;
-  z-index: var(--t-depth--twenty);
-  display: none;
-  width: 0;
-  height: 0;
-  color: rgba(0, 0, 0, 0.8);
-  pointer-events: none;
-  content: "";
-  border: 5px solid transparent;
-  opacity: 0;
-}
-
-@keyframes tooltip-appear {
-  from {
+.c-tooltipped::after
+{
+    position: absolute;
+    z-index: var(--t-depth--ten);
+    display: none;
+    padding: 5px 8px;
+    font: normal normal 11px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    -webkit-font-smoothing: subpixel-antialiased;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: none;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: break-word;
+    white-space: pre;
+    pointer-events: none;
+    content: attr(aria-label);
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 3px;
     opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+}
+
+.c-tooltipped::before
+{
+    position: absolute;
+    z-index: var(--t-depth--twenty);
+    display: none;
+    width: 0;
+    height: 0;
+    color: rgba(0, 0, 0, 0.8);
+    pointer-events: none;
+    content: "";
+    border: 5px solid transparent;
+    opacity: 0;
+}
+
+@keyframes tooltip-appear
+{
+    from
+    {
+        opacity: 0;
+    }
+
+    to
+    {
+        opacity: 1;
+    }
 }
 
 .c-tooltipped:hover::before, .c-tooltipped:hover::after,
 .c-tooltipped:active::before,
 .c-tooltipped:active::after,
 .c-tooltipped:focus::before,
-.c-tooltipped:focus::after {
-  display: inline-block;
-  text-decoration: none;
-  animation-name: tooltip-appear;
-  animation-duration: 0.1s;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-in;
-  animation-delay: 0.4s;
+.c-tooltipped:focus::after
+{
+    display: inline-block;
+    text-decoration: none;
+    animation-name: tooltip-appear;
+    animation-duration: 0.1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+    animation-delay: 0.4s;
 }
 
 .c-tooltipped--no-delay:hover::before, .c-tooltipped--no-delay:hover::after,
 .c-tooltipped--no-delay:active::before,
 .c-tooltipped--no-delay:active::after,
 .c-tooltipped--no-delay:focus::before,
-.c-tooltipped--no-delay:focus::after {
-  opacity: 1;
-  animation: none;
+.c-tooltipped--no-delay:focus::after
+{
+    opacity: 1;
+    animation: none;
 }
 
 .c-tooltipped--multiline:hover::after,
 .c-tooltipped--multiline:active::after,
-.c-tooltipped--multiline:focus::after {
-  display: table-cell;
+.c-tooltipped--multiline:focus::after
+{
+    display: table-cell;
 }
 
 .c-tooltipped--south::after,
 .c-tooltipped--southeast::after,
-.c-tooltipped--southwest::after {
-  top: 100%;
-  right: 50%;
-  margin-top: 5px;
+.c-tooltipped--southwest::after
+{
+    top: 100%;
+    right: 50%;
+    margin-top: 5px;
 }
 
 .c-tooltipped--south::before,
 .c-tooltipped--southeast::before,
-.c-tooltipped--southwest::before {
-  top: auto;
-  right: 50%;
-  bottom: -5px;
-  margin-right: -5px;
-  border-bottom-color: rgba(0, 0, 0, 0.8);
+.c-tooltipped--southwest::before
+{
+    top: auto;
+    right: 50%;
+    bottom: -5px;
+    margin-right: -5px;
+    border-bottom-color: rgba(0, 0, 0, 0.8);
 }
 
-.c-tooltipped--southeast::after {
-  right: auto;
-  left: 50%;
-  margin-left: -15px;
+.c-tooltipped--southeast::after
+{
+    right: auto;
+    left: 50%;
+    margin-left: -15px;
 }
 
-.c-tooltipped--southwest::after {
-  margin-right: -15px;
+.c-tooltipped--southwest::after
+{
+    margin-right: -15px;
 }
 
 .c-tooltipped--north::after,
 .c-tooltipped--northeast::after,
-.c-tooltipped--northwest::after {
-  right: 50%;
-  bottom: 100%;
-  margin-bottom: 5px;
+.c-tooltipped--northwest::after
+{
+    right: 50%;
+    bottom: 100%;
+    margin-bottom: 5px;
 }
 
 .c-tooltipped--north::before,
 .c-tooltipped--northeast::before,
-.c-tooltipped--northwest::before {
-  top: -5px;
-  right: 50%;
-  bottom: auto;
-  margin-right: -5px;
-  border-top-color: rgba(0, 0, 0, 0.8);
+.c-tooltipped--northwest::before
+{
+    top: -5px;
+    right: 50%;
+    bottom: auto;
+    margin-right: -5px;
+    border-top-color: rgba(0, 0, 0, 0.8);
 }
 
-.c-tooltipped--northeast::after {
-  right: auto;
-  left: 50%;
-  margin-left: -15px;
+.c-tooltipped--northeast::after
+{
+    right: auto;
+    left: 50%;
+    margin-left: -15px;
 }
 
-.c-tooltipped--northwest::after {
-  margin-right: -15px;
+.c-tooltipped--northwest::after
+{
+    margin-right: -15px;
 }
 
 .c-tooltipped--south::after,
-.c-tooltipped--north::after {
-  transform: translateX(50%);
+.c-tooltipped--north::after
+{
+    transform: translateX(50%);
 }
 
-.c-tooltipped--west::after {
-  right: 100%;
-  bottom: 50%;
-  margin-right: 5px;
-  transform: translateY(50%);
+.c-tooltipped--west::after
+{
+    right: 100%;
+    bottom: 50%;
+    margin-right: 5px;
+    transform: translateY(50%);
 }
 
-.c-tooltipped--west::before {
-  top: 50%;
-  bottom: 50%;
-  left: -5px;
-  margin-top: -5px;
-  border-left-color: rgba(0, 0, 0, 0.8);
+.c-tooltipped--west::before
+{
+    top: 50%;
+    bottom: 50%;
+    left: -5px;
+    margin-top: -5px;
+    border-left-color: rgba(0, 0, 0, 0.8);
 }
 
-.c-tooltipped--east::after {
-  bottom: 50%;
-  left: 100%;
-  margin-left: 5px;
-  transform: translateY(50%);
+.c-tooltipped--east::after
+{
+    bottom: 50%;
+    left: 100%;
+    margin-left: 5px;
+    transform: translateY(50%);
 }
 
-.c-tooltipped--east::before {
-  top: 50%;
-  right: -5px;
-  bottom: 50%;
-  margin-top: -5px;
-  border-right-color: rgba(0, 0, 0, 0.8);
+.c-tooltipped--east::before
+{
+    top: 50%;
+    right: -5px;
+    bottom: 50%;
+    margin-top: -5px;
+    border-right-color: rgba(0, 0, 0, 0.8);
 }
 
-.c-tooltipped--multiline::after {
-  width: max-content;
-  max-width: 250px;
-  word-break: break-word;
-  word-wrap: normal;
-  white-space: pre-line;
-  border-collapse: separate;
+.c-tooltipped--multiline::after
+{
+    width: max-content;
+    max-width: 250px;
+    word-break: break-word;
+    word-wrap: normal;
+    white-space: pre-line;
+    border-collapse: separate;
 }
 
-.c-tooltipped--multiline.c-tooltipped--south::after, .c-tooltipped--multiline.c-tooltipped--north::after {
-  right: auto;
-  left: 50%;
-  transform: translateX(-50%);
+.c-tooltipped--multiline.c-tooltipped--south::after, .c-tooltipped--multiline.c-tooltipped--north::after
+{
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-.c-tooltipped--multiline.c-tooltipped--west::after, .c-tooltipped--multiline.c-tooltipped--east::after {
-  right: 100%;
+.c-tooltipped--multiline.c-tooltipped--west::after, .c-tooltipped--multiline.c-tooltipped--east::after
+{
+    right: 100%;
 }
 
-@media screen and (min-width: 0\0) {
-  .c-tooltipped--multiline::after {
-    width: 250px;
-  }
+@media screen and (min-width: 0\0)
+{
+    .c-tooltipped--multiline::after
+    {
+        width: 250px;
+    }
 }
 
-.c-tooltipped--sticky::before, .c-tooltipped--sticky::after {
-  display: inline-block;
+.c-tooltipped--sticky::before, .c-tooltipped--sticky::after
+{
+    display: inline-block;
 }
 
-.c-tooltipped--sticky.c-tooltipped--multiline::after {
-  display: table-cell;
+.c-tooltipped--sticky.c-tooltipped--multiline::after
+{
+    display: table-cell;
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  .c-tooltipped--west::after {
-    margin-right: 4.5px;
-  }
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx)
+{
+    .c-tooltipped--west::after
+    {
+        margin-right: 4.5px;
+    }
 }

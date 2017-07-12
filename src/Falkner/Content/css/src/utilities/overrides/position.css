@@ -2,8 +2,9 @@
  * Absolutely position an element
  */
 
-.u-position-absolute {
-  position: absolute !important;
+.u-position-absolute
+{
+    position: absolute !important;
 }
 
 
@@ -13,13 +14,14 @@
  * ancestor.
  */
 
-.u-position-absolute-center {
-  bottom: 0 !important;
-  left: 0 !important;
-  margin: auto !important;
-  position: absolute !important;
-  right: 0 !important;
-  top: 0 !important;
+.u-position-absolute-center
+{
+    position: absolute !important;
+    top: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    margin: auto !important;
 }
 
 
@@ -27,10 +29,25 @@
  * Used when needing to adjust a partial position.
  */
 
-.u-position--top { top: 0 !important; }
-.u-position--right { right: 0 !important; }
-.u-position--bottom { bottom: 0 !important; }
-.u-position--left { left: 0 !important; }
+.u-position--top
+{
+    top: 0 !important;
+}
+
+.u-position--right
+{
+    right: 0 !important;
+}
+
+.u-position--bottom
+{
+    bottom: 0 !important;
+}
+
+.u-position--left
+{
+    left: 0 !important;
+}
 
 
 /**
@@ -38,16 +55,18 @@
  *    reasons.
  */
 
-.u-position-fixed {
-  position: fixed !important;
-  backface-visibility: hidden /* 1 */;
+.u-position-fixed
+{
+    position: fixed !important;
+    backface-visibility: hidden /* 1 */;
 }
 
-.u-position-relative {
-  position: relative !important;
+.u-position-relative
+{
+    position: relative !important;
 }
 
-.u-position-static {
-  position: static !important;
+.u-position-static
+{
+    position: static !important;
 }
-

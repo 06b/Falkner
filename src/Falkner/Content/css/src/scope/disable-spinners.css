@@ -29,12 +29,14 @@
 .s-disable-spinners input[type="number"]::-webkit-outer-spin-button,
 .s-disable-spinners input[type="number"]::-webkit-inner-spin-button,
 input[type="number"].s-disable-spinners::-webkit-outer-spin-button,
-input[type="number"].s-disable-spinners::-webkit-inner-spin-button {
-    -webkit-appearance: none;
+input[type="number"].s-disable-spinners::-webkit-inner-spin-button
+{
     margin: 0 /* N1 */;
+    -webkit-appearance: none;
 }
 
 .s-disable-spinners input[type="number"],
-input[type="number"].s-disable-spinners {
+input[type="number"].s-disable-spinners
+{
     -moz-appearance: textfield;
 }

@@ -10,116 +10,458 @@
  *
  */
 
-.c-stencil { background: var(--t-background-stencil); }
-
-.c-stencil__headline { height: 2rem; }
-.c-stencil__headline--giga { height: calc(var(--t-size-giga)); }
-.c-stencil__headline--mega { height: calc(var(--t-size-mega)); }
-.c-stencil__headline--kilo { height: calc(var(--t-size-kilo)); }
-
-.c-stencil__subheadline { height: 1.25rem; }
-.c-stencil__content { height: 0.75rem; }
-.c-stencil__divider { height: 0.25rem; }
-
-.c-stencil__thumbnail { position: relative /* N1 */; }
-
-.c-stencil__thumbnail:before { content: "" /* N1 */; display: block /* N1 */; padding-top: 100% /* N1 */; }
-.c-stencil__thumbnail--ratio2_1:before { padding-top: 50% /* N1 */; }
-.c-stencil__thumbnail--ratio1_2:before { padding-top: 200% /* N1 */; }
-.c-stencil__thumbnail--ratio4_3:before { padding-top: 75% /* N1 */; }
-.c-stencil__thumbnail--ratio16_9:before { padding-top: 56.25% /* N1 */; }
-
-.c-stencil__thumbnail-content { position: absolute /* N1 */; top: 0 /* N1 */; left: 0 /* N1 */; bottom: 0 /* N1 */; right: 0 /* N1 */; }
-
-.c-stencil__avatar { height: 5rem; width: 5rem; }
-.c-stencil__avatar--gargantuan { height: 8.75rem; width: 8.75rem; }
-.c-stencil__avatar--huge { height: 7.5rem; width: 7.5rem; }
-.c-stencil__avatar--large { height: 6.25rem; width: 6.25rem; }
-.c-stencil__avatar--medium { height: 3.75rem; width: 3.75rem; }
-.c-stencil__avatar--small { height: 2.5rem; width: 2.5rem; }
-
-@media only screen and (max-width: 30em) {
-    .c-stencil__avatar--phone-portrait-only { height: 5rem; width: 5rem; }
-    .c-stencil__avatar--gargantuan--phone-portrait-only { height: 8.75rem; width: 8.75rem; }
-    .c-stencil__avatar--huge--phone-portrait-only { height: 7.5rem; width: 7.5rem; }
-    .c-stencil__avatar--large--phone-portrait-only { height: 6.25rem; width: 6.25rem; }
-    .c-stencil__avatar--medium--phone-portrait-only { height: 3.75rem; width: 3.75rem; }
-    .c-stencil__avatar--small--phone-portrait-only { height: 2.5rem; width: 2.5rem; }
+.c-stencil
+{
+    background: var(--t-background-stencil);
 }
 
-@media only screen and (min-width: 30em) {
-    .c-stencil__avatar--phone-landscape-up { height: 5rem; width: 5rem; }
-    .c-stencil__avatar--gargantuan--phone-landscape-up { height: 8.75rem; width: 8.75rem; }
-    .c-stencil__avatar--huge--phone-landscape-up { height: 7.5rem; width: 7.5rem; }
-    .c-stencil__avatar--large--phone-landscape-up { height: 6.25rem; width: 6.25rem; }
-    .c-stencil__avatar--medium--phone-landscape-up { height: 3.75rem; width: 3.75rem; }
-    .c-stencil__avatar--small--phone-landscape-up { height: 2.5rem; width: 2.5rem; }
+.c-stencil__headline
+{
+    height: 2rem;
 }
 
-@media only screen and (min-width: 30em) and (max-width: 39.9375em) {
-    .c-stencil__avatar--phone-landscape-only { height: 5rem; width: 5rem; }
-    .c-stencil__avatar--gargantuan--phone-landscape-only { height: 8.75rem; width: 8.75rem; }
-    .c-stencil__avatar--huge--phone-landscape-only { height: 7.5rem; width: 7.5rem; }
-    .c-stencil__avatar--large--phone-landscape-only { height: 6.25rem; width: 6.25rem; }
-    .c-stencil__avatar--medium--phone-landscape-only { height: 3.75rem; width: 3.75rem; }
-    .c-stencil__avatar--small--phone-landscape-only { height: 2.5rem; width: 2.5rem; }
+.c-stencil__headline--giga
+{
+    height: calc(var(--t-size-giga));
 }
 
-@media only screen and (min-width: 40em) {
-    .c-stencil__avatar--tablet-portrait-up { height: 5rem; width: 5rem; }
-    .c-stencil__avatar--gargantuan--tablet-portrait-up { height: 8.75rem; width: 8.75rem; }
-    .c-stencil__avatar--huge--tablet-portrait-up { height: 7.5rem; width: 7.5rem; }
-    .c-stencil__avatar--large--tablet-portrait-up { height: 6.25rem; width: 6.25rem; }
-    .c-stencil__avatar--medium--tablet-portrait-up { height: 3.75rem; width: 3.75rem; }
-    .c-stencil__avatar--small--tablet-portrait-up { height: 2.5rem; width: 2.5rem; }
+.c-stencil__headline--mega
+{
+    height: calc(var(--t-size-mega));
 }
 
-@media only screen and (min-width: 40em) and (max-width: 63.9375em) {
-    .c-stencil__avatar--tablet-portrait-only { height: 5rem; width: 5rem; }
-    .c-stencil__avatar--gargantuan--tablet-portrait-only { height: 8.75rem; width: 8.75rem; }
-    .c-stencil__avatar--huge--tablet-portrait-only { height: 7.5rem; width: 7.5rem; }
-    .c-stencil__avatar--large--tablet-portrait-only { height: 6.25rem; width: 6.25rem; }
-    .c-stencil__avatar--medium--tablet-portrait-only { height: 3.75rem; width: 3.75rem; }
-    .c-stencil__avatar--small--tablet-portrait-only { height: 2.5rem; width: 2.5rem; }
+.c-stencil__headline--kilo
+{
+    height: calc(var(--t-size-kilo));
 }
 
-@media only screen and (min-width: 64em) {
-    .c-stencil__avatar--tablet-landscape-up { height: 5rem; width: 5rem; }
-    .c-stencil__avatar--gargantuan--tablet-landscape-up { height: 8.75rem; width: 8.75rem; }
-    .c-stencil__avatar--huge--tablet-landscape-up { height: 7.5rem; width: 7.5rem; }
-    .c-stencil__avatar--large--tablet-landscape-up { height: 6.25rem; width: 6.25rem; }
-    .c-stencil__avatar--medium--tablet-landscape-up { height: 3.75rem; width: 3.75rem; }
-    .c-stencil__avatar--small--tablet-landscape-up { height: 2.5rem; width: 2.5rem; }
+.c-stencil__subheadline
+{
+    height: 1.25rem;
 }
 
-@media only screen and (min-width: 64em) and (max-width: 79.9375em) {
-    .c-stencil__avatar--tablet-landscape-only { height: 5rem; width: 5rem; }
-    .c-stencil__avatar--gargantuan--tablet-landscape-only { height: 8.75rem; width: 8.75rem; }
-    .c-stencil__avatar--huge--tablet-landscape-only { height: 7.5rem; width: 7.5rem; }
-    .c-stencil__avatar--large--tablet-landscape-only { height: 6.25rem; width: 6.25rem; }
-    .c-stencil__avatar--medium--tablet-landscape-only { height: 3.75rem; width: 3.75rem; }
-    .c-stencil__avatar--small--tablet-landscape-only { height: 2.5rem; width: 2.5rem; }
+.c-stencil__content
+{
+    height: 0.75rem;
 }
 
-@media only screen and (min-width: 80em) {
-    .c-stencil__avatar--desktop-up { height: 5rem; width: 5rem; }
-    .c-stencil__avatar--gargantuan--desktop-up { height: 8.75rem; width: 8.75rem; }
-    .c-stencil__avatar--huge--desktop-up { height: 7.5rem; width: 7.5rem; }
-    .c-stencil__avatar--large--desktop-up { height: 6.25rem; width: 6.25rem; }
-    .c-stencil__avatar--medium--desktop-up { height: 3.75rem; width: 3.75rem; }
-    .c-stencil__avatar--small--desktop-up { height: 2.5rem; width: 2.5rem; }
+.c-stencil__divider
+{
+    height: 0.25rem;
 }
 
-.c-stencil--rounded { border-radius: 50%; }
+.c-stencil__thumbnail
+{
+    position: relative /* N1 */;
+}
 
-.c-stencil.is-loading, .is-loading .c-stencil {
-    will-change: background-position;
+.c-stencil__thumbnail:before
+{
+    display: block /* N1 */;
+    padding-top: 100% /* N1 */;
+    content: "" /* N1 */;
+}
+
+.c-stencil__thumbnail--ratio2_1:before
+{
+    padding-top: 50% /* N1 */;
+}
+
+.c-stencil__thumbnail--ratio1_2:before
+{
+    padding-top: 200% /* N1 */;
+}
+
+.c-stencil__thumbnail--ratio4_3:before
+{
+    padding-top: 75% /* N1 */;
+}
+
+.c-stencil__thumbnail--ratio16_9:before
+{
+    padding-top: 56.25% /* N1 */;
+}
+
+.c-stencil__thumbnail-content
+{
+    position: absolute /* N1 */;
+    top: 0 /* N1 */;
+    right: 0 /* N1 */;
+    bottom: 0 /* N1 */;
+    left: 0 /* N1 */;
+}
+
+.c-stencil__avatar
+{
+    width: 5rem;
+    height: 5rem;
+}
+
+.c-stencil__avatar--gargantuan
+{
+    width: 8.75rem;
+    height: 8.75rem;
+}
+
+.c-stencil__avatar--huge
+{
+    width: 7.5rem;
+    height: 7.5rem;
+}
+
+.c-stencil__avatar--large
+{
+    width: 6.25rem;
+    height: 6.25rem;
+}
+
+.c-stencil__avatar--medium
+{
+    width: 3.75rem;
+    height: 3.75rem;
+}
+
+.c-stencil__avatar--small
+{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+@media only screen and (max-width: 30em)
+{
+    .c-stencil__avatar--phone-portrait-only
+    {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .c-stencil__avatar--gargantuan--phone-portrait-only
+    {
+        width: 8.75rem;
+        height: 8.75rem;
+    }
+
+    .c-stencil__avatar--huge--phone-portrait-only
+    {
+        width: 7.5rem;
+        height: 7.5rem;
+    }
+
+    .c-stencil__avatar--large--phone-portrait-only
+    {
+        width: 6.25rem;
+        height: 6.25rem;
+    }
+
+    .c-stencil__avatar--medium--phone-portrait-only
+    {
+        width: 3.75rem;
+        height: 3.75rem;
+    }
+
+    .c-stencil__avatar--small--phone-portrait-only
+    {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+}
+
+@media only screen and (min-width: 30em)
+{
+    .c-stencil__avatar--phone-landscape-up
+    {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .c-stencil__avatar--gargantuan--phone-landscape-up
+    {
+        width: 8.75rem;
+        height: 8.75rem;
+    }
+
+    .c-stencil__avatar--huge--phone-landscape-up
+    {
+        width: 7.5rem;
+        height: 7.5rem;
+    }
+
+    .c-stencil__avatar--large--phone-landscape-up
+    {
+        width: 6.25rem;
+        height: 6.25rem;
+    }
+
+    .c-stencil__avatar--medium--phone-landscape-up
+    {
+        width: 3.75rem;
+        height: 3.75rem;
+    }
+
+    .c-stencil__avatar--small--phone-landscape-up
+    {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+}
+
+@media only screen and (min-width: 30em) and (max-width: 39.9375em)
+{
+    .c-stencil__avatar--phone-landscape-only
+    {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .c-stencil__avatar--gargantuan--phone-landscape-only
+    {
+        width: 8.75rem;
+        height: 8.75rem;
+    }
+
+    .c-stencil__avatar--huge--phone-landscape-only
+    {
+        width: 7.5rem;
+        height: 7.5rem;
+    }
+
+    .c-stencil__avatar--large--phone-landscape-only
+    {
+        width: 6.25rem;
+        height: 6.25rem;
+    }
+
+    .c-stencil__avatar--medium--phone-landscape-only
+    {
+        width: 3.75rem;
+        height: 3.75rem;
+    }
+
+    .c-stencil__avatar--small--phone-landscape-only
+    {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+}
+
+@media only screen and (min-width: 40em)
+{
+    .c-stencil__avatar--tablet-portrait-up
+    {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .c-stencil__avatar--gargantuan--tablet-portrait-up
+    {
+        width: 8.75rem;
+        height: 8.75rem;
+    }
+
+    .c-stencil__avatar--huge--tablet-portrait-up
+    {
+        width: 7.5rem;
+        height: 7.5rem;
+    }
+
+    .c-stencil__avatar--large--tablet-portrait-up
+    {
+        width: 6.25rem;
+        height: 6.25rem;
+    }
+
+    .c-stencil__avatar--medium--tablet-portrait-up
+    {
+        width: 3.75rem;
+        height: 3.75rem;
+    }
+
+    .c-stencil__avatar--small--tablet-portrait-up
+    {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+}
+
+@media only screen and (min-width: 40em) and (max-width: 63.9375em)
+{
+    .c-stencil__avatar--tablet-portrait-only
+    {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .c-stencil__avatar--gargantuan--tablet-portrait-only
+    {
+        width: 8.75rem;
+        height: 8.75rem;
+    }
+
+    .c-stencil__avatar--huge--tablet-portrait-only
+    {
+        width: 7.5rem;
+        height: 7.5rem;
+    }
+
+    .c-stencil__avatar--large--tablet-portrait-only
+    {
+        width: 6.25rem;
+        height: 6.25rem;
+    }
+
+    .c-stencil__avatar--medium--tablet-portrait-only
+    {
+        width: 3.75rem;
+        height: 3.75rem;
+    }
+
+    .c-stencil__avatar--small--tablet-portrait-only
+    {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+}
+
+@media only screen and (min-width: 64em)
+{
+    .c-stencil__avatar--tablet-landscape-up
+    {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .c-stencil__avatar--gargantuan--tablet-landscape-up
+    {
+        width: 8.75rem;
+        height: 8.75rem;
+    }
+
+    .c-stencil__avatar--huge--tablet-landscape-up
+    {
+        width: 7.5rem;
+        height: 7.5rem;
+    }
+
+    .c-stencil__avatar--large--tablet-landscape-up
+    {
+        width: 6.25rem;
+        height: 6.25rem;
+    }
+
+    .c-stencil__avatar--medium--tablet-landscape-up
+    {
+        width: 3.75rem;
+        height: 3.75rem;
+    }
+
+    .c-stencil__avatar--small--tablet-landscape-up
+    {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+}
+
+@media only screen and (min-width: 64em) and (max-width: 79.9375em)
+{
+    .c-stencil__avatar--tablet-landscape-only
+    {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .c-stencil__avatar--gargantuan--tablet-landscape-only
+    {
+        width: 8.75rem;
+        height: 8.75rem;
+    }
+
+    .c-stencil__avatar--huge--tablet-landscape-only
+    {
+        width: 7.5rem;
+        height: 7.5rem;
+    }
+
+    .c-stencil__avatar--large--tablet-landscape-only
+    {
+        width: 6.25rem;
+        height: 6.25rem;
+    }
+
+    .c-stencil__avatar--medium--tablet-landscape-only
+    {
+        width: 3.75rem;
+        height: 3.75rem;
+    }
+
+    .c-stencil__avatar--small--tablet-landscape-only
+    {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+}
+
+@media only screen and (min-width: 80em)
+{
+    .c-stencil__avatar--desktop-up
+    {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .c-stencil__avatar--gargantuan--desktop-up
+    {
+        width: 8.75rem;
+        height: 8.75rem;
+    }
+
+    .c-stencil__avatar--huge--desktop-up
+    {
+        width: 7.5rem;
+        height: 7.5rem;
+    }
+
+    .c-stencil__avatar--large--desktop-up
+    {
+        width: 6.25rem;
+        height: 6.25rem;
+    }
+
+    .c-stencil__avatar--medium--desktop-up
+    {
+        width: 3.75rem;
+        height: 3.75rem;
+    }
+
+    .c-stencil__avatar--small--desktop-up
+    {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+}
+
+.c-stencil--rounded
+{
+    border-radius: 50%;
+}
+
+.c-stencil.is-loading,
+.is-loading .c-stencil
+{
     background: linear-gradient(-90deg, var(--t-background-stencil) 0, var(--t-background-stencil--loading) 20%, var(--t-background-stencil) 40%, var(--t-background-stencil) 100%);
     background-size: 300% 300%;
     animation: stencil-loading /* N2 */ 2.4s ease-in-out infinite;
+    will-change: background-position;
 }
 
-@keyframes stencil-loading {
-    0% { background-position: 0% 0%; }
-    100% { background-position: -150% 0%; }
+@keyframes stencil-loading
+{
+    0%
+    {
+        background-position: 0 0;
+    }
+
+    100%
+    {
+        background-position: -150% 0;
+    }
 }

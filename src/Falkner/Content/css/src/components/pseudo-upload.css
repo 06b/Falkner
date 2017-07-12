@@ -17,6 +17,25 @@
  *
  */
 
-.c-pseudo-upload-wrapper { position: relative; overflow: hidden; display: inline-table; }
-.c-pseudo-upload { /* N2 */ }
-.c-pseudo-upload-wrapper .c-pseudo-upload-input { position: absolute; width: 0; background: transparent; outline: none; border: 0; left:-1px/* N1 */; z-index:-1 /* N3 */; }
+.c-pseudo-upload-wrapper
+{
+    position: relative;
+    display: inline-table;
+    overflow: hidden;
+}
+
+.c-pseudo-upload
+{
+    /* N2 */
+}
+
+.c-pseudo-upload-wrapper .c-pseudo-upload-input
+{
+    position: absolute;
+    left: -1px /* N1 */;
+    z-index: -1 /* N3 */;
+    width: 0;
+    outline: none;
+    border: 0;
+    background: transparent;
+}

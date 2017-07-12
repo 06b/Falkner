@@ -12,90 +12,422 @@
  *
  */
 
-.c-avatar { height: 5rem; width: 5rem; background-size: cover; overflow: hidden; }
-.c-avatar--gargantuan { height: 8.75rem; width: 8.75rem; }
-.c-avatar--huge { height: 7.5rem; width: 7.5rem; }
-.c-avatar--large { height: 6.25rem; width: 6.25rem; }
-.c-avatar--medium { height: 3.75rem; width: 3.75rem; }
-.c-avatar--small { height: 2.5rem; width: 2.5rem; }
-.c-avatar--tiny { height:1.25rem; width: 1.25rem; }
-
-@media only screen and (max-width: 30em) {
-    .c-avatar--phone-portrait-only { height: 5rem; width: 5rem; background-size: cover; overflow: hidden; }
-    .c-avatar--gargantuan--phone-portrait-only { height: 8.75rem; width: 8.75rem; }
-    .c-avatar--huge--phone-portrait-only { height: 7.5rem; width: 7.5rem; }
-    .c-avatar--large--phone-portrait-only { height: 6.25rem; width: 6.25rem; }
-    .c-avatar--medium--phone-portrait-only { height: 3.75rem; width: 3.75rem; }
-    .c-avatar--small--phone-portrait-only { height: 2.5rem; width: 2.5rem; }
-    .c-avatar--tiny--phone-portrait-only { height:1.25rem; width: 1.25rem; }
+.c-avatar
+{
+    overflow: hidden;
+    width: 5rem;
+    height: 5rem;
+    background-size: cover;
 }
 
-@media only screen and (min-width: 30em) {
-    .c-avatar--phone-landscape-up { height: 5rem; width: 5rem; background-size: cover; overflow: hidden; }
-    .c-avatar--gargantuan--phone-landscape-up { height: 8.75rem; width: 8.75rem; }
-    .c-avatar--huge--phone-landscape-up { height: 7.5rem; width: 7.5rem; }
-    .c-avatar--large--phone-landscape-up { height: 6.25rem; width: 6.25rem; }
-    .c-avatar--medium--phone-landscape-up { height: 3.75rem; width: 3.75rem; }
-    .c-avatar--small--phone-landscape-up { height: 2.5rem; width: 2.5rem; }
-    .c-avatar--tiny--phone-landscape-up { height:1.25rem; width: 1.25rem; }
+.c-avatar--gargantuan
+{
+    width: 8.75rem;
+    height: 8.75rem;
 }
 
-@media only screen and (min-width: 30em) and (max-width: 39.9375em) {
-    .c-avatar--phone-landscape-only { height: 5rem; width: 5rem; background-size: cover; overflow: hidden; }
-    .c-avatar--gargantuan--phone-landscape-only { height: 8.75rem; width: 8.75rem; }
-    .c-avatar--huge--phone-landscape-only { height: 7.5rem; width: 7.5rem; }
-    .c-avatar--large--phone-landscape-only { height: 6.25rem; width: 6.25rem; }
-    .c-avatar--medium--phone-landscape-only { height: 3.75rem; width: 3.75rem; }
-    .c-avatar--small--phone-landscape-only { height: 2.5rem; width: 2.5rem; }
-    .c-avatar--tiny--phone-landscape-only { height:1.25rem; width: 1.25rem; }
+.c-avatar--huge
+{
+    width: 7.5rem;
+    height: 7.5rem;
 }
 
-@media only screen and (min-width: 40em) {
-    .c-avatar--tablet-portrait-up { height: 5rem; width: 5rem; background-size: cover; overflow: hidden; }
-    .c-avatar--gargantuan--tablet-portrait-up { height: 8.75rem; width: 8.75rem; }
-    .c-avatar--huge--tablet-portrait-up { height: 7.5rem; width: 7.5rem; }
-    .c-avatar--large--tablet-portrait-up { height: 6.25rem; width: 6.25rem; }
-    .c-avatar--medium--tablet-portrait-up { height: 3.75rem; width: 3.75rem; }
-    .c-avatar--small--tablet-portrait-up { height: 2.5rem; width: 2.5rem; }
-    .c-avatar--tiny--tablet-portrait-up { height:1.25rem; width: 1.25rem; }
+.c-avatar--large
+{
+    width: 6.25rem;
+    height: 6.25rem;
 }
 
-@media only screen and (min-width: 40em) and (max-width: 63.9375em) {
-    .c-avatar--tablet-portrait-only { height: 5rem; width: 5rem; background-size: cover; overflow: hidden; }
-    .c-avatar--gargantuan--tablet-portrait-only { height: 8.75rem; width: 8.75rem; }
-    .c-avatar--huge--tablet-portrait-only { height: 7.5rem; width: 7.5rem; }
-    .c-avatar--large--tablet-portrait-only { height: 6.25rem; width: 6.25rem; }
-    .c-avatar--medium--tablet-portrait-only { height: 3.75rem; width: 3.75rem; }
-    .c-avatar--small--tablet-portrait-only { height: 2.5rem; width: 2.5rem; }
-    .c-avatar--tiny--tablet-portrait-only { height:1.25rem; width: 1.25rem; }
+.c-avatar--medium
+{
+    width: 3.75rem;
+    height: 3.75rem;
 }
 
-@media only screen and (min-width: 64em) {
-    .c-avatar--tablet-landscape-up { height: 5rem; width: 5rem; background-size: cover; overflow: hidden; }
-    .c-avatar--gargantuan--tablet-landscape-up { height: 8.75rem; width: 8.75rem; }
-    .c-avatar--huge--tablet-landscape-up { height: 7.5rem; width: 7.5rem; }
-    .c-avatar--large--tablet-landscape-up { height: 6.25rem; width: 6.25rem; }
-    .c-avatar--medium--tablet-landscape-up { height: 3.75rem; width: 3.75rem; }
-    .c-avatar--small--tablet-landscape-up { height: 2.5rem; width: 2.5rem; }
-    .c-avatar--tiny--tablet-landscape-up { height:1.25rem; width: 1.25rem; }
+.c-avatar--small
+{
+    width: 2.5rem;
+    height: 2.5rem;
 }
 
-@media only screen and (min-width: 64em) and (max-width: 79.9375em) {
-    .c-avatar--tablet-landscape-only { height: 5rem; width: 5rem; background-size: cover; overflow: hidden; }
-    .c-avatar--gargantuan--tablet-landscape-only { height: 8.75rem; width: 8.75rem; }
-    .c-avatar--huge--tablet-landscape-only { height: 7.5rem; width: 7.5rem; }
-    .c-avatar--large--tablet-landscape-only { height: 6.25rem; width: 6.25rem; }
-    .c-avatar--medium--tablet-landscape-only { height: 3.75rem; width: 3.75rem; }
-    .c-avatar--small--tablet-landscape-only { height: 2.5rem; width: 2.5rem; }
-    .c-avatar--tiny--tablet-landscape-only { height:1.25rem; width: 1.25rem; }
+.c-avatar--tiny
+{
+    width: 1.25rem;
+    height: 1.25rem;
 }
 
-@media only screen and (min-width: 80em) {
-    .c-avatar--desktop-up { height: 5rem; width: 5rem; background-size: cover; overflow: hidden; }
-    .c-avatar--gargantuan--desktop-up { height: 8.75rem; width: 8.75rem; }
-    .c-avatar--huge--desktop-up { height: 7.5rem; width: 7.5rem; }
-    .c-avatar--large--desktop-up { height: 6.25rem; width: 6.25rem; }
-    .c-avatar--medium--desktop-up { height: 3.75rem; width: 3.75rem; }
-    .c-avatar--small--desktop-up { height: 2.5rem; width: 2.5rem; }
-    .c-avatar--tiny--desktop-up { height:1.25rem; width: 1.25rem; }
+@media only screen and (max-width: 30em)
+{
+    .c-avatar--phone-portrait-only
+    {
+        overflow: hidden;
+        width: 5rem;
+        height: 5rem;
+        background-size: cover;
+    }
+
+    .c-avatar--gargantuan--phone-portrait-only
+    {
+        width: 8.75rem;
+        height: 8.75rem;
+    }
+
+    .c-avatar--huge--phone-portrait-only
+    {
+        width: 7.5rem;
+        height: 7.5rem;
+    }
+
+    .c-avatar--large--phone-portrait-only
+    {
+        width: 6.25rem;
+        height: 6.25rem;
+    }
+
+    .c-avatar--medium--phone-portrait-only
+    {
+        width: 3.75rem;
+        height: 3.75rem;
+    }
+
+    .c-avatar--small--phone-portrait-only
+    {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .c-avatar--tiny--phone-portrait-only
+    {
+        width: 1.25rem;
+        height: 1.25rem;
+    }
+}
+
+@media only screen and (min-width: 30em)
+{
+    .c-avatar--phone-landscape-up
+    {
+        overflow: hidden;
+        width: 5rem;
+        height: 5rem;
+        background-size: cover;
+    }
+
+    .c-avatar--gargantuan--phone-landscape-up
+    {
+        width: 8.75rem;
+        height: 8.75rem;
+    }
+
+    .c-avatar--huge--phone-landscape-up
+    {
+        width: 7.5rem;
+        height: 7.5rem;
+    }
+
+    .c-avatar--large--phone-landscape-up
+    {
+        width: 6.25rem;
+        height: 6.25rem;
+    }
+
+    .c-avatar--medium--phone-landscape-up
+    {
+        width: 3.75rem;
+        height: 3.75rem;
+    }
+
+    .c-avatar--small--phone-landscape-up
+    {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .c-avatar--tiny--phone-landscape-up
+    {
+        width: 1.25rem;
+        height: 1.25rem;
+    }
+}
+
+@media only screen and (min-width: 30em) and (max-width: 39.9375em)
+{
+    .c-avatar--phone-landscape-only
+    {
+        overflow: hidden;
+        width: 5rem;
+        height: 5rem;
+        background-size: cover;
+    }
+
+    .c-avatar--gargantuan--phone-landscape-only
+    {
+        width: 8.75rem;
+        height: 8.75rem;
+    }
+
+    .c-avatar--huge--phone-landscape-only
+    {
+        width: 7.5rem;
+        height: 7.5rem;
+    }
+
+    .c-avatar--large--phone-landscape-only
+    {
+        width: 6.25rem;
+        height: 6.25rem;
+    }
+
+    .c-avatar--medium--phone-landscape-only
+    {
+        width: 3.75rem;
+        height: 3.75rem;
+    }
+
+    .c-avatar--small--phone-landscape-only
+    {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .c-avatar--tiny--phone-landscape-only
+    {
+        width: 1.25rem;
+        height: 1.25rem;
+    }
+}
+
+@media only screen and (min-width: 40em)
+{
+    .c-avatar--tablet-portrait-up
+    {
+        overflow: hidden;
+        width: 5rem;
+        height: 5rem;
+        background-size: cover;
+    }
+
+    .c-avatar--gargantuan--tablet-portrait-up
+    {
+        width: 8.75rem;
+        height: 8.75rem;
+    }
+
+    .c-avatar--huge--tablet-portrait-up
+    {
+        width: 7.5rem;
+        height: 7.5rem;
+    }
+
+    .c-avatar--large--tablet-portrait-up
+    {
+        width: 6.25rem;
+        height: 6.25rem;
+    }
+
+    .c-avatar--medium--tablet-portrait-up
+    {
+        width: 3.75rem;
+        height: 3.75rem;
+    }
+
+    .c-avatar--small--tablet-portrait-up
+    {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .c-avatar--tiny--tablet-portrait-up
+    {
+        width: 1.25rem;
+        height: 1.25rem;
+    }
+}
+
+@media only screen and (min-width: 40em) and (max-width: 63.9375em)
+{
+    .c-avatar--tablet-portrait-only
+    {
+        overflow: hidden;
+        width: 5rem;
+        height: 5rem;
+        background-size: cover;
+    }
+
+    .c-avatar--gargantuan--tablet-portrait-only
+    {
+        width: 8.75rem;
+        height: 8.75rem;
+    }
+
+    .c-avatar--huge--tablet-portrait-only
+    {
+        width: 7.5rem;
+        height: 7.5rem;
+    }
+
+    .c-avatar--large--tablet-portrait-only
+    {
+        width: 6.25rem;
+        height: 6.25rem;
+    }
+
+    .c-avatar--medium--tablet-portrait-only
+    {
+        width: 3.75rem;
+        height: 3.75rem;
+    }
+
+    .c-avatar--small--tablet-portrait-only
+    {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .c-avatar--tiny--tablet-portrait-only
+    {
+        width: 1.25rem;
+        height: 1.25rem;
+    }
+}
+
+@media only screen and (min-width: 64em)
+{
+    .c-avatar--tablet-landscape-up
+    {
+        overflow: hidden;
+        width: 5rem;
+        height: 5rem;
+        background-size: cover;
+    }
+
+    .c-avatar--gargantuan--tablet-landscape-up
+    {
+        width: 8.75rem;
+        height: 8.75rem;
+    }
+
+    .c-avatar--huge--tablet-landscape-up
+    {
+        width: 7.5rem;
+        height: 7.5rem;
+    }
+
+    .c-avatar--large--tablet-landscape-up
+    {
+        width: 6.25rem;
+        height: 6.25rem;
+    }
+
+    .c-avatar--medium--tablet-landscape-up
+    {
+        width: 3.75rem;
+        height: 3.75rem;
+    }
+
+    .c-avatar--small--tablet-landscape-up
+    {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .c-avatar--tiny--tablet-landscape-up
+    {
+        width: 1.25rem;
+        height: 1.25rem;
+    }
+}
+
+@media only screen and (min-width: 64em) and (max-width: 79.9375em)
+{
+    .c-avatar--tablet-landscape-only
+    {
+        overflow: hidden;
+        width: 5rem;
+        height: 5rem;
+        background-size: cover;
+    }
+
+    .c-avatar--gargantuan--tablet-landscape-only
+    {
+        width: 8.75rem;
+        height: 8.75rem;
+    }
+
+    .c-avatar--huge--tablet-landscape-only
+    {
+        width: 7.5rem;
+        height: 7.5rem;
+    }
+
+    .c-avatar--large--tablet-landscape-only
+    {
+        width: 6.25rem;
+        height: 6.25rem;
+    }
+
+    .c-avatar--medium--tablet-landscape-only
+    {
+        width: 3.75rem;
+        height: 3.75rem;
+    }
+
+    .c-avatar--small--tablet-landscape-only
+    {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .c-avatar--tiny--tablet-landscape-only
+    {
+        width: 1.25rem;
+        height: 1.25rem;
+    }
+}
+
+@media only screen and (min-width: 80em)
+{
+    .c-avatar--desktop-up
+    {
+        overflow: hidden;
+        width: 5rem;
+        height: 5rem;
+        background-size: cover;
+    }
+
+    .c-avatar--gargantuan--desktop-up
+    {
+        width: 8.75rem;
+        height: 8.75rem;
+    }
+
+    .c-avatar--huge--desktop-up
+    {
+        width: 7.5rem;
+        height: 7.5rem;
+    }
+
+    .c-avatar--large--desktop-up
+    {
+        width: 6.25rem;
+        height: 6.25rem;
+    }
+
+    .c-avatar--medium--desktop-up
+    {
+        width: 3.75rem;
+        height: 3.75rem;
+    }
+
+    .c-avatar--small--desktop-up
+    {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .c-avatar--tiny--desktop-up
+    {
+        width: 1.25rem;
+        height: 1.25rem;
+    }
 }

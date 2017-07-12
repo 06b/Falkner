@@ -3,13 +3,46 @@
  * Example: http://jsbin.com/modegawiqo/1/edit?html,css,js,output
  */
 
-.c-archipelago { display: flex; -ms-flex-wrap: wrap; -webkit-flex-wrap: wrap; flex-wrap: wrap; height: 100%; }
+.c-archipelago
+{
+    display: flex;
+    height: 100%;
 
-.c-archipelago .c-seastack { display: flex; width: 14rem; padding: 0.375rem 0.375rem 0; }
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+}
 
-.c-seastack > div, .c-archipelago .o-island > .u-force-block { width: 100%; }
+.c-archipelago .c-seastack
+{
+    display: flex;
+    padding: 0.375rem 0.375rem 0;
+    width: 14rem;
+}
 
-    .c-archipelago > .o-island { display: flex; -ms-flex: 1.5; -webkit-flex: 1.5; flex: 1.5; }
-    .c-archipelago > .o-islet { -ms-flex: 1; -webkit-flex: 1; flex: 1; }
+.c-seastack > div,
+.c-archipelago .o-island > .u-force-block
+{
+    width: 100%;
+}
 
-    .c-archipelago > .o-island.u-overflow-y-auto { margin-right: 1rem; /* Due to o-islet causing an overlap on the scroll bar */ }
+.c-archipelago > .o-island
+{
+    display: flex;
+
+    -webkit-flex: 1.5;
+        -ms-flex: 1.5;
+            flex: 1.5;
+}
+
+.c-archipelago > .o-islet
+{
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+}
+
+.c-archipelago > .o-island.u-overflow-y-auto
+{
+    margin-right: 1rem; /* Due to o-islet causing an overlap on the scroll bar */
+}

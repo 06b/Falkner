@@ -10,16 +10,21 @@
  * </div>
  *
  */
-.c-embed-container {
+
+.c-embed-container
+{
     position: relative;
-    padding-bottom: 56.25%;
     overflow: hidden;
+    padding-bottom: 56.25%;
     max-width: 100%;
 }
 
-.c-embed-container iframe, .c-embed-container object, .c-embed-container embed, .c-embed-container img {
+.c-embed-container iframe,
+.c-embed-container object,
+.c-embed-container embed,
+.c-embed-container img
+{
     position: absolute;
     width: 100%;
     height: 100%;
 }
-

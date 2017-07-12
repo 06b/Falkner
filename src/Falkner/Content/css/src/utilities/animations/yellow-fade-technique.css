@@ -16,16 +16,26 @@
  *     to crash due to running out of GPU memory - https://github.com/daneden/animate.css/issues/537#issuecomment-286775213
  */
 
-@keyframes spotlight {
-  from {
-    background: var(--t-background-highlight);
-  }
-  to {
-    background: transparent;
-    will-change: auto /* N1 */;
-  }
+@keyframes spotlight
+{
+    from
+    {
+        background: var(--t-background-highlight);
+    }
+
+    to
+    {
+        background: transparent;
+        will-change: auto /* N1 */;
+    }
 }
 
-.u-spotlight-animation { animation: spotlight 2.5s; }
+.u-spotlight-animation
+{
+    animation: spotlight 2.5s;
+}
 
-.u-spotlight-animation--hint { will-change: background /* N2 */ /* N3 */; }
+.u-spotlight-animation--hint
+{
+    will-change: background /* N2 */ /* N3 */;
+}

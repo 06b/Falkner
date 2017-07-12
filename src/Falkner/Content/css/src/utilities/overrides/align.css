@@ -2,160 +2,418 @@
  * Vertical Alignment utilities - Note this depends on the appropriate `display` value.
  */
 
-.u-align-baseline { vertical-align: baseline !important; }
-@media only screen and (max-width: 30em) {
-    .u-align-baseline--phone-portrait-only { vertical-align: baseline !important; }
-}
-@media only screen and (min-width: 30em) {
-    .u-align-baseline--phone-landscape-up { vertical-align: baseline !important; }
-}
-@media only screen and (min-width: 30em) and (max-width: 39.9375em) {
-    .u-align-baseline--phone-landscape-only { vertical-align: baseline !important; }
-}
-@media only screen and (min-width: 40em) {
-    .u-align-baseline--tablet-portrait-up { vertical-align: baseline !important; }
-}
-@media only screen and (min-width: 40em) and (max-width: 63.9375em) {
-    .u-align-baseline--tablet-portrait-only { vertical-align: baseline !important; }
-}
-@media only screen and (min-width: 64em) {
-    .u-align-baseline--tablet-landscape-up { vertical-align: baseline !important; }
-}
-@media only screen and (min-width: 64em) and (max-width: 79.9375em) {
-    .u-align-baseline--tablet-landscape-only { vertical-align: baseline !important; }
-}
-@media only screen and (min-width: 80em) {
-    .u-align-baseline--desktop-up { vertical-align: baseline !important; }
+.u-align-baseline
+{
+    vertical-align: baseline !important;
 }
 
-.u-align-bottom { vertical-align: bottom !important; }
-@media only screen and (max-width: 30em) {
-    .u-align-bottom--phone-portrait-only { vertical-align: bottom !important; }
-}
-@media only screen and (min-width: 30em) {
-    .u-align-bottom--phone-landscape-up { vertical-align: bottom !important; }
-}
-@media only screen and (min-width: 30em) and (max-width: 39.9375em) {
-    .u-align-bottom--phone-landscape-only { vertical-align: bottom !important; }
-}
-@media only screen and (min-width: 40em) {
-    .u-align-bottom--tablet-portrait-up { vertical-align: bottom !important; }
-}
-@media only screen and (min-width: 40em) and (max-width: 63.9375em) {
-    .u-align-bottom--tablet-portrait-only { vertical-align: bottom !important; }
-}
-@media only screen and (min-width: 64em) {
-    .u-align-bottom--tablet-landscape-up { vertical-align: bottom !important; }
-}
-@media only screen and (min-width: 64em) and (max-width: 79.9375em) {
-    .u-align-bottom--tablet-landscape-only { vertical-align: bottom !important; }
-}
-@media only screen and (min-width: 80em) {
-    .u-align-bottom--desktop-up { vertical-align: bottom !important; }
+@media only screen and (max-width: 30em)
+{
+    .u-align-baseline--phone-portrait-only
+    {
+        vertical-align: baseline !important;
+    }
 }
 
-.u-align-middle { vertical-align: middle !important; }
-@media only screen and (max-width: 30em) {
-    .u-align-middle--phone-portrait-only { vertical-align: middle !important; }
-}
-@media only screen and (min-width: 30em) {
-    .u-align-middle--phone-landscape-up { vertical-align: middle !important; }
-}
-@media only screen and (min-width: 30em) and (max-width: 39.9375em) {
-    .u-align-middle--phone-landscape-only { vertical-align: middle !important; }
-}
-@media only screen and (min-width: 40em) {
-    .u-align-middle--tablet-portrait-up { vertical-align: middle !important; }
-}
-@media only screen and (min-width: 40em) and (max-width: 63.9375em) {
-    .u-align-middle--tablet-portrait-only { vertical-align: middle !important; }
-}
-@media only screen and (min-width: 64em) {
-    .u-align-middle--tablet-landscape-up { vertical-align: middle !important; }
-}
-@media only screen and (min-width: 64em) and (max-width: 79.9375em) {
-    .u-align-middle--tablet-landscape-only { vertical-align: middle !important; }
-}
-@media only screen and (min-width: 80em) {
-    .u-align-middle--desktop-up { vertical-align: middle !important; }
+@media only screen and (min-width: 30em)
+{
+    .u-align-baseline--phone-landscape-up
+    {
+        vertical-align: baseline !important;
+    }
 }
 
-.u-align-top { vertical-align: top !important; }
-@media only screen and (max-width: 30em) {
-    .u-align-top--phone-portrait-only { vertical-align: top !important; }
-}
-@media only screen and (min-width: 30em) {
-    .u-align-top--phone-landscape-up { vertical-align: top !important; }
-}
-@media only screen and (min-width: 30em) and (max-width: 39.9375em) {
-    .u-align-top--phone-landscape-only { vertical-align: top !important; }
-}
-@media only screen and (min-width: 40em) {
-    .u-align-top--tablet-portrait-up { vertical-align: top !important; }
-}
-@media only screen and (min-width: 40em) and (max-width: 63.9375em) {
-    .u-align-top--tablet-portrait-only { vertical-align: top !important; }
-}
-@media only screen and (min-width: 64em) {
-    .u-align-top--tablet-landscape-up { vertical-align: top !important; }
-}
-@media only screen and (min-width: 64em) and (max-width: 79.9375em) {
-    .u-align-top--tablet-landscape-only { vertical-align: top !important; }
-}
-@media only screen and (min-width: 80em) {
-    .u-align-top--desktop-up { vertical-align: top !important; }
+@media only screen and (min-width: 30em) and (max-width: 39.9375em)
+{
+    .u-align-baseline--phone-landscape-only
+    {
+        vertical-align: baseline !important;
+    }
 }
 
-.u-align-text-top { vertical-align: text-top !important; }
-@media only screen and (max-width: 30em) {
-    .u-align-text-top--phone-portrait-only { vertical-align: text-top !important; }
-}
-@media only screen and (min-width: 30em) {
-    .u-align-text-top--phone-landscape-up { vertical-align: text-top !important; }
-}
-@media only screen and (min-width: 30em) and (max-width: 39.9375em) {
-    .u-align-text-top--phone-landscape-only { vertical-align: text-top !important; }
-}
-@media only screen and (min-width: 40em) {
-    .u-align-text-top--tablet-portrait-up { vertical-align: text-top !important; }
-}
-@media only screen and (min-width: 40em) and (max-width: 63.9375em) {
-    .u-align-text-top--tablet-portrait-only { vertical-align: text-top !important; }
-}
-@media only screen and (min-width: 64em) {
-    .u-align-text-top--tablet-landscape-up { vertical-align: text-top !important; }
-}
-@media only screen and (min-width: 64em) and (max-width: 79.9375em) {
-    .u-align-text-top--tablet-landscape-only { vertical-align: text-top !important; }
-}
-@media only screen and (min-width: 80em) {
-    .u-align-text-top--desktop-up { vertical-align: text-top !important; }
+@media only screen and (min-width: 40em)
+{
+    .u-align-baseline--tablet-portrait-up
+    {
+        vertical-align: baseline !important;
+    }
 }
 
-.u-align-text-bottom { vertical-align: text-bottom !important; }
-@media only screen and (max-width: 30em) {
-    .u-align-text-bottom--phone-portrait-only { vertical-align: text-bottom !important; }
+@media only screen and (min-width: 40em) and (max-width: 63.9375em)
+{
+    .u-align-baseline--tablet-portrait-only
+    {
+        vertical-align: baseline !important;
+    }
 }
-@media only screen and (min-width: 30em) {
-    .u-align-text-bottom--phone-landscape-up { vertical-align: text-bottom !important; }
+
+@media only screen and (min-width: 64em)
+{
+    .u-align-baseline--tablet-landscape-up
+    {
+        vertical-align: baseline !important;
+    }
 }
-@media only screen and (min-width: 30em) and (max-width: 39.9375em) {
-    .u-align-text-bottom--phone-landscape-only { vertical-align: text-bottom !important; }
+
+@media only screen and (min-width: 64em) and (max-width: 79.9375em)
+{
+    .u-align-baseline--tablet-landscape-only
+    {
+        vertical-align: baseline !important;
+    }
 }
-@media only screen and (min-width: 40em) {
-    .u-align-text-bottom--tablet-portrait-up { vertical-align: text-bottom !important; }
+
+@media only screen and (min-width: 80em)
+{
+    .u-align-baseline--desktop-up
+    {
+        vertical-align: baseline !important;
+    }
 }
-@media only screen and (min-width: 40em) and (max-width: 63.9375em) {
-    .u-align-text-bottom--tablet-portrait-only { vertical-align: text-bottom !important; }
+
+.u-align-bottom
+{
+    vertical-align: bottom !important;
 }
-@media only screen and (min-width: 64em) {
-    .u-align-text-bottom--tablet-landscape-up { vertical-align: text-bottom !important; }
+
+@media only screen and (max-width: 30em)
+{
+    .u-align-bottom--phone-portrait-only
+    {
+        vertical-align: bottom !important;
+    }
 }
-@media only screen and (min-width: 64em) and (max-width: 79.9375em) {
-    .u-align-text-bottom--tablet-landscape-only { vertical-align: text-bottom !important; }
+
+@media only screen and (min-width: 30em)
+{
+    .u-align-bottom--phone-landscape-up
+    {
+        vertical-align: bottom !important;
+    }
 }
-@media only screen and (min-width: 80em) {
-    .u-align-text-bottom--desktop-up { vertical-align: text-bottom !important; }
+
+@media only screen and (min-width: 30em) and (max-width: 39.9375em)
+{
+    .u-align-bottom--phone-landscape-only
+    {
+        vertical-align: bottom !important;
+    }
+}
+
+@media only screen and (min-width: 40em)
+{
+    .u-align-bottom--tablet-portrait-up
+    {
+        vertical-align: bottom !important;
+    }
+}
+
+@media only screen and (min-width: 40em) and (max-width: 63.9375em)
+{
+    .u-align-bottom--tablet-portrait-only
+    {
+        vertical-align: bottom !important;
+    }
+}
+
+@media only screen and (min-width: 64em)
+{
+    .u-align-bottom--tablet-landscape-up
+    {
+        vertical-align: bottom !important;
+    }
+}
+
+@media only screen and (min-width: 64em) and (max-width: 79.9375em)
+{
+    .u-align-bottom--tablet-landscape-only
+    {
+        vertical-align: bottom !important;
+    }
+}
+
+@media only screen and (min-width: 80em)
+{
+    .u-align-bottom--desktop-up
+    {
+        vertical-align: bottom !important;
+    }
+}
+
+.u-align-middle
+{
+    vertical-align: middle !important;
+}
+
+@media only screen and (max-width: 30em)
+{
+    .u-align-middle--phone-portrait-only
+    {
+        vertical-align: middle !important;
+    }
+}
+
+@media only screen and (min-width: 30em)
+{
+    .u-align-middle--phone-landscape-up
+    {
+        vertical-align: middle !important;
+    }
+}
+
+@media only screen and (min-width: 30em) and (max-width: 39.9375em)
+{
+    .u-align-middle--phone-landscape-only
+    {
+        vertical-align: middle !important;
+    }
+}
+
+@media only screen and (min-width: 40em)
+{
+    .u-align-middle--tablet-portrait-up
+    {
+        vertical-align: middle !important;
+    }
+}
+
+@media only screen and (min-width: 40em) and (max-width: 63.9375em)
+{
+    .u-align-middle--tablet-portrait-only
+    {
+        vertical-align: middle !important;
+    }
+}
+
+@media only screen and (min-width: 64em)
+{
+    .u-align-middle--tablet-landscape-up
+    {
+        vertical-align: middle !important;
+    }
+}
+
+@media only screen and (min-width: 64em) and (max-width: 79.9375em)
+{
+    .u-align-middle--tablet-landscape-only
+    {
+        vertical-align: middle !important;
+    }
+}
+
+@media only screen and (min-width: 80em)
+{
+    .u-align-middle--desktop-up
+    {
+        vertical-align: middle !important;
+    }
+}
+
+.u-align-top
+{
+    vertical-align: top !important;
+}
+
+@media only screen and (max-width: 30em)
+{
+    .u-align-top--phone-portrait-only
+    {
+        vertical-align: top !important;
+    }
+}
+
+@media only screen and (min-width: 30em)
+{
+    .u-align-top--phone-landscape-up
+    {
+        vertical-align: top !important;
+    }
+}
+
+@media only screen and (min-width: 30em) and (max-width: 39.9375em)
+{
+    .u-align-top--phone-landscape-only
+    {
+        vertical-align: top !important;
+    }
+}
+
+@media only screen and (min-width: 40em)
+{
+    .u-align-top--tablet-portrait-up
+    {
+        vertical-align: top !important;
+    }
+}
+
+@media only screen and (min-width: 40em) and (max-width: 63.9375em)
+{
+    .u-align-top--tablet-portrait-only
+    {
+        vertical-align: top !important;
+    }
+}
+
+@media only screen and (min-width: 64em)
+{
+    .u-align-top--tablet-landscape-up
+    {
+        vertical-align: top !important;
+    }
+}
+
+@media only screen and (min-width: 64em) and (max-width: 79.9375em)
+{
+    .u-align-top--tablet-landscape-only
+    {
+        vertical-align: top !important;
+    }
+}
+
+@media only screen and (min-width: 80em)
+{
+    .u-align-top--desktop-up
+    {
+        vertical-align: top !important;
+    }
+}
+
+.u-align-text-top
+{
+    vertical-align: text-top !important;
+}
+
+@media only screen and (max-width: 30em)
+{
+    .u-align-text-top--phone-portrait-only
+    {
+        vertical-align: text-top !important;
+    }
+}
+
+@media only screen and (min-width: 30em)
+{
+    .u-align-text-top--phone-landscape-up
+    {
+        vertical-align: text-top !important;
+    }
+}
+
+@media only screen and (min-width: 30em) and (max-width: 39.9375em)
+{
+    .u-align-text-top--phone-landscape-only
+    {
+        vertical-align: text-top !important;
+    }
+}
+
+@media only screen and (min-width: 40em)
+{
+    .u-align-text-top--tablet-portrait-up
+    {
+        vertical-align: text-top !important;
+    }
+}
+
+@media only screen and (min-width: 40em) and (max-width: 63.9375em)
+{
+    .u-align-text-top--tablet-portrait-only
+    {
+        vertical-align: text-top !important;
+    }
+}
+
+@media only screen and (min-width: 64em)
+{
+    .u-align-text-top--tablet-landscape-up
+    {
+        vertical-align: text-top !important;
+    }
+}
+
+@media only screen and (min-width: 64em) and (max-width: 79.9375em)
+{
+    .u-align-text-top--tablet-landscape-only
+    {
+        vertical-align: text-top !important;
+    }
+}
+
+@media only screen and (min-width: 80em)
+{
+    .u-align-text-top--desktop-up
+    {
+        vertical-align: text-top !important;
+    }
+}
+
+.u-align-text-bottom
+{
+    vertical-align: text-bottom !important;
+}
+
+@media only screen and (max-width: 30em)
+{
+    .u-align-text-bottom--phone-portrait-only
+    {
+        vertical-align: text-bottom !important;
+    }
+}
+
+@media only screen and (min-width: 30em)
+{
+    .u-align-text-bottom--phone-landscape-up
+    {
+        vertical-align: text-bottom !important;
+    }
+}
+
+@media only screen and (min-width: 30em) and (max-width: 39.9375em)
+{
+    .u-align-text-bottom--phone-landscape-only
+    {
+        vertical-align: text-bottom !important;
+    }
+}
+
+@media only screen and (min-width: 40em)
+{
+    .u-align-text-bottom--tablet-portrait-up
+    {
+        vertical-align: text-bottom !important;
+    }
+}
+
+@media only screen and (min-width: 40em) and (max-width: 63.9375em)
+{
+    .u-align-text-bottom--tablet-portrait-only
+    {
+        vertical-align: text-bottom !important;
+    }
+}
+
+@media only screen and (min-width: 64em)
+{
+    .u-align-text-bottom--tablet-landscape-up
+    {
+        vertical-align: text-bottom !important;
+    }
+}
+
+@media only screen and (min-width: 64em) and (max-width: 79.9375em)
+{
+    .u-align-text-bottom--tablet-landscape-only
+    {
+        vertical-align: text-bottom !important;
+    }
+}
+
+@media only screen and (min-width: 80em)
+{
+    .u-align-text-bottom--desktop-up
+    {
+        vertical-align: text-bottom !important;
+    }
 }
 
 /**
@@ -164,5 +422,8 @@
  * Longhand used due to shorthand syntax can sometimes be harmful - https://csswizardry.com/2016/12/css-shorthand-syntax-considered-an-anti-pattern/
  */
 
-.u-align-center { margin-right: auto; margin-left: auto; }
-
+.u-align-center
+{
+    margin-right: auto;
+    margin-left: auto;
+}

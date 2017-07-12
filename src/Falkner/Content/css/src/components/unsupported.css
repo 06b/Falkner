@@ -16,12 +16,30 @@
  *
  */
 
-.c-unsupported { }
+.c-unsupported
+{
+}
 
-.c-unsupported__clearance { display:none; }
-.c-unsupported__description { }
-.c-unsupported__wall{ }
+.c-unsupported__clearance
+{
+    display: none;
+}
+
+.c-unsupported__description
+{
+}
+
+.c-unsupported__wall
+{
+}
 
 /* Toggle the visibility of 'c-unsupported__clearance' via either a scope class or modification of the DOM, etc */
-.s-legacy .c-unsupported__clearance { display:block; }
-.s-legacy .c-unsupported__wall { display:none; }
+.s-legacy .c-unsupported__clearance
+{
+    display: block;
+}
+
+.s-legacy .c-unsupported__wall
+{
+    display: none;
+}

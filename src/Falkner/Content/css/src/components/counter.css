@@ -11,9 +11,40 @@
  *
  */
 
-.c-counter { display:inline-block; border-radius:50%; text-align:center; font-weight:bold; line-height:1.6; font-size:11px; padding:3px; min-width:1.4rem; min-height:1rem; }
-.c-counter--pinned { position:absolute /* N1 */; }
-.c-counter--pinned-top { top:0; }
-.c-counter--pinned-right { right:0; }
-.c-counter--pinned-bottom { bottom:0; }
-.c-counter--pinned-left { left:0; }
+.c-counter
+{
+    display: inline-block;
+    padding: 3px;
+    min-width: 1.4rem;
+    min-height: 1rem;
+    border-radius: 50%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 1.6;
+}
+
+.c-counter--pinned
+{
+    position: absolute /* N1 */;
+}
+
+.c-counter--pinned-top
+{
+    top: 0;
+}
+
+.c-counter--pinned-right
+{
+    right: 0;
+}
+
+.c-counter--pinned-bottom
+{
+    bottom: 0;
+}
+
+.c-counter--pinned-left
+{
+    left: 0;
+}

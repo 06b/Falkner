@@ -6,207 +6,890 @@
  *
  */
 
-.c-backdrop .is-subdued,.c-backdrop .is-subdued--50 { opacity:0.5; }
-
-.c-backdrop .is-subdued--95 { opacity:0.95; }
-.c-backdrop .is-subdued--90 { opacity:0.9; }
-.c-backdrop .is-subdued--85 { opacity:0.85; }
-.c-backdrop .is-subdued--80 { opacity:0.8; }
-.c-backdrop .is-subdued--75 { opacity:0.75; }
-.c-backdrop .is-subdued--70 { opacity:0.7; }
-.c-backdrop .is-subdued--65 { opacity:0.65; }
-.c-backdrop .is-subdued--60 { opacity:0.6; }
-.c-backdrop .is-subdued--55 { opacity:0.55; }
-.c-backdrop .is-subdued--45 { opacity:0.45; }
-.c-backdrop .is-subdued--40 { opacity:0.4; }
-.c-backdrop .is-subdued--35 { opacity:0.35; }
-.c-backdrop .is-subdued--30 { opacity:0.3; }
-.c-backdrop .is-subdued--25 { opacity:0.25; }
-.c-backdrop .is-subdued--20 { opacity:0.2; }
-.c-backdrop .is-subdued--15 { opacity:0.15; }
-.c-backdrop .is-subdued--10 { opacity:0.1; }
-.c-backdrop .is-subdued--05 { opacity:0.05; }
-
-@media only screen and (max-width: 30em) {
-.c-backdrop .is-subdued--phone-portrait-only,.c-backdrop .is-subdued--50--phone-portrait-only { opacity:0.5; }
-
-.c-backdrop .is-subdued--95--phone-portrait-only { opacity:0.95; }
-.c-backdrop .is-subdued--90--phone-portrait-only { opacity:0.9; }
-.c-backdrop .is-subdued--85--phone-portrait-only { opacity:0.85; }
-.c-backdrop .is-subdued--80--phone-portrait-only { opacity:0.8; }
-.c-backdrop .is-subdued--75--phone-portrait-only { opacity:0.75; }
-.c-backdrop .is-subdued--70--phone-portrait-only { opacity:0.7; }
-.c-backdrop .is-subdued--65--phone-portrait-only { opacity:0.65; }
-.c-backdrop .is-subdued--60--phone-portrait-only { opacity:0.6; }
-.c-backdrop .is-subdued--55--phone-portrait-only { opacity:0.55; }
-.c-backdrop .is-subdued--45--phone-portrait-only { opacity:0.45; }
-.c-backdrop .is-subdued--40--phone-portrait-only { opacity:0.4; }
-.c-backdrop .is-subdued--35--phone-portrait-only { opacity:0.35; }
-.c-backdrop .is-subdued--30--phone-portrait-only { opacity:0.3; }
-.c-backdrop .is-subdued--25--phone-portrait-only { opacity:0.25; }
-.c-backdrop .is-subdued--20--phone-portrait-only { opacity:0.2; }
-.c-backdrop .is-subdued--15--phone-portrait-only { opacity:0.15; }
-.c-backdrop .is-subdued--10--phone-portrait-only { opacity:0.1; }
-.c-backdrop .is-subdued--05--phone-portrait-only { opacity:0.05; }
+.c-backdrop .is-subdued,
+.c-backdrop .is-subdued--50
+{
+    opacity: 0.5;
 }
 
-@media only screen and (min-width: 30em) {
-.c-backdrop .is-subdued--phone-landscape-up,.c-backdrop .is-subdued--50--phone-landscape-up { opacity:0.5; }
-
-.c-backdrop .is-subdued--95--phone-landscape-up { opacity:0.95; }
-.c-backdrop .is-subdued--90--phone-landscape-up { opacity:0.9; }
-.c-backdrop .is-subdued--85--phone-landscape-up { opacity:0.85; }
-.c-backdrop .is-subdued--80--phone-landscape-up { opacity:0.8; }
-.c-backdrop .is-subdued--75--phone-landscape-up { opacity:0.75; }
-.c-backdrop .is-subdued--70--phone-landscape-up { opacity:0.7; }
-.c-backdrop .is-subdued--65--phone-landscape-up { opacity:0.65; }
-.c-backdrop .is-subdued--60--phone-landscape-up { opacity:0.6; }
-.c-backdrop .is-subdued--55--phone-landscape-up { opacity:0.55; }
-.c-backdrop .is-subdued--45--phone-landscape-up { opacity:0.45; }
-.c-backdrop .is-subdued--40--phone-landscape-up { opacity:0.4; }
-.c-backdrop .is-subdued--35--phone-landscape-up { opacity:0.35; }
-.c-backdrop .is-subdued--30--phone-landscape-up { opacity:0.3; }
-.c-backdrop .is-subdued--25--phone-landscape-up { opacity:0.25; }
-.c-backdrop .is-subdued--20--phone-landscape-up { opacity:0.2; }
-.c-backdrop .is-subdued--15--phone-landscape-up { opacity:0.15; }
-.c-backdrop .is-subdued--10--phone-landscape-up { opacity:0.1; }
-.c-backdrop .is-subdued--05--phone-landscape-up { opacity:0.05; }
+.c-backdrop .is-subdued--95
+{
+    opacity: 0.95;
 }
 
-@media only screen and (min-width: 30em) and (max-width: 39.9375em) {
-.c-backdrop .is-subdued--phone-landscape-only,.c-backdrop .is-subdued--50--phone-landscape-only { opacity:0.5; }
-
-.c-backdrop .is-subdued--95--phone-landscape-only { opacity:0.95; }
-.c-backdrop .is-subdued--90--phone-landscape-only { opacity:0.9; }
-.c-backdrop .is-subdued--85--phone-landscape-only { opacity:0.85; }
-.c-backdrop .is-subdued--80--phone-landscape-only { opacity:0.8; }
-.c-backdrop .is-subdued--75--phone-landscape-only { opacity:0.75; }
-.c-backdrop .is-subdued--70--phone-landscape-only { opacity:0.7; }
-.c-backdrop .is-subdued--65--phone-landscape-only { opacity:0.65; }
-.c-backdrop .is-subdued--60--phone-landscape-only { opacity:0.6; }
-.c-backdrop .is-subdued--55--phone-landscape-only { opacity:0.55; }
-.c-backdrop .is-subdued--45--phone-landscape-only { opacity:0.45; }
-.c-backdrop .is-subdued--40--phone-landscape-only { opacity:0.4; }
-.c-backdrop .is-subdued--35--phone-landscape-only { opacity:0.35; }
-.c-backdrop .is-subdued--30--phone-landscape-only { opacity:0.3; }
-.c-backdrop .is-subdued--25--phone-landscape-only { opacity:0.25; }
-.c-backdrop .is-subdued--20--phone-landscape-only { opacity:0.2; }
-.c-backdrop .is-subdued--15--phone-landscape-only { opacity:0.15; }
-.c-backdrop .is-subdued--10--phone-landscape-only { opacity:0.1; }
-.c-backdrop .is-subdued--05--phone-landscape-only { opacity:0.05; }
+.c-backdrop .is-subdued--90
+{
+    opacity: 0.9;
 }
 
-@media only screen and (min-width: 40em) {
-.c-backdrop .is-subdued--tablet-portrait-up,.c-backdrop .is-subdued--50--tablet-portrait-up { opacity:0.5; }
-
-.c-backdrop .is-subdued--95--tablet-portrait-up { opacity:0.95; }
-.c-backdrop .is-subdued--90--tablet-portrait-up { opacity:0.9; }
-.c-backdrop .is-subdued--85--tablet-portrait-up { opacity:0.85; }
-.c-backdrop .is-subdued--80--tablet-portrait-up { opacity:0.8; }
-.c-backdrop .is-subdued--75--tablet-portrait-up { opacity:0.75; }
-.c-backdrop .is-subdued--70--tablet-portrait-up { opacity:0.7; }
-.c-backdrop .is-subdued--65--tablet-portrait-up { opacity:0.65; }
-.c-backdrop .is-subdued--60--tablet-portrait-up { opacity:0.6; }
-.c-backdrop .is-subdued--55--tablet-portrait-up { opacity:0.55; }
-.c-backdrop .is-subdued--45--tablet-portrait-up { opacity:0.45; }
-.c-backdrop .is-subdued--40--tablet-portrait-up { opacity:0.4; }
-.c-backdrop .is-subdued--35--tablet-portrait-up { opacity:0.35; }
-.c-backdrop .is-subdued--30--tablet-portrait-up { opacity:0.3; }
-.c-backdrop .is-subdued--25--tablet-portrait-up { opacity:0.25; }
-.c-backdrop .is-subdued--20--tablet-portrait-up { opacity:0.2; }
-.c-backdrop .is-subdued--15--tablet-portrait-up { opacity:0.15; }
-.c-backdrop .is-subdued--10--tablet-portrait-up { opacity:0.1; }
-.c-backdrop .is-subdued--05--tablet-portrait-up { opacity:0.05; }
+.c-backdrop .is-subdued--85
+{
+    opacity: 0.85;
 }
 
-@media only screen and (min-width: 40em) and (max-width: 63.9375em) {
-.c-backdrop .is-subdued--tablet-portrait-only,.c-backdrop .is-subdued--50--tablet-portrait-only { opacity:0.5; }
-
-.c-backdrop .is-subdued--95--tablet-portrait-only {opacity:0.95; }
-.c-backdrop .is-subdued--90--tablet-portrait-only {opacity:0.9; }
-.c-backdrop .is-subdued--85--tablet-portrait-only {opacity:0.85; }
-.c-backdrop .is-subdued--80--tablet-portrait-only {opacity:0.8; }
-.c-backdrop .is-subdued--75--tablet-portrait-only {opacity:0.75; }
-.c-backdrop .is-subdued--70--tablet-portrait-only {opacity:0.7; }
-.c-backdrop .is-subdued--65--tablet-portrait-only {opacity:0.65; }
-.c-backdrop .is-subdued--60--tablet-portrait-only {opacity:0.6; }
-.c-backdrop .is-subdued--55--tablet-portrait-only {opacity:0.55; }
-.c-backdrop .is-subdued--45--tablet-portrait-only {opacity:0.45; }
-.c-backdrop .is-subdued--40--tablet-portrait-only {opacity:0.4; }
-.c-backdrop .is-subdued--35--tablet-portrait-only {opacity:0.35; }
-.c-backdrop .is-subdued--30--tablet-portrait-only {opacity:0.3; }
-.c-backdrop .is-subdued--25--tablet-portrait-only {opacity:0.25; }
-.c-backdrop .is-subdued--20--tablet-portrait-only {opacity:0.2; }
-.c-backdrop .is-subdued--15--tablet-portrait-only {opacity:0.15; }
-.c-backdrop .is-subdued--10--tablet-portrait-only {opacity:0.1; }
-.c-backdrop .is-subdued--05--tablet-portrait-only {opacity:0.05; }
+.c-backdrop .is-subdued--80
+{
+    opacity: 0.8;
 }
 
-@media only screen and (min-width: 64em) {
-.c-backdrop .is-subdued--tablet-landscape-up,.c-backdrop .is-subdued--50--tablet-landscape-up { opacity:0.5; }
-
-.c-backdrop .is-subdued--95--tablet-landscape-up { opacity:0.95; }
-.c-backdrop .is-subdued--90--tablet-landscape-up { opacity:0.9; }
-.c-backdrop .is-subdued--85--tablet-landscape-up { opacity:0.85; }
-.c-backdrop .is-subdued--80--tablet-landscape-up { opacity:0.8; }
-.c-backdrop .is-subdued--75--tablet-landscape-up { opacity:0.75; }
-.c-backdrop .is-subdued--70--tablet-landscape-up { opacity:0.7; }
-.c-backdrop .is-subdued--65--tablet-landscape-up { opacity:0.65; }
-.c-backdrop .is-subdued--60--tablet-landscape-up { opacity:0.6; }
-.c-backdrop .is-subdued--55--tablet-landscape-up { opacity:0.55; }
-.c-backdrop .is-subdued--45--tablet-landscape-up { opacity:0.45; }
-.c-backdrop .is-subdued--40--tablet-landscape-up { opacity:0.4; }
-.c-backdrop .is-subdued--35--tablet-landscape-up { opacity:0.35; }
-.c-backdrop .is-subdued--30--tablet-landscape-up { opacity:0.3; }
-.c-backdrop .is-subdued--25--tablet-landscape-up { opacity:0.25; }
-.c-backdrop .is-subdued--20--tablet-landscape-up { opacity:0.2; }
-.c-backdrop .is-subdued--15--tablet-landscape-up { opacity:0.15; }
-.c-backdrop .is-subdued--10--tablet-landscape-up { opacity:0.1; }
-.c-backdrop .is-subdued--05--tablet-landscape-up { opacity:0.05; }
+.c-backdrop .is-subdued--75
+{
+    opacity: 0.75;
 }
 
-@media only screen and (min-width: 64em) and (max-width: 79.9375em) {
-.c-backdrop .is-subdued--tablet-landscape-only,.c-backdrop .is-subdued--50--tablet-landscape-only { opacity:0.5; }
-
-.c-backdrop .is-subdued--95--tablet-landscape-only { opacity:0.95; }
-.c-backdrop .is-subdued--90--tablet-landscape-only { opacity:0.9; }
-.c-backdrop .is-subdued--85--tablet-landscape-only { opacity:0.85; }
-.c-backdrop .is-subdued--80--tablet-landscape-only { opacity:0.8; }
-.c-backdrop .is-subdued--75--tablet-landscape-only { opacity:0.75; }
-.c-backdrop .is-subdued--70--tablet-landscape-only { opacity:0.7; }
-.c-backdrop .is-subdued--65--tablet-landscape-only { opacity:0.65; }
-.c-backdrop .is-subdued--60--tablet-landscape-only { opacity:0.6; }
-.c-backdrop .is-subdued--55--tablet-landscape-only { opacity:0.55; }
-.c-backdrop .is-subdued--45--tablet-landscape-only { opacity:0.45; }
-.c-backdrop .is-subdued--40--tablet-landscape-only { opacity:0.4; }
-.c-backdrop .is-subdued--35--tablet-landscape-only { opacity:0.35; }
-.c-backdrop .is-subdued--30--tablet-landscape-only { opacity:0.3; }
-.c-backdrop .is-subdued--25--tablet-landscape-only { opacity:0.25; }
-.c-backdrop .is-subdued--20--tablet-landscape-only { opacity:0.2; }
-.c-backdrop .is-subdued--15--tablet-landscape-only { opacity:0.15; }
-.c-backdrop .is-subdued--10--tablet-landscape-only { opacity:0.1; }
-.c-backdrop .is-subdued--05--tablet-landscape-only { opacity:0.05; }
+.c-backdrop .is-subdued--70
+{
+    opacity: 0.7;
 }
 
-@media only screen and (min-width: 80em) {
-.c-backdrop .is-subdued--desktop-up,.c-backdrop .is-subdued--50--desktop-up { opacity:0.5; }
+.c-backdrop .is-subdued--65
+{
+    opacity: 0.65;
+}
 
-.c-backdrop .is-subdued--95--desktop-up { opacity:0.95; }
-.c-backdrop .is-subdued--90--desktop-up { opacity:0.9; }
-.c-backdrop .is-subdued--85--desktop-up { opacity:0.85; }
-.c-backdrop .is-subdued--80--desktop-up { opacity:0.8; }
-.c-backdrop .is-subdued--75--desktop-up { opacity:0.75; }
-.c-backdrop .is-subdued--70--desktop-up { opacity:0.7; }
-.c-backdrop .is-subdued--65--desktop-up { opacity:0.65; }
-.c-backdrop .is-subdued--60--desktop-up { opacity:0.6; }
-.c-backdrop .is-subdued--55--desktop-up { opacity:0.55; }
-.c-backdrop .is-subdued--45--desktop-up { opacity:0.45; }
-.c-backdrop .is-subdued--40--desktop-up { opacity:0.4; }
-.c-backdrop .is-subdued--35--desktop-up { opacity:0.35; }
-.c-backdrop .is-subdued--30--desktop-up { opacity:0.3; }
-.c-backdrop .is-subdued--25--desktop-up { opacity:0.25; }
-.c-backdrop .is-subdued--20--desktop-up { opacity:0.2; }
-.c-backdrop .is-subdued--15--desktop-up { opacity:0.15; }
-.c-backdrop .is-subdued--10--desktop-up { opacity:0.1; }
-.c-backdrop .is-subdued--05--desktop-up { opacity:0.05; }
+.c-backdrop .is-subdued--60
+{
+    opacity: 0.6;
+}
+
+.c-backdrop .is-subdued--55
+{
+    opacity: 0.55;
+}
+
+.c-backdrop .is-subdued--45
+{
+    opacity: 0.45;
+}
+
+.c-backdrop .is-subdued--40
+{
+    opacity: 0.4;
+}
+
+.c-backdrop .is-subdued--35
+{
+    opacity: 0.35;
+}
+
+.c-backdrop .is-subdued--30
+{
+    opacity: 0.3;
+}
+
+.c-backdrop .is-subdued--25
+{
+    opacity: 0.25;
+}
+
+.c-backdrop .is-subdued--20
+{
+    opacity: 0.2;
+}
+
+.c-backdrop .is-subdued--15
+{
+    opacity: 0.15;
+}
+
+.c-backdrop .is-subdued--10
+{
+    opacity: 0.1;
+}
+
+.c-backdrop .is-subdued--05
+{
+    opacity: 0.05;
+}
+
+@media only screen and (max-width: 30em)
+{
+    .c-backdrop .is-subdued--phone-portrait-only,
+    .c-backdrop .is-subdued--50--phone-portrait-only
+    {
+        opacity: 0.5;
+    }
+
+    .c-backdrop .is-subdued--95--phone-portrait-only
+    {
+        opacity: 0.95;
+    }
+
+    .c-backdrop .is-subdued--90--phone-portrait-only
+    {
+        opacity: 0.9;
+    }
+
+    .c-backdrop .is-subdued--85--phone-portrait-only
+    {
+        opacity: 0.85;
+    }
+
+    .c-backdrop .is-subdued--80--phone-portrait-only
+    {
+        opacity: 0.8;
+    }
+
+    .c-backdrop .is-subdued--75--phone-portrait-only
+    {
+        opacity: 0.75;
+    }
+
+    .c-backdrop .is-subdued--70--phone-portrait-only
+    {
+        opacity: 0.7;
+    }
+
+    .c-backdrop .is-subdued--65--phone-portrait-only
+    {
+        opacity: 0.65;
+    }
+
+    .c-backdrop .is-subdued--60--phone-portrait-only
+    {
+        opacity: 0.6;
+    }
+
+    .c-backdrop .is-subdued--55--phone-portrait-only
+    {
+        opacity: 0.55;
+    }
+
+    .c-backdrop .is-subdued--45--phone-portrait-only
+    {
+        opacity: 0.45;
+    }
+
+    .c-backdrop .is-subdued--40--phone-portrait-only
+    {
+        opacity: 0.4;
+    }
+
+    .c-backdrop .is-subdued--35--phone-portrait-only
+    {
+        opacity: 0.35;
+    }
+
+    .c-backdrop .is-subdued--30--phone-portrait-only
+    {
+        opacity: 0.3;
+    }
+
+    .c-backdrop .is-subdued--25--phone-portrait-only
+    {
+        opacity: 0.25;
+    }
+
+    .c-backdrop .is-subdued--20--phone-portrait-only
+    {
+        opacity: 0.2;
+    }
+
+    .c-backdrop .is-subdued--15--phone-portrait-only
+    {
+        opacity: 0.15;
+    }
+
+    .c-backdrop .is-subdued--10--phone-portrait-only
+    {
+        opacity: 0.1;
+    }
+
+    .c-backdrop .is-subdued--05--phone-portrait-only
+    {
+        opacity: 0.05;
+    }
+}
+
+@media only screen and (min-width: 30em)
+{
+    .c-backdrop .is-subdued--phone-landscape-up,
+    .c-backdrop .is-subdued--50--phone-landscape-up
+    {
+        opacity: 0.5;
+    }
+
+    .c-backdrop .is-subdued--95--phone-landscape-up
+    {
+        opacity: 0.95;
+    }
+
+    .c-backdrop .is-subdued--90--phone-landscape-up
+    {
+        opacity: 0.9;
+    }
+
+    .c-backdrop .is-subdued--85--phone-landscape-up
+    {
+        opacity: 0.85;
+    }
+
+    .c-backdrop .is-subdued--80--phone-landscape-up
+    {
+        opacity: 0.8;
+    }
+
+    .c-backdrop .is-subdued--75--phone-landscape-up
+    {
+        opacity: 0.75;
+    }
+
+    .c-backdrop .is-subdued--70--phone-landscape-up
+    {
+        opacity: 0.7;
+    }
+
+    .c-backdrop .is-subdued--65--phone-landscape-up
+    {
+        opacity: 0.65;
+    }
+
+    .c-backdrop .is-subdued--60--phone-landscape-up
+    {
+        opacity: 0.6;
+    }
+
+    .c-backdrop .is-subdued--55--phone-landscape-up
+    {
+        opacity: 0.55;
+    }
+
+    .c-backdrop .is-subdued--45--phone-landscape-up
+    {
+        opacity: 0.45;
+    }
+
+    .c-backdrop .is-subdued--40--phone-landscape-up
+    {
+        opacity: 0.4;
+    }
+
+    .c-backdrop .is-subdued--35--phone-landscape-up
+    {
+        opacity: 0.35;
+    }
+
+    .c-backdrop .is-subdued--30--phone-landscape-up
+    {
+        opacity: 0.3;
+    }
+
+    .c-backdrop .is-subdued--25--phone-landscape-up
+    {
+        opacity: 0.25;
+    }
+
+    .c-backdrop .is-subdued--20--phone-landscape-up
+    {
+        opacity: 0.2;
+    }
+
+    .c-backdrop .is-subdued--15--phone-landscape-up
+    {
+        opacity: 0.15;
+    }
+
+    .c-backdrop .is-subdued--10--phone-landscape-up
+    {
+        opacity: 0.1;
+    }
+
+    .c-backdrop .is-subdued--05--phone-landscape-up
+    {
+        opacity: 0.05;
+    }
+}
+
+@media only screen and (min-width: 30em) and (max-width: 39.9375em)
+{
+    .c-backdrop .is-subdued--phone-landscape-only,
+    .c-backdrop .is-subdued--50--phone-landscape-only
+    {
+        opacity: 0.5;
+    }
+
+    .c-backdrop .is-subdued--95--phone-landscape-only
+    {
+        opacity: 0.95;
+    }
+
+    .c-backdrop .is-subdued--90--phone-landscape-only
+    {
+        opacity: 0.9;
+    }
+
+    .c-backdrop .is-subdued--85--phone-landscape-only
+    {
+        opacity: 0.85;
+    }
+
+    .c-backdrop .is-subdued--80--phone-landscape-only
+    {
+        opacity: 0.8;
+    }
+
+    .c-backdrop .is-subdued--75--phone-landscape-only
+    {
+        opacity: 0.75;
+    }
+
+    .c-backdrop .is-subdued--70--phone-landscape-only
+    {
+        opacity: 0.7;
+    }
+
+    .c-backdrop .is-subdued--65--phone-landscape-only
+    {
+        opacity: 0.65;
+    }
+
+    .c-backdrop .is-subdued--60--phone-landscape-only
+    {
+        opacity: 0.6;
+    }
+
+    .c-backdrop .is-subdued--55--phone-landscape-only
+    {
+        opacity: 0.55;
+    }
+
+    .c-backdrop .is-subdued--45--phone-landscape-only
+    {
+        opacity: 0.45;
+    }
+
+    .c-backdrop .is-subdued--40--phone-landscape-only
+    {
+        opacity: 0.4;
+    }
+
+    .c-backdrop .is-subdued--35--phone-landscape-only
+    {
+        opacity: 0.35;
+    }
+
+    .c-backdrop .is-subdued--30--phone-landscape-only
+    {
+        opacity: 0.3;
+    }
+
+    .c-backdrop .is-subdued--25--phone-landscape-only
+    {
+        opacity: 0.25;
+    }
+
+    .c-backdrop .is-subdued--20--phone-landscape-only
+    {
+        opacity: 0.2;
+    }
+
+    .c-backdrop .is-subdued--15--phone-landscape-only
+    {
+        opacity: 0.15;
+    }
+
+    .c-backdrop .is-subdued--10--phone-landscape-only
+    {
+        opacity: 0.1;
+    }
+
+    .c-backdrop .is-subdued--05--phone-landscape-only
+    {
+        opacity: 0.05;
+    }
+}
+
+@media only screen and (min-width: 40em)
+{
+    .c-backdrop .is-subdued--tablet-portrait-up,
+    .c-backdrop .is-subdued--50--tablet-portrait-up
+    {
+        opacity: 0.5;
+    }
+
+    .c-backdrop .is-subdued--95--tablet-portrait-up
+    {
+        opacity: 0.95;
+    }
+
+    .c-backdrop .is-subdued--90--tablet-portrait-up
+    {
+        opacity: 0.9;
+    }
+
+    .c-backdrop .is-subdued--85--tablet-portrait-up
+    {
+        opacity: 0.85;
+    }
+
+    .c-backdrop .is-subdued--80--tablet-portrait-up
+    {
+        opacity: 0.8;
+    }
+
+    .c-backdrop .is-subdued--75--tablet-portrait-up
+    {
+        opacity: 0.75;
+    }
+
+    .c-backdrop .is-subdued--70--tablet-portrait-up
+    {
+        opacity: 0.7;
+    }
+
+    .c-backdrop .is-subdued--65--tablet-portrait-up
+    {
+        opacity: 0.65;
+    }
+
+    .c-backdrop .is-subdued--60--tablet-portrait-up
+    {
+        opacity: 0.6;
+    }
+
+    .c-backdrop .is-subdued--55--tablet-portrait-up
+    {
+        opacity: 0.55;
+    }
+
+    .c-backdrop .is-subdued--45--tablet-portrait-up
+    {
+        opacity: 0.45;
+    }
+
+    .c-backdrop .is-subdued--40--tablet-portrait-up
+    {
+        opacity: 0.4;
+    }
+
+    .c-backdrop .is-subdued--35--tablet-portrait-up
+    {
+        opacity: 0.35;
+    }
+
+    .c-backdrop .is-subdued--30--tablet-portrait-up
+    {
+        opacity: 0.3;
+    }
+
+    .c-backdrop .is-subdued--25--tablet-portrait-up
+    {
+        opacity: 0.25;
+    }
+
+    .c-backdrop .is-subdued--20--tablet-portrait-up
+    {
+        opacity: 0.2;
+    }
+
+    .c-backdrop .is-subdued--15--tablet-portrait-up
+    {
+        opacity: 0.15;
+    }
+
+    .c-backdrop .is-subdued--10--tablet-portrait-up
+    {
+        opacity: 0.1;
+    }
+
+    .c-backdrop .is-subdued--05--tablet-portrait-up
+    {
+        opacity: 0.05;
+    }
+}
+
+@media only screen and (min-width: 40em) and (max-width: 63.9375em)
+{
+    .c-backdrop .is-subdued--tablet-portrait-only,
+    .c-backdrop .is-subdued--50--tablet-portrait-only
+    {
+        opacity: 0.5;
+    }
+
+    .c-backdrop .is-subdued--95--tablet-portrait-only
+    {
+        opacity: 0.95;
+    }
+
+    .c-backdrop .is-subdued--90--tablet-portrait-only
+    {
+        opacity: 0.9;
+    }
+
+    .c-backdrop .is-subdued--85--tablet-portrait-only
+    {
+        opacity: 0.85;
+    }
+
+    .c-backdrop .is-subdued--80--tablet-portrait-only
+    {
+        opacity: 0.8;
+    }
+
+    .c-backdrop .is-subdued--75--tablet-portrait-only
+    {
+        opacity: 0.75;
+    }
+
+    .c-backdrop .is-subdued--70--tablet-portrait-only
+    {
+        opacity: 0.7;
+    }
+
+    .c-backdrop .is-subdued--65--tablet-portrait-only
+    {
+        opacity: 0.65;
+    }
+
+    .c-backdrop .is-subdued--60--tablet-portrait-only
+    {
+        opacity: 0.6;
+    }
+
+    .c-backdrop .is-subdued--55--tablet-portrait-only
+    {
+        opacity: 0.55;
+    }
+
+    .c-backdrop .is-subdued--45--tablet-portrait-only
+    {
+        opacity: 0.45;
+    }
+
+    .c-backdrop .is-subdued--40--tablet-portrait-only
+    {
+        opacity: 0.4;
+    }
+
+    .c-backdrop .is-subdued--35--tablet-portrait-only
+    {
+        opacity: 0.35;
+    }
+
+    .c-backdrop .is-subdued--30--tablet-portrait-only
+    {
+        opacity: 0.3;
+    }
+
+    .c-backdrop .is-subdued--25--tablet-portrait-only
+    {
+        opacity: 0.25;
+    }
+
+    .c-backdrop .is-subdued--20--tablet-portrait-only
+    {
+        opacity: 0.2;
+    }
+
+    .c-backdrop .is-subdued--15--tablet-portrait-only
+    {
+        opacity: 0.15;
+    }
+
+    .c-backdrop .is-subdued--10--tablet-portrait-only
+    {
+        opacity: 0.1;
+    }
+
+    .c-backdrop .is-subdued--05--tablet-portrait-only
+    {
+        opacity: 0.05;
+    }
+}
+
+@media only screen and (min-width: 64em)
+{
+    .c-backdrop .is-subdued--tablet-landscape-up,
+    .c-backdrop .is-subdued--50--tablet-landscape-up
+    {
+        opacity: 0.5;
+    }
+
+    .c-backdrop .is-subdued--95--tablet-landscape-up
+    {
+        opacity: 0.95;
+    }
+
+    .c-backdrop .is-subdued--90--tablet-landscape-up
+    {
+        opacity: 0.9;
+    }
+
+    .c-backdrop .is-subdued--85--tablet-landscape-up
+    {
+        opacity: 0.85;
+    }
+
+    .c-backdrop .is-subdued--80--tablet-landscape-up
+    {
+        opacity: 0.8;
+    }
+
+    .c-backdrop .is-subdued--75--tablet-landscape-up
+    {
+        opacity: 0.75;
+    }
+
+    .c-backdrop .is-subdued--70--tablet-landscape-up
+    {
+        opacity: 0.7;
+    }
+
+    .c-backdrop .is-subdued--65--tablet-landscape-up
+    {
+        opacity: 0.65;
+    }
+
+    .c-backdrop .is-subdued--60--tablet-landscape-up
+    {
+        opacity: 0.6;
+    }
+
+    .c-backdrop .is-subdued--55--tablet-landscape-up
+    {
+        opacity: 0.55;
+    }
+
+    .c-backdrop .is-subdued--45--tablet-landscape-up
+    {
+        opacity: 0.45;
+    }
+
+    .c-backdrop .is-subdued--40--tablet-landscape-up
+    {
+        opacity: 0.4;
+    }
+
+    .c-backdrop .is-subdued--35--tablet-landscape-up
+    {
+        opacity: 0.35;
+    }
+
+    .c-backdrop .is-subdued--30--tablet-landscape-up
+    {
+        opacity: 0.3;
+    }
+
+    .c-backdrop .is-subdued--25--tablet-landscape-up
+    {
+        opacity: 0.25;
+    }
+
+    .c-backdrop .is-subdued--20--tablet-landscape-up
+    {
+        opacity: 0.2;
+    }
+
+    .c-backdrop .is-subdued--15--tablet-landscape-up
+    {
+        opacity: 0.15;
+    }
+
+    .c-backdrop .is-subdued--10--tablet-landscape-up
+    {
+        opacity: 0.1;
+    }
+
+    .c-backdrop .is-subdued--05--tablet-landscape-up
+    {
+        opacity: 0.05;
+    }
+}
+
+@media only screen and (min-width: 64em) and (max-width: 79.9375em)
+{
+    .c-backdrop .is-subdued--tablet-landscape-only,
+    .c-backdrop .is-subdued--50--tablet-landscape-only
+    {
+        opacity: 0.5;
+    }
+
+    .c-backdrop .is-subdued--95--tablet-landscape-only
+    {
+        opacity: 0.95;
+    }
+
+    .c-backdrop .is-subdued--90--tablet-landscape-only
+    {
+        opacity: 0.9;
+    }
+
+    .c-backdrop .is-subdued--85--tablet-landscape-only
+    {
+        opacity: 0.85;
+    }
+
+    .c-backdrop .is-subdued--80--tablet-landscape-only
+    {
+        opacity: 0.8;
+    }
+
+    .c-backdrop .is-subdued--75--tablet-landscape-only
+    {
+        opacity: 0.75;
+    }
+
+    .c-backdrop .is-subdued--70--tablet-landscape-only
+    {
+        opacity: 0.7;
+    }
+
+    .c-backdrop .is-subdued--65--tablet-landscape-only
+    {
+        opacity: 0.65;
+    }
+
+    .c-backdrop .is-subdued--60--tablet-landscape-only
+    {
+        opacity: 0.6;
+    }
+
+    .c-backdrop .is-subdued--55--tablet-landscape-only
+    {
+        opacity: 0.55;
+    }
+
+    .c-backdrop .is-subdued--45--tablet-landscape-only
+    {
+        opacity: 0.45;
+    }
+
+    .c-backdrop .is-subdued--40--tablet-landscape-only
+    {
+        opacity: 0.4;
+    }
+
+    .c-backdrop .is-subdued--35--tablet-landscape-only
+    {
+        opacity: 0.35;
+    }
+
+    .c-backdrop .is-subdued--30--tablet-landscape-only
+    {
+        opacity: 0.3;
+    }
+
+    .c-backdrop .is-subdued--25--tablet-landscape-only
+    {
+        opacity: 0.25;
+    }
+
+    .c-backdrop .is-subdued--20--tablet-landscape-only
+    {
+        opacity: 0.2;
+    }
+
+    .c-backdrop .is-subdued--15--tablet-landscape-only
+    {
+        opacity: 0.15;
+    }
+
+    .c-backdrop .is-subdued--10--tablet-landscape-only
+    {
+        opacity: 0.1;
+    }
+
+    .c-backdrop .is-subdued--05--tablet-landscape-only
+    {
+        opacity: 0.05;
+    }
+}
+
+@media only screen and (min-width: 80em)
+{
+    .c-backdrop .is-subdued--desktop-up,
+    .c-backdrop .is-subdued--50--desktop-up
+    {
+        opacity: 0.5;
+    }
+
+    .c-backdrop .is-subdued--95--desktop-up
+    {
+        opacity: 0.95;
+    }
+
+    .c-backdrop .is-subdued--90--desktop-up
+    {
+        opacity: 0.9;
+    }
+
+    .c-backdrop .is-subdued--85--desktop-up
+    {
+        opacity: 0.85;
+    }
+
+    .c-backdrop .is-subdued--80--desktop-up
+    {
+        opacity: 0.8;
+    }
+
+    .c-backdrop .is-subdued--75--desktop-up
+    {
+        opacity: 0.75;
+    }
+
+    .c-backdrop .is-subdued--70--desktop-up
+    {
+        opacity: 0.7;
+    }
+
+    .c-backdrop .is-subdued--65--desktop-up
+    {
+        opacity: 0.65;
+    }
+
+    .c-backdrop .is-subdued--60--desktop-up
+    {
+        opacity: 0.6;
+    }
+
+    .c-backdrop .is-subdued--55--desktop-up
+    {
+        opacity: 0.55;
+    }
+
+    .c-backdrop .is-subdued--45--desktop-up
+    {
+        opacity: 0.45;
+    }
+
+    .c-backdrop .is-subdued--40--desktop-up
+    {
+        opacity: 0.4;
+    }
+
+    .c-backdrop .is-subdued--35--desktop-up
+    {
+        opacity: 0.35;
+    }
+
+    .c-backdrop .is-subdued--30--desktop-up
+    {
+        opacity: 0.3;
+    }
+
+    .c-backdrop .is-subdued--25--desktop-up
+    {
+        opacity: 0.25;
+    }
+
+    .c-backdrop .is-subdued--20--desktop-up
+    {
+        opacity: 0.2;
+    }
+
+    .c-backdrop .is-subdued--15--desktop-up
+    {
+        opacity: 0.15;
+    }
+
+    .c-backdrop .is-subdued--10--desktop-up
+    {
+        opacity: 0.1;
+    }
+
+    .c-backdrop .is-subdued--05--desktop-up
+    {
+        opacity: 0.05;
+    }
 }

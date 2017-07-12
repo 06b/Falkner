@@ -13,8 +13,9 @@
 .u-linkClean,
 .u-linkClean:hover,
 .u-linkClean:focus,
-.u-linkClean:active {
-  text-decoration: none !important;
+.u-linkClean:active
+{
+    text-decoration: none !important;
 }
 
 
@@ -36,14 +37,16 @@
 .u-linkComplex,
 .u-linkComplex:hover,
 .u-linkComplex:focus,
-.u-linkComplex:active {
-  text-decoration: none !important;
+.u-linkComplex:active
+{
+    text-decoration: none !important;
 }
 
 .u-linkComplex:hover .u-linkComplexTarget,
 .u-linkComplex:focus .u-linkComplexTarget,
-.u-linkComplex:active .u-linkComplexTarget {
-  text-decoration: underline !important;
+.u-linkComplex:active .u-linkComplexTarget
+{
+    text-decoration: underline !important;
 }
 
 
@@ -56,8 +59,8 @@
 .u-linkBlock,
 .u-linkBlock:hover,
 .u-linkBlock:focus,
-.u-linkBlock:active {
-  display: block !important;
-  text-decoration: none !important;
+.u-linkBlock:active
+{
+    display: block !important;
+    text-decoration: none !important;
 }
-

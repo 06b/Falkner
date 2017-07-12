@@ -35,27 +35,69 @@
  *
  */
 
-.o-module { display: block; margin: 0.8rem; }
+.o-module
+{
+    display: block;
+    margin: 0.8rem;
+}
 
-    /* .o-module:after { display: table; clear: both; content: ''; } */ /* 1 */
+/* .o-module:after { display: table; clear: both; content: ''; } */ /* 1 */
 
-    .o-module__inner { position: relative; }
+.o-module__inner
+{
+    position: relative;
+}
 
-    .o-module__header,
-    .o-module__body,
-    .o-module__footer { display: block; overflow: hidden; }
+.o-module__header,
+.o-module__body,
+.o-module__footer
+{
+    display: block;
+    overflow: hidden;
+}
 
 
 /* ----- (extends module) ----- */
-.o-module--simple { }
-.o-module--complex { }
-.o-module--pop { }
+.o-module--simple
+{
+}
+
+.o-module--complex
+{
+}
+
+.o-module--pop
+{
+}
 
 
 /* ----- (presentational element which '.module--complex' uses) ----- */
-.o-module--complex .top { /* 2 */ }
-.o-module--complex .top-left { /* 3 */ }
-.o-module--complex .top-right { /* 3 */ }
-.o-module--complex .bottom { /* 2 */ }
-.o-module--complex .bottom-left { /* 3 */ }
-.o-module--complex .bottom-right { /* 3 */ }
+.o-module--complex .top
+{
+    /* 2 */
+}
+
+.o-module--complex .top-left
+{
+    /* 3 */
+}
+
+.o-module--complex .top-right
+{
+    /* 3 */
+}
+
+.o-module--complex .bottom
+{
+    /* 2 */
+}
+
+.o-module--complex .bottom-left
+{
+    /* 3 */
+}
+
+.o-module--complex .bottom-right
+{
+    /* 3 */
+}

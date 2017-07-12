@@ -5,8 +5,27 @@
  *
  */
 
-.u-height--zero { height: 0 !important; }
-.u-height--one-quarter-view-height { height: 25vh !important; }
-.u-height--half-view-height { height: 50vh !important; }
-.u-height--three-quarters-view-height { height: 75vh !important; }
-.u-height--full-view-height { height: 100vh !important; }
+.u-height--zero
+{
+    height: 0 !important;
+}
+
+.u-height--one-quarter-view-height
+{
+    height: 25vh !important;
+}
+
+.u-height--half-view-height
+{
+    height: 50vh !important;
+}
+
+.u-height--three-quarters-view-height
+{
+    height: 75vh !important;
+}
+
+.u-height--full-view-height
+{
+    height: 100vh !important;
+}

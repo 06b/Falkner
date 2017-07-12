@@ -6,8 +6,23 @@
  *
  */
 
-.o-resource-block { margin-bottom:1rem; }
-.o-resource-block__image { }
-.o-resource-block__headline { }
-.o-resource-block__teaser-body { }
-.o-resource-block__link { }
+.o-resource-block
+{
+    margin-bottom: 1rem;
+}
+
+.o-resource-block__image
+{
+}
+
+.o-resource-block__headline
+{
+}
+
+.o-resource-block__teaser-body
+{
+}
+
+.o-resource-block__link
+{
+}

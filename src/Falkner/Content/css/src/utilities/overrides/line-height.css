@@ -2,8 +2,22 @@
  * Set's line-height back to default size set within the typography base to override either a complex component or a third party style.
  */
 
-.u-normalize-line-height { line-height:1.5; }
-.u-normalize-line-height--wrapped-headings { line-height:1.125; }
-.u-normalize-line-height--one { line-height:1; }
-.u-normalize-line-height--zero { line-height:0; }
+.u-normalize-line-height
+{
+    line-height: 1.5;
+}
 
+.u-normalize-line-height--wrapped-headings
+{
+    line-height: 1.125;
+}
+
+.u-normalize-line-height--one
+{
+    line-height: 1;
+}
+
+.u-normalize-line-height--zero
+{
+    line-height: 0;
+}

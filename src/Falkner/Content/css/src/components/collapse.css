@@ -16,9 +16,30 @@
  *
  */
 
-.c-collapse { }
-.c-collapse__label { }
-.c-collapse__button { display: none; }
-.c-collapse__section { visibility: hidden; max-height: 0; opacity: 0; transition: max-height 0.1s, visibility 0.3s, opacity 0.3s; }
+.c-collapse
+{
+}
 
-.c-collapse__button:checked ~ .c-collapse__section { visibility: visible; max-height: 100%; opacity: 100; }
+.c-collapse__label
+{
+}
+
+.c-collapse__button
+{
+    display: none;
+}
+
+.c-collapse__section
+{
+    visibility: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.1s, visibility 0.3s, opacity 0.3s;
+}
+
+.c-collapse__button:checked ~ .c-collapse__section
+{
+    visibility: visible;
+    max-height: 100%;
+    opacity: 100;
+}
