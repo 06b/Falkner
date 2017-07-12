@@ -72,9 +72,12 @@ gulp.task('stylelint', function ()
 
     return gulp.src(
     // Stylesheet source:
-    ['./Content/css/src/**/*.css',
-    // Ignore linting vendor assets:
-    '!./Content/css/src/vendor/**/*.css', '!./Content/css/src/utilities/debug.css', '!./Content/css/src/base/00-Normalize.css']//, '!./Content/css/src/_settings/**/*.css']
+        ['./Content/css/src/**/*.css',
+        // Ignore linting vendor assets:
+            '!./Content/css/src/vendor/**/*.css',
+            '!./Content/css/src/utilities/debug.css',
+            '!./Content/css/src/base/00-Normalize.css']
+        //, '!./Content/css/src/_settings/**/*.css']
   )
   .pipe(postcss(processors));
 });
@@ -87,7 +90,9 @@ gulp.task('parker', function () {
         // Stylesheet source:
         ['./Content/css/src/**/*.css',
             // Ignore linting vendor assets:
-            '!./Content/css/src/vendor/**/*.css', '!./Content/css/src/utilities/debug.css', '!./Content/css/src/base/00-Normalize.css']
+            '!./Content/css/src/vendor/**/*.css',
+            '!./Content/css/src/utilities/debug.css',
+            '!./Content/css/src/base/00-Normalize.css']
     )
         .pipe(parker({
             file: 'report.md'
@@ -96,7 +101,12 @@ gulp.task('parker', function () {
 });
 
 gulp.task('normalize-css-styles', function () {
-    var cssSrc = './Content/css/src/{base,components,components/**,layout,objects,scope,theme,utilities,utilities/**,vendor,vendor/**}/*.css';
+    var cssSrc = ['./Content/css/src/{base,components,components/**,layout,objects,scope,theme,utilities,utilities/**,vendor,vendor/**}/*.css',
+        // Ignore Normalizing third party assets
+        '!./Content/css/src/vendor/**/*.css',
+        '!./Content/css/src/utilities/debug.css',
+        '!./Content/css/src/base/00-Normalize.css'];
+
     console.log('Running CSSComb - sorting CSS Properties within each selector declaration');
 
     return gulp.src(cssSrc)
