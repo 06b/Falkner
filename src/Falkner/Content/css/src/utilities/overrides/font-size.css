@@ -47,6 +47,7 @@
 .u-h6,
 .u-zeta
 {
+    font-size: calc(var(--t-size-epsilon) + 0.1vw) /* 1 */;
 }
 
 @media only screen and (max-width: 30em)
@@ -84,6 +85,7 @@
     .u-h6--phone-portrait-only,
     .u-zeta--phone-portrait-only
     {
+        font-size: calc(var(--t-size-epsilon) + 0.1vw) /* 1 */;
     }
 }
 
@@ -122,6 +124,7 @@
     .u-h6--phone-landscape-up,
     .u-zeta--phone-landscape-up
     {
+        font-size: calc(var(--t-size-epsilon) + 0.1vw) /* 1 */;
     }
 }
 
@@ -160,6 +163,7 @@
     .u-h6--phone-landscape-only,
     .u-zeta--phone-landscape-only
     {
+        font-size: calc(var(--t-size-epsilon) + 0.1vw) /* 1 */;
     }
 }
 
@@ -198,6 +202,7 @@
     .u-h6--tablet-portrait-up,
     .u-zeta--tablet-portrait-up
     {
+        font-size: calc(var(--t-size-epsilon) + 0.1vw) /* 1 */;
     }
 }
 
@@ -236,6 +241,7 @@
     .u-h6--tablet-portrait-only,
     .u-zeta--tablet-portrait-only
     {
+        font-size: calc(var(--t-size-epsilon) + 0.1vw) /* 1 */;
     }
 }
 
@@ -274,6 +280,7 @@
     .u-h6--tablet-landscape-up,
     .u-zeta--tablet-landscape-up
     {
+        font-size: calc(var(--t-size-epsilon) + 0.1vw) /* 1 */;
     }
 }
 
@@ -312,6 +319,7 @@
     .u-h6--tablet-landscape-only,
     .u-zeta--tablet-landscape-only
     {
+        font-size: calc(var(--t-size-epsilon) + 0.1vw) /* 1 */;
     }
 }
 
@@ -350,6 +358,7 @@
     .u-h6--desktop-up,
     .u-zeta--desktop-up
     {
+        font-size: calc(var(--t-size-epsilon) + 0.1vw) /* 1 */;
     }
 }
 
