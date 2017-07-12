@@ -51,6 +51,103 @@ var log = require('gulp-log2');
  */
 var discardDuplicates = require('postcss-discard-duplicates');
 
+/**********************************************************************
+ * Bundle Config
+ */
+
+var stylesheetBundle = [
+    // Default Base
+    'base/00-Normalize.css'
+    , 'base/01-Base.css'
+    , 'base/02-Typography.css'
+    , 'base/03-List.css'
+    , 'base/04-Forms.css'
+
+    // Client Generic Rules
+    , 'theme/theme.project.css'
+
+    // Layout
+    , 'layout/00-Layout.css'
+    , 'layout/01-csswizardary-grids.css'
+
+    // Objects
+    , 'objects/*.css'
+
+    // Vendor & Vendor Themes
+    //, 'vendor/vendorsubfolder/vendor-theme.css'
+    //, 'theme/vendor.project.css'
+
+    // Components
+    , 'components/*.css'
+    , 'components/**/*.css'
+
+    // WARNING: scope should be used sparingly - these should be used for a new styling context but may not necessarily cosmetic.
+    // Scope can be open to abuse and lead to poor CSS if not used wisely. If you find yourself having to call a certain scope style in multiple locations
+    // then it probably should be re-factored and moved outside of scope.
+    // Normally what would be used in scope would be things that we don't have control over - such as if we were using some third party content management system
+    // another case might be if we are needing to do certain styles that might be considered a 'one-off' or if it's a certain section of the site that needs to
+    // be styled a certain way that for certain pages but the markup remains the same with the exception of the class that get's appended which would be used as the
+    // scope hook.
+
+    , 'scope/*.css'
+
+    // Utilities
+
+    //Uncomment when checking for potentially broken, malformed or legacy (X)HTML.
+    // Note: Not all "errors" are created equally, so they are color coded to highlight severity. Green is "probably not a big problem",
+    // yellow is "worth looking at" and red is "you really should fix this."
+
+    //,'utilities/debug.css'
+
+    , 'utilities/animations/*.css'
+
+    // Strip-margin would conflict if moved below the 'aside' classes as it would now
+    // override the aside rather than allowing the aside to be used after clearing the existing margin
+    , 'utilities/overrides/strip-margin.css'
+    , 'utilities/overrides/strip-border.css'
+    , 'utilities/overrides/strip-padding.css'
+
+    // Floats force a display of block so anything forcing display should come after it
+    , 'utilities/overrides/floats.css'
+    , 'utilities/overrides/force-display-visibility.css'
+    , 'utilities/overrides/clearfix.css'
+
+    // Alignments depends on the display type (and stripping margin may conflict with it)
+    , 'utilities/overrides/align.css'
+
+    // Aside uses margin so it would need to come after the strip-margin classes to work.
+    , 'utilities/overrides/aside.css'
+
+    // Flex utilities shouldn't be overridden by a force display
+    , 'utilities/overrides/flex-utilities.css'
+
+    // Overflow could conflict with Text-decoration on `u-text-ellipsis`
+    , 'utilities/overrides/overflow.css'
+
+    , 'utilities/overrides/cursor.css'
+    , 'utilities/overrides/height.css'
+    , 'utilities/overrides/line-height.css'
+    , 'utilities/overrides/width.css'
+
+    , 'utilities/overrides/font-size.css'
+    , 'utilities/overrides/font-weight.css'
+    , 'utilities/overrides/text-alignment.css'
+
+    // Text decoration `u-text-ellipsis` (overflow) shouldn't be allow to be overridden as it will break
+    , 'utilities/overrides/text-decoration.css'
+    , 'utilities/overrides/text-transform.css'
+
+    , 'utilities/overrides/position.css'
+    , 'utilities/overrides/depth.css'
+    , 'utilities/overrides/links.css'
+    , 'utilities/overrides/box-sizing.css'
+    , 'utilities/shame.css'
+    , 'utilities/print.css'
+]
+
+/*
+ * End Bundle Config
+ *********************************************************************/
 
 gulp.task('default', function () {
 
