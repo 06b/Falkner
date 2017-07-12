@@ -58,7 +58,7 @@ gulp.task('default', function () {
 
 });
 
-gulp.task('stylelint', function ()
+gulp.task('dev:stylelint', function ()
 {
 
     var processors = [
@@ -82,7 +82,7 @@ gulp.task('stylelint', function ()
   .pipe(postcss(processors));
 });
 
-gulp.task('parker', function () {
+gulp.task('dev:parker', function () {
 
     del(['./report.md'])
 
@@ -100,7 +100,7 @@ gulp.task('parker', function () {
         .pipe(log("Markdown File (report.md) is located at the root of the Solution"));
 });
 
-gulp.task('normalize-css-styles', function () {
+gulp.task('dev:normalize-css-styles', function () {
     var cssSrc = ['./Content/css/src/{base,components,components/**,layout,objects,scope,theme,utilities,utilities/**,vendor,vendor/**}/*.css',
         // Ignore Normalizing third party assets
         '!./Content/css/src/vendor/**/*.css',
