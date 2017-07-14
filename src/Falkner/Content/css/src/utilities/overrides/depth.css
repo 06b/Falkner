@@ -19,7 +19,7 @@
 
 .u-depth
 {
-    z-index: auto /* Default value */;
+    z-index: auto; /* Default value */
 }
 
 .u-depth--one
@@ -49,10 +49,10 @@
 
 .u-depth--maximum
 {
-    z-index: 2147483647 /* N3 */;
+    z-index: 2147483647; /* N3 */
 }
 
 .u-depth--negative-one
 {
-    z-index: var(--t-depth--negative-one) /* N2 */;
+    z-index: var(--t-depth--negative-one); /* N2 */
 }

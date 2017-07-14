@@ -26,8 +26,8 @@
     bottom: 25vh;
     left: -4.7rem;
     z-index: 100;
-    display: flex /* N2 */;
-    flex-direction: row-reverse /* N2 */;
+    display: flex; /* N2 */
+    flex-direction: row-reverse; /* N2 */
     padding: 0.4em 1.3em 0.2em 0;
     outline: none;
     border: none;
@@ -39,7 +39,7 @@
 
 .c-floating-button__letter
 {
-    transform: rotate(-270deg) /* N1 */;
+    transform: rotate(-270deg); /* N1 */
 }
 
 .c-floating-button:hover,

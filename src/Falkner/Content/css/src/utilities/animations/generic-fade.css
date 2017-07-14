@@ -21,7 +21,7 @@
     to
     {
         opacity: 1;
-        will-change: auto /* N1 */;
+        will-change: auto; /* N1 */
     }
 }
 
@@ -40,7 +40,7 @@
     to
     {
         opacity: 0;
-        will-change: auto /* N1 */;
+        will-change: auto; /* N1 */
     }
 }
 
@@ -52,5 +52,5 @@
 .u-fadeIn--hint,
 .u-fadeOut--hint
 {
-    will-change: opacity /* N2 */ /* N3 */;
+    will-change: opacity; /* N2 */ /* N3 */
 }

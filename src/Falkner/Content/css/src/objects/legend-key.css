@@ -27,12 +27,12 @@
 
 .o-legend-key dt[data-breadcrumb]:before
 {
-    content: attr(data-breadcrumb) "\00A0" /* 2 */;
+    content: attr(data-breadcrumb) "\00A0"; /* 2 */
 }
 
 .o-legend-key dd[data-breadcrumb]:before
 {
-    content: attr(data-breadcrumb) "\00A0" /* 2 */;
+    content: attr(data-breadcrumb) "\00A0"; /* 2 */
 }
 
 /* ----- (extends legend-key orientation) ----- */

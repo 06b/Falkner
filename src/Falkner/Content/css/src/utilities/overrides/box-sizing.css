@@ -14,12 +14,12 @@
 
 .u-box-sizing--border
 {
-    box-sizing: border-box /* N1 */;
+    box-sizing: border-box; /* N1 */
 }
 
 /* stylelint-disable selector-no-universal */
 .u-box-sizing--border--universal *
 {
-    box-sizing: border-box /* N2 */;
+    box-sizing: border-box; /* N2 */
 }
 /* stylelint-enable selector-no-universal */

@@ -52,43 +52,43 @@
 
 .c-stencil__thumbnail
 {
-    position: relative /* N1 */;
+    position: relative; /* N1 */
 }
 
 .c-stencil__thumbnail:before
 {
-    display: block /* N1 */;
-    padding-top: 100% /* N1 */;
-    content: "" /* N1 */;
+    display: block; /* N1 */
+    padding-top: 100%; /* N1 */
+    content: ""; /* N1 */
 }
 
 .c-stencil__thumbnail--ratio2_1:before
 {
-    padding-top: 50% /* N1 */;
+    padding-top: 50%; /* N1 */
 }
 
 .c-stencil__thumbnail--ratio1_2:before
 {
-    padding-top: 200% /* N1 */;
+    padding-top: 200%; /* N1 */
 }
 
 .c-stencil__thumbnail--ratio4_3:before
 {
-    padding-top: 75% /* N1 */;
+    padding-top: 75%; /* N1 */
 }
 
 .c-stencil__thumbnail--ratio16_9:before
 {
-    padding-top: 56.25% /* N1 */;
+    padding-top: 56.25%; /* N1 */
 }
 
 .c-stencil__thumbnail-content
 {
-    position: absolute /* N1 */;
-    top: 0 /* N1 */;
-    right: 0 /* N1 */;
-    bottom: 0 /* N1 */;
-    left: 0 /* N1 */;
+    position: absolute; /* N1 */
+    top: 0; /* N1 */
+    right: 0; /* N1 */
+    bottom: 0; /* N1 */
+    left: 0; /* N1 */
 }
 
 .c-stencil__avatar
@@ -449,7 +449,7 @@
 {
     background: linear-gradient(-90deg, var(--t-background-stencil) 0, var(--t-background-stencil--loading) 20%, var(--t-background-stencil) 40%, var(--t-background-stencil) 100%);
     background-size: 300% 300%;
-    animation: stencil-loading /* N2 */ 2.4s ease-in-out infinite;
+    animation: stencil-loading 2.4s ease-in-out infinite; /* N2 */
     will-change: background-position;
 }
 

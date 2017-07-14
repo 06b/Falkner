@@ -59,15 +59,15 @@
 /* ----- (extends .c-search-form__bar and child elements) ----- */
 .c-search-form__bar.invalid
 {
-    outline-color: var(--t-border-invalid) /*N1*/;
+    outline-color: var(--t-border-invalid); /*N1*/
 }
 
 .invalid .c-search-form__button
 {
-    background-color: var(--t-background-failure) /*N1*/;
+    background-color: var(--t-background-failure); /*N1*/
 }
 
 .invalid .c-search-form__button-icon
 {
-    color: var(--t-svg-icon-failure) /*N1*/;
+    color: var(--t-svg-icon-failure); /*N1*/
 }

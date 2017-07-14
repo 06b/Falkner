@@ -58,7 +58,7 @@
 .u-position-fixed
 {
     position: fixed !important;
-    backface-visibility: hidden /* 1 */;
+    backface-visibility: hidden; /* 1 */
 }
 
 .u-position-relative

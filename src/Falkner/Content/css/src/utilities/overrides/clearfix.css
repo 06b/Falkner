@@ -17,5 +17,5 @@
 {
     display: table;
     clear: both;
-    content: " " /* N1 */;
+    content: " "; /* N1 */
 }

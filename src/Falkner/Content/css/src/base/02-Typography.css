@@ -14,8 +14,8 @@
 
 body
 {
-    font-size: calc(var(--t-size-body-copy) + 0.025vw) /* 2 */;
-    line-height: 1.5 /* 1 */;
+    font-size: calc(var(--t-size-body-copy) + 0.025vw); /* 2 */
+    line-height: 1.5; /* 1 */
 }
 
 
@@ -39,32 +39,32 @@ h4,
 h5,
 h6
 {
-    line-height: 1.125 /* 1 */;
+    line-height: 1.125; /* 1 */
 }
 
 h1
 {
-    font-size: calc(var(--t-size-alpha) + 0.1vw) /* 2 */;
+    font-size: calc(var(--t-size-alpha) + 0.1vw); /* 2 */
 }
 
 h2
 {
-    font-size: calc(var(--t-size-beta) + 0.1vw) /* 2 */;
+    font-size: calc(var(--t-size-beta) + 0.1vw); /* 2 */
 }
 
 h3
 {
-    font-size: calc(var(--t-size-gamma) + 0.1vw) /* 2 */;
+    font-size: calc(var(--t-size-gamma) + 0.1vw); /* 2 */
 }
 
 h4
 {
-    font-size: calc(var(--t-size-delta) + 0.1vw) /* 2 */;
+    font-size: calc(var(--t-size-delta) + 0.1vw); /* 2 */
 }
 
 h5
 {
-    font-size: calc(var(--t-size-epsilon) + 0.1vw) /* 2 */;
+    font-size: calc(var(--t-size-epsilon) + 0.1vw); /* 2 */
 }
 
 h6
@@ -111,7 +111,7 @@ q q:after
 blockquote
 {
     quotes: "\201C" "\201D";
-    text-indent: -0.41rem /* 1 */;
+    text-indent: -0.41rem; /* 1 */
 }
 
 blockquote p:before

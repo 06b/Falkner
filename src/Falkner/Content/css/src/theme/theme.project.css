@@ -28,7 +28,7 @@ body
  */
 .l-grid
 {
-    font-family: sans-serif /* 1 */;
+    font-family: sans-serif; /* 1 */
 }
 
 html,
@@ -38,7 +38,7 @@ select,
 textarea,
 .l-grid [class*="l-grid__column"]
 {
-    font-family: var(--t-font-stack-content) /* 1 */;
+    font-family: var(--t-font-stack-content); /* 1 */
 }
 
 /**
@@ -58,7 +58,7 @@ textarea,
 .l-global-content-container a[href]:not([class]):hover,
 .l-global-content-container a[href]:not([class]):active
 {
-    color: currentColor /* 2 */;
+    color: currentColor; /* 2 */
     text-decoration: underline;
 }
 

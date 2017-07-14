@@ -12,10 +12,10 @@
 
 html
 {
-    overflow-y: scroll /* 2 */;
-    box-sizing: border-box /* 3 */;
-    min-height: 100% /* 2 */;
-    color: #222 /* 1 */;
+    overflow-y: scroll; /* 2 */
+    box-sizing: border-box; /* 3 */
+    min-height: 100%; /* 2 */
+    color: #222; /* 1 */
 }
 
 /* stylelint-disable selector-no-universal */
@@ -23,7 +23,7 @@ html
 *::before,
 *::after
 {
-    box-sizing: inherit /* 3 */ /* 4 */;
+    box-sizing: inherit; /* 3 */ /* 4 */
 }
 /* stylelint-enable selector-no-universal */
 
@@ -49,8 +49,8 @@ body
 
 ::selection
 {
-    background: #0074d9 /* 1 */;
-    color: #fff /* 1 */;
+    background: #0074d9; /* 1 */
+    color: #fff; /* 1 */
     text-shadow: none;
 }
 
@@ -147,9 +147,9 @@ textarea
 
 img
 {
-    max-width: 100% /* 2 */;
-    height: auto /* 3 */;
-    font-style: italic /* 1 */;
+    max-width: 100%; /* 2 */
+    height: auto; /* 3 */
+    font-style: italic; /* 1 */
 }
 
 

@@ -70,7 +70,7 @@
     border-width: 1px;
     border-style: solid;
     border-color: inherit;
-    border-bottom-width: 2px /* N1 */;
+    border-bottom-width: 2px; /* N1 */
     border-bottom-color: var(--t-background-content-block);
 }
 

@@ -29,48 +29,48 @@
 .c-progressive-media
 {
     position: relative;
-    overflow: hidden /* N8 */;
+    overflow: hidden; /* N8 */
 }
 
 .c-progressive-media__proxy
 {
     position: absolute;
-    top: 0 /* N3 */;
-    right: 0 /* N3 */;
-    bottom: 0 /* N3 */;
-    left: 0 /* N3 */;
+    top: 0; /* N3 */
+    right: 0; /* N3 */
+    bottom: 0; /* N3 */
+    left: 0; /* N3 */
     z-index: 1;
     overflow: hidden;
-    background-position: center /* N1 */;
-    background-size: cover /* N1*/;
-    background-repeat: no-repeat /* N1 */;
-    filter: blur(5px) /* N1 */;
+    background-position: center; /* N1 */
+    background-size: cover; /* N1*/
+    background-repeat: no-repeat; /* N1 */
+    filter: blur(5px); /* N1 */
 }
 
 .c-progressive-media__content
 {
-    position: absolute /* N2 */;
+    position: absolute; /* N2 */
     top: 0;
-    z-index: 2 /* N2 */;
+    z-index: 2; /* N2 */
 }
 
 .c-progressive-media__proxy--contain
 {
-    background-size: contain /* N4 */;
+    background-size: contain; /* N4 */
 }
 
 .c-progressive-media__proxy--smooth-sharpen
 {
-    filter: blur(1px) /* N7 */;
-    transition: filter 2.5s ease-out /* N7 */;
+    filter: blur(1px); /* N7 */
+    transition: filter 2.5s ease-out; /* N7 */
 }
 
 .c-progressive-media__content--transparency-fix
 {
-    background-color: var(--t-background-content-block) /* N5 */;
+    background-color: var(--t-background-content-block); /* N5 */
 }
 
 .c-progressive-media__content--successful-load-fix
 {
-    outline: 3in solid var(--t-background-content-block) /* N6 */;
+    outline: 3in solid var(--t-background-content-block); /* N6 */
 }

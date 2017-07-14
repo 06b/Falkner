@@ -35,7 +35,7 @@
     to
     {
         transform: rotate3d(0, 0, 1, 0deg);
-        will-change: auto /* N1 */;
+        will-change: auto; /* N1 */
     }
 }
 
@@ -47,5 +47,5 @@
 
 .u-swing--hint
 {
-    will-change: transform /* N2 */ /* N3 */;
+    will-change: transform; /* N2 */ /* N3 */
 }

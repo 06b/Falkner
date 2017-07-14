@@ -24,6 +24,6 @@
 /* stylelint-disable selector-no-universal */
 .s-visualize-layout *
 {
-    outline: 1px solid rgba(255, 0, 0, 0.2) /* N1 */;
+    outline: 1px solid rgba(255, 0, 0, 0.2); /* N1 */
 }
 /* stylelint-enable selector-no-universal */

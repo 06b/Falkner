@@ -26,7 +26,7 @@
     to
     {
         background: transparent;
-        will-change: auto /* N1 */;
+        will-change: auto; /* N1 */
     }
 }
 
@@ -37,5 +37,5 @@
 
 .u-spotlight-animation--hint
 {
-    will-change: background /* N2 */ /* N3 */;
+    will-change: background; /* N2 */ /* N3 */
 }

@@ -32,8 +32,8 @@
 .c-pseudo-upload-wrapper .c-pseudo-upload-input
 {
     position: absolute;
-    left: -1px /* N1 */;
-    z-index: -1 /* N3 */;
+    left: -1px; /* N1 */
+    z-index: -1; /* N3 */
     width: 0;
     outline: none;
     border: 0;

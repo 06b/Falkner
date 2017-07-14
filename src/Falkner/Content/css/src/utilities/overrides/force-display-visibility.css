@@ -80,7 +80,7 @@
 .u-force-inline-block
 {
     display: inline-block !important;
-    max-width: 100% /* 1 */;
+    max-width: 100%; /* 1 */
 }
 
 @media only screen and (max-width: 30em)
@@ -88,7 +88,7 @@
     .u-force-inline-block--phone-portrait-only
     {
         display: inline-block !important;
-        max-width: 100% /* 1 */;
+        max-width: 100%; /* 1 */
     }
 }
 
@@ -97,7 +97,7 @@
     .u-force-inline-block--phone-landscape-up
     {
         display: inline-block !important;
-        max-width: 100% /* 1 */;
+        max-width: 100%; /* 1 */
     }
 }
 
@@ -106,7 +106,7 @@
     .u-force-inline-block--phone-landscape-only
     {
         display: inline-block !important;
-        max-width: 100% /* 1 */;
+        max-width: 100%; /* 1 */
     }
 }
 
@@ -115,7 +115,7 @@
     .u-force-inline-block--tablet-portrait-up
     {
         display: inline-block !important;
-        max-width: 100% /* 1 */;
+        max-width: 100%; /* 1 */
     }
 }
 
@@ -124,7 +124,7 @@
     .u-force-inline-block--tablet-portrait-only
     {
         display: inline-block !important;
-        max-width: 100% /* 1 */;
+        max-width: 100%; /* 1 */
     }
 }
 
@@ -133,7 +133,7 @@
     .u-force-inline-block--tablet-landscape-up
     {
         display: inline-block !important;
-        max-width: 100% /* 1 */;
+        max-width: 100%; /* 1 */
     }
 }
 
@@ -142,7 +142,7 @@
     .u-force-inline-block--tablet-landscape-only
     {
         display: inline-block !important;
-        max-width: 100% /* 1 */;
+        max-width: 100%; /* 1 */
     }
 }
 
@@ -151,7 +151,7 @@
     .u-force-inline-block--desktop-up
     {
         display: inline-block !important;
-        max-width: 100% /* 1 */;
+        max-width: 100%; /* 1 */
     }
 }
 

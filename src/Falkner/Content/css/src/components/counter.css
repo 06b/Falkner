@@ -26,7 +26,7 @@
 
 .c-counter--pinned
 {
-    position: absolute /* N1 */;
+    position: absolute; /* N1 */
 }
 
 .c-counter--pinned-top
