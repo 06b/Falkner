@@ -51,6 +51,32 @@ var log = require('gulp-log2');
  */
 var discardDuplicates = require('postcss-discard-duplicates');
 
+/**
+ * Custom Properties - PostCSS plugin to transform W3C CSS Custom Properties for cascading variables
+ */
+var customProperties = require("postcss-custom-properties");
+var fs = require("fs"); /* fs is a dependency of Custom Properties*/
+
+/**
+ * glob - Matches files using the patterns the shell uses.
+ */
+var glob = require('glob');
+
+/**
+ * q - A library for promises
+ */
+var Q = require('q');
+
+/**
+ * gulp-concat - Concatenates files
+ */
+var concat = require('gulp-concat');
+
+/**
+ * cssnano - a CSS modular minifier
+ */
+var cssnano = require('cssnano');
+
 /**********************************************************************
  * Bundle Config
  */
@@ -155,6 +181,97 @@ gulp.task('default', function () {
 
 });
 
+gulp.task('production:Optimization', ['production:Polyfilling-custom-properties'], function () {
+
+    console.log("TODO: Finish Production Optimization Build");
+
+    var cssSrc = './Content/css/preparation/{base,components,components/**,layout,objects,scope,theme,utilities,utilities/**,vendor,vendor/**}/*.css';
+
+    //TODO: Complete Polyfilling
+
+    return gulp.src(cssSrc)
+        .pipe(log("Starting PostCSS"))
+        .pipe(log(" - Optimization - Discard Duplicates: Discard duplicate rules in your CSS files."))
+        .pipe(log(" - Optimization - Ordered Values: Ensure values are ordered consistently in your CSS."))
+        .pipe(postcss([
+            discardDuplicates(),
+            orderedValues()
+        ]))
+        .pipe(log("Ending PostCSS"))
+        .pipe(log("Starting CSSComb - sorting CSS Properties within each selector declaration"))
+        .pipe(csscomb())
+        .pipe(log("Ending CSSComb"))
+        .pipe(gulp.dest('./Content/css/dist/'))
+
+    //TODO: Minification
+
+});
+
+
+gulp.task('production:Polyfilling-custom-properties', ['production:Minification-custom-properties'], function () {
+
+    console.log("Polyfilling - Custom Properties: Since Css Variables (Css Properties) are supported in Firefox, Chrome & Safari." +
+        " Use a polyfill (customProperties) to get it rendered for IE & Edge");
+
+    var cssSrc = './Content/css/src/{base,components,components/**,layout,objects,scope,theme,utilities,utilities/**,vendor,vendor/**}/*.css';
+
+    var projectSettings = './Content/css/preparation/_settings/project.css';
+
+    var promises = []; // Used for looping through each file within _settings
+
+    //Iterating over the files
+    //Original logic based off of the following - http://stackoverflow.com/a/22159951
+    glob.sync(cssSrc).forEach(function (filePath) {
+
+        var polyfillStylesheets = []
+
+        polyfillStylesheets.push(projectSettings);
+        polyfillStylesheets.push(filePath);
+
+            if (fs.statSync(polyfillStylesheets[1]).isFile()){
+
+            var defer = Q.defer();
+            var pipeline = gulp.src(polyfillStylesheets)
+                .pipe(concat(polyfillStylesheets[1].replace("./Content/css/src/", "")))
+                .pipe(postcss([customProperties]))
+                .pipe(gulp.dest('./Content/css/preparation/'));
+
+            pipeline.on('end', function () {
+                defer.resolve();
+            });
+            promises.push(defer.promise);
+        }
+    });
+
+    return Q.all(promises);
+
+});
+
+gulp.task('production:Minification-custom-properties', function () {
+
+    console.log('Deleting Old Preparation Folder');
+    del(['./Content/css/preparation']);
+
+    console.log("Since the custom properties get's concatenated with each stylesheet during polyfilling " +
+        " strip out the comments to avoid it being added to each stylesheet.");
+
+    return gulp.src('./Content/css/src/_settings/project.css')
+        .pipe(log("Starting Minification on project settings"))
+        // cssnano also does what orderValues does
+        .pipe(postcss([
+            cssnano({
+                safe: true,
+                discardComments: {
+                    removeAll: true
+                },
+                normalizeCharset: true,
+            }),
+        ]))
+        .pipe(log("Project Settings Minification Complete"))
+        .pipe(gulp.dest('./Content/css/preparation/_settings/'));
+
+});
+
 gulp.task('dev:stylelint', function ()
 {
 
@@ -181,7 +298,7 @@ gulp.task('dev:stylelint', function ()
 
 gulp.task('dev:parker', function () {
 
-    del(['./report.md'])
+    del(['./report.md']);
 
     return gulp.src(
         // Stylesheet source:
@@ -198,13 +315,15 @@ gulp.task('dev:parker', function () {
 });
 
 gulp.task('dev:normalize-css-styles', function () {
+
+    del(['./Content/css/normalized']);
+
     var cssSrc = ['./Content/css/src/{base,components,components/**,layout,objects,scope,theme,utilities,utilities/**,vendor,vendor/**}/*.css',
         // Ignore Normalizing third party assets
         '!./Content/css/src/vendor/**/*.css',
         '!./Content/css/src/utilities/debug.css',
-        '!./Content/css/src/base/00-Normalize.css'];
-
-    console.log('Running CSSComb - sorting CSS Properties within each selector declaration');
+        '!./Content/css/src/base/00-Normalize.css'
+    ];
 
     return gulp.src(cssSrc)
         .pipe(log("Starting PostCSS"))
