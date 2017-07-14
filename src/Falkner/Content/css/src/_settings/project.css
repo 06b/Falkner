@@ -64,10 +64,10 @@
 
     --t-size-alpha: calc(var(--initial-rem-unit) * 2);
     --t-size-beta: calc(var(--initial-rem-unit) * 1.5);
-    --t-size-gamma: calc(var(--initial-rem-unit) * 1.125);
-    --t-size-delta: calc(var(--initial-rem-unit) * 1);
-    --t-size-epsilon: calc(var(--initial-rem-unit) * 0.875);
-    /*--t-size-zeta: calc(var(--initial-rem-unit) * 1);*/
+    --t-size-gamma: calc(var(--initial-rem-unit) * 1.25);
+    --t-size-delta: calc(var(--initial-rem-unit) * 1.125);
+    --t-size-epsilon: calc(var(--initial-rem-unit) * 1);
+    --t-size-zeta: calc(var(--initial-rem-unit) * 0.875);
 
     --t-size-lede: calc(var(--t-size-body-copy) * 1.25);
     --t-size-milli: calc(var(--initial-rem-unit) * 0.75);
