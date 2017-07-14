@@ -187,7 +187,7 @@
 
 .o-breadcrumb .root
 {
-    font-weight: 400 /* 1b */;
+    font-weight: normal; /* 1b */
 }
 
 
@@ -199,5 +199,5 @@
 
 .o-breadcrumb > li + li[data-breadcrumb]:before
 {
-    content: attr(data-breadcrumb) "\00A0" /* 2b */;
+    content: attr(data-breadcrumb) "\00A0"; /* 2b */
 }
