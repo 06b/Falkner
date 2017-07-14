@@ -178,16 +178,55 @@ var stylesheetBundle = [
 gulp.task('default', function () {
 
     console.log('You are running Node Version: ' + process.version);
+    console.log("Update default to run what task you need it to run." +
+        " For Example: If you plan to have a different build process for your minification or bundling - then you probably only need to run `production: Optimization`" +
+        " HOWEVER - if you need don't need bundling but need the minification - then you only need to run `production:Minification` such as in the cases of HTTP2 support where bundling may not be as useful." +
+        " but maybe you can't support HTTP2 yet so you still need to bundle - then you can update this default task to do that after it's completed the `production:Minification` build and use the " +
+        " stylesheetBundle located above the default task.");
 
+});
+
+gulp.task('default-example', ['production:Minification'], function () {
+
+    console.log('You are running Node Version: ' + process.version);
+    console.log("Update default to run what task you need it to run." +
+        " For Example: If you plan to have a different build process for your minification or bundling - then you probably only need to run `production: Optimization`" +
+        " HOWEVER - if you need don't need bundling but need the minification - then you only need to run `production:Minification` such as in the cases of HTTP2 support where bundling may not be as useful." +
+        " but maybe you can't support HTTP2 yet so you still need to bundle - then you can update this default task to do that after it's completed the `production:Minification` build and use the " +
+        " stylesheetBundle located above the default task.");
+
+    var cssSrc = './Content/css/minification/{base,components,components/**,layout,objects,scope,theme,utilities,utilities/**,vendor,vendor/**}/*.css';
+    return gulp.src(cssSrc)
+        .pipe(log("This is an example where [default-example] is only using the `'production:Minification` task and is outputting to the dist folder as gulp is being used for the full build process. You will want to have a clean up task that cleans up everything except your dist folder in this case."))
+        .pipe(gulp.dest('./Content/css/dist/'))
+});
+
+gulp.task('production:Minification', ['production:Optimization'], function () {
+
+    var cssSrc = './Content/css/optimization/{base,components,components/**,layout,objects,scope,theme,utilities,utilities/**,vendor,vendor/**}/*.css';
+
+    return gulp.src(cssSrc)
+        .pipe(log("Starting PostCSS"))
+        .pipe(log(" - Minification - CSSNano: Modular Minifier"))
+        .pipe(postcss([
+            cssnano({
+                safe: true,
+                discardComments: {
+                    removeAll: true
+                },
+                normalizeCharset: true,
+            })
+        ]))
+        .pipe(log("Ending PostCSS"))
+        .pipe(gulp.dest('./Content/css/minification/'))
 });
 
 gulp.task('production:Optimization', ['production:Polyfilling-custom-properties'], function () {
 
-    console.log("TODO: Finish Production Optimization Build");
-
     var cssSrc = './Content/css/preparation/{base,components,components/**,layout,objects,scope,theme,utilities,utilities/**,vendor,vendor/**}/*.css';
 
-    //TODO: Complete Polyfilling
+    console.warn("TODO: Make sure you have completed any polyfilling steps needed.")
+    console.log("This task is similar to `dev:normalize-css-styles` however it is assumed that any polyfilling steps would be completed before running this task.");
 
     return gulp.src(cssSrc)
         .pipe(log("Starting PostCSS"))
@@ -201,12 +240,8 @@ gulp.task('production:Optimization', ['production:Polyfilling-custom-properties'
         .pipe(log("Starting CSSComb - sorting CSS Properties within each selector declaration"))
         .pipe(csscomb())
         .pipe(log("Ending CSSComb"))
-        .pipe(gulp.dest('./Content/css/dist/'))
-
-    //TODO: Minification
-
+        .pipe(gulp.dest('./Content/css/optimization/'))
 });
-
 
 gulp.task('production:Polyfilling-custom-properties', ['production:Prepare-custom-properties'], function () {
 
@@ -247,10 +282,7 @@ gulp.task('production:Polyfilling-custom-properties', ['production:Prepare-custo
 
 });
 
-gulp.task('production:Prepare-custom-properties', function () {
-
-    console.log('Deleting Old Preparation Folder');
-    del(['./Content/css/preparation']);
+gulp.task('production:Prepare-custom-properties', ['production:clean'], function () {
 
     console.log("Since the custom properties get's concatenated with each stylesheet during polyfilling " +
         " strip out the comments to avoid it being added to each stylesheet.");
@@ -269,6 +301,16 @@ gulp.task('production:Prepare-custom-properties', function () {
         ]))
         .pipe(log("Project Settings Minification Complete"))
         .pipe(gulp.dest('./Content/css/preparation/_settings/'));
+
+});
+
+gulp.task('production:clean', function () {
+
+    console.log('Deleting Old Preparation/Build/Etc Folders');
+    del(['./Content/css/preparation']);
+    del(['./Content/css/optimization']);
+    del(['./Content/css/minification']);
+    del(['./Content/css/dist']);
 
 });
 
