@@ -208,7 +208,7 @@ gulp.task('production:Optimization', ['production:Polyfilling-custom-properties'
 });
 
 
-gulp.task('production:Polyfilling-custom-properties', ['production:Minification-custom-properties'], function () {
+gulp.task('production:Polyfilling-custom-properties', ['production:Prepare-custom-properties'], function () {
 
     console.log("Polyfilling - Custom Properties: Since Css Variables (Css Properties) are supported in Firefox, Chrome & Safari." +
         " Use a polyfill (customProperties) to get it rendered for IE & Edge");
@@ -247,7 +247,7 @@ gulp.task('production:Polyfilling-custom-properties', ['production:Minification-
 
 });
 
-gulp.task('production:Minification-custom-properties', function () {
+gulp.task('production:Prepare-custom-properties', function () {
 
     console.log('Deleting Old Preparation Folder');
     del(['./Content/css/preparation']);
