@@ -69,7 +69,7 @@ h5
 
 h6
 {
-    font-size: calc(var(--t-size-zeta) + 0.1vw); /* 1 */
+    font-size: calc(var(--t-size-zeta) + 0.1vw); /* 2 */
 }
 
 
