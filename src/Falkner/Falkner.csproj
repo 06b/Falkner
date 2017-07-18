@@ -109,6 +109,7 @@
     <Content Include="Content\css\src\utilities\overrides\text-alignment.css" />
     <Content Include="Content\css\src\utilities\overrides\text-decoration.css" />
     <Content Include="Content\css\src\utilities\overrides\text-transform.css" />
+    <Content Include="Content\css\src\utilities\overrides\width.css" />
     <Content Include="Content\css\src\utilities\print.css" />
     <Content Include="Content\css\src\base\04-Forms.css" />
     <Content Include="Content\css\src\base\01-Base.css" />
