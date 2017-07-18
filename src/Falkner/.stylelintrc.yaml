@@ -129,7 +129,7 @@ rules:
   selector-type-no-unknown: true
   selector-max-empty-lines: 0
   #Selector List
-  selector-list-comma-newline-after: always-multi-line
+  selector-list-comma-newline-after: always
   selector-list-comma-newline-before: never-multi-line
   #root-no-standard-properties: true #Deprecated as of 7.8.0 - a stylelint plugin may exist in it's place
 
