@@ -1,6 +1,6 @@
 {
   "name": "Falkner",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "private": true,
   "devDependencies": {
     "cssnano": "3.10.0",
@@ -12,11 +12,12 @@
     "gulp-log2": "0.1.3",
     "gulp-parker": "0.1.4",
     "gulp-postcss": "7.0.0",
+    "postcss": "6.0.7",
     "postcss-custom-properties": "6.1.0",
     "postcss-discard-duplicates": "2.1.0",
     "postcss-reporter": "4.0.0",
     "postcss-ordered-values": "2.2.3",
     "q": "1.5.0",
-    "stylelint": "7.11.0"
+    "stylelint": "~8.0.0"
   }
 }
