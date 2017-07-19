@@ -21,9 +21,9 @@
  *
  */
 
-/* stylelint-disable selector-no-universal */
+/* stylelint-disable selector-max-universal */
 .s-visualize-layout *
 {
     outline: 1px solid rgba(255, 0, 0, 0.2); /* N1 */
 }
-/* stylelint-enable selector-no-universal */
+/* stylelint-enable selector-max-universal */

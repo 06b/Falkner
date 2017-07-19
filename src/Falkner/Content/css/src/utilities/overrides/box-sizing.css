@@ -17,9 +17,9 @@
     box-sizing: border-box; /* N1 */
 }
 
-/* stylelint-disable selector-no-universal */
+/* stylelint-disable selector-max-universal */
 .u-box-sizing--border--universal *
 {
     box-sizing: border-box; /* N2 */
 }
-/* stylelint-enable selector-no-universal */
+/* stylelint-enable selector-max-universal */
