@@ -40,6 +40,18 @@
 
 /* .o-navigation:after { display: table; clear: both; content: ''; } */ /* 1 */
 
+/**
+ * Support: Accessibility (A11y) using VoiceOver (Screen reader built into macOS, iOS, tvOS,watchOS & iPod operating systems.)
+ * Details: Input fields with 'required' get red shadow/border before submitting
+ * Supporting Details: https://unfetteredthoughts.net/2017/09/26/voiceover-and-list-style-type-none/
+ * Fix: Adding some pseudo-content before the list item will add the list semantics back to the list, in the most simple case it could be some zero-width space.
+ */
+
+.o-navigation > li:before
+{
+    content: "\200B"; /* add zero-width space */
+}
+
 .o-navigation > li,
 .o-navigation > li > a
 {
