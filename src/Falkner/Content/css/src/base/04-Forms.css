@@ -32,17 +32,6 @@ fieldset {
   margin: 0;
 }
 
-/**
- * Support: Accessibility (A11y) using VoiceOver (Screen reader built into macOS, iOS, tvOS,watchOS & iPod operating systems.)
- * Details: Input fields with 'required' get red shadow/border before submitting
- * Supporting Details: https://unfetteredthoughts.net/2017/09/26/voiceover-and-list-style-type-none/
- * Fix: Adding some pseudo-content before the list item will add the list semantics back to the list, in the most simple case it could be some zero-width space.
- */
-
-.form-fields > li:before {
-    content: "\200B"; /* add zero-width space */
-}
-
 .form-fields > li:last-child {
   margin-bottom: 0;
 }
@@ -106,18 +95,6 @@ fieldset {
 .check-list {
   list-style: none;
   margin: 0;
-}
-
-/**
- * Support: Accessibility (A11y) using VoiceOver (Screen reader built into macOS, iOS, tvOS,watchOS & iPod operating systems.)
- * Details: Input fields with 'required' get red shadow/border before submitting
- * Supporting Details: https://unfetteredthoughts.net/2017/09/26/voiceover-and-list-style-type-none/
- * Fix: Adding some pseudo-content before the list item will add the list semantics back to the list, in the most simple case it could be some zero-width space.
- */
-
-.check-list > li:before
-{
-    content: "\200B"; /* add zero-width space */
 }
 
 /*
