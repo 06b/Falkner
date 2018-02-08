@@ -14,5 +14,5 @@
 
 .u-normalize-cursor
 {
-    cursor: default;
+    cursor: default !important;
 }
