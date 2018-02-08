@@ -177,6 +177,7 @@
     flex-wrap: wrap-reverse;
 }
 
+
 /**
  * Defines the ability for a flex item to grow if necessary.
  */
@@ -188,6 +189,31 @@
 
 
 /**
+ * Defines the ability for a flex item to shrink if necessary.
+ */
+
+.u-flex-shrink--0
+{
+    flex-shrink: 0;
+}
+
+
+/**
+ * Support: Truncated Text with Flexbox / Flexbox child expanding wider than it's flexbox container
+ * Details: According to the spec - Flex elements have an automatic minimum size of the content width
+ *          to prevent overflows - which of course does not play nice when truncating text.
+ * Supporting Details: https://bugzilla.mozilla.org/show_bug.cgi?id=1108514#c5
+ * Supporting Details: https://www.w3.org/TR/css-flexbox-1/#min-size-auto
+ * Fix: Add `min-width:0;` in the flex-child containing the other text elements.
+ */
+
+.u-flex-min-width-truncate-fix
+{
+    min-width: 0;
+}
+
+
+/**
  * Reverse the flex direction
  */
 
@@ -195,4 +221,44 @@
 {
     display: flex !important;
     flex-direction: row-reverse !important;
+}
+
+
+/**
+ * Defines the default size of an element before the remaining space is distributed.
+ */
+
+.u-flex-basis--0
+{
+    flex-basis: 0;
+}
+
+
+/**
+ * Alignment along the main axis within Flexible Box Layout - Dependency on `display:flex`.
+ */
+
+.u-flex-justify-content
+{
+    justify-content: flex-start;
+}
+
+.u-flex-justify-content--flex-end
+{
+    justify-content: flex-end;
+}
+
+.u-flex-justify-content--center
+{
+    justify-content: center;
+}
+
+.u-flex-justify-content--space-between
+{
+    justify-content: space-between;
+}
+
+.u-flex-justify-content--space-around
+{
+    justify-content: space-around;
 }
