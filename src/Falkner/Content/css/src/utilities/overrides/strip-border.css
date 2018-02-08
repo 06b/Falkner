@@ -346,3 +346,31 @@
         border-right: 0 !important;
     }
 }
+
+/**
+ * Removes the border radius from elements
+ */
+.u-strip-border-radius
+{
+    border-radius: 0 !important;
+}
+
+.u-strip-border-top-left-radius
+{
+    border-top-left-radius: 0 !important;
+}
+
+.u-strip-border-top-right-radius
+{
+    border-top-right-radius: 0 !important;
+}
+
+.u-strip-border-bottom-left-radius
+{
+    border-bottom-left-radius: 0 !important;
+}
+
+.u-strip-border-bottom-right-radius
+{
+    border-bottom-right-radius: 0 !important;
+}
