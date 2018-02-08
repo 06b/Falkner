@@ -23,6 +23,11 @@
  *
  */
 
+.c-expansion-limit
+{
+    max-height: calc(var(--t-gutter) * 12.5);
+}
+
 .c-expansion-limit--diminutive
 {
     max-height: calc(var(--t-gutter--diminutive) * 12.5);
@@ -41,11 +46,6 @@
 .c-expansion-limit--medium
 {
     max-height: calc(var(--t-gutter--medium) * 12.5);
-}
-
-.c-expansion-limit
-{
-    max-height: calc(var(--t-gutter) * 12.5);
 }
 
 .c-expansion-limit--large
