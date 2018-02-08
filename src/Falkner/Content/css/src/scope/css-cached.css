@@ -1,0 +1,26 @@
+﻿/*!
+ * WARNING: scope should be used sparingly - these should be used for a new styling context but may not necessarily cosmetic.
+ *
+ * Scope can be open to abuse and lead to poor CSS if not used wisely. If you find yourself having to call a certain scope style in multiple locations
+ * then it probably should be re-factored and moved outside of scope.
+ *
+ * Normally what would be used in scope would be things that we don't have control over - such as if we were using some third party content management system
+ * another case might be if we are needing to do certain styles that might be considered a 'one-off' or if it's a certain section of the site that needs to
+ * be styled a certain way that for certain pages but the markup remains the same with the exception of the class that get's appended which would be used as the
+ * scope hook.
+ *
+ */
+
+/**
+ * Css Cached Scope
+ *
+ * Support: Enhance CSS Performance (Prevent FOUC)
+ * Details: Due to Flash of Unstyled Content - hide the body content if enhanced class as been added to the html tag but the `no-js` toggle is still set as the
+ *          toggle does not occur until the Ignite Core bundle has ran which loads after the cached stylesheet has loaded.
+ * Supporting Details: https://github.com/filamentgroup/EnhanceJS/wiki/Integration-Tips#preventing-fouc
+ * Fix: Toggle the visiablity once the full stylesheet has loaded.
+ *
+ */
+
+.s-css-cached { }
+.s-css-cached.enhanced body { visibility: visible; }
