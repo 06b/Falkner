@@ -43,7 +43,7 @@
 .c-divider--extend-tiny
 {
     margin-right: calc(-1 * var(--t-gutter--tiny));
-    margin-left: calc(-1 * var(--t-gutter--small));
+    margin-left: calc(-1 * var(--t-gutter--tiny));
 }
 
 .c-divider--extend-small
@@ -74,4 +74,10 @@
 {
     margin-right: calc(-1 * var(--t-gutter--huge));
     margin-left: calc(-1 * var(--t-gutter--huge));
+}
+
+.c-divider--extend-gargantuan
+{
+    margin-right: calc(-1 * var(--t-gutter--gargantuan));
+    margin-left: calc(-1 * var(--t-gutter--gargantuan));
 }
