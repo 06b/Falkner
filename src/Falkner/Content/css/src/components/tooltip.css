@@ -9,6 +9,9 @@
  *
  */
 
+/* stylelint-disable */
+/* Stylelint was disabled as it was a port from Github's Primer and the css wasn't written in-house - the only changes were class names to be more descriptive */
+
 .c-tooltipped
 {
     position: relative;
@@ -64,7 +67,8 @@
     }
 }
 
-.c-tooltipped:hover::before, .c-tooltipped:hover::after,
+.c-tooltipped:hover::before,
+.c-tooltipped:hover::after,
 .c-tooltipped:active::before,
 .c-tooltipped:active::after,
 .c-tooltipped:focus::before,
@@ -79,7 +83,8 @@
     animation-delay: 0.4s;
 }
 
-.c-tooltipped--no-delay:hover::before, .c-tooltipped--no-delay:hover::after,
+.c-tooltipped--no-delay:hover::before,
+.c-tooltipped--no-delay:hover::after,
 .c-tooltipped--no-delay:active::before,
 .c-tooltipped--no-delay:active::after,
 .c-tooltipped--no-delay:focus::before,
@@ -210,14 +215,16 @@
     border-collapse: separate;
 }
 
-.c-tooltipped--multiline.c-tooltipped--south::after, .c-tooltipped--multiline.c-tooltipped--north::after
+.c-tooltipped--multiline.c-tooltipped--south::after,
+.c-tooltipped--multiline.c-tooltipped--north::after
 {
     right: auto;
     left: 50%;
     transform: translateX(-50%);
 }
 
-.c-tooltipped--multiline.c-tooltipped--west::after, .c-tooltipped--multiline.c-tooltipped--east::after
+.c-tooltipped--multiline.c-tooltipped--west::after,
+.c-tooltipped--multiline.c-tooltipped--east::after
 {
     right: 100%;
 }
@@ -230,7 +237,8 @@
     }
 }
 
-.c-tooltipped--sticky::before, .c-tooltipped--sticky::after
+.c-tooltipped--sticky::before,
+.c-tooltipped--sticky::after
 {
     display: inline-block;
 }
@@ -247,3 +255,5 @@
         margin-right: 4.5px;
     }
 }
+
+/* stylelint-enable */
