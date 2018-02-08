@@ -1,0 +1,29 @@
+﻿/*!
+ * WARNING: scope should be used sparingly - these should be used for a new styling context but may not necessarily cosmetic.
+ *
+ * Scope can be open to abuse and lead to poor CSS if not used wisely. If you find yourself having to call a certain scope style in multiple locations
+ * then it probably should be re-factored and moved outside of scope.
+ *
+ * Normally what would be used in scope would be things that we don't have control over - such as if we were using some third party content management system
+ * another case might be if we are needing to do certain styles that might be considered a 'one-off' or if it's a certain section of the site that needs to
+ * be styled a certain way that for certain pages but the markup remains the same with the exception of the class that get's appended which would be used as the
+ * scope hook.
+ *
+ */
+
+/**
+ * Remove focus if a user is not tabbing
+ *
+ * Support: Accessibility (A11y)
+ * Details: Show :focus styles only when it's needed
+ * Supporting Details: https://hackernoon.com/removing-that-ugly-focus-ring-and-keeping-it-too-6c8727fefcd2
+ *
+ */
+
+body:not(.s-user-is-tabbing) button:focus,
+body:not(.s-user-is-tabbing) input:focus,
+body:not(.s-user-is-tabbing) select:focus,
+body:not(.s-user-is-tabbing) textarea:focus
+{
+    outline: none;
+}

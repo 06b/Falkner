@@ -77,6 +77,7 @@
     <Content Include="Content\css\src\components\tooltip.css" />
     <Content Include="Content\css\src\components\unsupported.css" />
     <Content Include="Content\css\src\objects\resource-block.css" />
+    <Content Include="Content\css\src\scope\disable-focus.css" />
     <Content Include="Content\css\src\scope\disable-spinners.css" />
     <Content Include="Content\css\src\scope\example.css" />
     <Content Include="Content\css\src\scope\svg.css" />
