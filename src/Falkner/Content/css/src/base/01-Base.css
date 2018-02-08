@@ -105,6 +105,8 @@ body
 }
 
 /* Internet Explorer 10+ */
+/* autoprefixer: off */
+/* Disable autoprefixer as it will insert `::-ms-input-placeholder` which IE does not understand - See Note 3 */
 /* stylelint-disable selector-list-comma-newline-before */
 /* Disabling `selector-list-comma-newline-before` as it complains about space before comma where I have a comment note placed */
 :-ms-input-placeholder,
@@ -114,6 +116,7 @@ textarea:-ms-input-placeholder /* 4 */
 {
     color: #aaa; /* 1 */ /* 3 */
 }
+/* autoprefixer: on */
 
 /* stylelint-enable selector-no-vendor-prefix */
 
