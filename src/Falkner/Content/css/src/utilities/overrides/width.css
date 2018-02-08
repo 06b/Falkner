@@ -780,7 +780,7 @@
     /* End phone-landscape-up modifier */
 }
 
-@media only screen and (min-width: 30em) and (max-width: 39.9375em)
+@media only screen and (min-width: 30em) and (max-width: 39.9999375em)
 { /* Begin phone-landscape-only modifier */
     /* Whole */
     .u-width--one-whole--phone-landscape-only
@@ -1292,7 +1292,7 @@
     /* End tablet-portrait-up modifier */
 }
 
-@media only screen and (min-width: 40em) and (max-width: 63.9375em)
+@media only screen and (min-width: 40em) and (max-width: 63.9999375em)
 { /* Begin tablet-portrait-only modifier */
     /* Whole */
     .u-width--one-whole--tablet-portrait-only
@@ -1804,7 +1804,7 @@
     /* End tablet-landscape-up modifier */
 }
 
-@media only screen and (min-width: 64em) and (max-width: 79.9375em)
+@media only screen and (min-width: 64em) and (max-width: 79.9999375em)
 { /* Begin tablet-landscape-only modifier */
     /* Whole */
     .u-width--one-whole--tablet-landscape-only
