@@ -4,14 +4,14 @@
 
 .u-strip-border
 {
-    border: 0;
+    border: 0 !important;
 }
 
 @media only screen and (max-width: 30em)
 {
     .u-strip-border--phone-portrait-only
     {
-        border: 0;
+        border: 0 !important;
     }
 }
 
@@ -19,7 +19,7 @@
 {
     .u-strip-border--phone-landscape-up
     {
-        border: 0;
+        border: 0 !important;
     }
 }
 
@@ -27,7 +27,7 @@
 {
     .u-strip-border--phone-landscape-only
     {
-        border: 0;
+        border: 0 !important;
     }
 }
 
@@ -35,7 +35,7 @@
 {
     .u-strip-border--tablet-portrait-up
     {
-        border: 0;
+        border: 0 !important;
     }
 }
 
@@ -43,7 +43,7 @@
 {
     .u-strip-border--tablet-portrait-only
     {
-        border: 0;
+        border: 0 !important;
     }
 }
 
@@ -51,7 +51,7 @@
 {
     .u-strip-border--tablet-landscape-up
     {
-        border: 0;
+        border: 0 !important;
     }
 }
 
@@ -59,7 +59,7 @@
 {
     .u-strip-border--tablet-landscape-only
     {
-        border: 0;
+        border: 0 !important;
     }
 }
 
@@ -67,20 +67,20 @@
 {
     .u-strip-border--desktop-up
     {
-        border: 0;
+        border: 0 !important;
     }
 }
 
 .u-strip-border-top
 {
-    border-top: 0;
+    border-top: 0 !important;
 }
 
 @media only screen and (max-width: 30em)
 {
     .u-strip-border-top--phone-portrait-only
     {
-        border-top: 0;
+        border-top: 0 !important;
     }
 }
 
@@ -88,7 +88,7 @@
 {
     .u-strip-border-top--phone-landscape-up
     {
-        border-top: 0;
+        border-top: 0 !important;
     }
 }
 
@@ -96,7 +96,7 @@
 {
     .u-strip-border-top--phone-landscape-only
     {
-        border-top: 0;
+        border-top: 0 !important;
     }
 }
 
@@ -104,7 +104,7 @@
 {
     .u-strip-border-top--tablet-portrait-up
     {
-        border-top: 0;
+        border-top: 0 !important;
     }
 }
 
@@ -112,7 +112,7 @@
 {
     .u-strip-border-top--tablet-portrait-only
     {
-        border-top: 0;
+        border-top: 0 !important;
     }
 }
 
@@ -120,7 +120,7 @@
 {
     .u-strip-border-top--tablet-landscape-up
     {
-        border-top: 0;
+        border-top: 0 !important;
     }
 }
 
@@ -128,7 +128,7 @@
 {
     .u-strip-border-top--tablet-landscape-only
     {
-        border-top: 0;
+        border-top: 0 !important;
     }
 }
 
@@ -136,20 +136,20 @@
 {
     .u-strip-border-top--desktop-up
     {
-        border-top: 0;
+        border-top: 0 !important;
     }
 }
 
 .u-strip-border-bottom
 {
-    border-bottom: 0;
+    border-bottom: 0 !important;
 }
 
 @media only screen and (max-width: 30em)
 {
     .u-strip-border-bottom--phone-portrait-only
     {
-        border-bottom: 0;
+        border-bottom: 0 !important;
     }
 }
 
@@ -157,7 +157,7 @@
 {
     .u-strip-border-bottom--phone-landscape-up
     {
-        border-bottom: 0;
+        border-bottom: 0 !important;
     }
 }
 
@@ -165,7 +165,7 @@
 {
     .u-strip-border-bottom--phone-landscape-only
     {
-        border-bottom: 0;
+        border-bottom: 0 !important;
     }
 }
 
@@ -173,7 +173,7 @@
 {
     .u-strip-border-bottom--tablet-portrait-up
     {
-        border-bottom: 0;
+        border-bottom: 0 !important;
     }
 }
 
@@ -181,7 +181,7 @@
 {
     .u-strip-border-bottom--tablet-portrait-only
     {
-        border-bottom: 0;
+        border-bottom: 0 !important;
     }
 }
 
@@ -189,7 +189,7 @@
 {
     .u-strip-border-bottom--tablet-landscape-up
     {
-        border-bottom: 0;
+        border-bottom: 0 !important;
     }
 }
 
@@ -197,7 +197,7 @@
 {
     .u-strip-border-bottom--tablet-landscape-only
     {
-        border-bottom: 0;
+        border-bottom: 0 !important;
     }
 }
 
@@ -205,20 +205,20 @@
 {
     .u-strip-border-bottom--desktop-up
     {
-        border-bottom: 0;
+        border-bottom: 0 !important;
     }
 }
 
 .u-strip-border-left
 {
-    border-left: 0;
+    border-left: 0 !important;
 }
 
 @media only screen and (max-width: 30em)
 {
     .u-strip-border-left--phone-portrait-only
     {
-        border-left: 0;
+        border-left: 0 !important;
     }
 }
 
@@ -226,7 +226,7 @@
 {
     .u-strip-border-left--phone-landscape-up
     {
-        border-left: 0;
+        border-left: 0 !important;
     }
 }
 
@@ -234,7 +234,7 @@
 {
     .u-strip-border-left--phone-landscape-only
     {
-        border-left: 0;
+        border-left: 0 !important;
     }
 }
 
@@ -242,7 +242,7 @@
 {
     .u-strip-border-left--tablet-portrait-up
     {
-        border-left: 0;
+        border-left: 0 !important;
     }
 }
 
@@ -250,7 +250,7 @@
 {
     .u-strip-border-left--tablet-portrait-only
     {
-        border-left: 0;
+        border-left: 0 !important;
     }
 }
 
@@ -258,7 +258,7 @@
 {
     .u-strip-border-left--tablet-landscape-up
     {
-        border-left: 0;
+        border-left: 0 !important;
     }
 }
 
@@ -266,7 +266,7 @@
 {
     .u-strip-border-left--tablet-landscape-only
     {
-        border-left: 0;
+        border-left: 0 !important;
     }
 }
 
@@ -274,20 +274,20 @@
 {
     .u-strip-border-left--desktop-up
     {
-        border-left: 0;
+        border-left: 0 !important;
     }
 }
 
 .u-strip-border-right
 {
-    border-right: 0;
+    border-right: 0 !important;
 }
 
 @media only screen and (max-width: 30em)
 {
     .u-strip-border-right--phone-portrait-only
     {
-        border-right: 0;
+        border-right: 0 !important;
     }
 }
 
@@ -295,7 +295,7 @@
 {
     .u-strip-border-right--phone-landscape-up
     {
-        border-right: 0;
+        border-right: 0 !important;
     }
 }
 
@@ -303,7 +303,7 @@
 {
     .u-strip-border-right--phone-landscape-only
     {
-        border-right: 0;
+        border-right: 0 !important;
     }
 }
 
@@ -311,7 +311,7 @@
 {
     .u-strip-border-right--tablet-portrait-up
     {
-        border-right: 0;
+        border-right: 0 !important;
     }
 }
 
@@ -319,7 +319,7 @@
 {
     .u-strip-border-right--tablet-portrait-only
     {
-        border-right: 0;
+        border-right: 0 !important;
     }
 }
 
@@ -327,7 +327,7 @@
 {
     .u-strip-border-right--tablet-landscape-up
     {
-        border-right: 0;
+        border-right: 0 !important;
     }
 }
 
@@ -335,7 +335,7 @@
 {
     .u-strip-border-right--tablet-landscape-only
     {
-        border-right: 0;
+        border-right: 0 !important;
     }
 }
 
@@ -343,6 +343,6 @@
 {
     .u-strip-border-right--desktop-up
     {
-        border-right: 0;
+        border-right: 0 !important;
     }
 }
