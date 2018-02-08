@@ -38,7 +38,8 @@
     border-bottom: 5px solid transparent;
 }
 
-.c-tabs__item.is-selected
+.c-tabs__item.is-selected,
+.c-tabs__item--selected
 {
     border-bottom-color: currentColor;
 }
@@ -65,7 +66,8 @@
     border: 0;
 }
 
-.c-tabs--card .c-tabs__item.is-selected
+.c-tabs--card .c-tabs__item.is-selected,
+.c-tabs--card .c-tabs__item--selected
 {
     border-width: 1px;
     border-style: solid;
