@@ -25,7 +25,7 @@
  * N1. Apparently some margin exists even if it's hidden.
  *
  */
-
+/* stylelint-disable property-no-vendor-prefix */
 .s-disable-spinners input[type="number"]::-webkit-outer-spin-button,
 .s-disable-spinners input[type="number"]::-webkit-inner-spin-button,
 input[type="number"].s-disable-spinners::-webkit-outer-spin-button,
@@ -40,3 +40,4 @@ input[type="number"].s-disable-spinners
 {
     -moz-appearance: textfield;
 }
+/* stylelint-enable property-no-vendor-prefix */
