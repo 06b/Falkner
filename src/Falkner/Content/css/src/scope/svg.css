@@ -14,7 +14,7 @@
 /**
  * SVG Scope
  *
- * Support: Edge 14+
+ * Support: Edge 13 - Edge 15
  * Details: When using a linked SVG wrapped around an anchor- if the SVG is clicked on rather than any surrounding whitespace within
  *          the anchor the browser will remain on the same page rather than navigating to the link in Edge.
  * Supporting Details: https://github.com/06b/MS-Edge-Anchor-wrapped-around-SVG-use-not-triggering-click-when-used-with-pseudo-class-present-bug
@@ -29,7 +29,32 @@
 
 .s-svg.edge13 svg,
 .s-svg.edge14 svg,
-.s-svg.edge15 svg
+.s-svg.edge15 svg,
+/**
+ * Disable Pointer Events Scope
+ * Used in places where pointer events needs to be set to none but not related to the scope used for the Edge Bug.
+ */
+.s-disable-pointer-events
 {
     pointer-events: none;
+}
+
+/**
+ * SVG Scope Workaround
+ *
+ * Support: Edge 13 - Edge 15
+ * Details: When using the SVG Scope it is possible that another issue maybe caused which depend on a pointer-event within Edge.
+ * Workaround: Use `s-svg--override-pointer-events` around items which need to have pointer-events enabled.
+ */
+
+.s-svg.edge13 .s-svg--override-pointer-events svg,
+.s-svg.edge13 svg.s-svg--override-pointer-events
+.s-svg.edge14 .s-svg--override-pointer-events svg,
+.s-svg.edge14 svg.s-svg--override-pointer-events
+.s-svg.edge15 .s-svg--override-pointer-events svg,
+.s-svg.edge15 svg.s-svg--override-pointer-events,
+.s-svg .s-svg--override-pointer-events svg,
+.s-svg svg.s-svg--override-pointer-events
+{
+    pointer-events: auto;
 }
