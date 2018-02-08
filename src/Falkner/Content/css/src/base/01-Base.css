@@ -8,6 +8,8 @@
  * 2. Eliminate horizontal centering "page jumps": http://css-tricks.com/eliminate-jumps-in-horizontal-centering-by-forcing-a-scroll-bar/
  * 3. Prevent padding and border from affecting element width. https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
  * 4. Disable stylelint rule as border-box performance impact isn't significant when using the universal selector - https://www.paulirish.com/2012/box-sizing-border-box-ftw/#content
+ * 5. Set the browser to emphasize legibility over rendering speed and geometric precision by enabling kerning and optional ligatures - https://developer.mozilla.org/en-US/docs/Web/CSS/text-rendering
+ * 6. Set the browser to determine whether font kerning should be used or not - https://developer.mozilla.org/en-US/docs/Web/CSS/font-kerning
  */
 
 html
@@ -24,17 +26,25 @@ html
 *::after
 {
     box-sizing: inherit; /* 3 */ /* 4 */
+    text-rendering: optimizeLegibility; /* 5 */
+    font-kerning: auto; /* 6 */
 }
 /* stylelint-enable selector-max-universal */
 
 
 /**
  * 1. Don't show your underwear... http://www.zeldman.com/2008/11/07/is-your-websites-underwear-showing/
+ * 2. Experimental(https://developer.mozilla.org/en-US/docs/Web/CSS/text-size-adjust): Force text to reflow at the same 'zome level' rather than 'zooming in or out a little' when rotating between portrait & landscape on some mobile devices - https://twitter.com/innovati/status/951119975821008896
  */
 
 body
 {
     background: #fff; /* 1 */
+    /* stylelint-disable property-no-vendor-prefix */
+    -webkit-text-size-adjust: 100%; /* 2 */
+    -moz-text-size-adjust: 100%; /* 2 */
+    -ms-text-size-adjust: 100%; /* 2 */
+    /* stylelint-enable property-no-vendor-prefix */
 }
 
 
