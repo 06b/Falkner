@@ -76,6 +76,7 @@
     /* ----- Colors (Border) ----- */
 
     --t-border-invalid: var(--red-orange);
+    --t-border-transparent: var(--clear-glass);
 
         /* --- Search Form Component --- */
         --t-border-content-block: var(--ghost-gray);

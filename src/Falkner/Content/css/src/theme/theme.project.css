@@ -154,9 +154,99 @@ hr
     border-color: var(--t-border-invalid);
 }
 
+/**
+ * Support: Accessibility (A11y)
+ * Details: Add a transparent border to buttons that have no borders. It makes the buttons more obvious in High Contrast Mode.
+ * Supporting Details: https://twitter.com/hassanhelfi/status/931933646394667009
+ */
+
+.t-border-color--transparent
+{
+    border-color: var(--t-border-transparent);
+}
+
+.t-border-color--transparent-top
+{
+    border-top-color: var(--t-border-transparent);
+}
+
+.t-border-color--transparent-right
+{
+    border-right-color: var(--t-border-transparent);
+}
+
+.t-border-color--transparent-bottom
+{
+    border-bottom-color: var(--t-border-transparent);
+}
+
+.t-border-color--transparent-left
+{
+    border-left-color: var(--t-border-transparent);
+}
+
 .t-border-type--dashed
 {
     border-style: dashed;
+}
+
+.t-border-width--medium
+{
+    border-width: medium;
+}
+
+.t-border-width--thick
+{
+    border-width: thick;
+}
+
+/**
+ * Border Radius modifiers
+ */
+
+.t-border-radius
+{
+    border-radius: var(--t-gutter);
+}
+
+.t-border-radius--diminutive
+{
+    border-radius: var(--t-gutter--diminutive);
+}
+
+.t-border-radius--tiny
+{
+    border-radius: var(--t-gutter--tiny);
+}
+
+.t-border-radius--small
+{
+    border-radius: var(--t-gutter--small);
+}
+
+.t-border-radius--medium
+{
+    border-radius: var(--t-gutter--medium);
+}
+
+.t-border-radius--large
+{
+    border-radius: var(--t-gutter--large);
+}
+
+.t-border-radius--huge
+{
+    border-radius: var(--t-gutter--huge);
+}
+
+.t-border-radius--gargantuan
+{
+    border-radius: var(--t-gutter--gargantuan);
+}
+
+.t-border-radius--colossal
+{
+    border-radius: var(--t-gutter--colossal);
 }
 
 .t-border-radius--rounded
