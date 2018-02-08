@@ -31,3 +31,20 @@
 {
     word-wrap: break-word !important;
 }
+
+
+/**
+ * Whitespace adjustments
+ *
+ * Used to either allow whitespace wrapping or prevent it from wrapping.
+ */
+
+.u-text-whitespace--normal
+{
+    white-space: normal;
+}
+
+.u-text-whitespace--nowrap
+{
+    white-space: nowrap;
+}
