@@ -105,6 +105,7 @@
     <Content Include="Content\css\src\utilities\overrides\links.css" />
     <Content Include="Content\css\src\utilities\overrides\overflow.css" />
     <Content Include="Content\css\src\utilities\overrides\position.css" />
+    <Content Include="Content\css\src\utilities\overrides\rotation.css" />
     <Content Include="Content\css\src\utilities\overrides\strip-border.css" />
     <Content Include="Content\css\src\utilities\overrides\strip-margin.css" />
     <Content Include="Content\css\src\utilities\overrides\strip-padding.css" />

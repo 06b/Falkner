@@ -167,6 +167,7 @@ var stylesheetBundle = [
     , 'utilities/overrides/depth.css'
     , 'utilities/overrides/links.css'
     , 'utilities/overrides/box-sizing.css'
+    , 'utilities/overrides/rotation.css'
     , 'utilities/shame.css'
     , 'utilities/print.css'
 ]
