@@ -77,6 +77,12 @@ var concat = require('gulp-concat');
  */
 var cssnano = require('cssnano');
 
+/**
+ * autoprefixer - Parse CSS and add vendor prefixes to rules by Can I Use
+ */
+var autoprefixer = require('autoprefixer');
+
+
 /**********************************************************************
  * Bundle Config
  */
@@ -210,6 +216,7 @@ gulp.task('production:Minification', ['production:Optimization'], function () {
         .pipe(log("Starting PostCSS"))
         .pipe(log(" - Minification - CSSNano: Modular Minifier"))
         .pipe(postcss([
+            autoprefixer(),
             cssnano({
                 safe: true,
                 discardComments: {
@@ -292,6 +299,7 @@ gulp.task('production:Prepare-custom-properties', ['production:clean'], function
         .pipe(log("Starting Minification on project settings"))
         // cssnano also does what orderValues does
         .pipe(postcss([
+            autoprefixer(),
             cssnano({
                 safe: true,
                 discardComments: {

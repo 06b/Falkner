@@ -1,8 +1,10 @@
 {
   "name": "Falkner",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "private": true,
   "devDependencies": {
+    "autoprefixer": "7.2.5",
+    "browserslist": "2.11.3",
     "cssnano": "3.10.0",
     "del": "3.0.0",
     "glob": "7.1.2",
@@ -19,5 +21,9 @@
     "postcss-ordered-values": "2.2.3",
     "q": "1.5.1",
     "stylelint": "~8.4.0"
-  }
+  },
+  "browserslist": [
+    "> 1% in us",
+    "last 2 versions"
+  ]
 }
