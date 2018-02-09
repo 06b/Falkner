@@ -128,7 +128,7 @@
     }
 }
 
-@media only screen and (min-width: 30em) and (max-width: 39.9999375em)
+@media only screen and (min-width: 30em) and (max-width: 39.999375em)
 {
     .u-h1--phone-landscape-only,
     .u-alpha--phone-landscape-only
@@ -206,7 +206,7 @@
     }
 }
 
-@media only screen and (min-width: 40em) and (max-width: 63.9999375em)
+@media only screen and (min-width: 40em) and (max-width: 63.999375em)
 {
     .u-h1--tablet-portrait-only,
     .u-alpha--tablet-portrait-only
@@ -284,7 +284,7 @@
     }
 }
 
-@media only screen and (min-width: 64em) and (max-width: 79.9999375em)
+@media only screen and (min-width: 64em) and (max-width: 79.999375em)
 {
     .u-h1--tablet-landscape-only,
     .u-alpha--tablet-landscape-only
