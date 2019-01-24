@@ -233,6 +233,24 @@
     flex-basis: 0;
 }
 
+/**
+ * Support: IE11 - Flexbox Basis
+ * Details: Long content does not wrap correctly in IE11. - While other browsers render `flex-basis:auto` correctly, IE11 wants an explicit request.
+ * Supporting Details: https://stackoverflow.com/a/35113633
+ * Additional Details: https://developer.mozilla.org/en-US/docs/Web/CSS/flex-basis
+ * Workaround: Setting `flex-basis: 100%` will make the container use 100% of it's container.
+ * Warning: When a non-auto flex-basis is specified, in IE10 & IE11 it will use a `content-box` box modal to calculate the size of a flex item even if
+ *  `box-sizing: border-box` is applied to the element - which can cause issues so this should not be applied globally.  The related details link shows
+ * the issue in IE11 and the flexbugs github repo shows possible workarounds for this issue.
+ * Related Details: https://codepen.io/philipwalton/pen/JoWjyb (viewed in IE11)
+ * Additional Details: https://github.com/philipwalton/flexbugs#flexbug-7
+ *
+ */
+
+.u-flex-basis--100
+{
+    flex-basis: 100%;
+}
 
 /**
  * Alignment along the main axis within Flexible Box Layout - Dependency on `display:flex`.
