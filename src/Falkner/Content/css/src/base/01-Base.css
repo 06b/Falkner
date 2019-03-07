@@ -119,7 +119,6 @@ textarea:-ms-input-placeholder /* 4 */
 {
     color: #767676 /* 1 */ /* 3 */ /* 5 */;
 }
-/* autoprefixer: on */
 
 /* stylelint-enable selector-no-vendor-prefix */
 
