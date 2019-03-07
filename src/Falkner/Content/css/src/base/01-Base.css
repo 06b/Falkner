@@ -196,11 +196,16 @@ img[height]
  */
 
 label[for],
-input,
-textarea,
+[type="button"],
+[type="reset"],
+[type="submit"],
+[role="button"],
+[type="radio"],
+[type="checkbox"],
 button,
 select,
-option
+option,
+datalist
 {
     cursor: pointer;
 }
