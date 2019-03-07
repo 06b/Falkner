@@ -214,8 +214,7 @@ option
 [disabled],
 button[disabled],
 html input[disabled],
-:disabled,
-.u-disabled:hover
+:disabled
 {
     cursor: not-allowed !important;
 }
