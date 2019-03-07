@@ -236,8 +236,7 @@ html input[disabled],
 
 abbr[title],
 dfn[title],
-[rel="help"],
-.help:hover
+[rel="help"]
 {
     cursor: help;
 }
