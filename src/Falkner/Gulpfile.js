@@ -230,7 +230,7 @@ gulp.task('production:Polyfilling-custom-properties', gulp.series('production:Pr
     //Original logic based off of the following - http://stackoverflow.com/a/22159951
     glob.sync(cssSrc).forEach(function (filePath) {
 
-        var polyfillStylesheets = []
+        var polyfillStylesheets = [];
 
         polyfillStylesheets.push(projectSettings);
         polyfillStylesheets.push(filePath);
@@ -274,7 +274,7 @@ gulp.task('production:Optimization', gulp.series('production:Polyfilling-custom-
         .pipe(log("Starting CSSComb - sorting CSS Properties within each selector declaration"))
         .pipe(csscomb())
         .pipe(log("Ending CSSComb"))
-        .pipe(gulp.dest('./Content/css/optimization/'))
+        .pipe(gulp.dest('./Content/css/optimization/'));
 }));
 
 gulp.task('production:Minification', gulp.series('production:Optimization', function () {
@@ -295,7 +295,7 @@ gulp.task('production:Minification', gulp.series('production:Optimization', func
             })
         ]))
         .pipe(log("Ending PostCSS"))
-        .pipe(gulp.dest('./Content/css/minification/'))
+        .pipe(gulp.dest('./Content/css/minification/'));
 }));
 
 gulp.task('dev:stylelint', function ()
@@ -369,7 +369,7 @@ gulp.task('isolated-debug:node-version', done => {
     /**
      * Isolated gulp task which returns Node Version installed/is being used. Useful when debugging possible issues.
      */
-    console.log('Version: ' + process.version)
+    console.log('Version: ' + process.version);
     done();
 });
 
@@ -384,7 +384,7 @@ gulp.task('default-example', gulp.series('production:Minification', function (do
     var cssSrc = './Content/css/minification/{base,components,components/**,layout,objects,scope,theme,utilities,utilities/**,vendor,vendor/**}/*.css';
     return gulp.src(cssSrc)
         .pipe(log("This is an example where [default-example] is only using the `'production:Minification` task and is outputting to the dist folder as gulp is being used for the full build process. You will want to have a clean up task that cleans up everything except your dist folder in this case."))
-        .pipe(gulp.dest('./Content/css/dist/'))
+        .pipe(gulp.dest('./Content/css/dist/'));
 }));
 
 gulp.task('default', done => {
