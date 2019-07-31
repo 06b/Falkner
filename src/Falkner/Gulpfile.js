@@ -213,12 +213,13 @@ gulp.task('production:Prepare-custom-properties', gulp.series('production:Clean'
         .pipe(postcss([
             autoprefixer(),
             cssnano({
-                safe: true,
-                discardComments: {
-                    removeAll: true
-                },
-                normalizeCharset: true,
-            }),
+                preset: ['default', {
+                    discardComments: {
+                        removeAll: true
+                    },
+                    normalizeCharset: true,
+                }]
+            })
         ]))
         .pipe(log("Project Settings Minification Complete"))
         .pipe(gulp.dest('./Content/css/preparation/_settings/'));
@@ -297,11 +298,12 @@ gulp.task('production:Minification', gulp.series('production:Optimization', func
         .pipe(postcss([
             autoprefixer(),
             cssnano({
-                safe: true,
-                discardComments: {
-                    removeAll: true
-                },
-                normalizeCharset: true,
+                preset: ['default', {
+                    discardComments: {
+                        removeAll: true
+                    },
+                    normalizeCharset: true,
+                }]
             })
         ]))
         .pipe(log("Ending PostCSS"))
@@ -419,11 +421,12 @@ gulp.task('default-example', gulp.series('production:Concatenation', function (d
         .pipe(postcss([
             autoprefixer(),
             cssnano({
-                safe: true,
-                discardComments: {
-                    removeAll: true
-                },
-                normalizeCharset: true,
+                preset: ['default', {
+                    discardComments: {
+                        removeAll: true
+                    },
+                    normalizeCharset: true,
+                }]
             })
         ]))
         .pipe(log("Ending PostCSS"))
