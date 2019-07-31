@@ -58,6 +58,11 @@ var customProperties = require("postcss-custom-properties");
 var fs = require("fs"); /* fs is a dependency of Custom Properties*/
 
 /**
+ * merge-stream - Merge (interleave) a bunch of streams.
+ */
+var mergeStream = require('merge-stream');
+
+/**
  * glob - Matches files using the patterns the shell uses.
  */
 var glob = require('glob');
@@ -82,6 +87,10 @@ var cssnano = require('cssnano');
  */
 var autoprefixer = require('autoprefixer');
 
+/**
+ * gulp-rename - Rename files easily.
+ */
+var rename = require('gulp-rename');
 
 /**********************************************************************
  * Bundle Config
@@ -186,6 +195,7 @@ gulp.task('production:Clean', done => {
     console.log('Deleting Old Preparation/Build/Etc Folders');
     del(['./Content/css/preparation']);
     del(['./Content/css/optimization']);
+    del(['./Content/css/concatenation']);
     del(['./Content/css/minification']);
     del(['./Content/css/dist']);
 
@@ -298,6 +308,28 @@ gulp.task('production:Minification', gulp.series('production:Optimization', func
         .pipe(gulp.dest('./Content/css/minification/'));
 }));
 
+gulp.task('production:Concatenation', gulp.series('production:Optimization', function () {
+
+    var tasks = [];
+    var basePath = './Content/css/optimization/';
+
+    var concatenatedBundle = [];
+
+    //Loop over every file in the stylesheet bundle add the base path to it
+    for (var index = 0, bundleLength = stylesheetBundle.length; index < bundleLength; index++) {
+        concatenatedBundle.push(basePath + stylesheetBundle[index]);
+    }
+
+    var pipeline = gulp.src(concatenatedBundle)
+        .pipe(concat('bundle.css'))
+        .pipe(gulp.dest('./Content/css/concatenation/'));
+
+    tasks.push(pipeline);
+
+    return mergeStream(tasks);
+
+}));
+
 gulp.task('dev:stylelint', function ()
 {
 
@@ -373,18 +405,37 @@ gulp.task('isolated-debug:node-version', done => {
     done();
 });
 
-gulp.task('default-example', gulp.series('production:Minification', function (done) {
+gulp.task('default-example', gulp.series('production:Concatenation', function (done) {
     console.log('You are running Node Version: ' + process.version);
     console.log("Update default to run what task you need it to run." +
         " For Example: If you plan to have a different build process for your minification or bundling - then you probably only need to run `production: Optimization`" +
         " HOWEVER - if you need don't need bundling but need the minification - then you only need to run `production:Minification` such as in the cases of HTTP2 support where bundling may not be as useful." +
         " but maybe you can't support HTTP2 yet so you still need to bundle - then you can update this default task to do that after it's completed the `production:Minification` build and use the " +
-        " stylesheetBundle located above the default task.");
+        " stylesheetBundle as shown in this example.");
 
-    var cssSrc = './Content/css/minification/{base,components,components/**,layout,objects,scope,theme,utilities,utilities/**,vendor,vendor/**}/*.css';
-    return gulp.src(cssSrc)
-        .pipe(log("This is an example where [default-example] is only using the `'production:Minification` task and is outputting to the dist folder as gulp is being used for the full build process. You will want to have a clean up task that cleans up everything except your dist folder in this case."))
+    gulp.src("./Content/css/concatenation/bundle.css")
+        .pipe(log("Starting PostCSS"))
+        .pipe(log(" - Minification - CSSNano: Modular Minifier"))
+        .pipe(postcss([
+            autoprefixer(),
+            cssnano({
+                safe: true,
+                discardComments: {
+                    removeAll: true
+                },
+                normalizeCharset: true,
+            })
+        ]))
+        .pipe(log("Ending PostCSS"))
+        .pipe(rename("core.css"))
         .pipe(gulp.dest('./Content/css/dist/'));
+
+    del(['./Content/css/preparation']);
+    del(['./Content/css/optimization']);
+    del(['./Content/css/concatenation']);
+
+    done();
+
 }));
 
 gulp.task('default', done => {
@@ -393,7 +444,7 @@ gulp.task('default', done => {
         " For Example: If you plan to have a different build process for your minification or bundling - then you probably only need to run `production: Optimization`" +
         " HOWEVER - if you need don't need bundling but need the minification - then you only need to run `production:Minification` such as in the cases of HTTP2 support where bundling may not be as useful." +
         " but maybe you can't support HTTP2 yet so you still need to bundle - then you can update this default task to do that after it's completed the `production:Minification` build and use the " +
-        " stylesheetBundle located above the default task.");
+        " stylesheetBundle as shown in the 'default-example'");
 
     done();
 });
