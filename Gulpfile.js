@@ -26,11 +26,6 @@ var reporter = require('postcss-reporter');
 var stylelint = require('stylelint');
 
 /**
- * gulp-parker - Gulp plugin for parker, a stylesheet analysis tool.
- */
-var parker = require('gulp-parker');
-
-/**
  * del - Delete files/folders using globs
  */
 
@@ -354,24 +349,6 @@ gulp.task('dev:stylelint', function ()
         //, '!./Content/css/src/_settings/**/*.css']
   )
   .pipe(postcss(processors));
-});
-
-gulp.task('dev:parker', function () {
-
-    del(['./report.md']);
-
-    return gulp.src(
-        // Stylesheet source:
-        ['./Content/css/src/**/*.css',
-            // Ignore linting vendor assets:
-            '!./Content/css/src/vendor/**/*.css',
-            '!./Content/css/src/utilities/debug.css',
-            '!./Content/css/src/base/00-Normalize.css']
-    )
-        .pipe(parker({
-            file: 'report.md'
-        }))
-        .pipe(log("Markdown File (report.md) is located at the root of the Solution"));
 });
 
 gulp.task('dev:normalize-css-styles', function () {
