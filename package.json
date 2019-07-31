@@ -1,7 +1,12 @@
 {
   "name": "falkner",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "private": true,
+  "scripts": {
+    "build": "gulp default-example",
+    "clean": "gulp production:Clean",
+    "lint": "gulp dev:stylelint"
+  },
   "devDependencies": {
     "autoprefixer": "9.4.6",
     "browserslist": "4.4.1",
