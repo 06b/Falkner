@@ -1,9 +1,4 @@
-﻿/*
-This file in the main entry point for defining Gulp tasks and using Gulp plugins.
-Click here to learn more. http://go.microsoft.com/fwlink/?LinkId=518007
-*/
-
-var gulp = require('gulp');
+﻿var gulp = require('gulp');
 
 /**
  * PostCSS - Tool for transforming styles with JS plugins
@@ -186,6 +181,16 @@ var stylesheetBundle = [
  * End Bundle Config
  *********************************************************************/
 
+var cssNanoOptions = cssnano({
+    preset: ['default', {
+    discardComments: {
+        removeAll: true
+    },
+    normalizeCharset: true,
+    }
+]});
+
+
 gulp.task('production:Clean', done => {
     console.log('Deleting Old Preparation/Build/Etc Folders');
     del(['./Content/css/preparation']);
@@ -207,14 +212,7 @@ gulp.task('production:Prepare-custom-properties', gulp.series('production:Clean'
         // cssnano also does what orderValues does
         .pipe(postcss([
             autoprefixer(),
-            cssnano({
-                preset: ['default', {
-                    discardComments: {
-                        removeAll: true
-                    },
-                    normalizeCharset: true,
-                }]
-            })
+            cssNanoOptions
         ]))
         .pipe(log("Project Settings Minification Complete"))
         .pipe(gulp.dest('./Content/css/preparation/_settings/'));
@@ -292,14 +290,7 @@ gulp.task('production:Minification', gulp.series('production:Optimization', func
         .pipe(log(" - Minification - CSSNano: Modular Minifier"))
         .pipe(postcss([
             autoprefixer(),
-            cssnano({
-                preset: ['default', {
-                    discardComments: {
-                        removeAll: true
-                    },
-                    normalizeCharset: true,
-                }]
-            })
+            cssNanoOptions
         ]))
         .pipe(log("Ending PostCSS"))
         .pipe(gulp.dest('./Content/css/minification/'));
@@ -397,14 +388,7 @@ gulp.task('default-example', gulp.series('production:Concatenation', function (d
         .pipe(log(" - Minification - CSSNano: Modular Minifier"))
         .pipe(postcss([
             autoprefixer(),
-            cssnano({
-                preset: ['default', {
-                    discardComments: {
-                        removeAll: true
-                    },
-                    normalizeCharset: true,
-                }]
-            })
+            cssNanoOptions
         ]))
         .pipe(log("Ending PostCSS"))
         .pipe(rename("core.css"))
