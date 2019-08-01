@@ -27,9 +27,11 @@ var stylelint = require('stylelint');
 var del = require('del');
 
 /**
- * Gulp Log2 - Support for simple log statements in the gulp pipeline
+ * gulp-displaylog - Gulp extension to log any text to the console.
  */
-var log = require('gulp-log2');
+
+var log = require('gulp-displaylog');
+
 
 /**
  * PostCSS Discard Duplicates - Discard duplicate rules in your CSS files with PostCSS.
@@ -214,13 +216,13 @@ gulp.task('production:Prepare-custom-properties', gulp.series('production:Clean'
         " strip out the comments to avoid it being added to each stylesheet.");
 
     return gulp.src('./Content/css/src/_settings/project.css')
-        .pipe(log("Starting Minification on project settings"))
+        .pipe(log({title:"Starting Minification on project settings", showFiles: false}))
         // cssnano also does what orderValues does
         .pipe(postcss([
             autoprefixer(),
             cssNanoOptions
         ]))
-        .pipe(log("Project Settings Minification Complete"))
+        .pipe(log({title:"Project Settings Minification Complete", showFiles: false}))
         .pipe(gulp.dest('./Content/css/preparation/_settings/'));
 
 }));
@@ -279,10 +281,10 @@ gulp.task('production:Optimization', gulp.series('production:Polyfilling-custom-
     console.log("This task is similar to `dev:normalize-css-styles` however it is assumed that any polyfilling steps would be completed before running this task.");
 
     return gulp.src(cssSrc)
-        .pipe(log("Starting PostCSS"))
-        .pipe(log(" - Optimization - Discard Duplicates: Discard duplicate rules in your CSS files."))
-        .pipe(log(" - Optimization - Ordered Values: Ensure values are ordered consistently in your CSS."))
-        .pipe(log(" - Optimization - Sorting: sorting CSS Properties within each selector declaration."))
+        .pipe(log({title:"Starting PostCSS", showFiles: false}))
+        .pipe(log({title:" - Optimization - Discard Duplicates: Discard duplicate rules in your CSS files.", showFiles: false}))
+        .pipe(log({title:" - Optimization - Ordered Values: Ensure values are ordered consistently in your CSS.", showFiles: false}))
+        .pipe(log({title:" - Optimization - Sorting: sorting CSS Properties within each selector declaration.", showFiles: false}))
         .pipe(postcss([
             discardDuplicates(),
             // Support: CSS Build Process - autoprefixer ignoring disable comments.
@@ -303,7 +305,7 @@ gulp.task('production:Optimization', gulp.series('production:Polyfilling-custom-
             // Fix: Instead of using CSSComb make use of postcss-sorting
             sorting(postcssSortingPropertiesOrder),
         ]))
-        .pipe(log("Ending PostCSS"))
+        .pipe(log({title:"Ending PostCSS", showFiles: false}))
         .pipe(gulp.dest('./Content/css/optimization/'));
 }));
 
@@ -312,13 +314,13 @@ gulp.task('production:Minification', gulp.series('production:Optimization', func
     var cssSrc = './Content/css/optimization/{base,components,components/**,layout,objects,scope,theme,utilities,utilities/**,vendor,vendor/**}/*.css';
 
     return gulp.src(cssSrc)
-        .pipe(log("Starting PostCSS"))
-        .pipe(log(" - Minification - CSSNano: Modular Minifier"))
+        .pipe(log({title:"Starting PostCSS", showFiles: false}))
+        .pipe(log({title:" - Minification - CSSNano: Modular Minifier", showFiles: false}))
         .pipe(postcss([
             autoprefixer(),
             cssNanoOptions
         ]))
-        .pipe(log("Ending PostCSS"))
+        .pipe(log({title:"Ending PostCSS", showFiles: false}))
         .pipe(gulp.dest('./Content/css/minification/'));
 }));
 
@@ -380,7 +382,7 @@ gulp.task('dev:normalize-css-styles', function () {
     ];
 
     return gulp.src(cssSrc)
-        .pipe(log("Starting PostCSS"))
+        .pipe(log({title:"Starting PostCSS", showFiles: false}))
         .pipe(postcss([
             discardDuplicates(),
             // Support: CSS Build Process - autoprefixer ignoring disable comments.
@@ -401,9 +403,9 @@ gulp.task('dev:normalize-css-styles', function () {
             // Fix: Instead of using CSSComb make use of postcss-sorting
             sorting(postcssSortingPropertiesOrder),
         ]))
-        .pipe(log("Ending PostCSS"))
+        .pipe(log({titile:"Ending PostCSS", showFiles: false}))
         .pipe(gulp.dest('./Content/css/normalized'))
-        .pipe(log("CSS Normalization is complete, compare changes in src against normalized"));
+        .pipe(log({titile:"CSS Normalization is complete, compare changes in src against normalized", showFiles: false}));
 });
 
 gulp.task('isolated-debug:node-version', done => {
@@ -423,13 +425,13 @@ gulp.task('default-example', gulp.series('production:Concatenation', function (d
         " stylesheetBundle as shown in this example.");
 
     gulp.src("./Content/css/concatenation/bundle.css")
-        .pipe(log("Starting PostCSS"))
-        .pipe(log(" - Minification - CSSNano: Modular Minifier"))
+        .pipe(log({title:"Starting PostCSS", showFiles: false}))
+        .pipe(log({title:" - Minification - CSSNano: Modular Minifier", showFiles: false}))
         .pipe(postcss([
             autoprefixer(),
             cssNanoOptions
         ]))
-        .pipe(log("Ending PostCSS"))
+        .pipe(log({title:"Ending PostCSS", showFiles: false}))
         .pipe(rename("core.css"))
         .pipe(gulp.dest('./Content/css/dist/'));
 
