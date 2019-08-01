@@ -1,6 +1,6 @@
 {
   "name": "falkner",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "private": true,
   "scripts": {
     "build": "gulp default-example",
@@ -15,7 +15,6 @@
     "glob": "7.1.4",
     "gulp": "4.0.2",
     "gulp-concat": "2.6.1",
-    "gulp-csscomb": "3.0.8",
     "gulp-log2": "0.1.3",
     "gulp-postcss": "8.0.0",
     "gulp-rename": "1.4.0",
@@ -25,6 +24,7 @@
     "postcss-discard-duplicates": "4.0.2",
     "postcss-ordered-values": "4.1.2",
     "postcss-reporter": "6.0.1",
+    "postcss-sorting": "^5.0.1",
     "q": "1.5.1",
     "stylelint": "10.1.0"
   },

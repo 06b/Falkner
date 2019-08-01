@@ -27,11 +27,6 @@ var stylelint = require('stylelint');
 var del = require('del');
 
 /**
- * CSSComb - Sorts CSS Properties within each selector declaration in a predefined order to improve maintenance.
- */
-var csscomb = require('gulp-csscomb');
-
-/**
  * Gulp Log2 - Support for simple log statements in the gulp pipeline
  */
 var log = require('gulp-log2');
@@ -81,6 +76,17 @@ var autoprefixer = require('autoprefixer');
  * gulp-rename - Rename files easily.
  */
 var rename = require('gulp-rename');
+
+/**
+ * postcss-sorting - PostCSS plugin to keep rules and at-rules content in order
+ */
+var sorting = require("postcss-sorting");
+
+/**
+ * External config rules for sorting styles
+ */
+var postcssSortingPropertiesOrder = require("./postcss-sorting.json");
+
 
 /**********************************************************************
  * Bundle Config
@@ -276,14 +282,28 @@ gulp.task('production:Optimization', gulp.series('production:Polyfilling-custom-
         .pipe(log("Starting PostCSS"))
         .pipe(log(" - Optimization - Discard Duplicates: Discard duplicate rules in your CSS files."))
         .pipe(log(" - Optimization - Ordered Values: Ensure values are ordered consistently in your CSS."))
+        .pipe(log(" - Optimization - Sorting: sorting CSS Properties within each selector declaration."))
         .pipe(postcss([
             discardDuplicates(),
-            orderedValues()
+            // Support: CSS Build Process - autoprefixer ignoring disable comments.
+            // Details: CSS Nano was originally used in this step which did the what postcss-ordered-values did, however it also removed autoprefixer's
+            //          disable comments which caused autoprefixer to prefix items it was told to ignore in a future step.
+            // Fix: Instead of using CSSNano in this step, use postcss-ordered-values
+
+            // Support: Performance - GZIP
+            // Details: Ensure values are ordered consistently in the css. - https://github.com/ben-eb/postcss-ordered-values
+            // Additional Details: Doing so should help gzip as it will help create a more consistent pattern.
+            orderedValues(),
+            // Support: Performance - GZIP
+            // Details: Sort CSS Properties as defined by `postcssSortingPropertiesOrder`. - https://github.com/hudochenkov/postcss-sorting
+            // Additional Details: Doing so should help gzip as it will help create a more consistent pattern.
+
+            // Support: CSS Build Process - npm script CSSComb
+            // Details: It appears that when using the css insensitive attribute selector, the build process breaks.
+            // Fix: Instead of using CSSComb make use of postcss-sorting
+            sorting(postcssSortingPropertiesOrder),
         ]))
         .pipe(log("Ending PostCSS"))
-        .pipe(log("Starting CSSComb - sorting CSS Properties within each selector declaration"))
-        .pipe(csscomb())
-        .pipe(log("Ending CSSComb"))
         .pipe(gulp.dest('./Content/css/optimization/'));
 }));
 
@@ -363,12 +383,25 @@ gulp.task('dev:normalize-css-styles', function () {
         .pipe(log("Starting PostCSS"))
         .pipe(postcss([
             discardDuplicates(),
-            orderedValues()
+            // Support: CSS Build Process - autoprefixer ignoring disable comments.
+            // Details: CSS Nano was originally used in this step which did the what postcss-ordered-values did, however it also removed autoprefixer's
+            //          disable comments which caused autoprefixer to prefix items it was told to ignore in a future step.
+            // Fix: Instead of using CSSNano in this step, use postcss-ordered-values
+
+            // Support: Performance - GZIP
+            // Details: Ensure values are ordered consistently in the css. - https://github.com/ben-eb/postcss-ordered-values
+            // Additional Details: Doing so should help gzip as it will help create a more consistent pattern.
+            orderedValues(),
+            // Support: Performance - GZIP
+            // Details: Sort CSS Properties as defined by `postcssSortingPropertiesOrder`. - https://github.com/hudochenkov/postcss-sorting
+            // Additional Details: Doing so should help gzip as it will help create a more consistent pattern.
+
+            // Support: CSS Build Process - npm script CSSComb
+            // Details: It appears that when using the css insensitive attribute selector, the build process breaks.
+            // Fix: Instead of using CSSComb make use of postcss-sorting
+            sorting(postcssSortingPropertiesOrder),
         ]))
         .pipe(log("Ending PostCSS"))
-        .pipe(log("Starting CSSComb - sorting CSS Properties within each selector declaration"))
-        .pipe(csscomb())
-        .pipe(log("Ending CSSComb"))
         .pipe(gulp.dest('./Content/css/normalized'))
         .pipe(log("CSS Normalization is complete, compare changes in src against normalized"));
 });
