@@ -244,8 +244,14 @@ gulp.task('production:Polyfilling-custom-properties', gulp.series('production:Pr
             var defer = Q.defer();
             var pipeline = gulp.src(polyfillStylesheets)
                 .pipe(concat(polyfillStylesheets[1].replace("./Content/css/src/", "")))
-                //TODO: Fix
-                //.pipe(postcss([customProperties]))
+                .pipe(postcss([
+                // Support: IE11 & Browsers that don't support W3C CSS Custom Properties
+                // Details: Use a polyfill (postcss-custom-properties) for the build process step which should copy the custom property fallback value and
+                //          insert the fallback in the declaration for older browser support that don't support custom properties.
+                    customProperties({
+                        warnings: true, // Sets whether Custom Property related warnings should be logged by the plugin or not. By default, warnings are set to false and are not logged.
+                    }),
+                ]))
                 .pipe(gulp.dest('./Content/css/preparation/'));
 
             pipeline.on('end', function () {
