@@ -62,7 +62,13 @@
 .c-progressive-media__proxy--smooth-sharpen
 {
     filter: blur(1px); /* N7 */
-    transition: filter 2.5s ease-out; /* N7 */
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-progressive-media__proxy--smooth-sharpen
+    {
+        transition: filter 2.5s ease-out; /* N7 */
+    }
 }
 
 .c-progressive-media__content--transparency-fix

@@ -34,7 +34,13 @@
     visibility: hidden;
     max-height: 0;
     opacity: 0;
-    transition: max-height 0.1s, visibility 0.3s, opacity 0.3s;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-collapse__section
+    {
+        transition: max-height 0.1s, visibility 0.3s, opacity 0.3s;
+    }
 }
 
 .c-collapse__button:checked ~ .c-collapse__section

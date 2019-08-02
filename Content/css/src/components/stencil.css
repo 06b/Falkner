@@ -451,8 +451,15 @@
     background: linear-gradient(-90deg, var(--t-background-stencil) 0, var(--t-background-stencil--loading) 20%, var(--t-background-stencil) 40%, var(--t-background-stencil) 100%);
     /* stylelint-enable max-line-length */
     background-size: 300% 300%;
-    animation: stencil-loading 2.4s ease-in-out infinite; /* N2 */
     will-change: background-position;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-stencil.is-loading,
+    .is-loading .c-stencil
+    {
+        animation: stencil-loading 2.4s ease-in-out infinite; /* N2 */
+    }
 }
 
 @keyframes stencil-loading
