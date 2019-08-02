@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Swing port from Animate.css - http://daneden.me/animate
  *
  * Notes:
@@ -42,7 +42,13 @@
 .u-swing
 {
     transform-origin: top center;
-    animation-name: swing;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .u-swing
+    {
+        animation-name: swing;
+    }
 }
 
 .u-swing--hint
