@@ -99,6 +99,36 @@
     padding-right: var(--t-gutter--huge);
 }
 
+.o-flag--reverse.o-flag--tiny > .o-flag__image
+{
+    padding-right: 0;
+    padding-left: var(--t-gutter--tiny);
+}
+
+.o-flag--reverse.o-flag--small > .o-flag__image
+{
+    padding-right: 0;
+    padding-left: var(--t-gutter--small);
+}
+
+.o-flag--reverse.o-flag--medium > .o-flag__image
+{
+    padding-right: 0;
+    padding-left: var(--t-gutter--medium);
+}
+
+.o-flag--reverse.o-flag--large > .o-flag__image
+{
+    padding-right: 0;
+    padding-left: var(--t-gutter--large);
+}
+
+.o-flag--reverse.o-flag--huge > .o-flag__image
+{
+    padding-right: 0;
+    padding-left: var(--t-gutter--huge);
+}
+
 .o-flag--collapse,
 .o-flag--collapse > .o-flag__body
 {
