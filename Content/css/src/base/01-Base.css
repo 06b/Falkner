@@ -66,6 +66,16 @@ body
 
 
 /**
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea
+{
+    resize: vertical;
+}
+
+
+/**
  * Placeholder styles
  *
  * Experimental: The `::placeholder` css pseudo-element has not been stabilized and is considered experimental technology.
@@ -152,16 +162,6 @@ fieldset
     margin: 0;
     padding: 0;
     border: 0;
-}
-
-
-/**
- * Allow only vertical resizing of textareas.
- */
-
-textarea
-{
-    resize: vertical;
 }
 
 
