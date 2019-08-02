@@ -275,4 +275,4 @@ rules:
      plugin/value-no-exposed-custom-properties: true
 
    # https://github.com/csstools/stylelint-value-no-unknown-custom-properties
-   #  csstools/value-no-unknown-custom-properties: true
+     csstools/value-no-unknown-custom-properties: [true, { "importFrom": ['./Content/css/src/_settings/project.css']}]
