@@ -31,3 +31,8 @@
 {
     height: 100vh !important;
 }
+
+.u-height--auto
+{
+    height: auto !important;
+}
