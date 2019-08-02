@@ -7,10 +7,7 @@
 {
     display: flex;
     height: 100%;
-
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 .c-archipelago .c-seastack
@@ -29,17 +26,12 @@
 .c-archipelago > .o-island
 {
     display: flex;
-
-    -webkit-flex: 1.5;
-        -ms-flex: 1.5;
-            flex: 1.5;
+    flex: 1.5;
 }
 
 .c-archipelago > .o-islet
 {
-    -webkit-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+    flex: 1;
 }
 
 .c-archipelago > .o-island.u-overflow-y-auto
