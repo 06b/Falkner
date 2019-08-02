@@ -2,7 +2,8 @@ extends: "stylelint-config-recommended"
 
 plugins: ["stylelint-a11y",
          "stylelint-csstree-validator",
-         "stylelint-declaration-block-no-ignored-properties",]
+         "stylelint-declaration-block-no-ignored-properties",
+         "stylelint-declaration-use-variable",]
 
 rules:
   #From https://stylelint.io/user-guide/example-config/
@@ -221,3 +222,11 @@ rules:
 
    # https://github.com/kristerkari/stylelint-declaration-block-no-ignored-properties
      plugin/declaration-block-no-ignored-properties: true
+
+   # https://github.com/sh-waqar/stylelint-declaration-use-variable
+     sh-waqar/declaration-use-variable:
+       [["color",
+        { ignoreValues:
+           ["currentColor"]
+        }
+       ]]
