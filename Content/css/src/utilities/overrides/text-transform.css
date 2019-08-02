@@ -1,8 +1,13 @@
 /**
- * Changes text case to uppercase
+ * Text transform classes
  */
 
-.u-text-all-caps
+.u-text-transform
+{
+    text-transform: none;
+}
+
+.u-text-transform--uppercase
 {
     text-transform: uppercase;
 }
