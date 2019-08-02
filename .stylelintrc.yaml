@@ -1,3 +1,5 @@
+extends: "stylelint-config-recommended"
+
 rules:
   #From https://stylelint.io/user-guide/example-config/
   #   at-rule-blacklist: string|[]
