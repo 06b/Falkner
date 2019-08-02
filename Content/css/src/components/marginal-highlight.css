@@ -26,14 +26,14 @@
 .c-marginal-highlight--success
 {
     background-color: var(--t-background-success);
-    background-image: linear-gradient(45deg, transparent 50%, rgba(0,0,0,0.1) 50%);
+    background-image: linear-gradient(45deg, transparent 50%, rgba(0, 0, 0, 0.1) 50%);
     background-size: 8px 8px;
 }
 
 .c-marginal-highlight--alert
 {
     background-color: var(--t-background-alert);
-    background-image: repeating-linear-gradient(45deg, transparent, transparent 5px, rgba(255,255,255,0.5) 5px, rgba(255,255,255,0.5) 10px);
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 5px, rgba(255, 255, 255, 0.5) 5px, rgba(255, 255, 255, 0.5) 10px);
 }
 
 .c-marginal-highlight--failure
