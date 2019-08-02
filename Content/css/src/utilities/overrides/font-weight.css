@@ -3,6 +3,8 @@
  * These are specific typography related utilities
  */
 
+/* stylelint-disable declaration-no-important */
+
 .u-font-weight
 {
     font-weight: inherit !important;

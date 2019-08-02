@@ -5,6 +5,8 @@
  *
  */
 
+/* stylelint-disable declaration-no-important */
+
 .u-height--zero
 {
     height: 0 !important;

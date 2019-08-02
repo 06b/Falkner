@@ -2,6 +2,8 @@
  * Text alignment classes
  */
 
+/* stylelint-disable declaration-no-important */
+
 .u-text-left
 {
     text-align: left !important;

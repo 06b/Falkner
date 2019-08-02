@@ -2,6 +2,8 @@
  * Adds cursor:pointer for that should appear clickable
  */
 
+/* stylelint-disable declaration-no-important */
+
 .u-clickable
 {
     cursor: pointer;

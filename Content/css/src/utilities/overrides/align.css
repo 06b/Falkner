@@ -2,6 +2,8 @@
  * Vertical Alignment utilities - Note this depends on the appropriate `display` value.
  */
 
+/* stylelint-disable declaration-no-important */
+
 .u-align-baseline
 {
     vertical-align: baseline !important;

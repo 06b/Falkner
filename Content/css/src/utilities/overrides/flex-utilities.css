@@ -2,6 +2,8 @@
  * Use Flexbox to vertically center align things
  */
 
+/* stylelint-disable declaration-no-important */
+
 .u-flex-vertical-center
 {
     display: flex;

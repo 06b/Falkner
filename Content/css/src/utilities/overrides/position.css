@@ -2,6 +2,8 @@
  * Absolutely position an element
  */
 
+/* stylelint-disable declaration-no-important */
+
 .u-position-absolute
 {
     position: absolute !important;

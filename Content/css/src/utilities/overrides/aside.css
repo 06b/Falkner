@@ -22,6 +22,8 @@
  *
  */
 
+/* stylelint-disable declaration-no-important */
+
 .u-aside-top
 {
     margin-top: var(--t-gutter) !important;

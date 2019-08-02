@@ -2,6 +2,8 @@
  * Removes the border from elements
  */
 
+/* stylelint-disable declaration-no-important */
+
 .u-strip-border
 {
     border: 0 !important;

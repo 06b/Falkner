@@ -2,6 +2,8 @@
  * Used to force an element to display block
  */
 
+/* stylelint-disable declaration-no-important */
+
 .u-force-block
 {
     display: block !important;
