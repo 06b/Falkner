@@ -32,6 +32,8 @@
  *
  */
 
+/* stylelint-disable a11y/content-property-no-static-value */
+
 .o-navigation
 {
     padding-left: 0;
