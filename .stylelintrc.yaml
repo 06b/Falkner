@@ -1,6 +1,7 @@
 extends: "stylelint-config-recommended"
 
-plugins: ["stylelint-a11y"]
+plugins: ["stylelint-a11y",
+         "stylelint-csstree-validator",]
 
 rules:
   #From https://stylelint.io/user-guide/example-config/
@@ -211,3 +212,8 @@ rules:
      a11y/no-outline-none: true
      a11y/no-text-align-justify: true
      a11y/selector-pseudo-class-focus: true
+
+   # NOTE: csstree/validator only checks if declaration values match w3c specs and browser extensions.
+   # https://github.com/csstree/validator
+   # The `property-no-vendor-prefix` rule will handle '-ms-grid-columns'
+     csstree/validator: {ignore: ['-ms-grid-columns']}
