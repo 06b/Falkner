@@ -42,7 +42,7 @@
     z-index: 1;
     overflow: hidden;
     background-position: center; /* N1 */
-    background-size: cover; /* N1*/
+    background-size: cover; /* N1 */
     background-repeat: no-repeat; /* N1 */
     filter: blur(5px); /* N1 */
 }

@@ -20,7 +20,7 @@
 
 .c-marginal-highlight
 {
-    padding-left: var(--t-gutter); /* N1*/
+    padding-left: var(--t-gutter); /* N1 */
 }
 
 .c-marginal-highlight--success
