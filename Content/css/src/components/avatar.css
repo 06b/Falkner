@@ -9,21 +9,17 @@
  *
  * Notes:
  * N1. `background-size: cover;` within `.c-avatar` is used when loading background-urls to mimic progressive image rendering
+ * N2. Avatars have a fixed width & height so don't treat them as a fluid image.
  *
  */
 
 .c-avatar
 {
-    overflow: hidden;
-    width: 5rem;
     height: 5rem;
+    width: 5rem;
     background-size: cover;
-}
-
-.c-avatar--gargantuan
-{
-    width: 8.75rem;
-    height: 8.75rem;
+    overflow: hidden;
+    max-width: none; /* N2 */
 }
 
 .c-avatar--huge
