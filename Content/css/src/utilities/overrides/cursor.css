@@ -18,3 +18,13 @@
 {
     cursor: default !important;
 }
+
+
+/**
+ * Control whether the user can select the text or not.
+ */
+
+.u-prevent-selection
+{
+    user-select: none;
+}
