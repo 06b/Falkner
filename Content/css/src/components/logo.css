@@ -13,7 +13,7 @@
     position: relative; /* N2 */
 }
 
-.c-logo:before
+.c-logo::before
 {
     display: block; /* N2 */
     padding-top: 4rem; /* N1 */

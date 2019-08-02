@@ -11,7 +11,7 @@
 {
 }
 
-.c-header-navigation > li + li[data-breadcrumb]:before
+.c-header-navigation > li + li[data-breadcrumb]::before
 {
 }
 
