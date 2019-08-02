@@ -9,8 +9,8 @@
 .u-text-ellipsis
 {
     overflow: hidden;
-    text-overflow: ellipsis;
     white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 
@@ -51,4 +51,22 @@
 .u-text-whitespace--nowrap
 {
     white-space: nowrap;
+}
+
+.u-text-whitespace--pre
+{
+    white-space: pre;
+}
+
+.u-text-whitespace--pre-wrap
+{
+    white-space: pre-wrap;
+}
+
+/**
+ * `white-space: pre-line;` will collapse sequences of whitespace however will honor the newline character. https://stackoverflow.com/questions/39325414/line-break-in-html-with-n
+ */
+.u-text-whitespace--pre-line
+{
+    white-space: pre-line;
 }
