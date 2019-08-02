@@ -2851,7 +2851,7 @@ lodash.uniq@^4.5.0:
   resolved "https://registry.yarnpkg.com/lodash.uniq/-/lodash.uniq-4.5.0.tgz#d0225373aeb652adc1bc82e4945339a842754773"
   integrity sha1-0CJTc662Uq3BvILklFM5qEJ1R3M=
 
-lodash@^4.1.0, lodash@^4.17.11, lodash@^4.17.13, lodash@^4.17.14, lodash@^4.17.4:
+lodash@^4.1.0, lodash@^4.17.11, lodash@^4.17.13, lodash@^4.17.14, lodash@^4.17.4, lodash@^4.17.5:
   version "4.17.15"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
   integrity sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
@@ -4925,6 +4925,13 @@ stylelint-selector-no-empty@^1.0.7:
   integrity sha512-407THCBbmfiD7oDv1HmWJiiQOhL8zOLxdxHofTlXrHe3jmxhGJIQLskQddv7wsOi9p/8NK2CaCUn9aOLfEb5Wg==
   dependencies:
     stylelint "^9.2.1"
+
+stylelint-selector-tag-no-without-class@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/stylelint-selector-tag-no-without-class/-/stylelint-selector-tag-no-without-class-2.0.1.tgz#4eda69a563933a0abe5e5e8269b4433333bd3c36"
+  integrity sha512-W7uMCakg3nuPyaI/ezFx5mpg/paU897QFc4EBx6SD8F+Z2rb4qq3VsIzmA758+Q2Kb9TVA7l0BvuvS0fbm2V9g==
+  dependencies:
+    lodash "^4.17.5"
 
 stylelint@^10.1.0:
   version "10.1.0"

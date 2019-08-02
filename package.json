@@ -36,7 +36,8 @@
     "stylelint-no-browser-hacks": "^1.2.1",
     "stylelint-no-indistinguishable-colors": "^1.2.1",
     "stylelint-no-unsupported-browser-features": "^3.0.2",
-    "stylelint-selector-no-empty": "^1.0.7"
+    "stylelint-selector-no-empty": "^1.0.7",
+    "stylelint-selector-tag-no-without-class": "^2.0.1"
   },
   "browserslist": [
     "> 1% in us",

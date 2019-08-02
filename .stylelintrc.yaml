@@ -8,7 +8,8 @@ plugins: ["stylelint-a11y",
          "stylelint-no-browser-hacks/lib",
          "stylelint-no-indistinguishable-colors",
          "stylelint-no-unsupported-browser-features",
-         "stylelint-selector-no-empty",]
+         "stylelint-selector-no-empty",
+         "stylelint-selector-tag-no-without-class",]
 
 rules:
   #From https://stylelint.io/user-guide/example-config/
@@ -258,3 +259,6 @@ rules:
 
    # https://github.com/ssivanatarajan/stylelint-selector-no-empty
      plugin/stylelint-selector-no-empty: true
+
+   # https://github.com/Moxio/stylelint-selector-tag-no-without-class
+     plugin/selector-tag-no-without-class: ["div", "span"]
