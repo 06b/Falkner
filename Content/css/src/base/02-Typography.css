@@ -85,25 +85,25 @@ q
     quotes: "\2018" "\2019" "\201C" "\201D";
 }
 
-q:before
+q::before
 {
     content: "\2018";
     content: open-quote;
 }
 
-q:after
+q::after
 {
     content: "\2019";
     content: close-quote;
 }
 
-q q:before
+q q::before
 {
     content: "\201C";
     content: open-quote;
 }
 
-q q:after
+q q::after
 {
     content: "\201D";
     content: close-quote;
@@ -115,25 +115,25 @@ blockquote
     text-indent: -0.41rem; /* 1 */
 }
 
-blockquote p:before
+blockquote p::before
 {
     content: "\201C";
     content: open-quote;
 }
 
-blockquote p:after
+blockquote p::after
 {
     content: "";
     content: no-close-quote;
 }
 
-blockquote q:before
+blockquote q::before
 {
     content: "\2018";
     content: open-quote;
 }
 
-blockquote q:after
+blockquote q::after
 {
     content: "\2019";
     content: close-quote;
@@ -144,7 +144,7 @@ blockquote p:last-of-type
     margin-bottom: 0;
 }
 
-blockquote p:last-of-type:after
+blockquote p:last-of-type::after
 {
     content: "\201D";
     content: close-quote;
