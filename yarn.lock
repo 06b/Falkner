@@ -4947,6 +4947,11 @@ stylelint-suitcss@^3.0.0:
     postcss-selector-parser "^2.2.3"
     stylelint "^9.0.0"
 
+stylelint-value-no-exposed-custom-properties@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/stylelint-value-no-exposed-custom-properties/-/stylelint-value-no-exposed-custom-properties-2.2.0.tgz#e893d8bff68afd33db694ccca83f0195c1e2c35e"
+  integrity sha512-GYKMUAgiqje3ZzdwcufPueDPSAFAumguPFZf4/HAzCp0z0Y26VEsQnfbUtCVlEixITiXtUnw6E+vJzpxdMtAfg==
+
 stylelint@^10.1.0:
   version "10.1.0"
   resolved "https://registry.yarnpkg.com/stylelint/-/stylelint-10.1.0.tgz#1bc4c4ce878107e7c396b19226d91ba28268911a"

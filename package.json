@@ -38,7 +38,8 @@
     "stylelint-no-unsupported-browser-features": "^3.0.2",
     "stylelint-selector-no-empty": "^1.0.7",
     "stylelint-selector-tag-no-without-class": "^2.0.1",
-    "stylelint-suitcss": "^3.0.0"
+    "stylelint-suitcss": "^3.0.0",
+    "stylelint-value-no-exposed-custom-properties": "^2.2.0"
   },
   "browserslist": [
     "> 1% in us",
