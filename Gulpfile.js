@@ -364,7 +364,8 @@ gulp.task('dev:stylelint', function ()
         // Ignore linting vendor assets:
             '!./Content/css/src/vendor/**/*.css',
             '!./Content/css/src/utilities/debug.css',
-            '!./Content/css/src/base/00-Normalize.css']
+            '!./Content/css/src/base/00-Normalize.css',
+            '!./src/css/utilities/print.css']
         //, '!./Content/css/src/_settings/**/*.css']
   )
   .pipe(postcss(processors));
