@@ -1,4 +1,4 @@
-﻿/*!
+﻿/**
  * WARNING: scope should be used sparingly - these should be used for a new styling context but may not necessarily cosmetic.
  *
  * Scope can be open to abuse and lead to poor CSS if not used wisely. If you find yourself having to call a certain scope style in multiple locations
@@ -15,29 +15,27 @@
  * Number Input Spinner Adjustment
  *
  * Support: Chrome 59+
- * Details: When requested to disable the spinner button across all browsers.
+ * Details: When requested to remove the spinner (up & down arrow) styles from number inputs.
  * Supporting Details: https://stackoverflow.com/questions/3790935/can-i-hide-the-html5-number-input-s-spin-box/27935448#27935448
  * Additional Details: https://css-tricks.com/numeric-inputs-a-comparison-of-browser-defaults/
- * Workaround: Use the `s-disable-spinners` scope class when it is requested to hide the up and down spin buttons on a number input either by wrapping the input
- * or adding the class to the input directly.
+ * Workaround: Wrap the number input with the `s-remove-spinners` scope class when it is requested to hide the up and down spin buttons.
  *
  * Notes:
  * N1. Apparently some margin exists even if it's hidden.
  *
  */
-/* stylelint-disable property-no-vendor-prefix */
-.s-disable-spinners input[type="number"]::-webkit-outer-spin-button,
-.s-disable-spinners input[type="number"]::-webkit-inner-spin-button,
-input[type="number"].s-disable-spinners::-webkit-outer-spin-button,
-input[type="number"].s-disable-spinners::-webkit-inner-spin-button
-{
-    margin: 0; /* N1 */
-    -webkit-appearance: none;
-}
 
-.s-disable-spinners input[type="number"],
-input[type="number"].s-disable-spinners
-{
+/* stylelint-disable property-no-vendor-prefix */
+/* Support: Firefox */
+.s-remove-spinners input[type="number"] {
+    /* autoprefixer: off */
     -moz-appearance: textfield;
+}
+/* Support: Webkit browsers like Safari and Chrome */
+.s-remove-spinners input[type="number"]::-webkit-inner-spin-button,
+.s-remove-spinners input[type="number"]::-webkit-outer-spin-button {
+    /* autoprefixer: off */
+    -webkit-appearance: none;
+    margin: 0 /* N1 */;
 }
 /* stylelint-enable property-no-vendor-prefix */
