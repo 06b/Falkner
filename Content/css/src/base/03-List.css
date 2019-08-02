@@ -13,7 +13,7 @@ li > ol
  * Have a numbered 'ul' without the semantics implied by using an 'ol'.
  */
 
-/*ul*/
+/* ul */
 .numbered-list
 {
     list-style-type: decimal;
