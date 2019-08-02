@@ -8,25 +8,3 @@
  *
  */
 
-/**
- * The Example Page was done within the timespan of X with the following process - Human Name YYYY-MM-DD
- * 1) Due to time constraints only the ....
- * 2) Changes were made half way while being built which differed from original design/planning
- * 3) Still wasn't sent to be QA tested...
- * 4) This Is Fine.
- *
- */
-
-@media only screen and (max-width: 79.999375em)
-{
-    ._Example__ScrollArea
-    {
-        overflow: overlay;
-        overflow: auto;
-    }
-
-    ._Example__VisibleArea
-    {
-        width: 1195px;
-    }
-}
