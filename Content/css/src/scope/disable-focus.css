@@ -20,6 +20,8 @@
  *
  */
 
+/* stylelint-disable a11y/no-outline-none */
+
 body:not(.s-user-is-tabbing) button:focus,
 body:not(.s-user-is-tabbing) input:focus,
 body:not(.s-user-is-tabbing) select:focus,
