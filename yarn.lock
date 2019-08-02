@@ -4417,6 +4417,11 @@ stylelint-declaration-use-variable@^1.7.0:
   dependencies:
     stylelint "^9.1.1"
 
+stylelint-high-performance-animation@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/stylelint-high-performance-animation/-/stylelint-high-performance-animation-1.2.1.tgz#544ab13978707c19d1d581d079aa848fa709717a"
+  integrity sha512-jHkX30yZP7Z7/EdbS7XyBEn7tWgTZAeJ0XnRXIS776QnVy4FBzsE2GcY9oQPJOPk/z7DdBr4jjpSuh9tn8UeIw==
+
 stylelint@^10.1.0:
   version "10.1.0"
   resolved "https://registry.yarnpkg.com/stylelint/-/stylelint-10.1.0.tgz#1bc4c4ce878107e7c396b19226d91ba28268911a"

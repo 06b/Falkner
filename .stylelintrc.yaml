@@ -3,7 +3,8 @@ extends: "stylelint-config-recommended"
 plugins: ["stylelint-a11y",
          "stylelint-csstree-validator",
          "stylelint-declaration-block-no-ignored-properties",
-         "stylelint-declaration-use-variable",]
+         "stylelint-declaration-use-variable",
+         "stylelint-high-performance-animation",]
 
 rules:
   #From https://stylelint.io/user-guide/example-config/
@@ -230,3 +231,7 @@ rules:
            ["currentColor"]
         }
        ]]
+
+   # https://github.com/kristerkari/stylelint-high-performance-animation
+   # See: https://www.html5rocks.com/en/tutorials/speed/high-performance-animations/
+     plugin/no-low-performance-animation-properties: true
