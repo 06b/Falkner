@@ -219,7 +219,7 @@ button[disabled],
 html input[disabled],
 :disabled
 {
-    cursor: not-allowed !important;
+    cursor: not-allowed;
 }
 
 /**
