@@ -4919,6 +4919,13 @@ stylelint-no-unsupported-browser-features@^3.0.2:
     lodash "^4.17.4"
     postcss "^7.0.0"
 
+stylelint-selector-no-empty@^1.0.7:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/stylelint-selector-no-empty/-/stylelint-selector-no-empty-1.0.7.tgz#96f190ca8b4cac7995645b76daf803c57b02fa38"
+  integrity sha512-407THCBbmfiD7oDv1HmWJiiQOhL8zOLxdxHofTlXrHe3jmxhGJIQLskQddv7wsOi9p/8NK2CaCUn9aOLfEb5Wg==
+  dependencies:
+    stylelint "^9.2.1"
+
 stylelint@^10.1.0:
   version "10.1.0"
   resolved "https://registry.yarnpkg.com/stylelint/-/stylelint-10.1.0.tgz#1bc4c4ce878107e7c396b19226d91ba28268911a"
@@ -4973,7 +4980,7 @@ stylelint@^10.1.0:
     svg-tags "^1.0.0"
     table "^5.2.3"
 
-stylelint@^9.1, stylelint@^9.1.1:
+stylelint@^9.1, stylelint@^9.1.1, stylelint@^9.2.1:
   version "9.10.1"
   resolved "https://registry.yarnpkg.com/stylelint/-/stylelint-9.10.1.tgz#5f0ee3701461dff1d68284e1386efe8f0677a75d"
   integrity sha512-9UiHxZhOAHEgeQ7oLGwrwoDR8vclBKlSX7r4fH0iuu0SfPwFaLkb1c7Q2j1cqg9P7IDXeAV2TvQML/fRQzGBBQ==

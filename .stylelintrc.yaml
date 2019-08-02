@@ -7,7 +7,8 @@ plugins: ["stylelint-a11y",
          "stylelint-high-performance-animation",
          "stylelint-no-browser-hacks/lib",
          "stylelint-no-indistinguishable-colors",
-         "stylelint-no-unsupported-browser-features",]
+         "stylelint-no-unsupported-browser-features",
+         "stylelint-selector-no-empty",]
 
 rules:
   #From https://stylelint.io/user-guide/example-config/
@@ -254,3 +255,6 @@ rules:
    #   plugin/no-unsupported-browser-features:
    #    - true
    #    - severity: warning
+
+   # https://github.com/ssivanatarajan/stylelint-selector-no-empty
+     plugin/stylelint-selector-no-empty: true
