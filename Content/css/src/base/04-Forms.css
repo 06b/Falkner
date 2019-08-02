@@ -1,11 +1,11 @@
-﻿/**
+/**
  * Forms
  * Demo: jsfiddle.net/inuitcss/MhHHU
  *
  */
 
 fieldset {
-  padding: 24px;
+    padding: 24px;
 }
 
 /**
@@ -28,12 +28,12 @@ fieldset {
  *
  */
 .form-fields {
-  list-style: none;
-  margin: 0;
+    list-style: none;
+    margin: 0;
 }
 
 .form-fields > li:last-child {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 /**
@@ -63,7 +63,7 @@ fieldset {
  *
  */
 .label {
-  display: block;
+    display: block;
 }
 
 /**
@@ -73,8 +73,8 @@ fieldset {
  *
  */
 .additional {
-  display: block;
-  font-weight: normal;
+    display: block;
+    font-weight: normal;
 }
 
 /*
@@ -93,8 +93,8 @@ fieldset {
  *
  */
 .check-list {
-  list-style: none;
-  margin: 0;
+    list-style: none;
+    margin: 0;
 }
 
 /*
@@ -103,7 +103,7 @@ fieldset {
 .check-label,
 .check-list label,
 .check-list .label {
-  display: inline-block;
+    display: inline-block;
 }
 
 /**
@@ -122,8 +122,8 @@ fieldset {
  *
  */
 .spoken-form label {
-  display: inline-block;
-  font: inherit;
+    display: inline-block;
+    font: inherit;
 }
 
 /**
@@ -138,13 +138,13 @@ fieldset {
  * it reappears.
  *
  */
-/*small*/
+/* small */
 .extra-help {
-  display: inline-block;
-  visibility: hidden;
+    display: inline-block;
+    visibility: hidden;
 }
 
 .text-input:active + .extra-help,
 .text-input:focus + .extra-help {
-  visibility: visible;
+    visibility: visible;
 }

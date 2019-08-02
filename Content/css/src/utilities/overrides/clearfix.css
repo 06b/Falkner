@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Micro clearfix, as per: css-101.org/articles/clearfix/latest-new-clearfix-so-far.php
  * Multiple Patterns use this, so make sure to remove selectors as needed
  *
@@ -7,13 +7,13 @@
  *
  */
 
-.u-clearfix:after,
-.o-media:after,
-.o-module:after,
-.o-island:after,
-.o-islet:after,
-.o-navigation:after,
-.o-legend-key:after
+.u-clearfix::after,
+.o-media::after,
+.o-module::after,
+.o-island::after,
+.o-islet::after,
+.o-navigation::after,
+.o-legend-key::after
 {
     display: table;
     clear: both;

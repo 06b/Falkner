@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Navigation Abstraction
  * http://csswizardry.com/2011/09/the-nav-abstraction/
  *
@@ -47,12 +47,12 @@
 }
 
 /* ----- (extends navigation) ----- */
-.o-navigation--keywords > li:after
+.o-navigation--keywords > li::after
 {
     content: "\002C" "\00A0";
 }
 
-.o-navigation--keywords > li:last-child:after
+.o-navigation--keywords > li:last-child::after
 {
     display: none;
 }
@@ -180,7 +180,7 @@
  * 2b. Assigns a delimiter on the fly through a data attribute
  */
 
-.o-breadcrumb > li + li:before
+.o-breadcrumb > li + li::before
 {
     content: "\00BB" "\00A0";
 }
@@ -192,12 +192,12 @@
 
 
 /* ----- (extends breadcrumb) ----- */
-.o-breadcrumb--path > li + li:before
+.o-breadcrumb--path > li + li::before
 {
     content: "\002F" "\00A0";
 }
 
-.o-breadcrumb > li + li[data-breadcrumb]:before
+.o-breadcrumb > li + li[data-breadcrumb]::before
 {
     content: attr(data-breadcrumb) "\00A0"; /* 2b */
 }
