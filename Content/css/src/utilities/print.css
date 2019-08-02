@@ -22,10 +22,10 @@
 @media print
 {
     *,
-    *:before,
-    *:after,
-    *:first-letter,
-    *:first-line
+    *::before,
+    *::after,
+    *::first-letter,
+    *::first-line
     {
         background: transparent !important;
         box-shadow: none !important;
@@ -39,12 +39,12 @@
         text-decoration: underline;
     }
 
-    a[href]:after
+    a[href]::after
     {
         content: " (" attr(href) ")";
     }
 
-    abbr[title]:after
+    abbr[title]::after
     {
         content: " (" attr(title) ")";
     }
@@ -52,8 +52,8 @@
     /**
     * Don't show links that are fragment identifiers, or use the `javascript:` pseudo protocol
     */
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after
+    a[href^="#"]::after,
+    a[href^="javascript:"]::after
     {
         content: "";
     }
