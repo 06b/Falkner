@@ -11,7 +11,8 @@ plugins: ["stylelint-a11y",
          "stylelint-selector-no-empty",
          "stylelint-selector-tag-no-without-class",
          "stylelint-suitcss",
-         "stylelint-value-no-exposed-custom-properties",]
+         "stylelint-value-no-exposed-custom-properties",
+         "stylelint-value-no-unknown-custom-properties",]
 
 rules:
   #From https://stylelint.io/user-guide/example-config/
@@ -272,3 +273,6 @@ rules:
 
    # https://github.com/denisraslov/stylelint-value-no-exposed-custom-properties
      plugin/value-no-exposed-custom-properties: true
+
+   # https://github.com/csstools/stylelint-value-no-unknown-custom-properties
+   #  csstools/value-no-unknown-custom-properties: true
