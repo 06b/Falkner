@@ -6,7 +6,8 @@ plugins: ["stylelint-a11y",
          "stylelint-declaration-use-variable",
          "stylelint-high-performance-animation",
          "stylelint-no-browser-hacks/lib",
-         "stylelint-no-indistinguishable-colors",]
+         "stylelint-no-indistinguishable-colors",
+         "stylelint-no-unsupported-browser-features",]
 
 rules:
   #From https://stylelint.io/user-guide/example-config/
@@ -247,3 +248,9 @@ rules:
        - true
        - allowEquivalentNotation:
          - true #Due to alpha transparency being stripped from colors, see: https://github.com/SlexAxton/css-colorguard#alpha-transparency
+
+   # NOTE: Possible false positives, useful for debugging browser support
+   # https://github.com/ismay/stylelint-no-unsupported-browser-features
+   #   plugin/no-unsupported-browser-features:
+   #    - true
+   #    - severity: warning
