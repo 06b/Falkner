@@ -4,7 +4,9 @@ plugins: ["stylelint-a11y",
          "stylelint-csstree-validator",
          "stylelint-declaration-block-no-ignored-properties",
          "stylelint-declaration-use-variable",
-         "stylelint-high-performance-animation",]
+         "stylelint-high-performance-animation",
+         "stylelint-no-browser-hacks/lib",
+         "stylelint-no-indistinguishable-colors",]
 
 rules:
   #From https://stylelint.io/user-guide/example-config/
@@ -235,3 +237,13 @@ rules:
    # https://github.com/kristerkari/stylelint-high-performance-animation
    # See: https://www.html5rocks.com/en/tutorials/speed/high-performance-animations/
      plugin/no-low-performance-animation-properties: true
+
+   # https://github.com/Slamdunk/stylelint-no-browser-hacks
+     plugin/no-browser-hacks:
+      - true
+
+   # https://github.com/ierhyna/stylelint-no-indistinguishable-colors
+     plugin/stylelint-no-indistinguishable-colors:
+       - true
+       - allowEquivalentNotation:
+         - true #Due to alpha transparency being stripped from colors, see: https://github.com/SlexAxton/css-colorguard#alpha-transparency
