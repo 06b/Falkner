@@ -5,7 +5,8 @@
   "scripts": {
     "build": "gulp default-example",
     "clean": "gulp production:Clean",
-    "lint": "gulp dev:stylelint"
+    "lint": "gulp dev:stylelint",
+    "lint--fix": "gulp dev:stylelint--fix"
   },
   "devDependencies": {
     "autoprefixer": "^9.6.1",

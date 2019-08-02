@@ -371,6 +371,34 @@ gulp.task('dev:stylelint', function ()
   .pipe(postcss(processors));
 });
 
+gulp.task('dev:stylelint--fix', function ()
+{
+
+    var processors = [
+      stylelint({
+        fix: true
+      }),
+      // Pretty reporting config
+      reporter({
+          clearAllMessages: true,
+          throwError: false
+      })
+    ];
+
+    return gulp.src(
+    // Stylesheet source:
+        ['./Content/css/src/**/*.css',
+        // Ignore linting vendor assets:
+            '!./Content/css/src/vendor/**/*.css',
+            '!./Content/css/src/utilities/debug.css',
+            '!./Content/css/src/base/00-Normalize.css',
+            '!./Content/css/src/utilities/print.css']
+        //, '!./Content/css/src/_settings/**/*.css']
+  )
+  .pipe(postcss(processors))
+  .pipe(gulp.dest('./Content/css/src/'));
+});
+
 gulp.task('dev:normalize-css-styles', function () {
 
     del(['./Content/css/normalized']);
