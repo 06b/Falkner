@@ -9,7 +9,8 @@ plugins: ["stylelint-a11y",
          "stylelint-no-indistinguishable-colors",
          "stylelint-no-unsupported-browser-features",
          "stylelint-selector-no-empty",
-         "stylelint-selector-tag-no-without-class",]
+         "stylelint-selector-tag-no-without-class",
+         "stylelint-suitcss",]
 
 rules:
   #From https://stylelint.io/user-guide/example-config/
@@ -262,3 +263,8 @@ rules:
 
    # https://github.com/Moxio/stylelint-selector-tag-no-without-class
      plugin/selector-tag-no-without-class: ["div", "span"]
+
+   # https://github.com/suitcss/stylelint-suitcss
+     suitcss/custom-property-no-outside-root: true
+     suitcss/root-no-standard-properties: true
+     suitcss/selector-root-no-composition: true
