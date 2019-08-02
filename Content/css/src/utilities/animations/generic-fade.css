@@ -25,9 +25,11 @@
     }
 }
 
-.u-fadeIn
-{
-    animation-name: fadeIn;
+@media (prefers-reduced-motion: no-preference) {
+    .u-fadeIn
+    {
+        animation-name: fadeIn;
+    }
 }
 
 @keyframes fadeOut
@@ -44,9 +46,11 @@
     }
 }
 
-.u-fadeOut
-{
-    animation-name: fadeOut;
+@media (prefers-reduced-motion: no-preference) {
+    .u-fadeOut
+    {
+        animation-name: fadeOut;
+    }
 }
 
 .u-fadeIn--hint,

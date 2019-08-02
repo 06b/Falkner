@@ -30,9 +30,11 @@
     }
 }
 
-.u-spotlight-animation
-{
-    animation: spotlight 2.5s;
+@media (prefers-reduced-motion: no-preference) {
+    .u-spotlight-animation
+    {
+        animation: spotlight 2.5s;
+    }
 }
 
 .u-spotlight-animation--hint
