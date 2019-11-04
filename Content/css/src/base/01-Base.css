@@ -167,7 +167,7 @@ fieldset
 
 /**
  * 1. So that `alt` text is visually offset if images don't load.
- * 2. Fluid images.
+ * 2. Fluid images - scale images down to prevent overflow.
  * 3. Maintain aspect ratio of scaled images
  */
 
