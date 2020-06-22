@@ -9,8 +9,8 @@
     "lint--fix": "gulp dev:stylelint--fix"
   },
   "devDependencies": {
-    "autoprefixer": "^9.6.1",
-    "browserslist": "^4.6.6",
+    "autoprefixer": "^9.8.2",
+    "browserslist": "^4.12.0",
     "cssnano": "^4.1.10",
     "del": "^5.0.0",
     "gulp": "^4.0.2",
@@ -19,7 +19,7 @@
     "gulp-postcss": "^8.0.0",
     "gulp-rename": "^1.4.0",
     "merge-stream": "^2.0.0",
-    "postcss": "^7.0.27",
+    "postcss": "^7.0.32",
     "postcss-custom-properties": "^9.0.2",
     "postcss-discard-duplicates": "4.0.2",
     "postcss-ordered-values": "^4.1.2",
@@ -32,7 +32,7 @@
     "stylelint-csstree-validator": "^1.5.2",
     "stylelint-declaration-block-no-ignored-properties": "^2.1.0",
     "stylelint-declaration-use-variable": "^1.7.2",
-    "stylelint-high-performance-animation": "^1.2.1",
+    "stylelint-high-performance-animation": "^1.5.1",
     "stylelint-no-browser-hacks": "^1.2.1",
     "stylelint-no-indistinguishable-colors": "^1.2.1",
     "stylelint-no-unsupported-browser-features": "^3.0.2",
